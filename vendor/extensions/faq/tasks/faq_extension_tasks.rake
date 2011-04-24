@@ -1,3 +1,6 @@
+$KCODE = 'UTF8' unless RUBY_VERSION >= '1.9'
+require 'ya2yaml'
+
 namespace :a2m do
   namespace :extensions do
     namespace :faq do
@@ -30,8 +33,11 @@ namespace :a2m do
       desc 'Prepare to migrate to another module'
       task :store_to_file => [:environment] do
         puts "Prepare to store data"
-        items = Faq.all.to_yaml
-        
+        items = Faq.all
+        p "Fetched #{items.length} faq objects."
+        save_path = File.join(RAILS_ROOT, "tmp", "faq_old.yml")
+        p "Save faq to #{save_path}"
+        File.open(save_path, 'w'){|f| f.write items.ya2yaml(:syck_compatible => true)}
       end
     end
   end
