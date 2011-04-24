@@ -1,0 +1,55 @@
+<style>
+  .less_news {background-color:#FFAAAA !important;}
+  .less_news td {background-color:#FFAAAA !important;}
+  .settings_mi {float: right !important;}
+</style>
+
+<ul class="breadcrumbs">
+  <li>
+    <%= link_to "Набор виджетов", {:action=>"index"}, {:class=>"ajax"} %>
+  </li>
+  <li><span>Редактирование виджета</span></li>
+  <li class="settings_mi">
+    <%= tags_link "NavigationTags" %>
+  </li>
+</ul>
+
+<% form_for :editnav, :html=>{:class=>"post_submit"} do |f| %>
+<table style="width:100%;">
+  <tbody>
+    <tr>
+      <td>
+        <p>Название виджета:</p>
+      </td>
+      <td>
+        <%= f.text_field :name %>
+      </td>
+      <td>
+        <p>
+          Название виджета нужно для того, чтобы в дальнейшем <br /> добавлять данный виджет на страницу по его имени<br /> Название должно быть УНИКАЛЬНЫМ
+        </p>
+        <p>
+          Например, добавление в шаблон:
+        <pre><%= h("<a2m:navwidget name=\"myname\" />")  %></pre>
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>Шаблон виджета:</p>
+      </td>
+      <td colspan="2">
+        <p>
+          Вам нужно определить шаблон для данного элемента навигации.
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="3">
+        <%= f.text_area :template, :columns=>10, :style=>"width:100%;" %>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<%= submit_tag "Сохранить" %>
+<% end %>

@@ -1,0 +1,50 @@
+<div class="page-wrapper">
+  <ul class="breadcrumbs">
+    <li>
+      <%= link_to "Дерево страниц", {:action=>"index"}, {:class=>"ajax"} %>
+    </li>
+    <li><span>Добавление новой страницы</span></li>
+  </ul>
+
+  <% form_for :newpage, :url=>{:action=>"create"}, :html=>{:class=>"post_submit"} do |form| %>
+    <table>
+      <tr>
+        <td>Сегмент страницы:</td>
+        <td><%= form.text_field :segment %></td>
+      </tr>
+      <tr>
+        <td>Заголовок страницы(меню):</td>
+        <td><%= form.text_field :title %></td>
+      </tr>
+      <tr>
+        <td>Заголовок страницы(бруазер):</td>
+        <td><%= form.text_field :self_title %></td>
+      </tr>
+      <tr>
+        <td>Ключевые слова:</td>
+        <td><%= form.text_field :keywords %></td>
+      </tr>
+      <tr>
+        <td>Небольшое описание:</td>
+        <td><%= form.text_field :description %></td>
+      </tr>
+      <tr>
+        <td>Выберите разметку:</td>
+        <td>
+          <%= form.select(:template, A2mCms::TemplatesLoader.loaded_templates, { :include_blank => false }) %>
+          <%= link_to "...", {:action=>"index", :controller=>"TemplatesExt"}, {:class=>"ajax"} %>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Выберите тип материала:
+        </td>
+        <td>
+          <%= form.select(:contenttype, A2mCms::ExtensionLoader.extensions.select{|ext| ext.is_material}.collect{|ext| [ext.title, ext.extension_name]}, { :include_blank => false }) %>
+        </td>
+      </tr>
+    </table>
+
+    <%= submit_tag "Создать" %>
+  <% end %>
+</div>

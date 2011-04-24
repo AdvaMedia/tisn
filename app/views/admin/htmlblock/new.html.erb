@@ -1,0 +1,23 @@
+<h4>Добавление блока</h4>
+<% form_for :htmlblock, :url=>{:action=>"create", :controller=>"admin/htmlblock"} do |form|%>
+<%= form.hidden_field :part_item_id %>
+<table style="width: 100%;">
+  <tbody>
+    <tr>
+      <td>Описание:</td>
+      <td>
+        <%= form.text_field :description %>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">Основной текст:</td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <%= form.text_area :content, :style=>"width:100%;", :size=>"20x20" %>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<%= submit_tag "Сохранить" %>
+<% end %>

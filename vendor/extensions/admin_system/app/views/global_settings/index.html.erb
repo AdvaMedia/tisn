@@ -1,0 +1,64 @@
+<div class="page-wrapper container">
+  <table class="null-table full content-layout">
+    <tr>
+      <td class="header" colspan="2">
+        <h1 style=" background-image:url(/images/adminsystem/icons/48/content.png);">Настройки сайта</h1>
+      </td>
+    </tr>
+    <tr>
+      <td class="column-center">
+        <p class="roundborder notice information">
+          <i class="notice icon">&nbsp;</i>
+          В данном разделе уточняются основные настройки сайта
+        </p>
+
+        <% form_for :item, :url=>{:action=>"index"} do |f| %>
+          <fieldset>
+            <div class="f-row width-100">
+              <%= f.label :name, "Имя сайта" %>
+              <div class="i-wrap">
+                  <%= f.text_field :name, :class=>"i-text" %>
+                <div class="req" title="Обязательное поле">&nbsp;</div>
+              </div>
+              <span class="i-help">Имя сайта.</span>
+            </div>
+
+            <div class="f-row width-100">
+              <%= f.label :mail, "Почта сайта" %>
+              <div class="i-wrap">
+                  <%= f.text_field :mail, :class=>"i-text" %>
+                <div class="req" title="Обязательное поле">&nbsp;</div>
+              </div>
+            </div>
+
+            <div class="f-row width-100">
+              <%= f.label :rootpage, "Главная страница сайта" %>
+              <div class="i-wrap">
+                  <%= f.text_field :rootpage, :class=>"i-text" %>
+                <div class="req" title="Обязательное поле">&nbsp;</div>
+              </div>
+            </div>
+
+            <div class="f-row width-100">
+              <%= f.label :error_403, "Страница 403 ошибки" %>
+              <div class="i-wrap">
+                  <%= f.text_field :error_403, :class=>"i-text" %>
+                <div class="req" title="Обязательное поле">&nbsp;</div>
+              </div>
+            </div>
+
+            <div class="f-row width-100">
+              <%= f.label :error_404, "Страница 404 ошибки" %>
+              <div class="i-wrap">
+                  <%= f.text_field :error_404, :class=>"i-text" %>
+                <div class="req" title="Обязательное поле">&nbsp;</div>
+              </div>
+            </div>
+            
+          </fieldset>
+          <%= f.submit %>
+        <% end %>
+      </td>
+    </tr>
+  </table>
+</div>

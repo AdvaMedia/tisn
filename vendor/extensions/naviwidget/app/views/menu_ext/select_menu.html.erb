@@ -1,0 +1,25 @@
+<div class="page-wrapper container">
+  <table class="null-table full content-layout">
+    <tr>
+      <td class="header" colspan="2">
+        <h1 style="background-image:url(/images/adminsystem/icons/48/content.png);">Редактирование блока меню</h1>
+      </td>
+    </tr>
+    <tr>
+      <td class="column-center">
+        <% form_for :item, :url=>{:action=>"select_menu", :controller=>"MenuExt", :id=>@item.id} do |f| %>
+          <fieldset>
+            <div class="f-row width-100">
+              <%= f.label :menu_id, "Какое меню выбрать для этого блока?" %>
+              <div class="i-wrap">
+                <%= f.select :menu_id, Navigate.all.collect{|p| [ p.name, p.id ] }, {:include_blank => 'Отключено'}, {:class=>"i-select"} %>
+              </div>
+              <span class="i-help">Укажите регион, куда следует поместить блок.</span>
+            </div>
+          </fieldset>
+          <%= submit_tag "Сохранить" %>
+        <% end %>
+      </td>
+    </tr>
+  </table>
+</div>

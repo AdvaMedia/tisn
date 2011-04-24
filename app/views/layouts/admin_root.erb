@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <title>ADARIUM - Информационный рекламмный портал (Система администрирования)</title>
+    <meta name="description" content="A web applications user interface library built on the Mootools javascript framework" />
+
+    <link rel="stylesheet" href="/css/content.css" type="text/css" />
+    <link rel="stylesheet" href="/css/ui.css" type="text/css" />
+    <link rel="stylesheet" href="/css/cssf-base.css" type="text/css" media="screen" />
+
+    <style>
+
+      /* This CSS should be place in a style sheet. It is only here in order to not conflict with the other demos. */
+
+      #pageWrapper {
+        background: #5b93cc;
+      }
+
+      .desktopIcon {
+        margin: 15px 0 0 15px;
+        cursor: pointer;
+      }
+
+    </style>
+
+    <!--[if IE]>
+	<script type="text/javascript" src="scripts/excanvas-compressed.js"></script>
+    <![endif]-->
+
+    <a2m:ajax />
+    <a2m:formcheck lang="ru"/>
+    <%= javascript_include_tag :fckeditor %>
+
+    <!--
+	mocha.js.php is for development. It is not recommended for production.
+	For production it is recommended that you used a compressed version of either
+	the output from mocha.js.php or mocha.js. You could also list the
+	necessary source files individually here in the header though that will
+	create a lot more http requests than a single concatenated file.
+
+    <script type="text/javascript" src="scripts/mocha.js"></script>
+
+    -->
+
+    <script type="text/javascript" src="/javascripts/mocha.js"></script>
+
+    <script type="text/javascript" src="/javascripts/demo-virtual-desktop-init.js"></script>
+
+  </head>
+  <body>
+
+    <div id="desktop">
+
+      <div id="desktopHeader">
+        <div id="desktopTitlebarWrapper">
+          <div id="desktopTitlebar">
+            <h1 class="applicationTitle">ADVERTARIUM</h1>
+            <h2 class="tagline">ADVERTARIUM  <span class="taglineEm">Система администрирования</span></h2>
+            <div id="topNav">
+              <ul class="menu-right">
+                <li>Здравствуйте, <a href="#" onclick="MochaUI.notification('Do Something');return false;"><%= current_user.login %></a>.</li>
+                <li><a href=<%="'"+ url_for(:controller=>'admin/welcome', :action=>'logout') +"'"%> >Выйти</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div id="desktopNavbar">
+          <ul>
+            <li><a class="returnFalse" href="">Настройка</a>
+                <ul>
+                  <li class="divider"><a class="returnFalse arrow-right" href="">Навигация</a>
+                    <ul>
+                      <li><a id="admin_navigation_link" href="/admin/pages" class="adminmenuitem">Навигация</a></li>
+                      <li><a id="admin_templates_link" href="/admin/templates" class="adminmenuitem">Шаблоны</a></li>
+                      <li><a id="admin_pageparts_link" href="/admin/pageparts" class="adminmenuitem">PageParts</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="returnFalse arrow-right" href="">Модули</a>
+                    <ul>
+                      <li><a id="admin_html_link" href="/admin/htmlblock" class="adminmenuitem">HTML</a></li>
+                      <li><a id="admin_news_link" href="/admin/news" class="adminmenuitem">News</a></li>
+                      <li><a id="admin_htmlrotate_link" href="/admin/htmlrotation" class="adminmenuitem">HtmlRotate</a></li>
+                      <li><a id="admin_orders_link" href="/admin/orders" class="adminmenuitem">Заказы</a></li>
+                    </ul>
+                  </li>
+                </ul>
+            </li>
+          </ul>
+        </div><!-- desktopNavbar end -->
+      </div><!-- desktopHeader end -->
+
+      <div id="dockWrapper">
+        <div id="dock">
+          <div id="dockPlacement"></div>
+          <div id="dockAutoHide"></div>
+          <div id="dockSort"><div id="dockClear" class="clear"></div></div>
+        </div>
+      </div>
+
+      <div id="pageWrapper">
+        <div id="desc_page">
+
+        </div>
+      </div>
+
+      <div id="desktopFooterWrapper">
+        <div id="desktopFooter">
+          &copy; 2009 <a href="#">A-2-Media.ru</a>
+        </div>
+      </div>
+
+    </div><!-- desktop end -->
+
+  </body>
+</html>

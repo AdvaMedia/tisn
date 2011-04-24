@@ -1,0 +1,29 @@
+<div class="page-wrapper">
+  <ul class="breadcrumbs">
+    <li>
+      <%= link_to "Список страниц", {:action=>"index", :controller=>"NavigationExt"}, {:class=>"ajax"} %>
+    </li>
+    <li>
+      <%= link_to "Редактирование страницы", {:controller => 'NavigationExt', :action => 'edit', :id=>params[:id]}, {:class=>"ajax"} %>
+    </li>
+    <li>
+      <%= link_to "Список ссылок", {:action => 'index', :id=>params[:id]}, {:class=>"ajax"} %>
+    </li>
+    <li><span>Добавляем</span></li>
+  </ul>
+
+  <% form_for :link, :url=>{:action=>"create"}, :html=>{:class=>"post_ajax"} do |f|%>
+    <%= f.hidden_field :page_id %>
+    <table>
+      <tbody>
+        <tr>
+          URL ссылки:
+        </tr>
+        <tr>
+          <%= f.text_field :url %>
+        </tr>
+      </tbody>
+    </table>
+    <%= submit_tag "Сохранить" %>
+  <% end %>
+</div>

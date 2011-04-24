@@ -1,0 +1,123 @@
+menutemplates_001: 
+  updated_at: 2010-06-07 08:26:06
+  template: |-
+    <table class="menu general-menu full null-table">
+    <tbody>
+     <tr>
+      <a2m:menuitems>
+      <a2m:item>
+       <a2m:normal>
+        <td class="leaf">
+         <div>
+          <a href="<a2m:url />"><span><a2m:name /></span></a>
+          <a2m:subitems />
+         </div>
+        </td>
+       </a2m:normal>
+       <a2m:active>
+        <td class="active-trail">
+         <div>
+          <a href="<a2m:url />" class="active"><span><a2m:name /></span></a>
+          <a2m:subitems />
+         </div>
+        </td>
+       </a2m:active>
+       <a2m:expanded>
+        <td class="active-trail">
+         <div>
+          <a href="<a2m:url />" class="active"><span><a2m:name /></span></a>
+          <a2m:subitems />
+         </div>
+        </td>
+       </a2m:expanded>
+      </a2m:item>
+      </a2m:menuitems>
+     </tr>
+    </tbody>
+    </table>
+  level: "0"
+  id: "1"
+  navigate_id: "1"
+  created_at: 2010-06-07 08:26:06
+menutemplates_002: 
+  updated_at: 2010-06-07 08:26:23
+  template: |-
+    <ul class="menu">
+      <a2m:menuitems>
+      <a2m:item>
+       <a2m:normal>
+        <li class="leaf"><a href="<a2m:url />"><a2m:name /></a>
+         <a2m:subitems />
+        </li>
+       </a2m:normal>
+       <a2m:active>
+        <li class="leaf expanded active-trail"><a class="active" href="<a2m:url />"><a2m:name /></a>
+         <a2m:subitems />
+        </li>
+       </a2m:active>
+       <a2m:expanded>
+         <li class="leaf expanded"><a class="active" href="<a2m:url />"><a2m:name /></a>
+         <a2m:subitems />
+        </li>
+       </a2m:expanded>
+      </a2m:item>
+      </a2m:menuitems>
+    </ul>
+  level: "1"
+  id: "2"
+  navigate_id: "1"
+  created_at: 2010-06-07 08:26:23
+menutemplates_003: 
+  updated_at: 2010-06-07 08:27:03
+  template: |-
+    <ul class="menu sidebar-menu">
+      <a2m:menuitems>
+      <a2m:item>
+       <a2m:normal>
+        <li class="leaf"><a href="<a2m:url />"><a2m:name /></a>
+        </li>
+       </a2m:normal>
+       <a2m:active>
+        <li class="leaf expanded active-trail"><a class="active" href="<a2m:url />"><a2m:name /></a>
+         <a2m:subitems />
+        </li>
+       </a2m:active>
+       <a2m:expanded>
+         <li class="leaf expanded"><a class="active" href="<a2m:url />"><a2m:name /></a>
+         <a2m:subitems />
+        </li>
+       </a2m:expanded>
+      </a2m:item>
+      </a2m:menuitems>
+    </ul>
+  level: "0"
+  id: "3"
+  navigate_id: "2"
+  created_at: 2010-06-07 08:27:03
+menutemplates_004: 
+  updated_at: 2010-06-07 08:27:29
+  template: |-
+    <ul class="menu">
+      <a2m:menuitems>
+      <a2m:item>
+       <a2m:normal>
+        <li class="leaf"><a href="<a2m:url />"><a2m:name /></a>
+        </li>
+       </a2m:normal>
+       <a2m:active>
+        <li class="leaf expanded active-trail"><a class="active" href="<a2m:url />"><a2m:name /></a>
+         <a2m:subitems />
+        </li>
+       </a2m:active>
+       <a2m:expanded>
+         <li class="leaf expanded"><a class="active" href="<a2m:url />"><a2m:name /></a>
+         <a2m:subitems />
+        </li>
+       </a2m:expanded>
+      </a2m:item>
+      </a2m:menuitems>
+    </ul>
+  level: "1"
+  id: "4"
+  navigate_id: "2"
+  created_at: 2010-06-07 08:27:29

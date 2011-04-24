@@ -1,0 +1,16 @@
+<% @map_regions.each do |admin_yandex_map| %>
+  <tr>
+	<td>
+    	<%= link_to '<span>&#x2191;</span>', move_to_admin_yandex_map_path(admin_yandex_map, :direction=>"up"), :class=>"minibutton" if admin_yandex_map.position > 1 %>
+		<%= link_to '<span>&#x2193;</span>', move_to_admin_yandex_map_path(admin_yandex_map, :direction=>"down"), :class=>"minibutton" if admin_yandex_map.position < @map_regions.count %>
+    </td>
+    <td><%= link_to admin_yandex_map.title, admin_yandex_adresses_path(:map_region_id=>admin_yandex_map.id), :title=>"Перейти" %></td>
+    <td><%= admin_yandex_map.map_adresses.count > 0 ? admin_yandex_map.map_adresses.count : "Нет ни одного офиса" %></td>
+    <td>
+		<%= link_to '<span>редактировать</span>', edit_admin_yandex_map_path(admin_yandex_map), :class=>"minibutton" %>
+		<%= link_to '<span>удалить</span>', admin_yandex_map_path(admin_yandex_map), :confirm => 'Вы уверены?', :method => :delete, :class=>"minibutton" %>
+	</td>
+  </tr>
+<% end %>
+
+<br />

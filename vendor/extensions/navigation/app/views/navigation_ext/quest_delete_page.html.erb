@@ -1,0 +1,15 @@
+<div class="page-wrapper">
+  <ul class="breadcrumbs">
+  <li>
+    <%= link_to "Дерево страниц", {:action=>"index"}, {:class=>"ajax"} %>
+  </li>
+  <li><span>Подтверждение удаления страницы</span></li>
+</ul>
+
+<% form_for :selfpage, :url=>{:action=>"delete_page", :id=>@selfpage.id}, :html=>{:class=>"post_submit"} do |form| %>
+<h2>
+  Я подтверждаю удаление страницы <b><%= @selfpage.title %></b>
+</h2>
+<%= submit_tag "Удалить" %>
+<% end %>
+</div>

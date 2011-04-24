@@ -1,0 +1,15 @@
+<ul class="breadcrumbs">
+  <li>
+    <%= link_to "Набор виджетов", {:action=>"index", :controller=>"NavividgetAdmin"}, {:class=>"ajax"} %>
+  </li>
+  <li>
+    <%= link_to @navitem.name, "#" %>
+  </li>
+  <li><span>Структура меню</span></li>
+</ul>
+
+<div>
+  <%= link_to "(+)", {:action=>"new", :id=>@navitem.id}, {:class=>"ajax"} %>
+  <%= render_navinodes( @navitem.navinodes ) %>
+
+</div>

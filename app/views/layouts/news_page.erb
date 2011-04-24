@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head profile="http://gmpg.org/xfn/11">
+	<title>Новости компании WERDAU</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />      
+	<meta http-equiv="imagetoolbar" content="no" />
+    <link href="http://werdau.ru/news.rss" title="RSS" type="application/rss+xml" rel="alternate"/>
+	<link rel="stylesheet" href="/css/cssf-base.css" type="text/css" media="screen" />
+	<!--[if lte IE 6]><link rel="stylesheet" href="/css/cssf-ie6.css" type="text/css" media="screen" /><![endif]-->
+	<!--[if IE 7]><link rel="stylesheet" href="/css/cssf-ie7.css" type="text/css" media="screen" /><![endif]-->
+	<script type="text/javascript" src="/js/iepngfix_tilebg.js"></script>
+	<script type="text/javascript" src="/js/css_browser_selector.js"></script>
+	<script type="text/javascript">
+		function addBookmark(url, title) 
+		{ 
+		  if (!url) url = location.href; 
+		  if (!title) title = document.title; 
+		    
+		  //Gecko 
+		  if ((typeof window.sidebar == "object") && (typeof window.sidebar.addPanel == "function")) window.sidebar.addPanel ("WERDAU Эталон — пластиковые окна Саратова", "http://werdau.ru/", ""); 
+		  //IE4+ 
+		  else if (typeof window.external == "object") window.external.AddFavorite("http://werdau.ru/", "WERDAU Эталон — пластиковые окна Саратова"); 
+		 //Opera7+ 
+		 else if (window.opera && document.createElement) 
+		  { 
+		     var a = document.createElement('A'); 
+		         if (!a) return false; //IF Opera 6 
+		          a.setAttribute('rel','sidebar'); 
+		          a.setAttribute('href',url); 
+		          a.setAttribute('title',title); 
+		          a.click(); 
+		    } 
+		   else return false; 
+		     
+		 return true; 
+		}  
+	</script>
+</head>
+<body>
+<!--Header-->
+<div id="header2">
+  <div class="page_margins">
+    <div class="page">
+      <div class="headblock">
+        <h1 id="logo"><a href="/">Оконная компания WERDAU Эталон. Саратов</a><!--<img id="logo" src="/i/logo.png" width="95" height="100" alt="" />--></h1>
+        <div class="quicklinks">
+          <a href="/"><img src="/i/icons/home.gif" width="13" height="13" alt="На главную" title="Перейти на главную страницу" /></a>
+          <a href="#"><img src="/i/icons/mail.gif" width="13" height="13" alt="Написать нам" title="Написать нам электронное письмо" /></a>
+          <a href="javascript: void(addBookmark('', 'Название') || alert('Ваш браузер не поддерживает автоматическое добавление закладок.'))"><img src="/i/icons/favorite.gif" width="13" height="13" alt="В закладки" title="Занести сайт в закладки" /></a>
+        </div>
+        <a class="werdau" href="/">Werdau — пластиковые окна. Саратов</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="extended">
+    <div class="page_margins">
+      <div class="page content container">
+        <div class="subcolumns">
+          <div class="c33l">
+            <div class="subcl">
+              <a2m:navigation />
+            </div>
+          </div>
+          <div class="c66r" style="border-left:1px dashed #d9cfb2;">
+            <div class="subcr">
+              <%= yield :layout %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="footer">
+    <div class="page_margins">
+      <div class="page content container">
+        <a2m:navigation_footer />
+        <span class="copyright"><span class="bold">Copyright 2009. WERDAU.</span>  Информация, размещенная на сайте не является публичной офертой</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+

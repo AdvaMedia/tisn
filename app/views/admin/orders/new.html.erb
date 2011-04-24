@@ -1,0 +1,29 @@
+<% form_for :order, :url=>{:action=>"create", :controller=>"admin/orders"} do |form| %>
+<table style="width:100%">
+  <tr>
+    <td>Наименование:</td>
+    <td>
+      <%= form.text_field :name %>
+    </td>
+  </tr>
+  <tr>
+    <td>URL изображения:</td>
+    <td>
+      <%= form.text_field :image_url %>
+    </td>
+  </tr>
+  <tr>
+    <td>Опции:</td>
+    <td>
+      <%= form.text_area :options, :size=>"10x5", :style=>"width:100%" %>
+    </td>
+  </tr>
+  <tr>
+    <td>Цена:</td>
+    <td>
+      <%= form.text_field :cash %>
+    </td>
+  </tr>
+</table>
+<%= submit_tag "Сохранить" %> <%= link_to "Отмена", {:action=>"index", :controller=>"admin/orders"} %>
+<% end %>

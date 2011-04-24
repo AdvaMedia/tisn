@@ -1,0 +1,21 @@
+<div class="page-wrapper container">
+  <table class="null-table full content-layout">
+    <tr>
+      <td class="header" colspan="2">
+        <h1 style=" background-image:url(/images/adminsystem/icons/48/content.png);">Управление блоками</h1>
+      </td>
+    </tr>
+    <tr>
+      <td class="column-center">
+        <p class="roundborder notice information">
+          <i class="notice icon">&nbsp;</i>
+          Вы действительно хотите удалить выбранный блок и связанный с ним контент?
+        </p>
+
+        <% form_for :item, :url=>{:action=>"delete", :id=>@item.id} do |f| %>
+          <%= submit_tag "Я подтверждаю удаление блока" %>
+        <% end %>
+      </td>
+    </tr>
+  </table>
+</div>

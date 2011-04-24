@@ -1,0 +1,48 @@
+confitems_005: 
+  id: "5"
+  description: 
+  ckey: mail
+  cvalue: postmaster@advamedia.ru
+  confgroup_id: "2"
+confitems_006: 
+  id: "6"
+  description: 
+  ckey: rootpage
+  cvalue: /
+  confgroup_id: "2"
+confitems_007: 
+  id: "7"
+  description: 
+  ckey: error_403
+  cvalue: /403
+  confgroup_id: "2"
+confitems_008: 
+  id: "8"
+  description: 
+  ckey: error_404
+  cvalue: /403
+  confgroup_id: "2"
+confitems_001: 
+  id: "1"
+  description: 
+  ckey: mail
+  cvalue: violetta@oknatisn.ru
+  confgroup_id: "1"
+confitems_002: 
+  id: "2"
+  description: 
+  ckey: title
+  cvalue: "\xD0\x9D\xD0\xBE\xD0\xB2\xD0\xBE\xD0\xB5 \xD1\x81\xD0\xBE\xD0\xBE\xD0\xB1\xD1\x89\xD0\xB5\xD0\xBD\xD0\xB8\xD0\xB5. \xD0\xA1\xD0\xB0\xD0\xB9\xD1\x82 \xD0\x9E\xD0\xBA\xD0\xBD\xD0\xB0 \xD0\xA2\xD0\xB8\xD0\xA1\xD0\x9D"
+  confgroup_id: "1"
+confitems_003: 
+  id: "3"
+  description: 
+  ckey: active
+  cvalue: "1"
+  confgroup_id: "1"
+confitems_004: 
+  id: "4"
+  description: 
+  ckey: name
+  cvalue: "\xD0\x9E\xD0\xBA\xD0\xBD\xD0\xB0 \xD0\xA2\xD0\xB8\xD0\xA1\xD0\x9D"
+  confgroup_id: "2"

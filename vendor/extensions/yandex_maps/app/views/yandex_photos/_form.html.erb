@@ -1,0 +1,20 @@
+<%= f.hidden_field :map_address_id %>
+
+<div class="f-row width-100">
+  <%= f.label :alt_text, "Описание фотографии:" %>
+  <div class="i-wrap">
+    <%= f.text_field :alt_text, :class=>"i-text", :tabindex => 1 %>
+  </div>
+<span class="i-help">Например: Главный офис в Саратове</span>
+</div>
+
+<div class="f-row width-100">
+  <% unless @hide_upload %>
+    <%= f.label :alt_text, "Выберите файл изображения:" %>
+    <div class="i-wrap">
+      <%= file_column_field 'office_image', 'image' %>
+    </div>
+  <% else %>
+    <%= image_tag(url_for_file_column(@office_image, :image, "widescreen")) %>
+  <% end %>
+</div>

@@ -1,0 +1,50 @@
+<div class="page-wrapper">
+  <ul class="breadcrumbs">
+    <li><span>Список страниц</span></li>
+    <li>
+      <%= link_to "Добавить страницу", {:action=>"add_page"}, {:class=>"ajax"} %>
+    </li>
+  </ul>
+  <div class="content">
+    <div class="subcolumns">
+      <table style="width: 100%;">
+        <tbody>
+          <tr>
+            <th>
+              Наименование и сегмент
+            </th>
+            <th>
+              Тип материала
+            </th>
+            <th>
+              Действия
+            </th>
+          </tr>
+          <% Page.all.each do |page| %>
+            <tr>
+              <td>
+                <%= link_to "#{page.title}", page.engine.blank? ? "#":page.engine.edit_link_params(page)%>
+              </td>
+              <td>
+                <%= link_to "[#{page.full_url}]", "#{page.full_url}", :target => "_blank" %>
+              </td>
+              <td>
+                <%= "#{page.content_name}" %>
+              </td>
+              <td>
+                <ul>
+                  <li>
+                    <%= link_to "блоки",  {:controller=>"PageblocksExt",  :action=>"index",  :page=>page.id} %>
+                  </li>
+                  <li>
+                    <%= link_to "настройки", {:action=>"edit", :id=>page.id}, :class=>"ajax" %>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

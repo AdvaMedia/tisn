@@ -1,0 +1,38 @@
+<div class="page-wrapper container">
+	<table class="null-table full content-layout">
+		<tr>
+	      <td class="header" colspan="2">
+	        <h1 style="background-image:url(/images/adminsystem/icons/48/content.png);"><%= link_to "Офисы", admin_yandex_maps_path %> / <%= link_to "Адреса", admin_yandex_adresses_path(:map_region_id=>@map_address.map_region.id) %></h1>
+	      </td>
+	      <td class="column-right" rowspan="2">
+	      </td>
+	    </tr>
+		<tr>
+	      <td class="column-center pagehead">
+			<ul class="actions">
+				<li>
+					<%= link_to '<span>Загрузить фото</span>', new_admin_yandex_photo_path(:map_address_id=>@map_address.id), {:class=>"minibutton btn-watch"}  %>					
+				</li>
+			</ul>
+			<div id="githubstyle">
+		        <table class="tree-browser" cellspacing="0" cellpadding="0">
+		          <tbody>
+					<tr class="header">
+						<th colspan="5">
+							<b><%= @map_address.name %></b>
+						</th>
+					</tr>
+					<tr class="header">
+						<th>Переместить</th>
+						<th>Фотография</th>
+						<th>Описание</th>
+						<th>Действия</th>
+					</tr>
+		            <%= render :partial => "list" %>
+		          </tbody>
+		        </table>
+			</div>
+	      </td>
+	    </tr>
+	</table>
+</div>

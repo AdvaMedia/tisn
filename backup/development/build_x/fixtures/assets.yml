@@ -1,0 +1,2101 @@
+assets_091: 
+  updated_at: 2010-07-04 19:38:59
+  data_content_type: image/jpeg
+  data_file_name: 16_small.jpg
+  type: Picture
+  assetable_type: 
+  data_file_size: "27436"
+  id: "91"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 19:38:59
+assets_070: 
+  updated_at: 2010-07-04 18:31:37
+  data_content_type: application/pdf
+  data_file_name: 4FO.pdf
+  type: AttachmentFile
+  assetable_type: 
+  data_file_size: "1130411"
+  id: "70"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 18:31:37
+assets_069: 
+  updated_at: 2010-07-04 18:31:16
+  data_content_type: application/pdf
+  data_file_name: 3FO.pdf
+  type: AttachmentFile
+  assetable_type: 
+  data_file_size: "423900"
+  id: "69"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 18:31:16
+assets_006: 
+  updated_at: 2010-06-07 11:11:29
+  data_content_type: application/octet-stream
+  data_file_name: tisnservice.png
+  type: Picture
+  assetable_type: Demo
+  data_file_size: "6124"
+  id: "6"
+  user_id: 
+  assetable_id: "0"
+  created_at: 2010-06-07 11:11:29
+assets_027: 
+  updated_at: 2010-07-04 16:29:26
+  data_content_type: image/jpeg
+  data_file_name: lic.jpg
+  type: Picture
+  assetable_type: 
+  data_file_size: "241137"
+  id: "27"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 16:29:26
+assets_048: 
+  updated_at: 2010-07-04 17:13:22
+  data_content_type: application/x-zip-compressed
+  data_file_name: snip4.zip
+  type: AttachmentFile
+  assetable_type: 
+  data_file_size: "333719"
+  id: "48"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 17:13:22
+assets_092: 
+  updated_at: 2010-07-04 19:39:11
+  data_content_type: image/jpeg
+  data_file_name: 17_small.jpg
+  type: Picture
+  assetable_type: 
+  data_file_size: "28182"
+  id: "92"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 19:39:11
+assets_071: 
+  updated_at: 2010-07-04 18:31:56
+  data_content_type: application/pdf
+  data_file_name: 5FO.pdf
+  type: AttachmentFile
+  assetable_type: 
+  data_file_size: "526058"
+  id: "71"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 18:31:56
+assets_007: 
+  updated_at: 2010-06-07 11:11:29
+  data_content_type: application/octet-stream
+  data_file_name: vorne.png
+  type: Picture
+  assetable_type: Demo
+  data_file_size: "5992"
+  id: "7"
+  user_id: 
+  assetable_id: "0"
+  created_at: 2010-06-07 11:11:29
+assets_028: 
+  updated_at: 2010-07-04 16:34:32
+  data_content_type: image/jpeg
+  data_file_name: sert2.jpg
+  type: Picture
+  assetable_type: 
+  data_file_size: "127772"
+  id: "28"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 16:34:32
+assets_050: 
+  updated_at: 2010-07-04 17:46:18
+  data_content_type: application/pdf
+  data_file_name: 2F.pdf
+  type: AttachmentFile
+  assetable_type: 
+  data_file_size: "442683"
+  id: "50"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 17:46:18
+assets_049: 
+  updated_at: 2010-07-04 17:45:19
+  data_content_type: application/pdf
+  data_file_name: 1F.pdf
+  type: AttachmentFile
+  assetable_type: 
+  data_file_size: "341562"
+  id: "49"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 17:45:19
+assets_093: 
+  updated_at: 2010-07-04 19:39:22
+  data_content_type: image/jpeg
+  data_file_name: 18_small.jpg
+  type: Picture
+  assetable_type: 
+  data_file_size: "21572"
+  id: "93"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 19:39:22
+assets_072: 
+  updated_at: 2010-07-04 18:32:07
+  data_content_type: application/pdf
+  data_file_name: 6FO.pdf
+  type: AttachmentFile
+  assetable_type: 
+  data_file_size: "86604"
+  id: "72"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 18:32:07
+assets_008: 
+  updated_at: 2010-06-07 12:43:44
+  data_content_type: application/octet-stream
+  data_file_name: bautek-logo.png
+  type: Picture
+  assetable_type: Demo
+  data_file_size: "3709"
+  id: "8"
+  user_id: 
+  assetable_id: "0"
+  created_at: 2010-06-07 12:43:44
+assets_030: 
+  updated_at: 2010-07-04 16:37:24
+  data_content_type: application/pdf
+  data_file_name: license.pdf
+  type: AttachmentFile
+  assetable_type: 
+  data_file_size: "2675893"
+  id: "30"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 16:37:24
+assets_029: 
+  updated_at: 2010-07-04 16:36:16
+  data_content_type: image/jpeg
+  data_file_name: sert.jpg
+  type: Picture
+  assetable_type: 
+  data_file_size: "587897"
+  id: "29"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 16:36:16
+assets_051: 
+  updated_at: 2010-07-04 17:47:09
+  data_content_type: application/pdf
+  data_file_name: 3F.pdf
+  type: AttachmentFile
+  assetable_type: 
+  data_file_size: "3848021"
+  id: "51"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 17:47:09
+assets_094: 
+  updated_at: 2010-07-04 19:39:40
+  data_content_type: image/jpeg
+  data_file_name: 19_small.jpg
+  type: Picture
+  assetable_type: 
+  data_file_size: "19936"
+  id: "94"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 19:39:40
+assets_073: 
+  updated_at: 2010-07-04 18:32:17
+  data_content_type: application/pdf
+  data_file_name: 7FO.pdf
+  type: AttachmentFile
+  assetable_type: 
+  data_file_size: "113585"
+  id: "73"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 18:32:17
+assets_052: 
+  updated_at: 2010-07-04 17:47:56
+  data_content_type: application/pdf
+  data_file_name: 4F.pdf
+  type: AttachmentFile
+  assetable_type: 
+  data_file_size: "3124082"
+  id: "52"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 17:47:56
+assets_010: 
+  updated_at: 2010-07-04 11:03:47
+  data_content_type: image/png
+  data_file_name: ren.png
+  type: Picture
+  assetable_type: 
+  data_file_size: "12967"
+  id: "10"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 11:03:47
+assets_009: 
+  updated_at: 2010-07-04 10:52:52
+  data_content_type: image/jpeg
+  data_file_name: znak_oknatisn.jpg
+  type: Picture
+  assetable_type: 
+  data_file_size: "7615"
+  id: "9"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 10:52:52
+assets_031: 
+  updated_at: 2010-07-04 16:40:35
+  data_content_type: application/pdf
+  data_file_name: 1-10.pdf
+  type: AttachmentFile
+  assetable_type: 
+  data_file_size: "1326849"
+  id: "31"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 16:40:35
+assets_095: 
+  updated_at: 2010-07-04 19:39:58
+  data_content_type: image/jpeg
+  data_file_name: 20_small.jpg
+  type: Picture
+  assetable_type: 
+  data_file_size: "38250"
+  id: "95"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 19:39:58
+assets_074: 
+  updated_at: 2010-07-04 18:35:23
+  data_content_type: application/pdf
+  data_file_name: RDM.pdf
+  type: AttachmentFile
+  assetable_type: 
+  data_file_size: "1801367"
+  id: "74"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 18:35:23
+assets_011: 
+  updated_at: 2010-07-04 13:50:43
+  data_content_type: image/png
+  data_file_name: pakety-na-glavnuu.png
+  type: Picture
+  assetable_type: 
+  data_file_size: "12566"
+  id: "11"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 13:50:43
+assets_032: 
+  updated_at: 2010-07-04 16:41:09
+  data_content_type: application/pdf
+  data_file_name: 11-20.pdf
+  type: AttachmentFile
+  assetable_type: 
+  data_file_size: "2124145"
+  id: "32"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 16:41:09
+assets_053: 
+  updated_at: 2010-07-04 17:48:43
+  data_content_type: application/pdf
+  data_file_name: 5F.pdf
+  type: AttachmentFile
+  assetable_type: 
+  data_file_size: "2854107"
+  id: "53"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 17:48:43
+assets_096: 
+  updated_at: 2010-07-04 19:40:13
+  data_content_type: image/jpeg
+  data_file_name: 21_small.jpg
+  type: Picture
+  assetable_type: 
+  data_file_size: "26151"
+  id: "96"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 19:40:13
+assets_075: 
+  updated_at: 2010-07-04 18:37:08
+  data_content_type: application/pdf
+  data_file_name: MO.pdf
+  type: AttachmentFile
+  assetable_type: 
+  data_file_size: "3591305"
+  id: "75"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 18:37:08
+assets_012: 
+  updated_at: 2010-07-04 15:04:00
+  data_content_type: image/png
+  data_file_name: 1278255692_file-pdf.png
+  type: Picture
+  assetable_type: 
+  data_file_size: "581"
+  id: "12"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 15:04:00
+assets_033: 
+  updated_at: 2010-07-04 16:41:43
+  data_content_type: application/pdf
+  data_file_name: 21-30.pdf
+  type: AttachmentFile
+  assetable_type: 
+  data_file_size: "2384544"
+  id: "33"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 16:41:43
+assets_054: 
+  updated_at: 2010-07-04 17:49:31
+  data_content_type: application/pdf
+  data_file_name: 6F.pdf
+  type: AttachmentFile
+  assetable_type: 
+  data_file_size: "3847927"
+  id: "54"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 17:49:31
+assets_097: 
+  updated_at: 2010-07-04 19:40:29
+  data_content_type: image/jpeg
+  data_file_name: 22_small.jpg
+  type: Picture
+  assetable_type: 
+  data_file_size: "31493"
+  id: "97"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 19:40:29
+assets_076: 
+  updated_at: 2010-07-04 19:34:40
+  data_content_type: image/jpeg
+  data_file_name: 1_small.jpg
+  type: Picture
+  assetable_type: 
+  data_file_size: "37716"
+  id: "76"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 19:34:40
+assets_013: 
+  updated_at: 2010-07-04 15:19:56
+  data_content_type: image/jpeg
+  data_file_name: advert_1-small.jpg
+  type: Picture
+  assetable_type: 
+  data_file_size: "17392"
+  id: "13"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 15:19:56
+assets_034: 
+  updated_at: 2010-07-04 16:42:13
+  data_content_type: application/pdf
+  data_file_name: 31-40.pdf
+  type: AttachmentFile
+  assetable_type: 
+  data_file_size: "2157340"
+  id: "34"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 16:42:13
+assets_055: 
+  updated_at: 2010-07-04 17:49:57
+  data_content_type: application/pdf
+  data_file_name: 7F.pdf
+  type: AttachmentFile
+  assetable_type: 
+  data_file_size: "603564"
+  id: "55"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 17:49:57
+assets_098: 
+  updated_at: 2010-07-04 19:44:15
+  data_content_type: image/jpeg
+  data_file_name: 1.jpg
+  type: AttachmentFile
+  assetable_type: 
+  data_file_size: "149127"
+  id: "98"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 19:44:15
+assets_077: 
+  updated_at: 2010-07-04 19:35:09
+  data_content_type: image/jpeg
+  data_file_name: 2_small.jpg
+  type: Picture
+  assetable_type: 
+  data_file_size: "38818"
+  id: "77"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 19:35:09
+assets_014: 
+  updated_at: 2010-07-04 15:20:08
+  data_content_type: image/jpeg
+  data_file_name: advert_2-small.jpg
+  type: Picture
+  assetable_type: 
+  data_file_size: "30588"
+  id: "14"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 15:20:08
+assets_035: 
+  updated_at: 2010-07-04 17:05:46
+  data_content_type: application/x-zip-compressed
+  data_file_name: 1.zip
+  type: AttachmentFile
+  assetable_type: 
+  data_file_size: "319712"
+  id: "35"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 17:05:46
+assets_056: 
+  updated_at: 2010-07-04 17:50:26
+  data_content_type: application/pdf
+  data_file_name: 8F.pdf
+  type: AttachmentFile
+  assetable_type: 
+  data_file_size: "982041"
+  id: "56"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 17:50:26
+assets_099: 
+  updated_at: 2010-07-04 19:44:36
+  data_content_type: image/jpeg
+  data_file_name: 2.jpg
+  type: AttachmentFile
+  assetable_type: 
+  data_file_size: "291733"
+  id: "99"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 19:44:36
+assets_078: 
+  updated_at: 2010-07-04 19:35:23
+  data_content_type: image/jpeg
+  data_file_name: 3_small.jpg
+  type: Picture
+  assetable_type: 
+  data_file_size: "35939"
+  id: "78"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 19:35:23
+assets_015: 
+  updated_at: 2010-07-04 15:20:14
+  data_content_type: image/jpeg
+  data_file_name: advert_4-small.jpg
+  type: Picture
+  assetable_type: 
+  data_file_size: "20033"
+  id: "15"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 15:20:14
+assets_036: 
+  updated_at: 2010-07-04 17:06:02
+  data_content_type: application/x-zip-compressed
+  data_file_name: 2.zip
+  type: AttachmentFile
+  assetable_type: 
+  data_file_size: "365879"
+  id: "36"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 17:06:02
+assets_057: 
+  updated_at: 2010-07-04 17:50:52
+  data_content_type: application/pdf
+  data_file_name: 9F.pdf
+  type: AttachmentFile
+  assetable_type: 
+  data_file_size: "1353390"
+  id: "57"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 17:50:52
+assets_080: 
+  updated_at: 2010-07-04 19:36:01
+  data_content_type: image/jpeg
+  data_file_name: 5_small.jpg
+  type: Picture
+  assetable_type: 
+  data_file_size: "28559"
+  id: "80"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 19:36:01
+assets_079: 
+  updated_at: 2010-07-04 19:35:37
+  data_content_type: image/jpeg
+  data_file_name: 4_small.jpg
+  type: Picture
+  assetable_type: 
+  data_file_size: "29126"
+  id: "79"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 19:35:37
+assets_016: 
+  updated_at: 2010-07-04 15:20:21
+  data_content_type: image/jpeg
+  data_file_name: advert_5-small.jpg
+  type: Picture
+  assetable_type: 
+  data_file_size: "14666"
+  id: "16"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 15:20:21
+assets_037: 
+  updated_at: 2010-07-04 17:06:20
+  data_content_type: application/x-zip-compressed
+  data_file_name: 3.zip
+  type: AttachmentFile
+  assetable_type: 
+  data_file_size: "238610"
+  id: "37"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 17:06:20
+assets_058: 
+  updated_at: 2010-07-04 17:51:29
+  data_content_type: application/pdf
+  data_file_name: 10F.pdf
+  type: AttachmentFile
+  assetable_type: 
+  data_file_size: "2822162"
+  id: "58"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 17:51:29
+assets_081: 
+  updated_at: 2010-07-04 19:36:12
+  data_content_type: image/jpeg
+  data_file_name: 6_small.jpg
+  type: Picture
+  assetable_type: 
+  data_file_size: "30645"
+  id: "81"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 19:36:12
+assets_017: 
+  updated_at: 2010-07-04 15:20:27
+  data_content_type: image/jpeg
+  data_file_name: advert_6-small.jpg
+  type: Picture
+  assetable_type: 
+  data_file_size: "25037"
+  id: "17"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 15:20:27
+assets_038: 
+  updated_at: 2010-07-04 17:06:28
+  data_content_type: application/x-zip-compressed
+  data_file_name: 4.zip
+  type: AttachmentFile
+  assetable_type: 
+  data_file_size: "212705"
+  id: "38"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 17:06:28
+assets_060: 
+  updated_at: 2010-07-04 18:24:13
+  data_content_type: application/pdf
+  data_file_name: 2A.pdf
+  type: AttachmentFile
+  assetable_type: 
+  data_file_size: "3466315"
+  id: "60"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 18:24:13
+assets_059: 
+  updated_at: 2010-07-04 18:23:28
+  data_content_type: application/pdf
+  data_file_name: 1A.pdf
+  type: AttachmentFile
+  assetable_type: 
+  data_file_size: "106597"
+  id: "59"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 18:23:28
+assets_082: 
+  updated_at: 2010-07-04 19:36:25
+  data_content_type: image/jpeg
+  data_file_name: 7_small.jpg
+  type: Picture
+  assetable_type: 
+  data_file_size: "30799"
+  id: "82"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 19:36:25
+assets_018: 
+  updated_at: 2010-07-04 15:20:32
+  data_content_type: image/jpeg
+  data_file_name: advert_8-small.jpg
+  type: Picture
+  assetable_type: 
+  data_file_size: "16714"
+  id: "18"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 15:20:32
+assets_040: 
+  updated_at: 2010-07-04 17:07:24
+  data_content_type: application/x-zip-compressed
+  data_file_name: 6.zip
+  type: AttachmentFile
+  assetable_type: 
+  data_file_size: "97260"
+  id: "40"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 17:07:24
+assets_039: 
+  updated_at: 2010-07-04 17:07:12
+  data_content_type: application/x-zip-compressed
+  data_file_name: 5.zip
+  type: AttachmentFile
+  assetable_type: 
+  data_file_size: "715406"
+  id: "39"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 17:07:12
+assets_061: 
+  updated_at: 2010-07-04 18:24:45
+  data_content_type: application/pdf
+  data_file_name: 3A.pdf
+  type: AttachmentFile
+  assetable_type: 
+  data_file_size: "2173071"
+  id: "61"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 18:24:45
+assets_083: 
+  updated_at: 2010-07-04 19:36:41
+  data_content_type: image/jpeg
+  data_file_name: 8_small.jpg
+  type: Picture
+  assetable_type: 
+  data_file_size: "22736"
+  id: "83"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 19:36:41
+assets_019: 
+  updated_at: 2010-07-04 15:40:47
+  data_content_type: application/octet-stream
+  data_file_name: mail.png
+  type: Picture
+  assetable_type: Demo
+  data_file_size: "1352"
+  id: "19"
+  user_id: 
+  assetable_id: "0"
+  created_at: 2010-07-04 15:40:47
+assets_041: 
+  updated_at: 2010-07-04 17:08:18
+  data_content_type: application/x-zip-compressed
+  data_file_name: 7.zip
+  type: AttachmentFile
+  assetable_type: 
+  data_file_size: "644055"
+  id: "41"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 17:08:18
+assets_062: 
+  updated_at: 2010-07-04 18:25:15
+  data_content_type: application/pdf
+  data_file_name: 4A.pdf
+  type: AttachmentFile
+  assetable_type: 
+  data_file_size: "1913907"
+  id: "62"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 18:25:15
+assets_020: 
+  updated_at: 2010-07-04 15:58:11
+  data_content_type: image/jpeg
+  data_file_name: pen.jpg
+  type: Picture
+  assetable_type: 
+  data_file_size: "2986"
+  id: "20"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 15:58:11
+assets_084: 
+  updated_at: 2010-07-04 19:37:07
+  data_content_type: image/jpeg
+  data_file_name: 9_small.jpg
+  type: Picture
+  assetable_type: 
+  data_file_size: "28415"
+  id: "84"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 19:37:07
+assets_063: 
+  updated_at: 2010-07-04 18:25:42
+  data_content_type: application/pdf
+  data_file_name: 5A.pdf
+  type: AttachmentFile
+  assetable_type: 
+  data_file_size: "1094225"
+  id: "63"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 18:25:42
+assets_021: 
+  updated_at: 2010-07-04 15:58:22
+  data_content_type: image/jpeg
+  data_file_name: flags.jpg
+  type: Picture
+  assetable_type: 
+  data_file_size: "2914"
+  id: "21"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 15:58:22
+assets_042: 
+  updated_at: 2010-07-04 17:08:28
+  data_content_type: application/x-zip-compressed
+  data_file_name: 8.zip
+  type: AttachmentFile
+  assetable_type: 
+  data_file_size: "145196"
+  id: "42"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 17:08:28
+assets_100: 
+  updated_at: 2010-07-04 19:45:00
+  data_content_type: image/jpeg
+  data_file_name: 3.jpg
+  type: AttachmentFile
+  assetable_type: 
+  data_file_size: "245585"
+  id: "100"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 19:45:00
+assets_085: 
+  updated_at: 2010-07-04 19:37:20
+  data_content_type: image/jpeg
+  data_file_name: 10_small.jpg
+  type: Picture
+  assetable_type: 
+  data_file_size: "27517"
+  id: "85"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 19:37:20
+assets_001: 
+  updated_at: 2010-06-07 10:57:01
+  data_content_type: application/octet-stream
+  data_file_name: logo_footer.png
+  type: Picture
+  assetable_type: Demo
+  data_file_size: "3844"
+  id: "1"
+  user_id: 
+  assetable_id: "0"
+  created_at: 2010-06-07 10:57:01
+assets_022: 
+  updated_at: 2010-07-04 15:58:35
+  data_content_type: image/jpeg
+  data_file_name: umbrella.jpg
+  type: Picture
+  assetable_type: 
+  data_file_size: "3413"
+  id: "22"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 15:58:35
+assets_043: 
+  updated_at: 2010-07-04 17:08:39
+  data_content_type: application/x-zip-compressed
+  data_file_name: 9.zip
+  type: AttachmentFile
+  assetable_type: 
+  data_file_size: "20976"
+  id: "43"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 17:08:39
+assets_064: 
+  updated_at: 2010-07-04 18:26:02
+  data_content_type: application/pdf
+  data_file_name: 6A.pdf
+  type: AttachmentFile
+  assetable_type: 
+  data_file_size: "634912"
+  id: "64"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 18:26:02
+assets_086: 
+  updated_at: 2010-07-04 19:37:40
+  data_content_type: image/jpeg
+  data_file_name: 11_small.jpg
+  type: Picture
+  assetable_type: 
+  data_file_size: "24136"
+  id: "86"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 19:37:40
+assets_002: 
+  updated_at: 2010-06-07 11:11:28
+  data_content_type: application/octet-stream
+  data_file_name: deceuninck.png
+  type: Picture
+  assetable_type: Demo
+  data_file_size: "5085"
+  id: "2"
+  user_id: 
+  assetable_id: "0"
+  created_at: 2010-06-07 11:11:28
+assets_023: 
+  updated_at: 2010-07-04 15:58:43
+  data_content_type: image/jpeg
+  data_file_name: disk.jpg
+  type: Picture
+  assetable_type: 
+  data_file_size: "4044"
+  id: "23"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 15:58:43
+assets_044: 
+  updated_at: 2010-07-04 17:10:06
+  data_content_type: image/png
+  data_file_name: 1278262813_folder_zipper.png
+  type: Picture
+  assetable_type: 
+  data_file_size: "651"
+  id: "44"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 17:10:06
+assets_065: 
+  updated_at: 2010-07-04 18:26:20
+  data_content_type: application/pdf
+  data_file_name: 7A.pdf
+  type: AttachmentFile
+  assetable_type: 
+  data_file_size: "633431"
+  id: "65"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 18:26:20
+assets_087: 
+  updated_at: 2010-07-04 19:37:54
+  data_content_type: image/jpeg
+  data_file_name: 12_small.jpg
+  type: Picture
+  assetable_type: 
+  data_file_size: "28709"
+  id: "87"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 19:37:54
+assets_003: 
+  updated_at: 2010-06-07 11:11:28
+  data_content_type: application/octet-stream
+  data_file_name: funke.png
+  type: Picture
+  assetable_type: Demo
+  data_file_size: "4507"
+  id: "3"
+  user_id: 
+  assetable_id: "0"
+  created_at: 2010-06-07 11:11:28
+assets_024: 
+  updated_at: 2010-07-04 15:58:49
+  data_content_type: image/jpeg
+  data_file_name: broshure.jpg
+  type: Picture
+  assetable_type: 
+  data_file_size: "3688"
+  id: "24"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 15:58:49
+assets_045: 
+  updated_at: 2010-07-04 17:12:37
+  data_content_type: application/x-zip-compressed
+  data_file_name: snip1.zip
+  type: AttachmentFile
+  assetable_type: 
+  data_file_size: "430346"
+  id: "45"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 17:12:37
+assets_066: 
+  updated_at: 2010-07-04 18:26:31
+  data_content_type: application/pdf
+  data_file_name: 8A.pdf
+  type: AttachmentFile
+  assetable_type: 
+  data_file_size: "107753"
+  id: "66"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 18:26:31
+assets_088: 
+  updated_at: 2010-07-04 19:38:05
+  data_content_type: image/jpeg
+  data_file_name: 13_small.jpg
+  type: Picture
+  assetable_type: 
+  data_file_size: "20675"
+  id: "88"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 19:38:05
+assets_067: 
+  updated_at: 2010-07-04 18:30:47
+  data_content_type: application/pdf
+  data_file_name: 1FO.pdf
+  type: AttachmentFile
+  assetable_type: 
+  data_file_size: "617085"
+  id: "67"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 18:30:47
+assets_004: 
+  updated_at: 2010-06-07 11:11:28
+  data_content_type: application/octet-stream
+  data_file_name: grain.png
+  type: Picture
+  assetable_type: Demo
+  data_file_size: "5072"
+  id: "4"
+  user_id: 
+  assetable_id: "0"
+  created_at: 2010-06-07 11:11:28
+assets_025: 
+  updated_at: 2010-07-04 15:58:55
+  data_content_type: image/jpeg
+  data_file_name: stends.jpg
+  type: Picture
+  assetable_type: 
+  data_file_size: "3595"
+  id: "25"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 15:58:55
+assets_046: 
+  updated_at: 2010-07-04 17:12:55
+  data_content_type: application/x-zip-compressed
+  data_file_name: snip2.zip
+  type: AttachmentFile
+  assetable_type: 
+  data_file_size: "614021"
+  id: "46"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 17:12:55
+assets_090: 
+  updated_at: 2010-07-04 19:38:47
+  data_content_type: image/jpeg
+  data_file_name: 15_small.jpg
+  type: Picture
+  assetable_type: 
+  data_file_size: "22009"
+  id: "90"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 19:38:47
+assets_089: 
+  updated_at: 2010-07-04 19:38:21
+  data_content_type: image/jpeg
+  data_file_name: 14_small.jpg
+  type: Picture
+  assetable_type: 
+  data_file_size: "22103"
+  id: "89"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 19:38:21
+assets_068: 
+  updated_at: 2010-07-04 18:30:59
+  data_content_type: application/pdf
+  data_file_name: 2FO.pdf
+  type: AttachmentFile
+  assetable_type: 
+  data_file_size: "293293"
+  id: "68"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 18:30:59
+assets_005: 
+  updated_at: 2010-06-07 11:11:28
+  data_content_type: application/octet-stream
+  data_file_name: siegenia.png
+  type: Picture
+  assetable_type: Demo
+  data_file_size: "6764"
+  id: "5"
+  user_id: 
+  assetable_id: "0"
+  created_at: 2010-06-07 11:11:28
+assets_026: 
+  updated_at: 2010-07-04 16:26:52
+  data_content_type: image/jpeg
+  data_file_name: lic2.jpg
+  type: Picture
+  assetable_type: 
+  data_file_size: "103909"
+  id: "26"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 16:26:52
+assets_047: 
+  updated_at: 2010-07-04 17:13:09
+  data_content_type: application/x-zip-compressed
+  data_file_name: snip3.zip
+  type: AttachmentFile
+  assetable_type: 
+  data_file_size: "376999"
+  id: "47"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 17:13:09
+assets_190: 
+  updated_at: 2011-03-03 14:11:47
+  data_content_type: image/jpeg
+  data_file_name: tinkoff-3.jpg
+  type: Picture
+  assetable_type: 
+  data_file_size: "109808"
+  id: "190"
+  user_id: 
+  assetable_id: 
+  created_at: 2011-03-03 14:11:47
+assets_189: 
+  updated_at: 2011-03-03 14:11:26
+  data_content_type: image/jpeg
+  data_file_name: tinkoff-2.jpg
+  type: Picture
+  assetable_type: 
+  data_file_size: "117583"
+  id: "189"
+  user_id: 
+  assetable_id: 
+  created_at: 2011-03-03 14:11:26
+assets_168: 
+  updated_at: 2010-07-21 09:34:00
+  data_content_type: image/jpeg
+  data_file_name: small_man_4.jpg
+  type: Picture
+  assetable_type: 
+  data_file_size: "19957"
+  id: "168"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-21 09:34:00
+assets_105: 
+  updated_at: 2010-07-04 19:48:01
+  data_content_type: image/jpeg
+  data_file_name: 8.JPG
+  type: AttachmentFile
+  assetable_type: 
+  data_file_size: "217630"
+  id: "105"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 19:48:01
+assets_126: 
+  updated_at: 2010-07-04 21:24:51
+  data_content_type: image/png
+  data_file_name: safe.png
+  type: Picture
+  assetable_type: 
+  data_file_size: "1679"
+  id: "126"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 21:24:51
+assets_147: 
+  updated_at: 2010-07-06 12:17:07
+  data_content_type: image/jpeg
+  data_file_name: 10.jpg
+  type: Picture
+  assetable_type: 
+  data_file_size: "3316"
+  id: "147"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-06 12:17:07
+assets_191: 
+  updated_at: 2011-03-03 14:12:10
+  data_content_type: image/jpeg
+  data_file_name: tinkoff-4.jpg
+  type: Picture
+  assetable_type: 
+  data_file_size: "124276"
+  id: "191"
+  user_id: 
+  assetable_id: 
+  created_at: 2011-03-03 14:12:10
+assets_170: 
+  updated_at: 2010-07-21 09:34:25
+  data_content_type: image/jpeg
+  data_file_name: small_man_6.jpg
+  type: Picture
+  assetable_type: 
+  data_file_size: "20002"
+  id: "170"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-21 09:34:25
+assets_169: 
+  updated_at: 2010-07-21 09:34:13
+  data_content_type: image/jpeg
+  data_file_name: small_man_5.jpg
+  type: Picture
+  assetable_type: 
+  data_file_size: "21354"
+  id: "169"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-21 09:34:13
+assets_106: 
+  updated_at: 2010-07-04 19:48:44
+  data_content_type: image/jpeg
+  data_file_name: 9.JPG
+  type: AttachmentFile
+  assetable_type: 
+  data_file_size: "275857"
+  id: "106"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 19:48:44
+assets_127: 
+  updated_at: 2010-07-04 21:32:14
+  data_content_type: image/png
+  data_file_name: mute.png
+  type: Picture
+  assetable_type: 
+  data_file_size: "1653"
+  id: "127"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 21:32:14
+assets_148: 
+  updated_at: 2010-07-06 12:17:27
+  data_content_type: image/jpeg
+  data_file_name: 11.jpg
+  type: Picture
+  assetable_type: 
+  data_file_size: "3205"
+  id: "148"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-06 12:17:27
+assets_171: 
+  updated_at: 2010-07-21 09:34:42
+  data_content_type: image/jpeg
+  data_file_name: small_man_7.jpg
+  type: Picture
+  assetable_type: 
+  data_file_size: "23074"
+  id: "171"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-21 09:34:42
+assets_107: 
+  updated_at: 2010-07-04 19:48:58
+  data_content_type: image/jpeg
+  data_file_name: 10.JPG
+  type: AttachmentFile
+  assetable_type: 
+  data_file_size: "271823"
+  id: "107"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 19:48:58
+assets_128: 
+  updated_at: 2010-07-04 21:38:30
+  data_content_type: image/png
+  data_file_name: eco.png
+  type: Picture
+  assetable_type: 
+  data_file_size: "1448"
+  id: "128"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 21:38:30
+assets_150: 
+  updated_at: 2010-07-06 12:22:30
+  data_content_type: image/jpeg
+  data_file_name: 13.jpg
+  type: Picture
+  assetable_type: 
+  data_file_size: "4075"
+  id: "150"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-06 12:22:30
+assets_149: 
+  updated_at: 2010-07-06 12:22:15
+  data_content_type: image/jpeg
+  data_file_name: 12.jpg
+  type: Picture
+  assetable_type: 
+  data_file_size: "3183"
+  id: "149"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-06 12:22:15
+assets_172: 
+  updated_at: 2010-07-21 09:34:57
+  data_content_type: image/jpeg
+  data_file_name: small_man_8.jpg
+  type: Picture
+  assetable_type: 
+  data_file_size: "18978"
+  id: "172"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-21 09:34:57
+assets_129: 
+  updated_at: 2010-07-04 21:47:08
+  data_content_type: image/gif
+  data_file_name: img_63a99b888a.gif
+  type: Picture
+  assetable_type: 
+  data_file_size: "860"
+  id: "129"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 21:47:08
+assets_151: 
+  updated_at: 2010-07-06 12:22:58
+  data_content_type: image/jpeg
+  data_file_name: 14.jpg
+  type: Picture
+  assetable_type: 
+  data_file_size: "3927"
+  id: "151"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-06 12:22:58
+assets_108: 
+  updated_at: 2010-07-04 19:50:07
+  data_content_type: image/jpeg
+  data_file_name: 11.JPG
+  type: AttachmentFile
+  assetable_type: 
+  data_file_size: "234118"
+  id: "108"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 19:50:07
+assets_130: 
+  updated_at: 2010-07-04 21:59:25
+  data_content_type: image/png
+  data_file_name: design.png
+  type: Picture
+  assetable_type: 
+  data_file_size: "1488"
+  id: "130"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 21:59:25
+assets_173: 
+  updated_at: 2010-07-21 09:36:22
+  data_content_type: image/jpeg
+  data_file_name: man_1.JPG
+  type: AttachmentFile
+  assetable_type: 
+  data_file_size: "293276"
+  id: "173"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-21 09:36:22
+assets_110: 
+  updated_at: 2010-07-04 19:50:28
+  data_content_type: image/jpeg
+  data_file_name: 13.JPG
+  type: AttachmentFile
+  assetable_type: 
+  data_file_size: "204896"
+  id: "110"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 19:50:28
+assets_109: 
+  updated_at: 2010-07-04 19:50:17
+  data_content_type: image/jpeg
+  data_file_name: 12.JPG
+  type: AttachmentFile
+  assetable_type: 
+  data_file_size: "244909"
+  id: "109"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 19:50:17
+assets_131: 
+  updated_at: 2010-07-05 09:44:24
+  data_content_type: image/jpeg
+  data_file_name: favorite.jpg
+  type: Picture
+  assetable_type: 
+  data_file_size: "22297"
+  id: "131"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-05 09:44:24
+assets_152: 
+  updated_at: 2010-07-06 12:23:15
+  data_content_type: image/jpeg
+  data_file_name: 15.jpg
+  type: Picture
+  assetable_type: 
+  data_file_size: "3094"
+  id: "152"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-06 12:23:15
+assets_174: 
+  updated_at: 2010-07-21 09:36:36
+  data_content_type: image/jpeg
+  data_file_name: man_2.JPG
+  type: AttachmentFile
+  assetable_type: 
+  data_file_size: "241206"
+  id: "174"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-21 09:36:36
+assets_111: 
+  updated_at: 2010-07-04 19:50:42
+  data_content_type: image/jpeg
+  data_file_name: 14.JPG
+  type: AttachmentFile
+  assetable_type: 
+  data_file_size: "229308"
+  id: "111"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 19:50:42
+assets_132: 
+  updated_at: 2010-07-05 10:22:01
+  data_content_type: image/gif
+  data_file_name: logodeceuninck.gif
+  type: Picture
+  assetable_type: 
+  data_file_size: "2747"
+  id: "132"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-05 10:22:01
+assets_153: 
+  updated_at: 2010-07-06 12:23:30
+  data_content_type: image/jpeg
+  data_file_name: 16.jpg
+  type: Picture
+  assetable_type: 
+  data_file_size: "2413"
+  id: "153"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-06 12:23:30
+assets_175: 
+  updated_at: 2010-07-21 09:36:50
+  data_content_type: image/jpeg
+  data_file_name: man_3.JPG
+  type: AttachmentFile
+  assetable_type: 
+  data_file_size: "251712"
+  id: "175"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-21 09:36:50
+assets_112: 
+  updated_at: 2010-07-04 19:51:13
+  data_content_type: image/jpeg
+  data_file_name: 15.jpg
+  type: AttachmentFile
+  assetable_type: 
+  data_file_size: "254231"
+  id: "112"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 19:51:13
+assets_133: 
+  updated_at: 2010-07-05 10:22:36
+  data_content_type: image/gif
+  data_file_name: logograin.gif
+  type: Picture
+  assetable_type: 
+  data_file_size: "2456"
+  id: "133"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-05 10:22:36
+assets_154: 
+  updated_at: 2010-07-06 12:23:46
+  data_content_type: image/jpeg
+  data_file_name: 17.jpg
+  type: Picture
+  assetable_type: 
+  data_file_size: "2011"
+  id: "154"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-06 12:23:46
+assets_176: 
+  updated_at: 2010-07-21 09:37:01
+  data_content_type: image/jpeg
+  data_file_name: man_4.JPG
+  type: AttachmentFile
+  assetable_type: 
+  data_file_size: "255520"
+  id: "176"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-21 09:37:01
+assets_113: 
+  updated_at: 2010-07-04 19:51:25
+  data_content_type: image/jpeg
+  data_file_name: 16.jpg
+  type: AttachmentFile
+  assetable_type: 
+  data_file_size: "210032"
+  id: "113"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 19:51:25
+assets_134: 
+  updated_at: 2010-07-05 10:26:28
+  data_content_type: image/png
+  data_file_name: logo-deceuninck.png
+  type: Picture
+  assetable_type: 
+  data_file_size: "3701"
+  id: "134"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-05 10:26:28
+assets_155: 
+  updated_at: 2010-07-06 12:24:00
+  data_content_type: image/jpeg
+  data_file_name: 18.jpg
+  type: Picture
+  assetable_type: 
+  data_file_size: "2319"
+  id: "155"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-06 12:24:00
+assets_177: 
+  updated_at: 2010-07-21 09:37:16
+  data_content_type: image/jpeg
+  data_file_name: man_5.jpg
+  type: AttachmentFile
+  assetable_type: 
+  data_file_size: "304571"
+  id: "177"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-21 09:37:16
+assets_114: 
+  updated_at: 2010-07-04 19:51:53
+  data_content_type: image/jpeg
+  data_file_name: 17.jpg
+  type: AttachmentFile
+  assetable_type: 
+  data_file_size: "379272"
+  id: "114"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 19:51:53
+assets_135: 
+  updated_at: 2010-07-05 10:26:57
+  data_content_type: image/png
+  data_file_name: logo-grain.png
+  type: Picture
+  assetable_type: 
+  data_file_size: "3303"
+  id: "135"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-05 10:26:57
+assets_156: 
+  updated_at: 2010-07-06 12:24:26
+  data_content_type: image/jpeg
+  data_file_name: 19.jpg
+  type: Picture
+  assetable_type: 
+  data_file_size: "2363"
+  id: "156"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-06 12:24:26
+assets_178: 
+  updated_at: 2010-07-21 09:37:25
+  data_content_type: image/jpeg
+  data_file_name: man_6.jpg
+  type: AttachmentFile
+  assetable_type: 
+  data_file_size: "299513"
+  id: "178"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-21 09:37:25
+assets_115: 
+  updated_at: 2010-07-04 19:52:18
+  data_content_type: image/jpeg
+  data_file_name: 18.jpg
+  type: AttachmentFile
+  assetable_type: 
+  data_file_size: "183423"
+  id: "115"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 19:52:18
+assets_136: 
+  updated_at: 2010-07-06 08:03:25
+  data_content_type: image/png
+  data_file_name: logo-siegenia.png
+  type: Picture
+  assetable_type: 
+  data_file_size: "2670"
+  id: "136"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-06 08:03:25
+assets_157: 
+  updated_at: 2010-07-06 12:24:39
+  data_content_type: image/jpeg
+  data_file_name: 20.jpg
+  type: Picture
+  assetable_type: 
+  data_file_size: "2254"
+  id: "157"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-06 12:24:39
+assets_180: 
+  updated_at: 2010-07-21 09:37:42
+  data_content_type: image/jpeg
+  data_file_name: man_8.jpg
+  type: AttachmentFile
+  assetable_type: 
+  data_file_size: "294901"
+  id: "180"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-21 09:37:42
+assets_179: 
+  updated_at: 2010-07-21 09:37:34
+  data_content_type: image/jpeg
+  data_file_name: man_7.jpg
+  type: AttachmentFile
+  assetable_type: 
+  data_file_size: "340768"
+  id: "179"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-21 09:37:34
+assets_116: 
+  updated_at: 2010-07-04 19:53:11
+  data_content_type: image/jpeg
+  data_file_name: 19.jpg
+  type: AttachmentFile
+  assetable_type: 
+  data_file_size: "367091"
+  id: "116"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 19:53:11
+assets_137: 
+  updated_at: 2010-07-06 08:04:55
+  data_content_type: image/png
+  data_file_name: logo-vorne.png
+  type: Picture
+  assetable_type: 
+  data_file_size: "5983"
+  id: "137"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-06 08:04:55
+assets_158: 
+  updated_at: 2010-07-06 12:24:52
+  data_content_type: image/jpeg
+  data_file_name: 21.jpg
+  type: Picture
+  assetable_type: 
+  data_file_size: "2032"
+  id: "158"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-06 12:24:52
+assets_181: 
+  updated_at: 2010-07-28 07:31:52
+  data_content_type: image/png
+  data_file_name: funke.png
+  type: Picture
+  assetable_type: 
+  data_file_size: "4580"
+  id: "181"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-28 07:31:52
+assets_117: 
+  updated_at: 2010-07-04 19:53:24
+  data_content_type: image/jpeg
+  data_file_name: 20.jpg
+  type: AttachmentFile
+  assetable_type: 
+  data_file_size: "162159"
+  id: "117"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 19:53:24
+assets_138: 
+  updated_at: 2010-07-06 12:14:03
+  data_content_type: image/jpeg
+  data_file_name: 1.jpg
+  type: Picture
+  assetable_type: 
+  data_file_size: "1878"
+  id: "138"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-06 12:14:03
+assets_160: 
+  updated_at: 2010-07-19 11:19:23
+  data_content_type: application/octet-stream
+  data_file_name: grain-profile.png
+  type: Picture
+  assetable_type: Demo
+  data_file_size: "102077"
+  id: "160"
+  user_id: 
+  assetable_id: "0"
+  created_at: 2010-07-19 11:19:23
+assets_159: 
+  updated_at: 2010-07-06 12:25:05
+  data_content_type: image/jpeg
+  data_file_name: 22.jpg
+  type: Picture
+  assetable_type: 
+  data_file_size: "1845"
+  id: "159"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-06 12:25:05
+assets_182: 
+  updated_at: 2010-07-29 06:45:33
+  data_content_type: image/jpeg
+  data_file_name: bauline.jpg
+  type: Picture
+  assetable_type: 
+  data_file_size: "14849"
+  id: "182"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-29 06:45:33
+assets_118: 
+  updated_at: 2010-07-04 19:53:43
+  data_content_type: image/jpeg
+  data_file_name: 21.jpg
+  type: AttachmentFile
+  assetable_type: 
+  data_file_size: "368001"
+  id: "118"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 19:53:43
+assets_140: 
+  updated_at: 2010-07-06 12:15:04
+  data_content_type: image/jpeg
+  data_file_name: 3.jpg
+  type: Picture
+  assetable_type: 
+  data_file_size: "3860"
+  id: "140"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-06 12:15:04
+assets_139: 
+  updated_at: 2010-07-06 12:14:43
+  data_content_type: image/jpeg
+  data_file_name: 2.jpg
+  type: Picture
+  assetable_type: 
+  data_file_size: "3199"
+  id: "139"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-06 12:14:43
+assets_161: 
+  updated_at: 2010-07-19 13:30:52
+  data_content_type: image/png
+  data_file_name: uplotnitel.png
+  type: Picture
+  assetable_type: 
+  data_file_size: "1446"
+  id: "161"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-19 13:30:52
+assets_183: 
+  updated_at: 2010-07-29 08:25:44
+  data_content_type: image/jpeg
+  data_file_name: funke_sert.jpg
+  type: Picture
+  assetable_type: 
+  data_file_size: "90313"
+  id: "183"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-29 08:25:44
+assets_162: 
+  updated_at: 2010-07-19 13:52:46
+  data_content_type: image/jpeg
+  data_file_name: helios.jpg
+  type: Picture
+  assetable_type: 
+  data_file_size: "21411"
+  id: "162"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-19 13:52:46
+assets_120: 
+  updated_at: 2010-07-04 20:46:43
+  data_content_type: image/jpeg
+  data_file_name: bautek_window.jpg
+  type: Picture
+  assetable_type: 
+  data_file_size: "19346"
+  id: "120"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 20:46:43
+assets_119: 
+  updated_at: 2010-07-04 19:53:58
+  data_content_type: image/jpeg
+  data_file_name: 22.jpg
+  type: AttachmentFile
+  assetable_type: 
+  data_file_size: "451876"
+  id: "119"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 19:53:58
+assets_141: 
+  updated_at: 2010-07-06 12:15:20
+  data_content_type: image/jpeg
+  data_file_name: 4.jpg
+  type: Picture
+  assetable_type: 
+  data_file_size: "3445"
+  id: "141"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-06 12:15:20
+assets_184: 
+  updated_at: 2010-07-29 08:26:13
+  data_content_type: image/jpeg
+  data_file_name: funke_big.jpg
+  type: AttachmentFile
+  assetable_type: 
+  data_file_size: "4620167"
+  id: "184"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-29 08:26:13
+assets_121: 
+  updated_at: 2010-07-04 20:47:17
+  data_content_type: image/png
+  data_file_name: bautek-logo.png
+  type: Picture
+  assetable_type: 
+  data_file_size: "3709"
+  id: "121"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 20:47:17
+assets_142: 
+  updated_at: 2010-07-06 12:15:34
+  data_content_type: image/jpeg
+  data_file_name: 5.jpg
+  type: Picture
+  assetable_type: 
+  data_file_size: "3205"
+  id: "142"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-06 12:15:34
+assets_163: 
+  updated_at: 2010-07-19 13:54:17
+  data_content_type: image/jpeg
+  data_file_name: grain-profile.jpg
+  type: Picture
+  assetable_type: 
+  data_file_size: "23542"
+  id: "163"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-19 13:54:17
+assets_185: 
+  updated_at: 2010-07-29 08:36:19
+  data_content_type: image/jpeg
+  data_file_name: sertificats.jpg
+  type: Picture
+  assetable_type: 
+  data_file_size: "17037"
+  id: "185"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-29 08:36:19
+assets_101: 
+  updated_at: 2010-07-04 19:45:17
+  data_content_type: image/jpeg
+  data_file_name: 4.jpg
+  type: AttachmentFile
+  assetable_type: 
+  data_file_size: "186036"
+  id: "101"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 19:45:17
+assets_122: 
+  updated_at: 2010-07-04 20:47:43
+  data_content_type: image/png
+  data_file_name: accessibly.png
+  type: Picture
+  assetable_type: 
+  data_file_size: "1949"
+  id: "122"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 20:47:43
+assets_143: 
+  updated_at: 2010-07-06 12:15:52
+  data_content_type: image/jpeg
+  data_file_name: 6.jpg
+  type: Picture
+  assetable_type: 
+  data_file_size: "2202"
+  id: "143"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-06 12:15:52
+assets_164: 
+  updated_at: 2010-07-19 15:36:35
+  data_content_type: image/png
+  data_file_name: kachestvo.png
+  type: Picture
+  assetable_type: 
+  data_file_size: "1657"
+  id: "164"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-19 15:36:35
+assets_186: 
+  updated_at: 2010-11-15 10:19:44
+  data_content_type: image/png
+  data_file_name: karta.png
+  type: Picture
+  assetable_type: 
+  data_file_size: "10837"
+  id: "186"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-11-15 10:19:44
+assets_102: 
+  updated_at: 2010-07-04 19:45:52
+  data_content_type: image/jpeg
+  data_file_name: 5.jpg
+  type: AttachmentFile
+  assetable_type: 
+  data_file_size: "176360"
+  id: "102"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 19:45:52
+assets_123: 
+  updated_at: 2010-07-04 20:47:59
+  data_content_type: image/png
+  data_file_name: heat.png
+  type: Picture
+  assetable_type: 
+  data_file_size: "2698"
+  id: "123"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 20:47:59
+assets_144: 
+  updated_at: 2010-07-06 12:16:06
+  data_content_type: image/jpeg
+  data_file_name: 7.jpg
+  type: Picture
+  assetable_type: 
+  data_file_size: "2619"
+  id: "144"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-06 12:16:06
+assets_165: 
+  updated_at: 2010-07-21 09:32:33
+  data_content_type: image/jpeg
+  data_file_name: small_man_1.jpg
+  type: Picture
+  assetable_type: 
+  data_file_size: "23343"
+  id: "165"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-21 09:32:33
+assets_187: 
+  updated_at: 2011-03-03 14:07:29
+  data_content_type: image/png
+  data_file_name: small_tinkoff.png
+  type: Picture
+  assetable_type: 
+  data_file_size: "37094"
+  id: "187"
+  user_id: 
+  assetable_id: 
+  created_at: 2011-03-03 14:07:29
+assets_103: 
+  updated_at: 2010-07-04 19:46:09
+  data_content_type: image/jpeg
+  data_file_name: 6.jpg
+  type: AttachmentFile
+  assetable_type: 
+  data_file_size: "200257"
+  id: "103"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 19:46:09
+assets_124: 
+  updated_at: 2010-07-04 20:48:17
+  data_content_type: image/png
+  data_file_name: longevity.png
+  type: Picture
+  assetable_type: 
+  data_file_size: "2165"
+  id: "124"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 20:48:17
+assets_145: 
+  updated_at: 2010-07-06 12:16:20
+  data_content_type: image/jpeg
+  data_file_name: 8.jpg
+  type: Picture
+  assetable_type: 
+  data_file_size: "3257"
+  id: "145"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-06 12:16:20
+assets_166: 
+  updated_at: 2010-07-21 09:33:29
+  data_content_type: image/jpeg
+  data_file_name: small_man_2.jpg
+  type: Picture
+  assetable_type: 
+  data_file_size: "18798"
+  id: "166"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-21 09:33:29
+assets_188: 
+  updated_at: 2011-03-03 14:10:55
+  data_content_type: image/jpeg
+  data_file_name: tinkoff-1.jpg
+  type: Picture
+  assetable_type: 
+  data_file_size: "100561"
+  id: "188"
+  user_id: 
+  assetable_id: 
+  created_at: 2011-03-03 14:10:55
+assets_167: 
+  updated_at: 2010-07-21 09:33:44
+  data_content_type: image/jpeg
+  data_file_name: small_man_3.jpg
+  type: Picture
+  assetable_type: 
+  data_file_size: "19194"
+  id: "167"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-21 09:33:44
+assets_104: 
+  updated_at: 2010-07-04 19:47:16
+  data_content_type: image/jpeg
+  data_file_name: 7.JPG
+  type: AttachmentFile
+  assetable_type: 
+  data_file_size: "277622"
+  id: "104"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 19:47:16
+assets_125: 
+  updated_at: 2010-07-04 20:48:30
+  data_content_type: image/png
+  data_file_name: strength.png
+  type: Picture
+  assetable_type: 
+  data_file_size: "2085"
+  id: "125"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-04 20:48:30
+assets_146: 
+  updated_at: 2010-07-06 12:16:39
+  data_content_type: image/jpeg
+  data_file_name: 9.jpg
+  type: Picture
+  assetable_type: 
+  data_file_size: "2583"
+  id: "146"
+  user_id: 
+  assetable_id: 
+  created_at: 2010-07-06 12:16:39

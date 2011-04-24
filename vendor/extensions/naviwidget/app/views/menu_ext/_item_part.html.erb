@@ -1,0 +1,17 @@
+<% @item.all_navinodes(nil).each do |node| %>
+  <tr class="item <%= node.enabled ? "on":"off" %>">
+    <td>
+      <div class="level-<%= node.depth %>">
+        <%= link_to node.name, {:action=>"edit_node", :id=>node.navigate.id, :tid=>node.id}, {:class=>"name icon link #{node.class_for_admin}"} %>
+        <br />
+        <%= link_to node.full_url, node.full_url, {:class=>"url"} %>
+      </div>
+    </td>
+    <td>
+      <%= link_to "", {:action=>"toggle_node", :id=>node.navigate.id, :tid=>node.id}, {:class=>"control #{node.aexpanded ? "expanded":"collapsed"}", :title=>"Дочерние пункты всегда #{node.aexpanded ? "развернуты":"свернуты"}"} %>
+    </td>
+    <td>
+      <%= link_to "", {:action=>"toggle_node_visible", :id=>node.navigate.id, :tid=>node.id}, {:class=>"control activity", :title=>"Ссылка #{node.enabled ? "активна":"неактивна"}"} %>
+    </td>
+  </tr>
+<% end %>

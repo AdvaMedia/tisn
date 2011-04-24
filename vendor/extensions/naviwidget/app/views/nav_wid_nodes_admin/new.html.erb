@@ -1,0 +1,86 @@
+<ul class="breadcrumbs">
+  <li>
+    <%= link_to "Набор виджетов", {:action=>"index", :controller=>"NavividgetAdmin"}, {:class=>"ajax"} %>
+  </li>
+  <li>
+    <%= link_to @navitem.name, "#" %>
+  </li>
+  <li>
+    <%= link_to "Структура меню", {:action=>"index", :id=>@navitem.id}, {:class=>"ajax"} %>
+  </li>
+  <li><span>Добавление пункта</span></li>
+</ul>
+
+<% form_for :node, :url=>{:action=>"save", :id=>@navitem.id}, :html=>{:class=>"post_submit"} do |f|%>
+<%= f.hidden_field :parent_id %>
+<%= f.hidden_field :navigate_id %>
+  <table style="width:100%">
+    <tbody>
+      <% if @parentnode %>
+      <tr>
+        <td>
+          Родительский элемент:
+        </td>
+        <td colspan="2">
+          <%= @parentnode.name %>
+        </td>
+      </tr>
+      <% end %>
+      <tr>
+        <td>
+          Наименование:
+        </td>
+        <td>
+          <%= f.text_field :name, :style=>"width:90%" %>
+        </td>
+        <td>
+          <p>
+            Наименование пункта меню.<br />
+            Этот текст будет отображаться в меню.
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          URL:
+        </td>
+        <td>
+          <%= f.text_field :link_url, :style=>"width:90%" %>
+        </td>
+        <td>
+          <p>
+            Адресс страницы
+          <pre>/my_page</pre>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Страница из списка:
+        </td>
+        <td>
+          <%= f.select(:page_id, Page.all.collect{|page| [(page.full_url.blank?) ? "/" : "/#{page.full_url}", page.id]}, { :include_blank => true }) %>
+        </td>
+        <td>
+          <p>
+            Вы можете выбрать страницу из набора.<br/> Она имеет меньший приоритет, чем страница,<br /> заданная через URL.
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Вес пункта:
+        </td>
+        <td>
+          <%= f.text_field :order_num %>
+        </td>
+        <td>
+          <p>
+            Введите вес страницы (номер от 0 до 100 - в зависимости <br />от количества пунктов в данном меню/подменю)
+          </p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+<%= submit_tag "Сохранить" %>
+<% end %>

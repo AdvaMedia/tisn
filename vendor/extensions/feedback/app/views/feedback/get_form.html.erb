@@ -1,0 +1,45 @@
+<div class="content">
+  <h1 style="background: url(&quot;/templates/layouts/oknatisn/i/layout/contact_us.png&quot;) no-repeat scroll 0pt 60% transparent; padding-left: 45px;">Написать сообщение</h1>
+  <% form_tag url_for(:action=>"send_feedback") do -%>
+    <fieldset>
+      <div class="f-row width-100">
+        <%= label_tag "name", "Ваше имя:" %>
+        <div class="i-wrap">
+          <%= text_field_tag "name", "", {:class=>"validate['required','length[3,-1]'] i-text"} %>
+          <div title="Обязательное поле" class="req">&nbsp;</div>
+        </div>
+      </div>
+      <div class="f-row width-100">
+        <%= label_tag "phone", "Контактный телефон:" %>
+        <div class="i-wrap">
+          <%= text_field_tag "phone", "", {:class=>"validate['required','phone'] i-text"} %>
+          <div title="Обязательное поле" class="req">&nbsp;</div>
+        </div>
+      </div>
+      <div class="f-row width-100">
+        <%= label_tag "mail", "Электронный ящик:" %>
+        <div class="i-wrap">
+          <%= text_field_tag "mail", "", {:class=>"i-text"} %>
+        </div>
+      </div>
+      <div class="f-row width-100">
+        <%= label_tag "theme", "Тема сообщения:" %>
+        <div class="i-wrap">
+          <%= text_field_tag "theme", "", {:class=>"validate['required','length[3,-1]'] i-text"} %>
+          <div title="Обязательное поле" class="req">&nbsp;</div>
+        </div>
+      </div>
+      <div class="f-row width-100">
+        <%= label_tag "message", "Текст сообщения:" %>
+        <div class="i-wrap">
+          <%= text_area_tag "message", "", {:class=>"validate['required','length[3,-1]'] i-text", :rows=>10} %>
+          <div title="Обязательное поле" class="req">&nbsp;</div>
+        </div>
+      </div>
+    </fieldset>
+    <fieldset>
+      <%= submit_tag "Отправить сообщение" %>
+      <span class="or">или</span> <a href="#" class="icon cancel">отменить и закрыть окно</a>
+    </fieldset>
+  <% end %>
+</div>

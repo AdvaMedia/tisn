@@ -1,0 +1,30 @@
+<h2><%= link_to "<-Назад", :action=>"index", :controller=>"admin/templates" %> Создание шаблона <b>-=<%= @templ.name %>=-</b> </h2>
+
+<% form_for :templ,:url=>{:action=>"create", :controller=>"admin/templates"} do |form| %>
+  <table style="width: 100%">
+    <tbody>
+      <tr>
+        <td>Название шаблона:</td>
+        <td>
+          <%= form.text_field :name %>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <h4>Текст шаблона:</h4>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <%= form.text_area :content, :style=>"width:100%;" %>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <%= submit_tag "Изменить" %>
+        </td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+<% end %>

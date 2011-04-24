@@ -1,0 +1,30 @@
+<ul class="breadcrumbs">
+  <li>
+    <%= link_to "Список страниц", 'admin/navigation', {:class=>"ajax"} %>
+  </li>
+  <li><span>Редактирование страницы(блоков)</span></li>
+</ul>
+
+<h4>Редактируем контейнер:<%= @container_name %> для страницы <%= @selpage.title %></h4>
+<table>
+  <tbody>
+    <tr>
+      <th>Конетнт</th>
+      <th>Действия:</th>
+    </tr>
+    <% @part.part_items.each do |part_item| %>
+      <tr>
+        <td>
+          <%= part_item.modul.name %>
+        </td>
+        <td>
+          <%= link_to "Удалить", {:action=>"show", :controller=>"admin/part_items", :id=>part_item.id}, {:class=>'ajax'} %>
+        </td>
+      </tr>
+    <% end %>
+    <tr>
+      <td colspan="2">
+        <%= link_to "Добавить блок", {:action=>"new", :controller=>"admin/part_items", :parent_part_id=>@part.id}, {:class=>'ajax'} %>
+      </td>
+    </tr>
+  </tbody>

@@ -1,0 +1,19 @@
+<h4>HTML блоки, включенные на страницу <b><%= @actpage.title %></b>:</h4>
+<table>
+  <tbody>
+    <tr>
+      <th>Описание блока</th>
+      <th>Первые 100 символов</th>
+      <th>Действия:</th>
+    </tr>
+    <% @html_parts.each do |part_html| %>
+    <tr>
+      <td><%= html_description(part_html) %></td>
+      <td><%= h(html_content(part_html)) %></td>
+      <td>
+        <%= link_to_html(part_html) %>
+      </td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>

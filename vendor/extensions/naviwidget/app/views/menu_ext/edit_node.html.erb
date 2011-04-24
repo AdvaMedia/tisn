@@ -1,0 +1,94 @@
+<%= render :partial=>"tabs" %>
+<div class="page-wrapper container">
+  <% form_for :item, :url=>{:action=>"save_node",:id=>@item.navigate_id, :tid=>@item.id, :controller=>"MenuExt"} do |f| %>
+    <table class="null-table full content-layout">
+      <tr>
+        <td class="header" colspan="2">
+          <h1 style="background-image:url(/images/adminsystem/icons/48/content.png);">Редактирование пункта меню</h1>
+        </td>
+      </tr>
+      <tr>
+        <td class="column-center">
+          <fieldset>
+            <div class="f-row width-100">
+              <%= f.label :name, "Текст пункта меню:" %>
+              <div class="i-wrap">
+                <%= f.text_field :name, :class=>"i-text" %>
+                <div title="Обязательное поле" class="req">&nbsp;</div>
+              </div>
+              <span class="i-help">Например: О компании Ромашка.</span>
+            </div>
+
+            <div class="f-row width-100">
+              <%= f.label :link_url, "Адрес ссылки пункта меню:" %>
+              <div class="i-wrap">
+                <%= f.text_field :link_url, :class=>"i-text" %>
+              </div>
+              <span class="i-help">Адрес ссылки может вести как на внутренние страницы сайта так и на внешние.
+                Например: "about-company", "http://mysyte.com".</span>
+            </div>
+
+            <div class="f-row width-100">
+              <%= f.label :page_id, "Или выберите страницу из существующих в базе:" %>
+              <div class="i-wrap">
+                <%= f.select :page_id, Page.all.collect{|page| ["#{page.title}[#{page.full_url}]", page.id]}, { :include_blank => "Страница не выбрана" }, {:class=>"i-select"} %>
+              </div>
+              <span class="i-help">Система настроена таким образом, что приоритетным выбором является введенный в ручную URL
+                Поэтому, если даже вы выбрали страницу из выпадающего списка, но ввели URL в поле выше, то переход будет
+                произведен на адресс, с введенным выше URL.</span>
+            </div>
+
+            <div class="f-row width-100">
+              <%= f.label :parent_id, "Родительский элемент меню:" %>
+              <div class="i-wrap">
+                <%= f.select :parent_id, Navigate.find_by_id(params[:id]).all_navinodes(nil).reject{|node| node.id==@item.id}.collect{|node| [h("#{"—"*(node.depth+1)} #{node.name}"), node.id]}, { :include_blank => "[Главное меню сайта]" }, {:class=>"i-select"} %>
+                <div title="Обязательное поле" class="req">&nbsp;</div>
+              </div>
+              <span class="i-help">Адрес ссылки может вести как на внутренние страницы сайта так и на внешние.
+                Например: "about-company", "http://mysyte.com".</span>
+            </div>
+
+            <div class="f-row width-100">
+              <label>Параметры отображения:</label>
+              <div class="i-checkbox">
+                <%= f.check_box :enabled %>
+                <%= f.label :enabled, "Ссылка активна", {:title=>"Если флажок не установлен, ссылка будет скрыта в меню для посетителей"}%>
+              </div>
+              <div class="i-checkbox">
+                <%= f.check_box :aexpanded %>
+                <%= f.label :aexpanded, "Дочерние пункты всегда развернуты", {:title=>"Если флажок установлен и пункт меню имеет дочерние элементы, меню всегда будет отображаться развернутым"}%>
+              </div>
+            </div>
+
+          </fieldset>
+        </td>
+        <td class="column-advanced">
+          <div class="corners corners-4" style="background: none repeat scroll 0% 0% rgb(238, 238, 238); padding: 1.5em;">
+            <h3>Расширенные настройки</h3> В идеале, здесь можно будет задать классы для пункта меню а также ID по желанию.
+            <em class="tl">&nbsp;</em><em class="tr">&nbsp;</em><em class="bl">&nbsp;</em><em class="br">&nbsp;</em></div>
+
+          <div class="f-row width-100">
+            <%= f.label :description, "Описание пункта меню:" %>
+            <div class="i-wrap">
+              <%= f.text_area :description, :class=>"i-text", :rows=>5 %>
+            </div>
+            <span class="i-help">
+              Описание будет показано при наведении курсора на пункт меню.
+              Это упростит навигацию и понимание структуры сайта для Ваших посетителей.
+            </span>
+          </div>
+
+          <div class="f-row width-100">
+            <%= f.label :order_num, "Вес пункта:" %>
+            <div class="i-wrap">
+              <%= f.select :order_num, (-20..20), { :include_blank => false }, {:class=>"i-select"} %>
+            </div>
+            <span class="i-help">Чем меньше вес, тем выше ссылка.</span>
+          </div>
+
+        </td>
+      </tr>
+    </table>
+    <%= submit_tag "Сохранить" %>
+  <% end %>
+</div>

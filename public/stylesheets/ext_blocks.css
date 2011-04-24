@@ -1,0 +1,221 @@
+
+/* blocks */
+
+/* FOOTER BLOCK  */
+
+.my-footer   { 
+	color:#c6c6c6;
+	font-size:.9em;
+	position:relative;
+	padding:2.5em 0;
+	border-top:1px solid #E3E6E6;
+	margin-top:-1px;
+	}
+
+.my-footer .columns,.my-footer p {
+	margin-bottom:0;
+	}
+
+.my-footer p { 
+	padding-top:.6em; 
+	}
+
+.my-footer a {
+	color:#c6c6c6;
+	}
+	
+.my-footer .madein { 
+	position:absolute; 
+	right:0; 
+	top:50%;
+	}	
+
+.my-footer .madein span { 
+	font-family: Paratype, Arial, Helvetica, sans-serif; 
+	}
+
+.my-footer img {
+	margin:0;
+	}
+
+/* PARTNERS BLOCK  */
+
+.affiliates table { 
+	margin-bottom:0;
+	}
+
+.affiliates table td {
+	padding-bottom:.9em;}
+
+
+			
+/* PARTNERS BLOCK  */			
+			
+.partners-block	{
+	padding:2.5em 0;
+	border-bottom:1px solid #E3E6E6;
+	}		
+
+.partners-block table { 
+	margin:0; 
+	}	
+
+.partners-block	a {
+	display:block;
+	width:165px;
+	height:57px;
+	background-position:0 100%;
+	background-repeat:no-repeat;
+	}
+
+.partners-block	a:hover {
+	background-position:0 0;
+	}
+
+a.deceuninck {
+	background-image: url(/assets/pictures/2/content_deceuninck.png);
+	}
+	
+a.siegenia {
+	background-image:url(/assets/pictures/5/content_siegenia.png);
+	}	
+	
+a.tisnservice {
+	background-image:url(/assets/pictures/6/content_tisnservice.png);
+	}		
+	
+a.funke {
+	background-image:url(/assets/pictures/3/content_funke.png);
+	}	
+
+a.vorne {
+	background-image:url(/assets/pictures/7/content_vorne.png);
+	}	
+
+a.grain {
+	background-image: url(/assets/pictures/4/content_grain.png);
+	}	
+
+/* LAST NEWS MODULE  */	
+
+.modifed-last-news,
+.modifed-last-news dl {
+	 margin:0; 
+	 }
+
+.modifed-last-news .col-last {
+	position:relative;
+	border-left:1px dotted #c6c6c6; 
+	padding-left:1.5em;
+	margin-left:1.5em;
+	}
+
+.modifed-last-news img { 
+	border:1px solid #E3E6E6; 
+	padding:4px;
+	}
+
+.modifed-last-news .entry-title a { 
+	color:#000;
+	}
+
+.modifed-last-news .date {
+	float:left;
+	width:80px; 
+	color:#c6c6c6;
+	font-weight:400;
+	margin-left:0;
+	}
+
+.modifed-last-news dd { 
+	margin-bottom:.75em; 
+	}	
+	
+.modifed-last-news .rss { 
+	position:absolute;
+	top:4px;
+	right:0;
+	}	
+
+.modifed-last-news .rss img {
+	margin:0;
+	}
+
+/* AFFILATES BLOCK  */
+
+.affiliates table { 
+	margin-bottom:0;
+	}
+
+.affiliates table td {
+	padding-bottom:.9em;}
+
+.affiliates { /*background:url(/assets/pictures/11/content_pakety-na-glavnuu.png?1278251443) no-repeat 100% 0 ; */ }
+
+.promo .video-wrap {
+width:344px;
+}
+
+.promo .video {
+padding-left:420px;
+}
+
+/* LAST NEWS MODULE  */	
+
+.modifed-last-news,
+.modifed-last-news dl {
+	 margin:0; 
+	 }
+
+.modifed-last-news .col-last {
+	position:relative;
+	border-left:1px dotted #c6c6c6; 
+	padding-left:1.5em;
+	margin-left:1.5em;
+	}
+
+.modifed-last-news img { 
+	border:1px solid #E3E6E6; 
+	padding:4px;
+	}
+
+.modifed-last-news .entry-title a { 
+	color:#000;
+	}
+
+.modifed-last-news .date {
+	float:left;
+	width:80px; 
+	color:#c6c6c6;
+	font-weight:400;
+	margin-left:0;
+	}
+
+.modifed-last-news dd { 
+	margin-bottom:.75em; 
+	}	
+	
+.modifed-last-news .rss { 
+	position:absolute;
+	top:4px;
+	right:0;
+	}	
+
+.modifed-last-news .rss img {
+	margin:0;
+	}
+
+ul.pdf a { background-image: url(/assets/pictures/12/content_1278255692_file-pdf.png?1278255840); padding-left:25px; }
+
+ul.icons {padding-left:1em;}
+
+ul.icons { padding-left:1em; list-style:none; }
+ul.zip a { padding-left:25px; background-image:url(/assets/pictures/44/content_1278262813_folder_zipper.png?1278263406);}
+
+#content h1 {color:#02A0C1;
+font-family:Arial,Helvetica,sans-serif;
+font-size:2.7em;
+margin-bottom:0.75em;}
+
+.vertical-partners {padding:0; border:none; }
+.vertical-partners a { margin:0 auto; }

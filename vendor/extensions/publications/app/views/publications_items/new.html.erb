@@ -1,0 +1,83 @@
+<%= javascript_include_tag :ckeditor %>
+<%= render :partial=>"tabs" %>
+<div class="page-wrapper container">
+  <% form_for :item, :url=>{:action=>"create",:id=>@item.publicationgroup.id} do |f| %>
+    <table class="null-table full content-layout">
+      <tr>
+        <td class="header" colspan="2">
+          <h1 style="background-image:url(/images/adminsystem/icons/48/content.png);">Создание элемента публикации</h1>
+        </td>
+      </tr>
+      <tr>
+        <td class="column-center">
+          <fieldset>
+            <div class="f-row width-100">
+              <%= f.label :title, "Заголовок публикации:" %>
+              <div class="i-wrap">
+                <%= f.text_field :title, :class=>"i-text" %>
+                <div title="Обязательное поле" class="req">&nbsp;</div>
+              </div>
+              <span class="i-help">Например: О компании Ромашка.</span>
+            </div>
+
+            <div class="f-row width-100">
+              <%= f.label :tag, "тэг публикации:" %>
+              <div class="i-wrap">
+                <%= f.text_field :tag, :class=>"i-text" %>
+              </div>
+              <span class="i-help">Например: about-romashka-company.</span>
+            </div>
+
+            <div class="f-row width-100">
+              <%= f.label :image_url, "URL изображения:" %>
+              <div class="i-wrap">
+                <%= f.text_field :image_url, :class=>"i-text" %>
+              </div>
+              <span class="i-help">Например: О компании Ромашка.</span>
+            </div>
+
+            <div class="f-row width-100">
+              <%= f.label :descriptions, "Описание публикации:" %>
+              <div class="i-wrap">
+                <%= f.cktext_area :descriptions, :swf_params=>{:assetable_type=>'Demo', :assetable_id=>0}, :width => 500, :height=>200 %>
+                <div title="Обязательное поле" class="req">&nbsp;</div>
+              </div>
+              <span class="i-help">Например: О компании Ромашка.</span>
+            </div>
+
+            <div class="f-row width-100">
+              <%= f.label :content, "Текст публикации:" %>
+              <div class="i-wrap">
+                <%= f.cktext_area :content, :swf_params=>{:assetable_type=>'Demo', :assetable_id=>0}, :width => 500 %>
+                <div title="Обязательное поле" class="req">&nbsp;</div>
+              </div>
+              <span class="i-help">Например: О компании Ромашка.</span>
+            </div>
+          </fieldset>
+        </td>
+        <td class="column-advanced">
+          <div class="corners corners-4" style="background: none repeat scroll 0% 0% rgb(238, 238, 238); padding: 1.5em;">
+            <h3>Расширенные настройки</h3> В идеале, здесь можно будет задать классы для пункта меню а также ID по желанию.
+            <em class="tl">&nbsp;</em><em class="tr">&nbsp;</em><em class="bl">&nbsp;</em><em class="br">&nbsp;</em></div>
+
+          <div class="f-row width-100">
+            <%= f.label :publicationgroup_id, "Принадлежит к категории:" %>
+            <div class="i-wrap">
+              <%= f.select(:publicationgroup_id, Publicationgroup.all.collect{|p| [p.name, p.id]}, { :include_blank => false }, {:class=>"i-select"}) %>
+            </div>
+            <span class="i-help">Выберите категорию, к которой принадлежит данная публикация.</span>
+          </div>
+
+          <div class="f-row width-100">
+            <%= f.label :publicationgroup_id, "Дата публикации:" %>
+            <div class="i-wrap">
+              <%= f.datetime_select :created_at %>
+            </div>
+            <span class="i-help">Выберите категорию, к которой принадлежит данная публикация.</span>
+          </div>
+        </td>
+      </tr>
+    </table>
+    <%= submit_tag "Сохранить" %>
+  <% end %>
+</div>

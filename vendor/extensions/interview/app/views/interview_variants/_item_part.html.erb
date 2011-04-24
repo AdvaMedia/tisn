@@ -1,0 +1,22 @@
+<% @item.interviewvariants.each do |item| %>
+  <tr class="item on">
+    <td>
+      <div class="level-0">
+        <span>
+          <%= "#{item.created_at.strftime("Сегодня в %R")}" if item.created_at.today? %>
+          <%= "#{item.created_at.strftime("Вчера в %R")}" if item.created_at.to_date == Date.yesterday %>
+          <%= "#{item.created_at.strftime("%F %R")}" if item.created_at.to_date < Date.yesterday %>
+        </span>
+        <%= link_to "#{item.content}", {:action=>"edit", :id=>item.interview.id, :tid=>item.id}, {:class=>"name icon link"} %>
+      </div>
+    </td>
+    <td>
+      <div class="level-0">
+        <%= link_to "Удалить", {:action=>"delete", :id=>item.interview.id, :tid=>item.id}, {:class=>"name icon link"} %>
+      </div>
+    </td>
+    <td>
+      
+    </td>
+  </tr>
+<% end %>

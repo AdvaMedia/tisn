@@ -1,0 +1,7 @@
+<% unless @error_vote %>
+<p>
+  Не удалось оставить отзыв за выбранный Вами вариант... Попробуйте позднее.
+</p>
+<% else %>
+<a2m:interview_block id="<%= @interview_id %>" result="true"/>
+<% end %>

@@ -1,0 +1,53 @@
+<h2>
+  <%= link_to "Назад", :action=>"index", :controller=>"admin/pages" %>
+  Дочерняя страница для:
+<%= @parent_page.title %></h2>
+<% form_for :newpage, :url=>{:action=>"create", :controller=>"admin/pages"} do |form| %>
+<%= form.hidden_field :parent_id %>
+<table>
+  <tr>
+    <td>Сегмент страницы:</td>
+    <td><%= form.text_field :segment %></td>
+  </tr>
+  <tr>
+    <td>Редирект на:</td>
+    <td>
+        <%= form.text_field :redirect %>, Код:<%= form.text_field :status_code %>
+    </td>
+  </tr>
+  <tr>
+    <td>Заголовок страницы(меню):</td>
+    <td><%= form.text_field :title %></td>
+  </tr>
+  <tr>
+    <td>Заголовок страницы(бруазер):</td>
+    <td><%= form.text_field :self_title %></td>
+  </tr>
+  <tr>
+    <td>Ключевые слова:</td>
+    <td><%= form.text_field :keywords %></td>
+  </tr>
+  <tr>
+    <td>Небольшое описание:</td>
+    <td><%= form.text_field :description %></td>
+  </tr>
+  <tr>
+    <td>Выберите разметку:</td>
+    <td><%= form.select(:sitetemplate_id, @templates_for_page.collect{|p| [ p.name, p.id ] }, { :include_blank => false }) %></td>
+  </tr>
+  <tr>
+    <td>
+      Выберите тип материала:
+    </td>
+    <td>
+      <%= form.select(:type, A2mCms::ExtensionLoader.extensions.collect{|ext| [ext.title, ext.extension_name]}, { :include_blank => true }) %>
+    </td>
+  </tr>
+  <tr>
+    <td>Порядковый номер в меню:</td>
+    <td><%= form.text_field :order_num %></td>
+  </tr>
+</table>
+
+<%= submit_tag "Создать" %>
+<% end %>

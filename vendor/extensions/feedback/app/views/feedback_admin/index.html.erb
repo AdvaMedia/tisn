@@ -1,0 +1,49 @@
+<div class="page-wrapper container">
+  <table class="null-table full content-layout">
+    <tr>
+      <td class="header" colspan="2">
+        <h1 style=" background-image:url(/images/adminsystem/icons/48/content.png);">Обратная связь</h1>
+      </td>
+    </tr>
+    <tr>
+      <td class="column-center">
+        <p class="roundborder notice information">
+          <i class="notice icon">&nbsp;</i>
+          Просто укажите адрес электронной почты, на который будут приходить сообщения,
+          внесите заголовок, под которым будут приходить письма
+        </p>
+
+        <% form_tag do -%>
+
+          <div class="f-row width-50">
+            <%= label_tag "mail", "Наименование меню" %>
+            <div class="i-wrap">
+              <%= text_field_tag "mail", @mail, {:class=>"i-text"} %>
+              <div title="Обязательное поле" class="req">&nbsp;</div>
+            </div>
+            <span class="i-help">Например: postmaster@mymail.ru.</span>
+          </div>
+
+          <div class="f-row width-50">
+            <%= label_tag "title", "Заголовок отправляемого письма" %>
+            <div class="i-wrap">
+              <%= text_field_tag "title", @title, {:class=>"i-text"} %>
+              <div title="Обязательное поле" class="req">&nbsp;</div>
+            </div>
+            <span class="i-help">С этим заголовком Вам будут приходить сообщения на электронную почту.</span>
+          </div>
+
+          <div class="f-row width-50">
+            <%= label_tag "active", "Должен ли сайт отправлять Вам письма?" %>
+            <div class="i-wrap">
+              <%= select_tag "active", options_for_select([["Да","1"],["Нет","0"]], @active), {:class=>"i-select"} %>
+              <div title="Обязательное поле" class="req">&nbsp;</div>
+            </div>
+            <span class="i-help">Выбрав "нет", Вы можете на время отключить отправку сообщений с сайта...</span>
+          </div>
+          <%= submit_tag "Сохранить" %>
+        <% end %>
+      </td>
+    </tr>
+  </table>
+</div>

@@ -1,0 +1,130 @@
+<script src="http://api-maps.yandex.ru/1.1/index.xml?key=<%= YandexMapsExtension.yandex_key %>" type="text/javascript"></script>
+<%= javascript_include_tag "yandex_maps" %>
+<%= f.hidden_field :map_region_id %>
+<%= f.hidden_field :lng %>
+<%= f.hidden_field :lat %>
+
+<table class="null-table full content-layout">
+	<colgroup>
+		<col width="50%" />
+		<col width="50%" />
+	</colgroup>
+	<tbody>
+    <tr>
+      <td colspan="2">
+        <div class="f-row width-100">
+		      <%= f.label :name, "Наименование организации:" %>
+		      <div class="i-wrap">
+		        <%= f.text_field :name, :class=>"i-text", :tabindex => 1 %>
+            <div title="Обязательное поле" class="req">&nbsp;</div>
+		      </div>
+		      <span class="i-help">Например: ООО "Моя компания"</span>
+		     </div>
+      </td>
+    </tr>
+		<tr>
+			<td style="padding: auto;">
+					<div class="f-row width-100">
+		              <%= f.label :country, "Страна:" %>
+		              <div class="i-wrap">
+		                <%= f.text_field :country, :class=>"i-text", :tabindex => 2 %>
+		              </div>
+		              <span class="i-help">Например: Россия</span>
+		            </div>
+		
+					<div class="f-row width-100">
+		              <%= f.label :area, "Район:" %>
+		              <div class="i-wrap">
+		                <%= f.text_field :area, :class=>"i-text", :tabindex => 4 %>
+		              </div>
+		              <span class="i-help">Например: Аркадакский район</span>
+		            </div>
+		
+					<div class="f-row width-100">
+		              <%= f.label :street, "Улица (ул., просп., бул., пр-д):" %>
+		              <div class="i-wrap">
+		                <%= f.text_field :street, :class=>"i-text", :tabindex => 6%>
+		              </div>
+		              <span class="i-help">Например: ул. Большая Казачья</span>
+		            </div>
+		
+					<div class="f-row width-100">
+		              <%= f.label :house, "Дом:" %>
+		              <div class="i-wrap">
+		                <%= f.text_field :house, :class=>"i-text", :tabindex => 8 %>
+		              </div>
+		              <span class="i-help">Например: 109</span>
+		            </div>
+
+          <div class="f-row width-100">
+		              <%= f.label :is_primary, "Это главный офис?" %>
+		              <div class="i-wrap">
+		                <%= f.check_box :is_primary, :tabindex => 10 %>
+		              </div>
+		              <span class="i-help">Поставьте голочку, если этот офис является главным</span>
+		            </div>
+
+          <div class="f-row width-100">
+		              <%= f.label :work_times, "Время работы:" %>
+		              <div class="i-wrap">
+		                <%= f.text_field :work_times, :class=>"i-text", :tabindex => 12 %>
+		              </div>
+		              <span class="i-help">Например: пн-пт 10:00-19:00</span>
+		            </div>
+          
+			</td>
+			<td style="padding: auto;">
+					<div class="f-row width-100">
+		              <%= f.label :federation, "Субъект федерации:" %>
+		              <div class="i-wrap">
+		                <%= f.text_field :federation, :class=>"i-text", :tabindex => 3 %>
+		              </div>
+		              <span class="i-help">область, край, республика, автономный округ</span>
+		            </div>
+		
+					<div class="f-row width-100">
+		              <%= f.label :city, "Город, населенный пункт:" %>
+		              <div class="i-wrap">
+		                <%= f.text_field :city, :class=>"i-text", :tabindex => 5 %>
+		                <div title="Обязательное поле" class="req">&nbsp;</div>
+		              </div>
+		              <span class="i-help">Например: Саратов</span>
+		            </div>
+		
+					<div class="f-row width-100">
+		              <%= f.label :post_index, "Почтовый индекс:" %>
+		              <div class="i-wrap">
+		                <%= f.text_field :post_index, :class=>"i-text", :tabindex => 7 %>
+		              </div>
+		              <span class="i-help">Формат: 410012</span>
+		            </div>
+		
+					<div class="f-row width-100">
+		              <%= f.label :office, "БЦ, подъезд, этаж, офис:" %>
+		              <div class="i-wrap">
+		                <%= f.text_field :office, :class=>"i-text", :tabindex => 9 %>
+		              </div>
+		              <span class="i-help">Например: каб. 501</span>
+		            </div>
+
+          <div class="f-row width-100">
+		              <%= f.label :phones, "Телефон(-ы):" %>
+		              <div class="i-wrap">
+		                <%= f.text_field :phones, :class=>"i-text", :tabindex => 11 %>
+		              </div>
+		              <span class="i-help">
+                    Телефоны вводятся в формате +7(код_региона)номер_телефона<br/>
+                    И разделяются пробелом<br />
+                    Например: +7(8452)12-34-56 +7(495)123-45-67
+                  </span>
+		            </div>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<hr />
+
+<div style="margin-bottom: 20px;">
+	<a href="#" id="show_yandex_pams">Показать на карте...</a> | <a href="#" id="clear_yandex_pams"> очистить карту</a></br />
+	<div id="yandex_map_container" style="height: 300px; width: 100%;" class="hidden">&nbsp;</div>
+</div>

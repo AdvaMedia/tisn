@@ -1,0 +1,24 @@
+<h4>Добавление блока</h4>
+<% form_for :htmlblock, :url=>{:action=>"update", :controller=>"admin/htmlblock"}, :html=>{:method=>:put} do |form|%>
+<%= form.hidden_field :part_item_id %>
+<table style="width: 100%;">
+  <tbody>
+    <tr>
+      <td>Описание:</td>
+      <td>
+        <%= form.text_field :description %>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">Основной текст:</td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <%= fckeditor_textarea("htmlblock", "content", :toolbarSet => 'Simple', :width => '100%', :height => '200px') %>
+        <%#= form.text_area :content, :style=>"width:100%;", :size=>"20x20" %>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<%= submit_tag "Сохранить" %>
+<% end %>

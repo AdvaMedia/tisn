@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <title>Система администрирования сайтом - <%= request.host %></title>
+    <meta name="description" content="A web applications user interface library built on the Mootools javascript framework" />
+
+    <%= stylesheet_link_tag %w{adminsystem/cssf-base adminsystem/adminpanel adminsystem/ext} %>
+
+    <!--[if IE]>
+	<script type="text/javascript" src="javascripts/adminsystem/excanvas-compressed.js"></script>
+    <![endif]-->
+    <%= javascript_include_tag %w{mootools-1.2-core mootools-1.2-more css_browser_selector auto_corners_selector admin_core}.map {|jsfile| jsfile='adminsystem/'+jsfile}, :cache => "adminsystem" %>
+    <%= javascript_include_tag "fullajax" %>
+
+  </head>
+  <body>
+    <!--HEADER-->
+    <div id="header" class="block">
+      <!--Toolbar navigation-->
+      <% if current_user and current_user.admin? %>
+        <div class="toolbar-navigation">
+          <div class="out-margin">
+            <ul id="navigation_links" class="menu-h navigation">
+              <% A2mCms::ExtensionLoader.grouped_extensions.sort{|a,b| a[1][2]<=>b[1][2]}.each do |item| %>
+                <li <%= "class='slided'" if item[1].length>0 %>> <a class="<%= "#{item[0]}" %>" href="<%= url_for(:controller=>"AdminSystem", :action=>"show_room", :room=>item[0]) %>"><span><%= item[1][0] %></span></a></li>
+              <% end %>
+            </ul>
+          </div>
+        </div>
+        <!--Toolbar modules-->
+        <div id="toolbar-slider" class="toolbar-modules hidden">
+          <div class="out-margin">
+            <% A2mCms::ExtensionLoader.grouped_extensions.each do |key, item| %>
+            <ul id="tmodul-<%= key %>" class="icons modules hidden">
+              <% item[1].each do |m| %>
+              <li><a style="background-image:url(/i/icons/16/1273854001_ui-menu-blue.png)"
+                     title="Описание модуля берется со страницы списка доступных модулей" href="/<%= "#{m.admin_index}" || "#" %>"><%= m.title %></a></li>
+              <% end %>
+            </ul>
+            <% end %>
+          </div>
+        </div>
+        <!--Toolbar bookmarks-->
+        <div class="toolbar-bookmark">
+          <div class="out-margin">
+            <ul class="menu-h bookmarks">
+              <li><a class="edit" href="#">Управление закладками</a></li>
+              <li><a href="#">Главное меню</a></li>
+              <li><a href="#">Блоки</a></li>
+              <li><a href="#">Статьи</a></li>
+              <li><a href="#">Справка</a></li>
+            </ul>
+          </div>
+        </div>
+      <% end %>
+    </div>
+    <!--END HEADER-->
+    <!--CONTENT-->
+    <div id="content" class="out-margin">
+      <%= yield :layout %>
+    </div>
+    <!--END CONTENT-->
+    <script type="text/javascript">CornersInit();</script>
+  </body>
+</html>

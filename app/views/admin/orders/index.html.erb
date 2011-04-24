@@ -1,0 +1,32 @@
+<script type="text/javascript" src="/javascripts/admin/orders.js">
+</script>
+<h4>Управление заказами</h4>
+<div class="content">
+  <table style="width:100%">
+    <tbody>
+      <tr>
+        <th>Наименование</th>
+        <th>URL изображения</th>
+        <th>Опции</th>
+        <th>Действия</th>
+      </tr>
+      <% @orders.each do |order| %>
+      <tr>
+        <td>
+          <%= link_to order.name, {:action=>"show", :controller=>"admin/orders", :id=>order.id} %>
+        </td>
+        <td>
+          <img src="<%= order.image_url %>"></img>
+        </td>
+        <td>
+          <%= BlueCloth::new(order.options).to_html %>
+        </td>
+        <td>
+          <%= link_to "Редактировать", {:action=>"edit", :controller=>"admin/orders", :id=>order.id} %>
+        </td>
+      </tr>
+      <% end %>
+    </tbody>
+  </table>
+  <%= link_to "Добавить", {:action=>"new", :controller=>"admin/orders"} %>
+</div>

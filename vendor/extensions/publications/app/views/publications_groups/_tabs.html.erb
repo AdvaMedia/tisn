@@ -1,0 +1,8 @@
+<ul class="menu-h page-tabs">
+  <li <%= "class=\"active\"" if @tab=="list" %>>
+    <%= link_to "Настройки групп публикаций", {:action=>"index", :controller=>"PublicationsGroups"} %>
+  </li>
+  <li <%= "class=\"active\"" if @tab=="edit"%>>
+    <%= link_to "Менеджер публикаций", {:action=>"index", :controller=>"PublicationsItems"} %>
+  </li>
+</ul>

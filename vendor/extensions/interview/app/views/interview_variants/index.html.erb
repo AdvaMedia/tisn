@@ -1,0 +1,53 @@
+<%= render :partial=>"tabs" %>
+<div class="page-wrapper container">
+  <table class="null-table full content-layout">
+    <tr>
+      <td class="header" colspan="2">
+        <h1 style="background-image:url(/images/adminsystem/icons/48/content.png);">Менеджер опросов</h1>
+      </td>
+      <td class="column-right" rowspan="2">
+        <!--Control panel-->
+        <div class="control-panel">
+          <a href="#" class="help">Помощь</a>
+          <% if @item %>
+          <ul class="roundborder">
+            <li>
+              <%= link_to "Добавить", {:action=>"new", :id=>@item.id}, {:class=>"add"} %>
+            </li>
+          </ul>
+          <% end %>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td class="column-left">
+        <ul class="menu block icons">
+          <% Interview.all.each do |group| %>
+            <li<%= " class=\"active\"" if @item and @item.id==group.id %>>
+              <%= link_to group.name, {:action=>"show", :id=>group.id}, {:style=>"background-image: url(&quot;/i/icons/16/1273854001_ui-menu-blue.png&quot;);"} %>
+            </li>
+          <% end %>
+        </ul>
+      </td>
+      <td class="column-center">
+        <% if @item %>
+          <table class="full null-table listing selecting vam">
+            <colgroup>
+              <col />
+              <col width="32px" />
+              <col width="32px" />
+            </colgroup>
+
+            <tbody>
+              <%= render :partial=>"item_part" %>
+            </tbody>
+          </table>
+        <% else %>
+          <p class="roundborder notice information">
+            <i class="notice icon">&nbsp;</i>
+            Выберите группу из левого списка.</p>
+        <% end %>
+      </td>
+    </tr>
+  </table>
+</div>

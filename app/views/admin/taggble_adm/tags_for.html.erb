@@ -1,0 +1,23 @@
+<style>
+  .help_table {border: solid 1px; width:100%;}
+  .help_table td {border: solid 1px;}
+</style>
+
+<table class="help_table">
+  <tbody>
+    <tr>
+      <th>Тэг</th>
+      <th>Описание</th>
+    </tr>
+    <% @taggblemod.tag_descriptions.each do |td| %>
+    <tr>
+      <td>
+        <%= h "<a2m:#{td[0]} />" %>
+      </td>
+      <td>
+        <%= td[1] %>
+      </td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>

@@ -1,0 +1,42 @@
+<h2><%= link_to "<-Назад", :action=>"index", :controller=>"admin/templates" %> Редактирование шаблона <b>-=<%= @templ.name %>=-</b> </h2>
+
+<% form_for :templ,:url=>{:action=>"update", :controller=>"admin/templates", :id=>@templ.id}, :html => { :method => :put} do |form| %>
+  <table style="width: 100%">
+    <tbody>
+      <tr>
+        <td>Название шаблона:</td>
+        <td>
+          <%= form.text_field :name %>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <h4>Текст шаблона:</h4>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <%= form.text_area :content, :style=>"width:100%;" %>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <%= submit_tag "Изменить" %>
+        </td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+<% end %>
+
+<% form_for :templ,:url=>{:action=>"destroy", :controller=>"admin/templates", :id=>@templ.id}, :html => { :method => :delete} do |form| %>
+  <p style="color:red;">Внимание! при удалении шаблона будут удалены связи страницы с шаблоном...</p>
+  <p style="color:red;">Для этих страниц нужно будет заново выбрать шаблон...</p>
+  <p>Страницы, используемые шаблоном:</p>
+  <ul>
+    <% @templ.pages.each do |page| %>
+    <li><%= page.full_url %></li>
+    <% end %>
+  </ul>
+  <%= submit_tag "Да, удалить!" %>
+<% end %>

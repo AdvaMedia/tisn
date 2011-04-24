@@ -1,0 +1,31 @@
+<ul class="breadcrumbs">
+  <li>
+    <%= link_to "Дерево страниц", {:action=>"index", :controller=>"NavigationExt"}, {:class=>"ajax"} %>
+  </li>
+  <li><span>Шаблоны верстки</span></li>
+</ul>
+
+<table style="width: 100%;">
+  <tbody>
+    <tr>
+      <th>Название шаблона
+      <%#= link_to "+", {:action=>"add_template"}, {:class=>"ajax"} %>
+      </th>
+      <th>Действия</th>
+    </tr>
+    <% @templates.each do |template| %>
+    <tr>
+      <td>
+        <%= template %>
+      </td>
+      <td>
+        <ul>
+          <li>
+            <%= link_to "...", {:action=>"edit", :id=>template}, {:class=>"ajax"} %>
+          </li>
+        </ul>
+      </td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>

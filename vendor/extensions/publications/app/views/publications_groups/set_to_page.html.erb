@@ -1,0 +1,51 @@
+<div class="page-wrapper container">
+  <table class="null-table full content-layout">
+    <tr>
+      <td class="header" colspan="2">
+        <h1 style=" background-image:url(/images/adminsystem/icons/48/content.png);">Управление блоками</h1>
+      </td>
+    </tr>
+    <tr>
+      <td class="column-center">
+        <p class="roundborder notice information">
+          <i class="notice icon">&nbsp;</i>
+          <% if flash[:notice] %>
+            <%= flash[:notice] %>
+          <% else %>
+            Выберите группу публикаций из выпадающего списка.
+            и заполните шаблоны для отображения
+          <% end %>
+        </p>
+
+        <% form_for :item do |f| %>
+          <fieldset>
+            <div class="f-row width-100">
+              <%= f.label :publicationgroup_id, "Принадлежит к категории:" %>
+              <div class="i-wrap">
+                <%= f.select(:publicationgroup_id, Publicationgroup.all.collect{|p| [p.name, p.id]}, { :include_blank => false }, {:class=>"i-select"}) %>
+              </div>
+              <span class="i-help">Выберите категорию, к которой принадлежит данная публикация.</span>
+            </div>
+
+            <div class="f-row width-100">
+              <%= f.label :template_all, "Шаблон страницы публикаций:" %>
+              <div class="i-wrap">
+                <%= f.text_area :template_all,  {:rows=>10, :class=>"i-text"} %>
+              </div>
+              <span class="i-help">Шаблон дизайна страницы публикаций. Страница со списком публикаций.</span>
+            </div>
+
+            <div class="f-row width-100">
+              <%= f.label :template_one, "Шаблон публикации:" %>
+              <div class="i-wrap">
+                <%= f.text_area :template_one,  {:rows=>10, :class=>"i-text"} %>
+              </div>
+              <span class="i-help">Шаблон дизайна страницы самой публикации. Допускается внедрять список остальных публикаций.</span>
+            </div>
+          </fieldset>
+          <%= f.submit "Сохранить" %>
+        <% end %>
+      </td>
+    </tr>
+  </table>
+</div>

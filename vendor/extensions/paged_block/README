@@ -1,0 +1,33 @@
+Шаблон для страницы
+
+<h1 class="heading"><a2m:title /></h1>
+<ul class="menu-h tabs block">
+ <a2m:items>
+  <a2m:item>
+    <li class="<a2m:class />"><a href="<a2m:tag />"><a2m:name /></a></li>
+  </a2m:item>
+ </a2m:items>
+</ul>
+<a2m:content />
+
+Шаблон для блока
+
+<div class="promo">
+<ul class="promotabs">
+ <a2m:items>
+    <a2m:item>
+      <li class="corners <a2m:class />">
+         <a href="<a2m:tag />" style="background-image: url(&quot;template/i/layout/fun_block.png&quot;);"></a>
+         <em class="tr">&nbsp;</em><em class="br">&nbsp;</em>
+       </li>
+    </a2m:item>
+ </a2m:items>
+</ul>
+<div class="section">
+<a2m:content />
+</div>
+</div>
+<em class="tl">&nbsp;</em>
+<em class="tr">&nbsp;</em>
+<em class="bl">&nbsp;</em>
+<em class="br">&nbsp;</em>

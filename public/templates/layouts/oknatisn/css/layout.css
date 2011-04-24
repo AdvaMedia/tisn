@@ -1,0 +1,318 @@
+@font-face { font-family: Paratype; src: url(../i/pt-sans-caption-bold.ttf); }
+
+html {
+	height:100%;
+	}
+body {
+	font-size:.814em;
+	margin:0;
+	padding:0;
+	height:auto !important;
+	height:100%;
+	min-height:100%;
+	background:#73e8ff url(../i/layout/bg_page.png) 0 0 repeat-x;
+	}
+
+body.home {
+	background:#fff;
+	}
+
+body.page { }
+
+.page-margin {
+	width:990px;
+	margin:0 auto;
+	position:relative;
+	}	
+
+.page .page-margin { width:1072px; padding:3em 0; }
+
+.wrap {
+	background: url(../i/layout/glass.png) 0 0 repeat;
+	padding:15px;
+	border-radius:10px;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	position:relative;
+	z-index:10;
+	}
+
+.page-wrap {
+	background:#fff;
+	-moz-box-shadow: 0 0 4px #7a9da4;
+	-webkit-box-shadow: 0 0 4px #7a9da4;
+	padding:0 26px;
+	border-radius:8px;
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	position:relative;
+	z-index:20;
+	}
+
+/* form styles */
+
+label {
+	color:#00b2d5;
+	}
+	
+button {
+	cursor:pointer;
+	padding:.5em;
+	}
+
+button span {
+	font-weight:700;
+	white-space:nowrap;
+	}
+
+a { 
+	color:#00b2d5;
+	}
+
+.block { margin-bottom:2.5em; }
+
+h1, h2, h3, h4, h5, h6 { 
+	clear:none; 
+	font-family: Tahoma, Geneva, sans-serif;  
+	}
+
+img.f-left {
+	margin-top:.35em;
+	}
+	
+.peaple-page { 
+	position:absolute; 
+	top:5em; 
+	left:-82px; 
+	z-index:5;
+	background:url(../i/layout/peaple_page24.png);
+	}		
+
+table {
+	border-top-color:#c9c9c9; 
+	border-bottom:none;
+	}
+	
+tbody th {
+	border-bottom:none;
+	background:#07bce2;
+	color:#fff;
+	font-weight:700;
+	}
+
+.striped tr:nth-child(2n) { background-color:#f7f7f7;}
+
+.heading {
+	font-size:2.7em;
+	margin-bottom:.75em;
+	font-family:Arial, Helvetica, sans-serif;
+	color:#02a0c1;
+	}
+
+.yellowbutton a {
+	border:1px solid;
+	border-color:#FFF3B1 #FFEF9A #FFE765;
+	padding:0 1em;
+	color:#000;
+	font: bold 1em/34px Verdana, Geneva, sans-serif;
+	background:url(../i/layout/table-menu-a.png) 0 100% repeat-x;
+	text-shadow:0 1px 0 #E5C824;
+	display:block;
+	-moz-border-radius:2px;
+	-webkit-border-radius:2px;
+	border-radius:2px;
+
+	}
+
+.yellowbutton {
+	border:1px solid #F0B300;
+	position:absolute;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	}
+
+	
+/* HEADER 
+------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------ */	
+
+#header {
+	position:relative;
+	}
+
+/* Logo */
+
+.logo { 
+	padding:2.5em 0; 
+	}
+	
+.logo h1 { 
+	margin:0; 
+	} 
+	
+.logo a {
+	width:129px;
+	height:59px;
+	background: url(../i/layout/logo-8.png) 0 0 no-repeat;
+	}
+
+/* Phones */
+
+.phones {
+	position:absolute;
+	line-height:56px;
+	left:200px;
+	top:2.5em;
+	}
+	
+.phones a {
+	font-weight:700;
+	color:#184952;
+	}
+	
+.phones a {
+	position:relative;
+	top:-.4em;
+	}	
+
+.phones .number {
+	color:#00c5eb;
+	font-size:2em;
+	}	
+	
+.phones .code {
+	color:#d0d5d5;
+	font-size:1.4em;
+	padding-left:.5em;
+	position:relative;
+	top:-.15em;
+	}
+				
+				
+/* Contact us */
+
+.contact-us {
+	background:url(../i/layout/contact_us.png) no-repeat 0 50%;
+	display:block;
+	line-height:59px;
+	padding-left:45px;
+	position:absolute;
+	right:250px;
+	top:2.5em;
+	font-weight:700;
+	}		
+			
+
+/* CONTENT AND SIDEBAR 
+------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------ */	
+
+.content-wrap {
+	width: 100%;
+	float: right;
+	margin-left: -230px;
+	}
+
+#content {
+	margin-left: 280px;
+	}
+
+#sidebar {
+	width: 230px;
+	float: left;
+	}
+
+
+
+				
+/* INDEX CONTENT 
+------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------ */	
+
+#index-content .columns { 
+	margin-bottom:0; 
+	}
+
+#index-content .col-last {
+	margin-left:1.5em;
+	padding-left:1.5em;
+	}
+				
+
+/* TABS
+------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------ */	
+
+.tabs {
+	margin-left:0;
+	padding-left:0;
+	background:url(../i/layout/tabs_line.png) 0 100% repeat-x;
+	}
+
+.tabs li {
+	margin:0 5px 0 0;
+	border:1px solid #c6c6c6;
+	padding:0;
+	background:url(../i/layout/tabs.png) 0 0 repeat-x;
+	-moz-border-radius: 3px 3px 0 0;
+	-webkit-border-radius: 3px 3px 0 0;
+	}
+
+.tabs li.active { 
+	border-bottom-color:#fff;
+	background:none; 
+	}
+
+.tabs a {
+	font-weight:700;
+	line-height:31px;
+	color: #668796;
+	padding:0 20px;
+	}
+
+.tabs .active a {
+	color:#000;
+	}
+				
+				
+/* FOOTER 
+------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------ */	
+				
+#footer {
+	border-top:1px solid #E3E6E6;
+	 }				
+				
+				
+/* MODAL WINDOW 
+------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------ */		
+
+.modal {
+	position:absolute; 
+	top:7em;
+	left:50%; 
+	min-width:550px;
+	margin-left:-275px; 
+	z-index:999; 
+	-moz-border-radius:5px; 
+	-webkit-border-radius:5px;
+	background:url(../i/layout/modal_bg.png) 0 0 repeat;
+	padding:10px;
+	}
+
+.modal .content	{
+	background:#fff; 
+	padding:2em; 
+	-moz-border-radius:3px; 
+	-webkit-border-radius:3px;
+	 }
+	 
+.modal .cancel {
+	background-image:url(../i/icons/16/cross.png);
+	}
+	
+.modal .or {
+	margin-left:3em;
+	margin-right:3em;}	 			

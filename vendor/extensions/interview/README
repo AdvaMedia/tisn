@@ -1,0 +1,21 @@
+Шаблон опросов:
+
+<div class="system-block polls">
+<a2m:interview>
+<div class="f-row width-100">
+<label><big><a2m:name /></big></label>
+ <a2m:variants>
+<div class="i-radio"><a2m:variant /></div>
+ </a2m:variants>
+</div>
+<a2m:submit>Голосовать</a2m:submit>
+</a2m:interview>
+<a2m:result>
+<div class="result">
+ <label><big><a2m:name /></big></label>
+  <a2m:variants>
+   <div class="f-row"><a2m:variant /></div>
+  </a2m:variants>
+</div>
+</a2m:result>
+</div>

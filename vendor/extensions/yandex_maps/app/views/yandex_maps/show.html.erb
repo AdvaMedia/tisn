@@ -1,0 +1,32 @@
+<div class="page-wrapper container">
+	<table class="null-table full content-layout">
+		<tr>
+	      <td class="header" colspan="2">
+	        <h1 style="background-image:url(/images/adminsystem/icons/48/content.png);">Офисы</h1>
+	      </td>
+	      <td class="column-right" rowspan="2">
+	      </td>
+	    </tr>
+		<tr>
+	      <td class="column-center ">
+			<div id="githubstyle">
+				<div class="f-row width-100">
+					<h3>Наименование региона или области:</h3>
+					<div class="i-wrap">
+						<%= link_to @map_region.title, admin_yandex_adresses_path(:map_region_id=>@map_region.id), {:class=>"minibutton btn-watch"}%>
+					</div>
+	            </div>
+				<div class="f-row width-100">
+					<h3>Количество внесенных офисов:</h3>
+					<div class="i-wrap">
+						<%= @map_region.map_adresses.count > 0 ? "#{@map_region.map_adresses.count} штук" : "Ни одного офиса пока не внесено" %>
+					</div>
+	            </div>
+	
+				<%= link_to '<span>Добавить новый офис</span>', new_admin_yandex_adress_path(:map_region_id=>@map_region.id), {:class=>"minibutton btn-watch"}  %>
+				<%= link_to '<span>Вернуться к списку</span>', admin_yandex_maps_path, {:class=>"minibutton btn-watch"}  %>
+			</div>
+	      </td>
+	    </tr>
+	</table>
+</div>

@@ -1,0 +1,46 @@
+publicationblocks_001: 
+  publicationgroup_id: "1"
+  template: "<div class=\"columns modifed-last-news\">\r\n\
+    \t<div class=\"w-60\">\r\n\
+    \t\t<div class=\"col-content col-first\">\r\n\
+    \t\t\t<a2m:lastnew />\r\n\
+    \t\t</div>\r\n\
+    \t</div>\r\n\
+    \t<div class=\"w-40\">\r\n\
+    \t\t<div class=\"col-content col-last\">\r\n\
+    \t\t\t<a2m:publication_getegory>\r\n <h3><a2m:name /></h3>\r\n\
+    <a class=\"rss\" href=\"<a2m:link />.rss\"><img alt=\"RSS\" src=\"/templates/layouts/oknatisn/i/rss.png\" title=\"\xD0\x9F\xD0\xBE\xD0\xB4\xD0\xBF\xD0\xB8\xD1\x81\xD0\xB0\xD1\x82\xD1\x8C\xD1\x81\xD1\x8F \xD0\xBD\xD0\xB0 \xD0\xBD\xD0\xBE\xD0\xB2\xD0\xBE\xD1\x81\xD1\x82\xD0\xB8\" /></a>\r\n\
+    </a2m:publication_getegory>\r\n\
+    \r\n\
+    <dl class=\"list-last-news\">\r\n\
+    <a2m:items>\r\n <dt class=\"date\"><a2m:date /></dt>\r\n <dd>\r\n  <a href=\"<a2m:url />\"><a2m:title /></a>\r\n </dd>\r\n\
+    </a2m:items>\r\n\
+    </dl>\r\n\
+    \t\t\t</div>\r\n\
+    \t</div>\r\n\
+    </div>"
+  id: "1"
+  pageblock_id: "12"
+publicationblocks_002: 
+  publicationgroup_id: "1"
+  template: "<div class=\"columns modifed-last-news\">\r\n\
+    \t<div class=\"w-60\">\r\n\
+    \t\t<div class=\"col-content col-first\">\r\n\
+    \t\t\t<a2m:lastnew />\r\n\
+    \t\t</div>\r\n\
+    \t</div>\r\n\
+    \t<div class=\"w-40\">\r\n\
+    \t\t<div class=\"col-content col-last\">\r\n\
+    \t\t\t<a2m:publication_getegory>\r\n <h3><a2m:name /></h3>\r\n\
+    <a class=\"rss\" href=\"<a2m:link />.rss\"><img alt=\"RSS\" src=\"/templates/layouts/oknatisn/i/rss.png\" title=\"\xD0\x9F\xD0\xBE\xD0\xB4\xD0\xBF\xD0\xB8\xD1\x81\xD0\xB0\xD1\x82\xD1\x8C\xD1\x81\xD1\x8F \xD0\xBD\xD0\xB0 \xD0\xBD\xD0\xBE\xD0\xB2\xD0\xBE\xD1\x81\xD1\x82\xD0\xB8\" /></a>\r\n\
+    </a2m:publication_getegory>\r\n\
+    \r\n\
+    <dl class=\"list-last-news\">\r\n\
+    <a2m:items>\r\n <dt class=\"date\"><a2m:date /></dt>\r\n <dd>\r\n  <a href=\"<a2m:url />\"><a2m:title /></a>\r\n </dd>\r\n\
+    </a2m:items>\r\n\
+    </dl>\r\n\
+    \t\t\t</div>\r\n\
+    \t</div>\r\n\
+    </div>"
+  id: "2"
+  pageblock_id: "23"

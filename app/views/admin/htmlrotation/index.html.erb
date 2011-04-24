@@ -1,0 +1,34 @@
+<script type="text/javascript" src="/javascripts/admin/htmlrotate.js">
+</script>
+<h3>Ротация HTML текста (<%= link_to "Добавить", {:action=>"new", :controller=>"admin/htmlrotation"} %>)</h3>
+<div class="content">
+  <table style="width:100%">
+    <tbody>
+      <tr>
+        <th>Содержимое</th>
+        <th>Фильтр</th>
+        <th>Действия</th>
+      </tr>
+      <% @rotates.each do |item| %>
+      <tr>
+        <td>
+          <%= h(item.content) %>
+        </td>
+        <td>
+          <% if item.usefilter %>
+          MarkDown
+          <% else %>
+          Не используется
+          <% end %>
+        </td>
+        <td>
+          <% form_for :item, :url=>{:action=>"destroy", :controller=>"admin/htmlrotation", :id=>item.id}, :html=>{:method=>:delete} do |form| %>
+          <%= submit_tag "Удалить" %>
+          <% end %>
+          <%= link_to "Редактировать", {:action=>"edit" , :controller=>"admin/htmlrotation", :id=>item.id} %>
+        </td>
+      </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>

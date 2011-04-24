@@ -1,0 +1,25 @@
+<%= javascript_include_tag :ckeditor %>
+<div class="page-wrapper container">
+  <table class="null-table full content-layout">
+    <tr>
+      <td class="header" colspan="2">
+        <h1 style=" background-image:url(/images/adminsystem/icons/48/content.png);">Управление блоками</h1>
+      </td>
+    </tr>
+    <tr>
+      <td class="column-center">
+        <p class="roundborder notice information">
+          <i class="notice icon">&nbsp;</i>
+          HTML блок - это статичное содержимое страницы или элемента страницы.
+          Пере Вами достаточно мощный интерфейс управления содержимым,
+          но даже новичек разберется что обозначают все эти кнопочки...
+        </p>
+
+        <% form_for :item, :url=>{:action=>"save", :controller=>"HtmlBlockExt", :id=>@item.id} do |f| %>
+          <%= f.cktext_area :content, :swf_params=>{:assetable_type=>'Demo', :assetable_id=>0}, :width => 700 %>
+        <%= submit_tag "Сохранить" %>
+        <% end %>
+      </td>
+    </tr>
+  </table>
+</div>

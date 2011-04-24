@@ -1,0 +1,13 @@
+<ul class="breadcrumbs">
+  <li>
+    <%= link_to "Дерево страниц", {:action=>"index", :controller=>"NavigationExt"}, {:class=>"ajax"} %>
+  </li>
+  <li>
+    <%= link_to @selpage.title, "#" %>
+  </li>
+  <li><span>Контейнеры и модули</span></li>
+</ul>
+
+<div>
+  <%= parts_list(@selpage) %>
+</div>

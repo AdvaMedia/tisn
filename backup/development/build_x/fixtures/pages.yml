@@ -1,0 +1,493 @@
+pages_030: 
+  updated_at: 2010-07-05 11:06:24
+  title: "\xD0\x9E\xD0\xBA\xD0\xBE\xD0\xBD\xD0\xBD\xD0\xB0\xD1\x8F \xD1\x81\xD0\xB8\xD1\x81\xD1\x82\xD0\xB5\xD0\xBC\xD0\xB0 Grain Lider"
+  template: oknatist_child
+  self_title: "\xD0\x9E\xD0\xBA\xD0\xBE\xD0\xBD\xD0\xBD\xD0\xB0\xD1\x8F \xD1\x81\xD0\xB8\xD1\x81\xD1\x82\xD0\xB5\xD0\xBC\xD0\xB0 Grain Lider"
+  id: "31"
+  description: ""
+  contenttype: html
+  segment: profiles/grain
+  full_url: /profiles/grain
+  order_num: "0"
+  created_at: 2010-07-05 11:06:24
+  keywords: ""
+pages_019: 
+  updated_at: 2010-06-08 02:46:06
+  title: !binary |
+    0J7RgdGC0LXQutC70LXQvdC40LU=
+
+  template: oknatist_child
+  self_title: !binary |
+    0J7RgdGC0LXQutC70LXQvdC40LU=
+
+  id: "20"
+  description: ""
+  contenttype: html
+  segment: service/glassing
+  full_url: /service/glassing
+  order_num: "0"
+  created_at: 2010-06-08 02:44:05
+  keywords: ""
+pages_008: 
+  updated_at: 2010-06-07 14:55:07
+  title: !binary |
+    0JTQvtC60YPQvNC10L3RgtCw0YbQuNGP
+
+  template: oknatist_child
+  self_title: !binary |
+    0JTQvtC60YPQvNC10L3RgtCw0YbQuNGP
+
+  id: "8"
+  description: ""
+  contenttype: html
+  segment: documentation
+  full_url: /documentation
+  order_num: "0"
+  created_at: 2010-06-07 14:55:07
+  keywords: ""
+pages_031: 
+  updated_at: 2010-07-06 07:09:42
+  title: Siegenia
+  template: oknatist_child
+  self_title: Siegenia
+  id: "32"
+  description: ""
+  contenttype: html
+  segment: product/accessories/siegenia
+  full_url: /product/accessories/siegenia
+  order_num: "0"
+  created_at: 2010-07-06 07:09:42
+  keywords: ""
+pages_020: 
+  updated_at: 2010-06-08 02:47:46
+  title: "\xD0\x93\xD0\xB8\xD0\xB1\xD0\xBA\xD0\xB0 \xD0\xB0\xD1\x80\xD0\xBE\xD0\xBA"
+  template: oknatist_child
+  self_title: "\xD0\x93\xD0\xB8\xD0\xB1\xD0\xBA\xD0\xB0 \xD0\xB0\xD1\x80\xD0\xBE\xD0\xBA"
+  id: "21"
+  description: ""
+  contenttype: html
+  segment: service/flexible-arches
+  full_url: /service/flexible-arches
+  order_num: "0"
+  created_at: 2010-06-08 02:47:46
+  keywords: ""
+pages_009: 
+  updated_at: 2010-06-07 19:19:59
+  title: "\xD0\x98\xD0\xBD\xD1\x84\xD0\xBE\xD1\x80\xD0\xBC\xD0\xB0\xD1\x86\xD0\xB8\xD1\x8F \xD0\xB4\xD0\xBB\xD1\x8F \xD0\xB4\xD0\xB8\xD0\xBB\xD0\xBB\xD0\xB5\xD1\x80\xD0\xBE\xD0\xB2"
+  template: oknatist_child
+  self_title: "\xD0\x98\xD0\xBD\xD1\x84\xD0\xBE\xD1\x80\xD0\xBC\xD0\xB0\xD1\x86\xD0\xB8\xD1\x8F \xD0\xB4\xD0\xBB\xD1\x8F \xD0\xB4\xD0\xB8\xD0\xBB\xD0\xBB\xD0\xB5\xD1\x80\xD0\xBE\xD0\xB2"
+  id: "9"
+  description: ""
+  contenttype: html
+  segment: about-company/information-for-dealers
+  full_url: /about-company/information-for-dealers
+  order_num: "0"
+  created_at: 2010-06-07 19:18:24
+  keywords: ""
+pages_032: 
+  updated_at: 2010-07-06 07:10:50
+  title: Vorne
+  template: oknatist_child
+  self_title: Vorne
+  id: "33"
+  description: ""
+  contenttype: html
+  segment: product/accessories/vorne
+  full_url: /product/accessories/vorne
+  order_num: "0"
+  created_at: 2010-07-06 07:10:50
+  keywords: ""
+pages_021: 
+  updated_at: 2010-06-08 02:50:03
+  title: "\xD0\x97\xD0\xB0\xD0\xBC\xD0\xB5\xD1\x80 \xD0\xBE\xD0\xBA\xD0\xBE\xD0\xBD"
+  template: oknatist_child
+  self_title: "\xD0\x97\xD0\xB0\xD0\xBC\xD0\xB5\xD1\x80 \xD0\xBE\xD0\xBA\xD0\xBE\xD0\xBD"
+  id: "22"
+  description: ""
+  contenttype: html
+  segment: service/measuring-windows
+  full_url: /service/measuring-windows
+  order_num: "0"
+  created_at: 2010-06-08 02:50:03
+  keywords: ""
+pages_010: 
+  updated_at: 2010-06-07 19:26:03
+  title: "\xD0\x9A\xD0\xBE\xD1\x80\xD0\xBF\xD0\xBE\xD1\x80\xD0\xB0\xD1\x82\xD0\xB8\xD0\xB2\xD0\xBD\xD1\x8B\xD0\xBC \xD0\xBA\xD0\xBB\xD0\xB8\xD0\xB5\xD0\xBD\xD1\x82\xD0\xB0\xD0\xBC"
+  template: oknatist_child
+  self_title: "\xD0\x9A\xD0\xBE\xD1\x80\xD0\xBF\xD0\xBE\xD1\x80\xD0\xB0\xD1\x82\xD0\xB8\xD0\xB2\xD0\xBD\xD1\x8B\xD0\xBC \xD0\xBA\xD0\xBB\xD0\xB8\xD0\xB5\xD0\xBD\xD1\x82\xD0\xB0\xD0\xBC"
+  id: "10"
+  description: ""
+  contenttype: html
+  segment: about-company/corporate-clients
+  full_url: /about-company/corporate-clients
+  order_num: "0"
+  created_at: 2010-06-07 19:24:44
+  keywords: ""
+pages_033: 
+  updated_at: 2010-07-19 11:33:44
+  title: Funke
+  template: oknatist_child
+  self_title: "\xD0\x9F\xD1\x80\xD0\xBE\xD1\x84\xD0\xB8\xD0\xBB\xD1\x8C\xD0\xBD\xD1\x8B\xD0\xB5 \xD1\x81\xD0\xB8\xD1\x81\xD1\x82\xD0\xB5\xD0\xBC\xD1\x8B Funke"
+  id: "34"
+  description: ""
+  contenttype: paged_block
+  segment: profiles/funke
+  full_url: /profiles/funke
+  order_num: "0"
+  created_at: 2010-07-19 11:31:15
+  keywords: ""
+pages_022: 
+  updated_at: 2010-06-08 02:52:03
+  title: !binary |
+    0JTQvtGB0YLQsNCy0LrQsA==
+
+  template: oknatist_child
+  self_title: !binary |
+    0JTQvtGB0YLQsNCy0LrQsA==
+
+  id: "23"
+  description: ""
+  contenttype: html
+  segment: service/delivery
+  full_url: /service/delivery
+  order_num: "0"
+  created_at: 2010-06-08 02:52:03
+  keywords: ""
+pages_011: 
+  updated_at: 2010-06-07 19:31:34
+  title: !binary |
+    0JrQvtC90YLQsNC60YLRiw==
+
+  template: oknatist_child
+  self_title: !binary |
+    0JrQvtC90YLQsNC60YLRiw==
+
+  id: "11"
+  description: ""
+  contenttype: html
+  segment: about-company/contacts
+  full_url: /about-company/contacts
+  order_num: "0"
+  created_at: 2010-06-07 19:31:34
+  keywords: ""
+pages_023: 
+  updated_at: 2010-06-08 02:58:10
+  title: !binary |
+    0KHQtdGA0YLQuNGE0LjQutCw0YLRiw==
+
+  template: oknatist_child
+  self_title: !binary |
+    0KHQtdGA0YLQuNGE0LjQutCw0YLRiw==
+
+  id: "24"
+  description: ""
+  contenttype: html
+  segment: documentation/certificates
+  full_url: /documentation/certificates
+  order_num: "0"
+  created_at: 2010-06-08 02:58:10
+  keywords: ""
+pages_012: 
+  updated_at: 2010-06-07 19:38:28
+  title: "\xD0\xA0\xD0\xB5\xD0\xBA\xD0\xBB\xD0\xB0\xD0\xBC\xD0\xBD\xD0\xB0\xD1\x8F \xD0\xBF\xD0\xBE\xD0\xB4\xD0\xB4\xD0\xB5\xD1\x80\xD0\xB6\xD0\xBA\xD0\xB0"
+  template: oknatist_child
+  self_title: "\xD0\xA0\xD0\xB5\xD0\xBA\xD0\xBB\xD0\xB0\xD0\xBC\xD0\xBD\xD0\xB0\xD1\x8F \xD0\xBF\xD0\xBE\xD0\xB4\xD0\xB4\xD0\xB5\xD1\x80\xD0\xB6\xD0\xBA\xD0\xB0"
+  id: "12"
+  description: ""
+  contenttype: html
+  segment: about-company/advertising-support
+  full_url: /about-company/advertising-support
+  order_num: "0"
+  created_at: 2010-06-07 19:38:28
+  keywords: ""
+pages_001: 
+  updated_at: 2010-06-24 09:02:57
+  title: "\xD0\x9E\xD0\xBA\xD0\xBD\xD0\xB0 \xD0\xA2\xD0\xB8\xD0\xA1\xD0\x9D"
+  template: oknatisn
+  self_title: ""
+  id: "1"
+  description: ""
+  contenttype: html
+  segment: ""
+  full_url: /
+  order_num: "0"
+  created_at: 2010-06-07 08:17:14
+  keywords: ""
+pages_024: 
+  updated_at: 2010-06-08 03:00:52
+  title: "\xD0\x93\xD0\x9E\xD0\xA1\xD0\xA2\xD1\x8B \xD0\xB8 \xD0\xA1\xD0\x9D\xD0\x98\xD0\x9F\xD1\x8B"
+  template: oknatist_child
+  self_title: "\xD0\x93\xD0\x9E\xD0\xA1\xD0\xA2\xD1\x8B \xD0\xB8 \xD0\xA1\xD0\x9D\xD0\x98\xD0\x9F\xD1\x8B"
+  id: "25"
+  description: ""
+  contenttype: html
+  segment: documentation/state-standards-and-snips
+  full_url: /documentation/state-standards-and-snips
+  order_num: "0"
+  created_at: 2010-06-08 03:00:52
+  keywords: ""
+pages_013: 
+  updated_at: 2010-06-07 19:44:37
+  title: "\xD0\x9F\xD0\xBB\xD0\xB0\xD1\x81\xD1\x82\xD0\xB8\xD0\xBA\xD0\xBE\xD0\xB2\xD1\x8B\xD0\xB5 \xD0\xBE\xD0\xBA\xD0\xBD\xD0\xB0 \xD0\xB8 \xD0\xB4\xD0\xB2\xD0\xB5\xD1\x80\xD0\xB8"
+  template: oknatist_child
+  self_title: "\xD0\x9F\xD0\xBB\xD0\xB0\xD1\x81\xD1\x82\xD0\xB8\xD0\xBA\xD0\xBE\xD0\xB2\xD1\x8B\xD0\xB5 \xD0\xBE\xD0\xBA\xD0\xBD\xD0\xB0 \xD0\xB8 \xD0\xB4\xD0\xB2\xD0\xB5\xD1\x80\xD0\xB8"
+  id: "13"
+  description: ""
+  contenttype: html
+  segment: product/plastic-windows-and-doors
+  full_url: /product/plastic-windows-and-doors
+  order_num: "0"
+  created_at: 2010-06-07 19:44:37
+  keywords: ""
+pages_002: 
+  updated_at: 2010-07-04 18:50:20
+  title: !binary |
+    0J/RgNC+0LTRg9C60YbQuNGP
+
+  template: oknatist_child
+  self_title: !binary |
+    0J/RgNC+0LTRg9C60YbQuNGP
+
+  id: "2"
+  description: ""
+  contenttype: html
+  segment: product
+  full_url: /product
+  order_num: "0"
+  created_at: 2010-06-07 13:23:08
+  keywords: ""
+pages_025: 
+  updated_at: 2010-06-08 03:03:51
+  title: !binary |
+    0JrQsNGC0LDQu9C+0LPQuA==
+
+  template: oknatist_child
+  self_title: !binary |
+    0JrQsNGC0LDQu9C+0LPQuA==
+
+  id: "26"
+  description: ""
+  contenttype: html
+  segment: documentation/catalogs
+  full_url: /documentation/catalogs
+  order_num: "0"
+  created_at: 2010-06-08 03:03:51
+  keywords: ""
+pages_014: 
+  updated_at: 2010-06-07 19:49:46
+  title: "\xD0\xA1\xD1\x82\xD0\xBE\xD0\xB8\xD0\xBC\xD0\xBE\xD1\x81\xD1\x82\xD1\x8C \xD0\xBE\xD0\xBA\xD0\xBE\xD0\xBD"
+  template: oknatist_child
+  self_title: "\xD0\xA1\xD1\x82\xD0\xBE\xD0\xB8\xD0\xBC\xD0\xBE\xD1\x81\xD1\x82\xD1\x8C \xD0\xBE\xD0\xBA\xD0\xBE\xD0\xBD"
+  id: "14"
+  description: ""
+  contenttype: html
+  segment: product/how-much-does-windows
+  full_url: /product/how-much-does-windows
+  order_num: "0"
+  created_at: 2010-06-07 19:49:46
+  keywords: ""
+pages_003: 
+  updated_at: 2010-06-07 14:28:45
+  title: "\xD0\x9E \xD0\xBA\xD0\xBE\xD0\xBC\xD0\xBF\xD0\xB0\xD0\xBD\xD0\xB8\xD0\xB8 \"\xD0\x9E\xD0\xBA\xD0\xBD\xD0\xB0 \xD0\xA2\xD0\xB8\xD0\xA1\xD0\x9D\""
+  template: oknatist_child
+  self_title: "\xD0\x9E \xD0\xBA\xD0\xBE\xD0\xBC\xD0\xBF\xD0\xB0\xD0\xBD\xD0\xB8\xD0\xB8 \"\xD0\x9E\xD0\xBA\xD0\xBD\xD0\xB0 \xD0\xA2\xD0\xB8\xD0\xA1\xD0\x9D\""
+  id: "3"
+  description: ""
+  contenttype: html
+  segment: about-company
+  full_url: /about-company
+  order_num: "0"
+  created_at: 2010-06-07 14:28:45
+  keywords: ""
+pages_026: 
+  updated_at: 2010-06-08 03:05:47
+  title: !binary |
+    0JPQu9C+0YHRgdCw0YDQuNC5
+
+  template: oknatist_child
+  self_title: !binary |
+    0JPQu9C+0YHRgdCw0YDQuNC5
+
+  id: "27"
+  description: ""
+  contenttype: html
+  segment: documentation/glossary
+  full_url: /documentation/glossary
+  order_num: "0"
+  created_at: 2010-06-08 03:05:47
+  keywords: ""
+pages_015: 
+  updated_at: 2010-06-07 19:51:41
+  title: !binary |
+    0JPQsNC70LXRgNC10Y8=
+
+  template: oknatist_child
+  self_title: !binary |
+    0JPQsNC70LXRgNC10Y8=
+
+  id: "15"
+  description: ""
+  contenttype: html
+  segment: product/gallery
+  full_url: /product/gallery
+  order_num: "0"
+  created_at: 2010-06-07 19:51:41
+  keywords: ""
+pages_004: 
+  updated_at: 2010-06-07 14:38:17
+  title: !binary |
+    0J/RgNC+0LjQt9Cy0L7QtNGB0YLQstC+
+
+  template: oknatist_child
+  self_title: !binary |
+    0J/RgNC+0LjQt9Cy0L7QtNGB0YLQstC+
+
+  id: "4"
+  description: ""
+  contenttype: html
+  segment: manufacture
+  full_url: /manufacture
+  order_num: "0"
+  created_at: 2010-06-07 14:38:17
+  keywords: ""
+pages_027: 
+  updated_at: 2010-06-29 12:55:23
+  title: !binary |
+    0KHRgtCw0YLRjNC4
+
+  template: oknatist_child
+  self_title: !binary |
+    0KHRgtCw0YLRjNC4
+
+  id: "28"
+  description: ""
+  contenttype: publications
+  segment: documentation/articles
+  full_url: /documentation/articles
+  order_num: "0"
+  created_at: 2010-06-08 03:06:42
+  keywords: ""
+pages_016: 
+  updated_at: 2010-07-05 10:06:45
+  title: !binary |
+    0J/RgNC+0YTQuNC70Lg=
+
+  template: oknatist_child
+  self_title: !binary |
+    0J/RgNC+0YTQuNC70Lg=
+
+  id: "16"
+  description: ""
+  contenttype: html
+  segment: profiles
+  full_url: /profiles
+  order_num: "0"
+  created_at: 2010-06-07 19:57:37
+  keywords: ""
+pages_005: 
+  updated_at: 2010-06-07 14:40:18
+  title: "\xD0\x9D\xD0\xB0\xD1\x88\xD0\xB8 \xD1\x83\xD1\x81\xD0\xBB\xD1\x83\xD0\xB3\xD0\xB8"
+  template: oknatist_child
+  self_title: "\xD0\x9D\xD0\xB0\xD1\x88\xD0\xB8 \xD1\x83\xD1\x81\xD0\xBB\xD1\x83\xD0\xB3\xD0\xB8"
+  id: "5"
+  description: ""
+  contenttype: html
+  segment: service
+  full_url: /service
+  order_num: "0"
+  created_at: 2010-06-07 14:40:18
+  keywords: ""
+pages_028: 
+  updated_at: 2010-06-17 09:26:36
+  title: !binary |
+    0J3QvtCy0L7RgdGC0Lg=
+
+  template: oknatist_child
+  self_title: !binary |
+    0J3QvtCy0L7RgdGC0Lg=
+
+  id: "29"
+  description: ""
+  contenttype: publications
+  segment: news
+  full_url: /news
+  order_num: "0"
+  created_at: 2010-06-17 09:26:36
+  keywords: ""
+pages_017: 
+  updated_at: 2010-06-07 20:13:18
+  title: !binary |
+    0KTRg9GA0L3QuNGC0YPRgNCw
+
+  template: oknatist_child
+  self_title: !binary |
+    0KTRg9GA0L3QuNGC0YPRgNCw
+
+  id: "18"
+  description: ""
+  contenttype: html
+  segment: product/accessories
+  full_url: /product/accessories
+  order_num: "0"
+  created_at: 2010-06-07 20:13:18
+  keywords: ""
+pages_006: 
+  updated_at: 2010-06-07 14:43:45
+  title: !binary |
+    0JrQsNC70YzQutGD0LvRj9GC0L7RgA==
+
+  template: oknatist_child
+  self_title: !binary |
+    0JrQsNC70YzQutGD0LvRj9GC0L7RgA==
+
+  id: "6"
+  description: ""
+  contenttype: html
+  segment: calculate-the-cost
+  full_url: /calculate-the-cost
+  order_num: "0"
+  created_at: 2010-06-07 14:43:45
+  keywords: ""
+pages_029: 
+  updated_at: 2010-07-05 10:09:52
+  title: "\xD0\x9F\xD1\x80\xD0\xBE\xD1\x84\xD0\xB8\xD0\xBB\xD1\x8C\xD0\xBD\xD1\x8B\xD0\xB5 \xD1\x81\xD0\xB8\xD1\x81\xD1\x82\xD0\xB5\xD0\xBC\xD1\x8B Deceuninck"
+  template: oknatist_child
+  self_title: "\xD0\x9F\xD1\x80\xD0\xBE\xD1\x84\xD0\xB8\xD0\xBB\xD1\x8C\xD0\xBD\xD1\x8B\xD0\xB5 \xD1\x81\xD0\xB8\xD1\x81\xD1\x82\xD0\xB5\xD0\xBC\xD1\x8B Deceuninck"
+  id: "30"
+  description: ""
+  contenttype: paged_block
+  segment: profiles/deceuninck
+  full_url: /profiles/deceuninck
+  order_num: "0"
+  created_at: 2010-07-05 10:09:40
+  keywords: ""
+pages_018: 
+  updated_at: 2010-06-08 07:22:54
+  title: !binary |
+    0JrQvtC80L/Qu9C10LrRgtGD0Y7RidC40LU=
+
+  template: oknatist_child
+  self_title: !binary |
+    0JrQvtC80L/Qu9C10LrRgtGD0Y7RidC40LU=
+
+  id: "19"
+  description: ""
+  contenttype: paged_block
+  segment: product-windows-kits
+  full_url: /product-windows-kits
+  order_num: "0"
+  created_at: 2010-06-07 20:16:11
+  keywords: ""
+pages_007: 
+  updated_at: 2010-06-29 11:57:28
+  title: "\xD0\xA7\xD0\xB0\xD1\x81\xD1\x82\xD1\x8B\xD0\xB5 \xD0\xB2\xD0\xBE\xD0\xBF\xD1\x80\xD0\xBE\xD1\x81\xD1\x8B"
+  template: oknatist_child
+  self_title: "\xD0\xA7\xD0\xB0\xD1\x81\xD1\x82\xD1\x8B\xD0\xB5 \xD0\xB2\xD0\xBE\xD0\xBF\xD1\x80\xD0\xBE\xD1\x81\xD1\x8B"
+  id: "7"
+  description: ""
+  contenttype: faq
+  segment: faq
+  full_url: /faq
+  order_num: "0"
+  created_at: 2010-06-07 14:46:50
+  keywords: ""

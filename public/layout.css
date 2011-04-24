@@ -1,0 +1,39 @@
+#site_center {text-align:center; background:url(images/bg_top.gif) top left repeat-x;}
+#main {width:766px; margin:0 auto; text-align:left;}
+
+
+.col_1, .col_2, .col_3, .column1, .column2, .column3 { float:left;}
+
+/*======= index.html =======*/
+#page1 #content .col_1 { width:362px;}
+#page1 #content .col_2 { width:345px;}
+/*=========================*/
+
+/*======= index-1.html =======*/
+#page2 #content .col_1 {width:479px;}
+#page2 #content .col_2 { width:224px;}
+/*=========================*/
+
+/*======= index-2.html =======*/
+#page3 #content .col_1 {width:362px;}
+#page3 #content .col_2 { width:345px;}
+/*=========================*/
+
+/*======= index-3.html =======*/
+#page4 #content .col_1 {width:242px;}
+#page4 #content .col_2 { width:465px;}
+/*=========================*/
+
+/*======= index-4.html =======*/
+#page5 #content .col_1 {width:482px;}
+#page5 #content .col_2 { width:225px;}
+/*=========================*/
+
+/*======= index-5.html =======*/
+#page6 #content .col_1 { width:189px;}
+#page6 #content .col_2 { width:232px;}
+#page6 #content .col_3 { width:285px;}
+
+/*=========================*/
+
+#footer {height:103px;}

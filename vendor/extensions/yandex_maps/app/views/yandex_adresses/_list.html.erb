@@ -1,0 +1,28 @@
+<% @map_addresses.each do |map_address| %>
+  <tr>
+	<td>
+    	<%= link_to '<span>&#x2191;</span>', move_to_admin_yandex_adress_path(map_address, :direction=>"up"), :class=>"minibutton" if map_address.position > 1 %>
+		<%= link_to '<span>&#x2193;</span>', move_to_admin_yandex_adress_path(map_address, :direction=>"down"), :class=>"minibutton" if map_address.position < @map_addresses.count %>
+    </td>
+    <td>
+        <%= "#{map_address.name}<br />" unless map_address.name.empty? %>
+        <%= link_to map_address.full_address, edit_admin_yandex_adress_path(map_address), :title=>"Перейти" %>
+        <%= "<br />Телефоны: #{map_address.phones_ar * ', '}" unless map_address.phones_ar.blank? %>
+    </td>
+	  <td>
+      <% if map_address.has_map? %>
+        Офис <b>указан</b> на карте
+      <% else %>
+        Данные о карте <b>отсутствуют</b>
+      <% end %>
+    </td>
+    <% tmp_p_name = map_address.office_images.count > 0 ? "Загружено #{map_address.office_images.count} фотография(-й)" : "Нет ни одной фотки"%>
+    <td><%= link_to(tmp_p_name, admin_yandex_photos_path(:map_address_id=>map_address.id)) %></td>
+    <td>
+		<%= link_to '<span>редактировать</span>', edit_admin_yandex_adress_path(map_address), :class=>"minibutton" %>
+		<%= link_to '<span>удалить</span>', admin_yandex_adress_path(map_address), :confirm => 'Вы уверены?', :method => :delete, :class=>"minibutton" %>
+	</td>
+  </tr>
+<% end %>
+
+<br />

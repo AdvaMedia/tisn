@@ -1,0 +1,49 @@
+<div class="page-wrapper container">
+  <table class="null-table full content-layout">
+    <tr>
+      <td class="header" colspan="2">
+        <h1 style="background-image:url(/images/adminsystem/icons/48/content.png);">Список вопросов</h1>
+      </td>
+      <td class="column-right" rowspan="2">
+      </td>
+    </tr>
+    <tr>
+      <td class="column-center">
+        <% form_for :item, :url=>{:action=>"save", :id=>@item.id} do |f| %>
+          <fieldset>
+            <div class="f-row width-100">
+              <%= f.label :querist, "Вопрос задает:" %>
+              <div class="i-wrap">
+                <%= h @item.querist %>
+              </div>
+            </div>
+
+            <div class="f-row width-100">
+              <%= f.label :querytitle, "Вопрос:" %>
+              <div class="i-wrap">
+                <%= h @item.querytitle %>
+              </div>
+            </div>
+
+            <div class="f-row width-100">
+              <%= f.label :query, "Суть вопроса:" %>
+              <div class="i-wrap">
+                <%= h @item.query %>
+              </div>
+            </div>
+
+            <div class="f-row width-100">
+              <%= f.label :answer, "Ответ на вопрос:" %>
+              <div class="i-wrap">
+                <%= f.text_area :answer, :class=>"i-text", :rows=>10 %>
+                <div title="Обязательное поле" class="req">&nbsp;</div>
+              </div>
+              <span class="i-help">В это поле вписываем ответ на интересующий посетителя вопрос.</span>
+            </div>
+          </fieldset>
+        <%= f.submit "Ответить" %>
+        <% end %>
+      </td>
+    </tr>
+  </table>
+</div>

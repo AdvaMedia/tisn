@@ -1,0 +1,401 @@
+html { color: #000; background: #FFF; }
+body { height: auto !important; height: 100%; min-height: 100%; line-height: 1; color: #000; background: #fff; padding:0; }
+body,div,dl,dt,dd,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,select,button,textarea,p,blockquote,th,td { margin: 0; padding: 0; }
+table { border-collapse: collapse; border-spacing: 0; }
+fieldset,img { border: 0; }
+address,caption,cite,code,dfn,em,strong,th,var,optgroup { font-style: inherit; font-weight: inherit; }
+del,ins { text-decoration: none; }
+caption,th { text-align: left; }
+h1,h2,h3,h4,h5,h6 { font-size: 100%; font-weight: normal; }
+q:before,q:after { content: ''; }
+abbr,acronym { border: 0; font-variant: normal; }
+sup,sub  { vertical-align: baseline; }
+legend {color: #000;} /*because legend doesn't inherit in IE */
+input,button,textarea,select,optgroup,option {font-family: inherit; font-size: inherit; font-style: inherit; font-weight: inherit; }
+
+
+		
+/* UTILITES
+------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------ */
+
+.hidden { display: none; }
+.show { display: block!important; }
+.ovv { overflow:visible!important; }
+.block { margin-bottom:3em; }
+.big-block { margin-bottom:4em; }
+.no-margin { margin: 0!important; }
+.no-padding { padding: 0!important; }
+.no-bg { background: none!important; }
+.no-border, a img { border: none!important; }
+.container:after, .columns:after, .floatbox:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.img-repl { text-indent: -9999px; overflow: hidden; display: block; }
+.cc { clear: both; }
+.bold { font-weight:700; }
+.no-bold { font-weight:400; }
+.em { font-style: italic; }
+.a-left { text-align: left; }
+.a-center { text-align: center; }
+.a-right { text-align: right; }
+.center {display:block; margin:0 auto 1.5em auto; text-align:center;}
+.f-left { display:inline; float:left; margin-bottom:0.15em;  }
+.f-right { display:inline;  float: right; margin-bottom:0.15em;  }
+.icons a, .icon { padding: 1px 0 1px 20px; background-repeat: no-repeat; background-position: left center; }
+
+/* GLOBAL STYLES
+------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------ */
+
+html { overflow:auto; }
+body { font: .8em/1.5 Arial, Helvetica, sans-serif;  } /* body height 100% */
+
+
+/* Inline Semantic Text Decoration
+------------------------------------------------*/
+
+
+/* 1. Links */
+
+a { color: #0072bc; }
+a:focus { }
+a:visited {  }
+a:hover { text-decoration:none; }
+a:active {  }
+a[rel~="nofollow"]::after { }
+a[rel~="tag"]::after { }
+a.pseudo { text-decoration:none; border-bottom:1px dashed; cursor:pointer; }
+a.pseudo:hover { border:none; }
+
+/* 2. Others */
+
+i, em { font-style: italic; }
+b, strong { font-weight:700; }
+acronym, abbr { border-bottom: 1px dotted #aaa; cursor:help; letter-spacing:0.07em; }
+cite, q { font-family: Georgia, "Times New Roman", Times, serif; font-style:italic;}
+cite { color:#969696; }
+q { color: #008000;} q:before { content: '\00AB';} q:after { content: '\00BB';}
+code { padding: 0 2px; color:#880000; }
+var { font-style:italic;}
+ins { text-decoration:underline; }
+del { text-decoration:line-through; }
+kbd, samp { font-weight:700;}
+samp { color:red;}
+sup, sub { position: relative; } sup { top: -.4em; } sub { bottom: -.3em; }
+tt { }
+
+pre, code, kbd, samp, var, tt {font-family: "Courier New", Courier, monospace;}
+
+
+/* Block Semantic Text Decoration
+------------------------------------------------*/
+
+p, table, blockquote, pre, .columns, img, hr, ul, ol, dl { margin-bottom: 1.5em; margin-top:0; }
+
+pre { border: 1px dashed #aaa; color:#00837E;  padding: 1.05em; }
+blockquote { font: italic 1.4em/1.3 Georgia, "Times New Roman", Times, serif; color: #666; background: url(../i/blockquote.png) 0 1.6em no-repeat; padding:1.5em 2.5em; }
+
+ul, ol { padding-left:3em; margin-left:0; }
+ul li, ol li { margin-bottom: .75em; }
+ul li ul, ol li ol { margin:.75em auto; }
+ol ol li { list-style-type:lower-alpha; }
+
+dl { }
+dl dt { margin-left:1em; font-weight: bold; }
+dl dd { padding-left: 3em; margin-bottom: 1.5em; }
+
+			
+/* Horizontal Menu
+------------------------------ */
+
+.menu-h { overflow: hidden;  }
+.menu-h li { float: left; list-style: none; padding: 0 .8em; }
+.menu-h a { display: block; }
+.menu-h a:hover { text-decoration: none; }
+
+			
+/* Vertical Menu
+------------------------------ */
+
+.menu-v { border-top: 1px solid #ccc; }
+.menu-v li { padding: 2px 0; list-style: none; }
+.menu-v li ul { padding-left: 1em; margin-top: 2px; }
+.menu-v li li { border: none;  }
+.menu-v a {  display: block; }
+.menu-v a:hover { text-decoration: underline; }
+
+
+			
+/* Content elements
+------------------------------------------------*/
+
+
+/* 1. Headings */
+
+h1, h2, h3, h4, h5, h6 { font: 1em/1.3 Arial, Helvetica, sans-serif; color: #000; clear:both; margin-bottom:.5em;  }
+
+h1 { font-size:2.3em; }
+h2 { font-size:2em; } 
+h3 { font-size:1.7em; } 
+h4 { font-size:1.5em; } 
+h5 { font-size:1.4em; }
+h6 { font-size:1.3em; }
+
+
+/* 2. Paragraphs */
+
+.dimmed, .highlight, .info, .note, .important, .warning { margin-bottom:1.5em; padding:1em;}
+p.dimmed, .dimmed { color:#888; }
+p.highlight, .highlight { color:#FF6600; }
+p.info, .info { background:#F8F8F8; color:#666; }
+p.note, .note { background:#f7f7f7; border-left:5px solid #0099cc; font: italic 1.4em/1.3 Georgia, "Times New Roman", Times, serif; color: #666; }
+p.important, .important { background:#FFFFEE;  color:#444400; }
+p.warning, .warning { background:#FFEEEE; color:#440000; }
+
+
+/* 3. Other */
+
+hr { background-color: #ccc; height: 1px; border-width: 0px; margin:1.5em 0; }
+
+
+/* 4. Tables  */
+
+table.null-table, 
+table.null-table td, 
+table.null-table th { border:none; padding:0; background:none; vertical-align: top;}
+table.null-table caption { margin-bottom:.5em; border-bottom: 2px solid #888;}
+
+table { width: auto; border-collapse:collapse; border-top: 2px #888 solid; border-bottom: 2px #888 solid; }
+table caption { font-variant:small-caps; }
+table.full { width: 100%; }
+table.fixed { table-layout:fixed; }
+
+th,td { padding: 0.5em; }
+thead th { color: #000; border-bottom: 2px #800 solid; }
+tbody th { background: #e0e0e0; color: #333; }
+tbody th { border-bottom: 1px solid #fff; text-align: left; }
+tbody td { border-bottom: 1px solid #eee; }
+
+
+/* 5. Images  */
+
+.content img { margin-top: .4em; }
+.content img.null-image { padding: 0!important; border: none!important; margin: 0!important; }
+img.f-left { margin-right: 1.5em; margin-bottom:1em; }
+img.f-right { margin-left: 1.5em; margin-bottom:1em;}
+
+
+/*	Columns
+------------------------------------------------*/
+
+.columns {  }
+.w-5, .w-10, .w-15, .w-20, .w-25, .w-30, .w-35, .w-40, .w-45, .w-50, .w-55, .w-60, .w-65, .w-70, .w-75, .w-80, .w-85, .w-90, .w-95, .w-100, .w-33, .w-66, .w-38, .w-62 { float: left;  }
+
+.col-content { padding-right: 6px; }
+.col-first { padding-left: 0!important; }
+.col-last { padding-right: 0!important; }
+
+.w-5, .width-5 { width: 5% }
+.w-10, .width-10 { width: 10% }
+.w-15, .width-15 { width: 15% }
+.w-20, .width-20 { width: 20% }
+.w-25, .width-25 { width: 25% }
+.w-30, .width-30 { width: 30% }
+.w-35, .width-35 { width: 35% }
+.w-40, .width-40 { width: 40% }
+.w-45, .width-45 { width: 45% }
+.w-50, .width-50 { width: 50% }
+.w-55, .width-55 { width: 55% }
+.w-60, .width-60 { width: 60% }
+.w-65, .width-65 { width: 65% }
+.w-70, .width-70 { width: 70% }
+.w-75, .width-75 { width: 75% }
+* html .w-75    { width:74.5%}
+.w-80, .width-80 { width: 80% }
+.w-85, .width-85 { width: 85% }
+.w-90, .width-90 { width: 90% }
+.w-95, .width-95 { width: 95% }
+.w-99, .width-99 { width: 99% }
+.w-100, .width-100 { width: 100% }
+
+.w-33,.width-33 { width: 33% }
+.w-66,.width-66 { width: 66% }
+
+.w-38,.width-38 { width: 38% }
+.w-62,.width-62 { width: 62% }
+
+
+/* Forms
+------------------------------------------------*/
+
+
+/* 1. Base form styles */
+
+form { margin-bottom:1.5em; }
+fieldset { border:none; margin-bottom:2.5em; }
+legend { margin:0; padding: 0 0 1em 0; font-size:1.5em }
+.f-row { margin-bottom:1.5em; }
+label { color:#000; display:inline-block; margin-bottom:.7em; font-weight:700; line-height:1.3; cursor:text; }
+label[for] { cursor:pointer; }
+
+
+/* 2. Input, Textarea, Select, Radio, Check  */
+
+input, button { vertical-align:middle; font:1.2em sans-serif; padding:2px; }
+input:focus { outline-color:#7cbdf0; }
+
+input[type="text"], 
+textarea, 
+.chrome select,
+.ie select,
+.gecko select,
+.konqueror select,
+.safari3 select { border:1px solid ; border-color:#abadb3 #dbdfe6 #e3e9ef #e2e3ea; border-radius: 2px; -moz-border-radius: 2px; -webkit-border-radius: 2px; background:#fff url(../i/input_bg.png) 0 0 repeat-x; } /* with browser selector hack - opera bug */
+
+input[type="text"]:hover,  
+input[type="text"]:focus,
+textarea:hover,
+textarea:focus,
+select:hover,
+select:focus { border-color:#3d7bad #a4c9e3 #b7d9ed #b5cfe7; }
+
+select { padding:2px; vertical-align:middle; }
+optgroup { font-weight:700; }
+option { font-weight:400; }
+
+textarea { overflow:auto; }
+
+
+/* 3. Custom form styles  */
+
+.i-text:focus, textarea:focus, select:focus { outline-color:#7cbdf0; }
+.i-text , .i-select { width:99.5%; }
+
+.f-row, .i-checkbox, .i-radio, .i-wrap, .adding-row { position:relative; }
+.i-checkbox input, .i-radio input { position: absolute; left: 0; top: 0.42em; margin: -4px 0 0; }
+.opera .i-checkbox input, .opera .i-radio input { top:.2em; }	/*opera hack*/
+.ie8 .i-checkbox input, .ie8 .i-radio input { padding:0; }	/*ie8 hack*/
+.i-checkbox label, .i-radio label { font-weight:400;  margin-bottom:.75em; margin-left:19px; cursor:default; }
+
+.i-help { color:#888; font-size:.9em; display:block; margin:.4em 0;  }
+
+input[type="text"].i-invalid,
+textarea.i-invalid,
+select.i-invalid { background:url(../i/invalid_line.png) 0 100% repeat-x; border:1px solid #CC3300; outline:none; }
+
+.f-row .f-row { margin-top:1em; }
+.adding-row { margin:1em 0; }
+.add-row { margin-top:.3em; text-align:right; }
+.delete-row { background: url(../i/icons/16/cross.png) 50% 50% no-repeat;  }
+.row-control, .req  { position:absolute;}
+.row-control { width:20px; height:20px; right:-30px; top:2px; display:block; color:#fff; }
+.req { background: url(../i/icons/16/req.png) no-repeat 0 0; cursor:help; 
+height:10px; width:10px; left:-5px; top:-5px; }
+
+
+/* 3. Form Buttons  */
+
+.button { cursor:pointer; overflow:visible; padding:.4em 1.5em; width:auto; }
+
+
+/* PLUGINS
+------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------ */
+
+
+/* Corners
+------------------------------------------------*/
+
+.corners { overflow:hidden; position:relative; }
+.corners em.tl, .corners em.tr, .corners em.bl, .corners em.br { font-size:1px; position:absolute; }
+.corners-2 em.tl, 
+.corners-2 em.tr, 
+.corners-2 em.bl, 
+.corners-2 em.br { background-image:url(../i/corners/corners-2.png); height:4px; width:4px; }
+.corners-2 em.tl { left:-2px; top:-2px; }
+.corners-2 em.tr { right:-2px; top:-2px; }
+.corners-2 em.bl { bottom:-2px; left:-2px; }
+.corners-2 em.br { bottom:-2px; right:-2px; }
+.corners-3 em.tl, 
+.corners-3 em.tr, 
+.corners-3 em.bl, 
+.corners-3 em.br { background:url(../i/corners/corners-3.png) repeat 0 0; height:6px; width:6px; }
+.corners-3 em.tl { left:-3px; top:-3px; }
+.corners-3 em.tr { right:-3px; top:-3px; }
+.corners-3 em.bl { bottom:-3px; left:-3px; }
+.corners-3 em.br { bottom:-3px; right:-3px; }
+.corners-4 em.tl, 
+.corners-4 em.tr, 
+.corners-4 em.bl, 
+.corners-4 em.br { background:url(../i/corners/corners-4.png) repeat 0 0; height:8px; width:8px; }
+.corners-4 em.tl { left:-4px; top:-4px; }
+.corners-4 em.tr { right:-4px; top:-4px; }
+.corners-4 em.bl { bottom:-4px; left:-4px; }
+.corners-4 em.br { bottom:-4px; right:-4px; }
+.corners-5 em.tl, 
+.corners-5 em.tr, 
+.corners-5 em.bl, 
+.corners-5 em.br { background:url(../i/corners/corners-5.png) repeat 0 0 ; height:10px; width:10px; }
+.corners-5 em.tl { left:-5px; top:-5px; }
+.corners-5 em.tr { right:-5px; top:-5px; }
+.corners-5 em.bl { bottom:-5px; left:-5px; }
+.corners-5 em.br { bottom:-5px; right:-5px; }
+.corners-6 em.tl, 
+.corners-6 em.tr, 
+.corners-6 em.bl, 
+.corners-6 em.br { background:url(../i/corners/corners-6.png) repeat 0 0 ; height:12px; width:12px; }
+.corners-6 em.tl { left:-6px; top:-6px; }
+.corners-6 em.tr { right:-6px; top:-6px; }
+.corners-6 em.bl { bottom:-6px; left:-6px; }
+.corners-6 em.br { bottom:-6px; right:-6px; }
+.corners-7 em.tl, 
+.corners-7 em.tr, 
+.corners-7 em.bl, 
+.corners-7 em.br { background:url(../i/corners/corners-7.png) repeat 0 0 ; height:14px; width:14px; }
+.corners-7 em.tl { left:-7px; top:-7px; }
+.corners-7 em.tr { right:-7px; top:-7px; }
+.corners-7 em.bl { bottom:-7px; left:-7px; }
+.corners-7 em.br { bottom:-7px; right:-7px; }
+.corners-8 em.tl, 
+.corners-8 em.tr, 
+.corners-8 em.bl, 
+.corners-8 em.br { background:url(../i/corners/corners-8.png) repeat 0 0 ; height:16px; width:16px; }
+.corners-8 em.tl { left:-8px; top:-8px; }
+.corners-8 em.tr { right:-8px; top:-8px; }
+.corners-8 em.bl { bottom:-8px; left:-8px; }
+.corners-8 em.br { bottom:-8px; right:-8px; }
+.corners-9 em.tl, 
+.corners-9 em.tr, 
+.corners-9 em.bl, 
+.corners-9 em.br { background:url(../i/corners/corners-9.png) repeat 0 0 ; height:18px; width:18px; }
+.corners-9 em.tl { left:-9px; top:-9px; }
+.corners-9 em.tr { right:-9px; top:-9px; }
+.corners-9 em.bl { bottom:-9px; left:-9px; }
+.corners-9 em.br { bottom:-9px; right:-9px; }
+.corners-10 em.tl, 
+.corners-10 em.tr, 
+.corners-10 em.bl, 
+.corners-10 em.br { background:url(../i/corners/corners-10.png) repeat 0 0 ; height:20px; width:20px; }
+.corners-10 em.tl { left:-10px; top:-10px; }
+.corners-10 em.tr { right:-10px; top:-10px; }
+.corners-10 em.bl { bottom:-10px; left:-10px; }
+.corners-10 em.br { bottom:-10px; right:-10px; }
+
+
+/* Roundborders
+------------------------------------------------*/
+
+.roundborder  { border:1px solid #E0E0E0; padding:10px; }
+.roundborder:before {
+background:url(../i/corners/roundborder_top_right.gif) no-repeat 100% 0;
+content:url(../i/corners/roundborder_top_left.gif);
+display:block;
+height:5px;
+margin:-11px -11px 5px;
+}
+.roundborder:after {
+background:url(../i/corners/roundborder_bottom_right.gif) no-repeat 100% 0;
+content:url(../i/corners/roundborder_bottom_left.gif);
+display:block;
+height:5px;
+margin:5px -11px -11px;
+}

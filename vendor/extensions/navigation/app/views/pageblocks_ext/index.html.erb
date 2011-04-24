@@ -1,0 +1,73 @@
+<div class="page-wrapper container">
+  <table class="null-table full content-layout">
+    <tr>
+      <td class="header" colspan="2">
+        <h1 style=" background-image:url(/images/adminsystem/icons/48/content.png);">Управление блоками</h1>
+      </td>
+      <td class="column-right" rowspan="2">
+        <!-- Здась будет панель управления -->
+        <%= render :partial=>"blockspanel" %>
+      </td>
+    </tr>
+    <tr>
+      <td class="column-left">
+        <!-- Тут будет список фильтрации блоков -->
+      </td>
+      <td class="column-center">
+        <p class="roundborder notice information">
+          <i class="notice icon">&nbsp;</i>
+          Главное меню сайта отображается на всех страницах и служит основным
+          навигационным элементом на сайте.
+          Оно располагается в верхней части сайта и имеет горизонтальное направление.
+          Родительские пункты меню скрыты от поисковых систем.</p>
+
+        <table class="full null-table listing selecting vam">
+          <colgroup>
+            <col />
+            <col width="200px" />
+            <col width="32px" />
+          </colgroup>
+          <% @regions.each do |region|%>
+            <% reg = PageRegion.new(region, @page) %>
+            <tr>
+              <td class="region-title" colspan="3">
+                <h4><%= "#{reg.title} [#{reg.name}]" %></h4>
+              </td>
+            </tr>
+            <% reg.blocks.each do |block| %>
+              <tr class="item on">
+                <td>
+                  <div class="level-0">
+                    <%= link_to block.title||block.name, block.engine.edit_link_params(block) %>
+                  </div>
+                </td>
+                <td>
+                  <%= link_to "Настройка", {:action=>"edit", :id=>block.id}, :html=>{:class=>"name icon block"} %>
+                  <%= link_to "Удалить", {:action=>"delete", :id=>block.id}, :html=>{:class=>"name icon block"} %>
+                </td>
+              </tr>
+            <% end %>
+          <% end %>
+          <tr>
+            <td class="region-title" colspan="3" style="background:none repeat scroll 0 0 red;">
+              <h4>Отключенные</h4>
+            </td>
+          </tr>
+          <% @disabled_blocks.each do |block| %>
+            <tr class="item off">
+              <td>
+                <div class="level-0">
+                  <%= link_to block.title||block.name, block.engine.edit_link_params(block) %>
+                </div>
+              </td>
+              <td>
+                <%= link_to "Настройка", {:action=>"edit", :id=>block.id}, :html=>{:class=>"name icon block"} %>
+                <%= link_to "Удалить", {:action=>"delete", :id=>block.id}, :html=>{:class=>"name icon block"} %>
+              </td>
+            </tr>
+          <% end %>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>

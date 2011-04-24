@@ -1,0 +1,14 @@
+publicationgroups_001: 
+  name: "\xD0\x94\xD1\x80\xD1\x83\xD0\xB3\xD0\xB8\xD0\xB5 \xD0\xBD\xD0\xBE\xD0\xB2\xD0\xBE\xD1\x81\xD1\x82\xD0\xB8 \xD0\xBA\xD0\xBE\xD0\xBC\xD0\xBF\xD0\xB0\xD0\xBD\xD0\xB8\xD0\xB8"
+  updated_at: 2010-06-29 12:43:54
+  tag: news
+  id: "1"
+  created_at: 2010-06-17 09:25:13
+publicationgroups_002: 
+  name: !binary |
+    0KHRgtCw0YLRjNC4
+
+  updated_at: 2010-06-29 12:53:29
+  tag: articles
+  id: "2"
+  created_at: 2010-06-29 12:53:29

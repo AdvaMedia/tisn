@@ -1,0 +1,30 @@
+<div id="regme">
+      <% form_tag :action=>"index" do |form| %>
+        <h2 class="block">Регистрация на сайте</h2>
+        <div class="roundborder">
+          <div class="columns corners corners-4" style="background:#F3F3F3;">
+            <div class="w-50">
+              <% if flash[:notice]%><p><%=flash[:notice]%></p>
+              <%end%>
+              <div class="col-content" style="margin:2em;">
+                <ul>
+                  <li><label for="usermail">Электронный адрес:</label></li>
+                  <li><div class="req"><input name="login_name" id="usermail" type="text" class="i-text" value="<%= @username %>"/><div title="Обязательное поле">&nbsp;</div></div></li>
+                  <li><label for="userpass">Придумайте пароль:</label></li>
+                  <li><div class="req"><input name="password" id="userpass" type="password" class="i-text"/><div title="Обязательное поле">&nbsp;</div></div></li>
+                </ul>
+                <ul class="menu-h ui-button underform" style="margin:0;">
+                  <li class="blue_button">
+                    <button type="submit" value="Сохранить"><span>Войти</span></button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="w-50" style="background:#fff;">
+            </div>
+            <em class="tl">&nbsp;</em><em class="bl">&nbsp;</em>
+          </div>
+          <div class="disableform" style="display:none;">&nbsp;</div><!--DISABLE FORM BLOCK-->
+        </div>
+      <% end %>
+</div>

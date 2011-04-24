@@ -1,0 +1,83 @@
+<%= javascript_include_tag :ckeditor %>
+<div class="page-wrapper container">
+  <% form_for :item, :url=>{:action=>"create", :id=>params[:id]} do |f| %>
+    <table class="null-table full content-layout">
+      <tr>
+        <td class="header" colspan="2">
+          <h1 style="background-image:url(/images/adminsystem/icons/48/content.png);">Редактирование вкладки [<%= @group.name %>]</h1>
+        </td>
+        <td class="column-right" rowspan="2">
+          <!--Control panel-->
+          <div class="control-panel">
+            <a href="#" class="help">Помощь</a>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td class="column-center">
+          <fieldset>
+            <div class="f-row width-100">
+              <%= f.label :name, "Заголовок вкладки" %>
+              <div class="i-wrap">
+                <%= f.text_field :name, :class=>"i-text" %>
+                <div title="Обязательное поле" class="req">&nbsp;</div>
+              </div>
+              <span class="i-help">Заголовок вкладки.</span>
+            </div>
+
+            <div class="f-row width-100">
+              <%= f.label :tag, "Тэг вкладки" %>
+              <div class="i-wrap">
+                <%= f.text_field :tag, :class=>"i-text" %>
+                <div title="Обязательное поле" class="req">&nbsp;</div>
+              </div>
+              <span class="i-help">Обычно, тэгом является сегмент URL, поэтому разрешаются только значения [a..z].</span>
+            </div>
+
+            <div class="f-row width-100">
+              <%= f.label :content, "Содержание вкладки" %>
+              <div class="i-wrap">
+                <%= f.cktext_area :content, :swf_params=>{:assetable_type=>'Demo', :assetable_id=>0}, :width => "100%" %>
+                <div title="Обязательное поле" class="req">&nbsp;</div>
+              </div>
+              <span class="i-help">Этот контент будет подгружен во вкладку.</span>
+            </div>
+
+          </fieldset>
+        </td>
+        <td class="column-advanced">
+          <fieldset>
+            <div class="f-row width-100">
+              <%= f.label :image_url, "URL картинки" %>
+              <div class="i-wrap">
+                <%= f.text_field :image_url, :class=>"i-text" %>
+              </div>
+              <span class="i-help">Вставьте путь к изображению, которое будет показано на вкладке.</span>
+            </div>
+
+            <div class="f-row width-100">
+              <%= f.label :level, "Вес вкладки" %>
+              <div class="i-wrap">
+                <%= f.select :level, (-20..20), { :include_blank => false }, {:class=>"i-select"} %>
+              </div>
+              <span class="i-help">Чем меньше вес, тем выше вкладка.</span>
+            </div>
+
+            <div class="f-row width-100">
+              <label>Параметры отображения:</label>
+              <div class="i-checkbox">
+                <%= f.check_box :enable %>
+                <%= f.label :enable, "Вкладка активна", {:title=>"Если флажок не установлен, вкладка будет скрыта от посетителей"}%>
+              </div>
+              <div class="i-checkbox">
+                <%= f.check_box :active %>
+                <%= f.label :active, "Вкладка по-умолчанию", {:title=>"Если флажок установлен, вкладка будет отображаться при загрузке страницы..."}%>
+              </div>
+            </div>
+          </fieldset>
+        </td>
+      </tr>
+    </table>
+    <%= submit_tag "Сохранить" %>
+  <% end %>
+</div>

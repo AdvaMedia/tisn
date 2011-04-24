@@ -1,0 +1,87 @@
+<script src="http://api-maps.yandex.ru/1.1/index.xml?key={{yandex_key}}" type="text/javascript"></script>
+<link rel="stylesheet" href="/stylesheets/mediabox.css" type="text/css" media="screen" />
+<script src="/javascripts/mediabox.js" type="text/javascript"></script>
+<!--<script src="/javascripts/carusel.js" type="text/javascript"></script>-->
+<h1 class="heading">Контактная информация, офисы продаж</h1>
+<div class="contacts-map">
+   <div class="central-office big-block">
+	<h2>Центральный офис «Окна ТиСН»</h2>
+	<ul class="tabs-office container">
+		{% for office in primary_offices %}
+		<li class="{%if forloop.index == 1 %}active {% endif %}corners corners-4 carusel_item">
+			<a id='tab_region_{{office.map_region.id}}' href="#map-region-{{office.map_region.id}}">{{office.map_region.tab_name}}</a>
+		</li>
+		{% endfor %}
+	</ul>
+	<div id="good-carousel" class="section">
+	{% for office in primary_offices %}
+			<div id="tab_region_{{office.map_region.id}}-container" class="vcard container{%if forloop.index > 1 %} hidden{% endif %}">
+              <div class="photo f-left">
+                <a href="{{office.item.poster | get_image_path(office.item.poster, 'orig')}}" rel="lightbox[set_top_{{office.item.id}}]" title="{{office.item.name | escape}}"><img src="{{office.item.poster | get_image_path(office.item.poster, 'widescreen')}}" width="120" height="80" alt="" /></a>
+              </div>
+              <div class="information">
+                <div class="fn org"><b>{{office.item.name}}</b></div>
+                  <div class="adr icon">
+                    <span class="country-name hidden">{{office.item.country}}</span> 
+                    <span class="locality">{{office.item.city}}</span> 
+                    <span class="street-address">{{office.item.street}}, {{office.item.house}}</span>
+                  </div>
+                  {% if office.item.work_times != nil and office.item.work_times != "" %}
+                  <div class="icon time">время работы: <span class="workhours">{{office.item.work_times}}</span></div>
+                  {% endif %}
+                  {% if office.item.has_phones? %}
+                  <div class="tel icon"><i class="value">{{ office.item.phones_ar | join(office.item.phones_ar, ', ') }}</i></div>
+                  {% endif %}
+              </div>
+	           	{% if office.item.has_map? %}
+	              <a href="#" class="icon onmap" rel="{{office.item.lng}}:{{office.item.lat}}">Показать на карте</a>
+				{% endif %}
+            </div>
+	{% endfor %}
+	</div>
+   </div>
+
+    <!-- Пошли области -->
+    {% for region in regions %}
+        <h3 id="map-region-{{region.id}}" class="corners corners-3 toggle">{{region.title}}</h3>
+          <div class="toggle-container hidden">
+            {% for address in region.map_adresses %}
+              <div class="vcard container">
+                <div class="photo f-left">
+                  {% if address.poster %}
+                  <a href="{{ address.poster | get_image_path(address.poster, 'orig') }}" rel="lightbox[set_{{address.id}}]" title="{{address.name | escape}}"><img src="{{ address.poster | get_image_path(address.poster, 'widescreen') }}" width="120" height="80" alt="" /></a>
+                  {% endif %}
+                </div>
+                <div class="information">
+                  <div class="fn org"><b>{{address.name}}</b></div>
+                  <div class="adr icon">
+                    <span class="country-name hidden">{{address.country}}</span> 
+                    <span class="locality">{{address.city}}</span> 
+                    <span class="street-address">{{address.street}}, {{address.house}}</span>
+                  </div>
+                  {% if address.work_times != nil and address.work_times != "" %}
+                  <div class="icon time">время работы: <span class="workhours">{{address.work_times}}</span></div>
+                  {% endif %}
+                  {% if address.has_phones? %}
+                  <div class="tel icon"><i class="value">{{ address.phones_ar | join(address.phones_ar, ', ') }}</i></div>
+                  {% endif %}
+                </div>
+				{% if address.has_map? %}
+                <a href="#" class="icon onmap" rel="{{address.lng}}:{{address.lat}}">Показать на карте</a>
+				{% endif %}
+              </div>
+            {% endfor %}
+            </div>                
+    {% endfor %}
+</div>
+<script type="text/javascript" src="/javascripts/contacts_map.js">
+  
+</script>
+
+<div id="map_modal_window" class="modal showmap hidden">
+  <div class="content">
+    <div class="wheader"><h4>Как нас найти:</h4><a href="#" class="icon cancel">Закрыть окно</a></div>
+    <div id="yandex_map_container_rm" class="map-container" style="height:350px;">
+    </div>
+  </div>
+</div>

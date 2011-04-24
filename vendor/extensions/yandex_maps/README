@@ -1,0 +1,34 @@
+<script src="http://api-maps.yandex.ru/1.1/index.xml?key=AE9No00BAAAADp2DDgIA-6thWwv2zeGK4zyTL-iIsNRAKhYAAAAAAAAAAADQLw7U6jVocMlvcJK3dngBN3pMyQ=="
+	type="text/javascript"></script>
+    <script type="text/javascript">
+        window.addEvent("domready",function(){
+		    var map = new YMaps.Map(document.getElementById("YMapsID"));
+		    map.setCenter(new YMaps.GeoPoint(37.64, 55.76), 10);
+		});
+    </script>
+
+
+
+This Module Routes
+
+    admin_yandex_map_yandex_adress_yandex_photos GET    /admin/content/yandex_maps/:yandex_map_id/adresses/:yandex_adress_id/photos(.:format)          {:controller=>"yandex_photos", :action=>"index"}
+                                                 POST   /admin/content/yandex_maps/:yandex_map_id/adresses/:yandex_adress_id/photos(.:format)          {:controller=>"yandex_photos", :action=>"create"}
+ new_admin_yandex_map_yandex_adress_yandex_photo GET    /admin/content/yandex_maps/:yandex_map_id/adresses/:yandex_adress_id/photos/new(.:format)      {:controller=>"yandex_photos", :action=>"new"}
+edit_admin_yandex_map_yandex_adress_yandex_photo GET    /admin/content/yandex_maps/:yandex_map_id/adresses/:yandex_adress_id/photos/:id/edit(.:format) {:controller=>"yandex_photos", :action=>"edit"}
+     admin_yandex_map_yandex_adress_yandex_photo GET    /admin/content/yandex_maps/:yandex_map_id/adresses/:yandex_adress_id/photos/:id(.:format)      {:controller=>"yandex_photos", :action=>"show"}
+                                                 PUT    /admin/content/yandex_maps/:yandex_map_id/adresses/:yandex_adress_id/photos/:id(.:format)      {:controller=>"yandex_photos", :action=>"update"}
+                                                 DELETE /admin/content/yandex_maps/:yandex_map_id/adresses/:yandex_adress_id/photos/:id(.:format)      {:controller=>"yandex_photos", :action=>"destroy"}
+                admin_yandex_map_yandex_adresses GET    /admin/content/yandex_maps/:yandex_map_id/adresses(.:format)                                   {:controller=>"yandex_adresses", :action=>"index"}
+                                                 POST   /admin/content/yandex_maps/:yandex_map_id/adresses(.:format)                                   {:controller=>"yandex_adresses", :action=>"create"}
+              new_admin_yandex_map_yandex_adress GET    /admin/content/yandex_maps/:yandex_map_id/adresses/new(.:format)                               {:controller=>"yandex_adresses", :action=>"new"}
+             edit_admin_yandex_map_yandex_adress GET    /admin/content/yandex_maps/:yandex_map_id/adresses/:id/edit(.:format)                          {:controller=>"yandex_adresses", :action=>"edit"}
+                  admin_yandex_map_yandex_adress GET    /admin/content/yandex_maps/:yandex_map_id/adresses/:id(.:format)                               {:controller=>"yandex_adresses", :action=>"show"}
+                                                 PUT    /admin/content/yandex_maps/:yandex_map_id/adresses/:id(.:format)                               {:controller=>"yandex_adresses", :action=>"update"}
+                                                 DELETE /admin/content/yandex_maps/:yandex_map_id/adresses/:id(.:format)                               {:controller=>"yandex_adresses", :action=>"destroy"}
+                               admin_yandex_maps GET    /admin/content/yandex_maps(.:format)                                                           {:controller=>"yandex_maps", :action=>"index"}
+                                                 POST   /admin/content/yandex_maps(.:format)                                                           {:controller=>"yandex_maps", :action=>"create"}
+                            new_admin_yandex_map GET    /admin/content/yandex_maps/new(.:format)                                                       {:controller=>"yandex_maps", :action=>"new"}
+                           edit_admin_yandex_map GET    /admin/content/yandex_maps/:id/edit(.:format)                                                  {:controller=>"yandex_maps", :action=>"edit"}
+                                admin_yandex_map GET    /admin/content/yandex_maps/:id(.:format)                                                       {:controller=>"yandex_maps", :action=>"show"}
+                                                 PUT    /admin/content/yandex_maps/:id(.:format)                                                       {:controller=>"yandex_maps", :action=>"update"}
+                                                 DELETE /admin/content/yandex_maps/:id(.:format)                                                       {:controller=>"yandex_maps", :action=>"destroy"}

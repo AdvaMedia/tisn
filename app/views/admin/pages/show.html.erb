@@ -1,0 +1,21 @@
+<h2>
+  <%= link_to "Назад", :action=>"index", :controller=>"admin/pages" %>
+  Выбрана страница:
+<%= @selpage.title %></h2>
+<ul>
+  <li>
+    <%= link_to "Редактировать", {:action=>"edit", :controller=>"admin/pages", :id=>@selpage.id} %>
+  </li>
+  <li>
+    <%= link_to "Добавить дочернюю", {:action=>"new", :controller=>"admin/pages", :parent_page=>@selpage.id} %>
+  </li>
+</ul>
+
+
+<% form_tag url_for(:action=>"destroy", :controller=>"admin/pages", :id=>@selpage.id), :method=>:delete do |form| %>
+<div style="color:red;">
+<p>Внимание! при удалении страницы, вы уже не сможете ее восстановить.</p>
+<p>Она удаляется безвозвратно и без дополнительных вопросов</p>
+</div>
+<%= submit_tag "Понял, можно удалить" %>
+<% end %>

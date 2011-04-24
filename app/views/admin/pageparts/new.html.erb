@@ -1,0 +1,9 @@
+<% form_for :part, :url=>{:action=>"create", :controller=>"admin/pageparts"}, :html=>{:class=>'post_submit'} do |form| %>
+<%= form.hidden_field :page_id %>
+<%= form.hidden_field :name %>
+<p>Проверьте правильность данных:</p>
+<p>Страница: <b><%= @part.page.title %></b></p>
+<p>Имя контейнера: <b><%= @part.name %></b></p>
+<%= submit_tag "Создать контейнер" %>
+<% end %>
+<%= link_to "Я передумал", @back_url, :class=>"ajax" %>

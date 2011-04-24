@@ -1,0 +1,8 @@
+<ul class="menu-h page-tabs">
+  <li <%= "class=\"active\"" if @tab=="list" %>>
+    <%= link_to "Настройки меню", {:action=>"index", :controller=>"MenuExt"} %>
+  </li>
+  <li <%= "class=\"active\"" if @tab=="edit"%>>
+    <%= link_to "Менеджер меню", {:action=>"show", :controller=>"MenuExt"} %>
+  </li>
+</ul>

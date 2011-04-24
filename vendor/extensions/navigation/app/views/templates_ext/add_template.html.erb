@@ -1,0 +1,38 @@
+<ul class="breadcrumbs">
+  <li>
+    <%= link_to "Дерево страниц", {:action=>"index", :controller=>"NavigationExt"}, {:class=>"ajax"} %>
+  </li>
+  <li>
+    <%= link_to "Шаблоны верстки", {:action=>"index"}, {:class=>"ajax"} %>
+  </li>
+  <li><span>Добавление шаблона</span></li>
+</ul>
+
+<% form_tag url_for(:action=>"create"), :html=>{:class => "post_submit"} do -%>
+  <table style="width: 100%">
+    <tbody>
+      <tr>
+        <td>Название шаблона:</td>
+        <td>
+          <%= text_field_tag "name", "" %>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <h4>Текст шаблона:</h4>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <%= text_area_tag "content", "", :style=>"width:100%;", :cols=>80 %>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <%= submit_tag "Добавить" %>
+        </td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+<% end %>

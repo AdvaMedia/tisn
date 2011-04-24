@@ -1,0 +1,15 @@
+interviewblocks_001: 
+  interview_id: "1"
+  template: "<a2m:interview>\r\n\
+    <div class=\"f-row width-100\">\r\n\
+    <label><big><a2m:name /></big></label>\r\n <a2m:variants>\r\n\
+    <div class=\"i-radio\"><a2m:variant /></div>\r\n </a2m:variants>\r\n\
+    </div>\r\n\
+    <a2m:submit>\xD0\x93\xD0\xBE\xD0\xBB\xD0\xBE\xD1\x81\xD0\xBE\xD0\xB2\xD0\xB0\xD1\x82\xD1\x8C</a2m:submit>\r\n\
+    </a2m:interview>\r\n\
+    <a2m:result>\r\n\
+    <div class=\"result\">\r\n <label><big><a2m:name /></big></label>\r\n  <a2m:variants>\r\n   <div class=\"f-row\"><a2m:variant /></div>\r\n  </a2m:variants>\r\n\
+    </div>\r\n\
+    </a2m:result>"
+  id: "1"
+  pageblock_id: "14"

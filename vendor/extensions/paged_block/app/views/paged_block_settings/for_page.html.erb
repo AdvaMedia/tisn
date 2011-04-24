@@ -1,0 +1,24 @@
+<div class="page-wrapper container">
+  <table class="null-table full content-layout">
+    <tr>
+      <td class="header" colspan="2">
+        <h1 style=" background-image:url(/images/adminsystem/icons/48/content.png);">Управление блоками</h1>
+      </td>
+    </tr>
+    <tr>
+      <td class="column-center">
+        <p class="roundborder notice information">
+          <i class="notice icon">&nbsp;</i>
+          Выберите группу вкладок из выпадающего списка.
+        </p>
+
+        <% form_tag url_for(:action=>"for_page", :id=>@block.id) do -%>
+        <fieldset>
+          <%= select_tag "tabsgroup_id", options_for_select(Tabgroup.all.collect{|item| [item.name, item.id]}, @block.tabgroups.first.id) %>
+        </fieldset>
+        <%= submit_tag "Сохранить" %>
+        <% end %>
+      </td>
+    </tr>
+  </table>
+</div>

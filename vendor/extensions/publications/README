@@ -1,0 +1,55 @@
+Шаблон страницы списка публикаций
+
+<a2m:publication_getegory>
+<h1 class="heading"><a2m:name /></h1>
+</a2m:publication_getegory>
+
+ <a2m:publicationlist count="2">
+  <a2m:items>
+   <a2m:item>
+    <div class="entry container block">
+      <img width="170" height="100" alt="Знак окна тисн" src="<a2m:image_url />" class="f-left">
+      <h3 class="entry-title"><a href="<a2m:url />"><a2m:title /></a></h3>
+      <div class="publication-content"><a2m:descriptions /></div>
+    </div>
+   </a2m:item>
+  </a2m:items>
+<p>&nbsp;</p>
+<a2m:pagination>
+<ul class="pagination container block">
+ <a2m:first>
+   <li><a href="<a2m:link />">Раньше</a></li>
+ </a2m:first>
+ <a2m:pages>
+   <li class="<a2m:class class="active" />"><a href="<a2m:link />"><a2m:number /></a></li>
+ </a2m:pages>
+ <a2m:last>
+   <li><a href="<a2m:link />">Дальше</a></li>
+ </a2m:last>
+</ul>
+</a2m:pagination>
+ </a2m:publicationlist>
+
+
+Шаблон самой публикации
+
+<a2m:publication>
+ <h1 class="heading"><a2m:title /></h1>
+ <a2m:content />
+</a2m:publication>
+
+
+Шаблон блока
+
+<a2m:publication_getegory>
+ <h3><a2m:name /></h3>
+</a2m:publication_getegory>
+
+<dl class="list-last-news">
+<a2m:items>
+ <dt class="date"><a2m:date /></dt>
+ <dd>
+  <a href="<a2m:url />"><a2m:title /></a>
+ </dd>
+</a2m:items>
+</dl>

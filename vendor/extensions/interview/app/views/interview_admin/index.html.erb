@@ -1,0 +1,51 @@
+<%= render :partial=>"tabs" %>
+<div class="page-wrapper container">
+  <table class="null-table full content-layout">
+    <tr>
+      <td class="header" colspan="2">
+        <h1 style="background-image:url(/images/adminsystem/icons/48/content.png);">Опросы</h1>
+      </td>
+      <td class="column-right" rowspan="2">
+        <!--Control panel-->
+        <div class="control-panel">
+          <a href="#" class="help">Помощь</a>
+          <ul class="roundborder">
+            <li>
+              <%= link_to "Добавить", {:action=>"new"}, {:class=>"add"} %>
+            </li>
+          </ul>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td class="column-center">
+        <table class="full null-table listing selecting vam">
+          <colgroup>
+            <col />
+            <col width="32px" />
+          </colgroup>
+          <tbody>
+            <% @items.each do |item| %>
+              <tr class="item on">
+                <td>
+                  <div class="level-0">
+                    <%= link_to item.name, {:action=>"edit", :id=>item.id} %>
+                    <div class="description">
+                      <p>
+                        может быть добавлю поле описания... а может и нет...
+                      </p>
+                    </div>
+
+                  </div>
+                </td>
+                <td>
+                  <%= link_to "Удалить", {:action=>"delete", :id=>item.id}, {:title=>"удалить группу и все вкладки", :class=>"control"} %>
+                </td>
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>

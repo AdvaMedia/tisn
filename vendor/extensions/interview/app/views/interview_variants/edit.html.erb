@@ -1,0 +1,41 @@
+<%= javascript_include_tag :ckeditor %>
+<%= render :partial=>"tabs" %>
+<div class="page-wrapper container">
+  <% form_for :item, :url=>{:action=>"save",:id=>@item.interview.id, :tid=>@item.id} do |f| %>
+    <table class="null-table full content-layout">
+      <tr>
+        <td class="header" colspan="2">
+          <h1 style="background-image:url(/images/adminsystem/icons/48/content.png);">Редактирование варианта опроса</h1>
+        </td>
+      </tr>
+      <tr>
+        <td class="column-center">
+          <fieldset>
+            <div class="f-row width-100">
+              <%= f.label :content, "Вариант элемента опроса:" %>
+              <div class="i-wrap">
+                <%= f.text_field :content, :class=>"i-text" %>
+                <div title="Обязательное поле" class="req">&nbsp;</div>
+              </div>
+              <span class="i-help">Например: Отлично.</span>
+            </div>
+          </fieldset>
+        </td>
+        <td class="column-advanced">
+          <div class="corners corners-4" style="background: none repeat scroll 0% 0% rgb(238, 238, 238); padding: 1.5em;">
+            <h3>Расширенные настройки</h3> В идеале, здесь можно будет задать классы для пункта меню а также ID по желанию.
+            <em class="tl">&nbsp;</em><em class="tr">&nbsp;</em><em class="bl">&nbsp;</em><em class="br">&nbsp;</em></div>
+
+          <div class="f-row width-100">
+            <%= f.label :interview_id, "Принадлежит к категории:" %>
+            <div class="i-wrap">
+              <%= f.select(:interview_id, Interview.all.collect{|p| [p.name, p.id]}, { :include_blank => false }, {:class=>"i-select"}) %>
+            </div>
+            <span class="i-help">Выберите опрос, к которому принадлежит данный элемент.</span>
+          </div>
+        </td>
+      </tr>
+    </table>
+    <%= submit_tag "Сохранить" %>
+  <% end %>
+</div>

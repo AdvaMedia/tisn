@@ -1,0 +1,63 @@
+<!--Page tabs-->
+<ul class="menu-h page-tabs">
+  <li><a href="/settings/index.html">Настройки сайта</a></li>
+  <li class="active"><a>Дата и время</a></li>
+  <li><a href="#">Производительность</a></li>
+  <li><a href="#">Обслуживание</a></li>
+</ul>
+<!--Page wrapper-->
+<div class="page-wrapper">
+  <h1>Отображение форматов даты и времени</h1>
+  <form action="">
+    <fieldset>
+     
+      <div class="f-row width-50">
+        <label for="site-name">Название сайта:</label>
+        <div class="i-wrap">
+          <input id="site-name" class="i-text" type="text" />
+          <div class="req" title="Обязательное поле">&nbsp;</div>
+        </div>
+      </div>
+      <div class="f-row width-50">
+        <label for="link-description">Слоган сайта:</label>
+        <div class="i-wrap">
+          <textarea id="link-description" class="i-text" rows="3" cols=""></textarea>
+        </div>
+        <span class="i-help">Слоган используется для брендирования вашего сайта и позволяет
+          добавлять дополнительное описание в любом удобном месте.</span>
+      </div>
+      <div class="f-row width-50">
+        <label for="site-email">Электронный адрес сайта:</label>
+        <div class="i-wrap">
+          <input id="site-email" class="i-text" type="text" value="me@localhost.com" />
+          <div class="req" title="Обязательное поле">&nbsp;</div>
+        </div>
+        <span class="i-help">Исходящий адрес e-mail Вашего сайта для автоматической отправки
+          писем при регистрации, запроса нового пароля и других системных уведомлений.</span>
+      </div>
+      <div class="f-row width-50">
+        <label for="site-frontpage">Адрес главной страницы сайта:</label>
+        <div class="i-wrap">
+          <input id="site-frontpage" class="i-text" type="text" value="/" />
+          <div class="req" title="Обязательное поле">&nbsp;</div>
+        </div>
+        <span class="i-help">Адрес главной страницы &mdash; это страница, куда будут попадать ваши
+          посетители, набрав адрес вашего сайта в строке браузера.</span>
+      </div>
+      <div class="f-row width-50">
+        <label for="site-403">Адрес страницы для ошибки 403:</label>
+        <div class="i-wrap">
+          <input id="site-403" class="i-text" type="text" />
+        </div>
+        <span class="i-help">Ошибка 403 означает, что доступ к запрошенной странице запрещен.</span>
+      </div>
+      <div class="f-row width-50">
+        <label for="site-404">Адрес страницы для ошибки 404:</label>
+        <div class="i-wrap">
+          <input id="site-404" class="i-text" type="text" />
+        </div>
+        <span class="i-help">Ошибка 404 обозначает, что ссылка неверна или ранее существовавшая страница была удалена.</span>
+      </div>
+    </fieldset>
+  </form>
+</div>

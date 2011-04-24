@@ -1,0 +1,35 @@
+AdminSystem
+===========
+
+Introduction goes here.
+
+
+Example
+=======
+
+Example goes here.
+
+
+Copyright (c) 2010 [name of plugin creator], released under the MIT license
+
+ WindowsParams
+ =============
+
+    headerHeight:      30,
+    footerHeight:      25,
+    closeBgColor:      [231, 70, 50],
+    closeColor:        [255, 255, 255],
+    cornerRadius:      8,
+    addClass:          '',
+    width:             300,
+    height:            125,
+    x:                 null,
+    y:                 null,
+    scrollbars:        true,
+    padding:              { top: 12, right: 12, bottom: 12, left: 12 },
+    shadowBlur:        4,
+    shadowOffset:      {'x': 0, 'y': 1},
+    controlsOffset:    {'right': 12, 'top': 9},
+    useCanvas:         true,
+    useCanvasControls: true,
+    useSpinner:        true,    // Toggles whether or not the ajax spinners are displayed in window footers.

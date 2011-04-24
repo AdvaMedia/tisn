@@ -1,0 +1,35 @@
+publicationpages_001: 
+  publicationgroup_id: "1"
+  page_id: "29"
+  template_one: |-
+    <a2m:publication>
+     <h1 class="heading"><a2m:title /></h1>
+     <a2m:content />
+    </a2m:publication>
+  id: "1"
+  template_all: "<a2m:publication_getegory>\r\n\
+    <h1 class=\"heading\"><a2m:name /></h1>\r\n\
+    </a2m:publication_getegory>\r\n\
+    \r\n <a2m:publicationlist count=\"10\">\r\n  <a2m:items>\r\n   <a2m:item>\r\n    <div class=\"entry container block\">\r\n      <img width=\"170\" height=\"100\" alt=\"\xD0\x97\xD0\xBD\xD0\xB0\xD0\xBA \xD0\xBE\xD0\xBA\xD0\xBD\xD0\xB0 \xD1\x82\xD0\xB8\xD1\x81\xD0\xBD\" src=\"<a2m:image_url />\" class=\"f-left\">\r\n      <h3 class=\"entry-title\"><a href=\"<a2m:url />\"><a2m:title /></a></h3>\r\n      <div class=\"publication-content\"><a2m:descriptions /></div>\r\n    </div>\r\n   </a2m:item>\r\n  </a2m:items>\r\n\
+    <p>&nbsp;</p>\r\n\
+    <a2m:pagination>\r\n\
+    <ul class=\"pagination container block\">\r\n <a2m:first>\r\n   <li><a href=\"<a2m:link />\">\xD0\xA0\xD0\xB0\xD0\xBD\xD1\x8C\xD1\x88\xD0\xB5</a></li>\r\n </a2m:first>\r\n <a2m:pages>\r\n   <li class=\"<a2m:class class=\"active\" />\"><a href=\"<a2m:link />\"><a2m:number /></a></li>\r\n </a2m:pages>\r\n <a2m:last>\r\n   <li><a href=\"<a2m:link />\">\xD0\x94\xD0\xB0\xD0\xBB\xD1\x8C\xD1\x88\xD0\xB5</a></li>\r\n </a2m:last>\r\n\
+    </ul>\r\n\
+    </a2m:pagination>\r\n </a2m:publicationlist>"
+publicationpages_002: 
+  publicationgroup_id: "2"
+  page_id: "28"
+  template_one: |-
+    <a2m:publication>
+     <h1 class="heading"><a2m:title /></h1>
+     <a2m:content />
+    </a2m:publication>
+  id: "2"
+  template_all: "<a2m:publication_getegory>\r\n\
+    <h1 class=\"heading\"><a2m:name /></h1>\r\n\
+    </a2m:publication_getegory>\r\n <a2m:publicationlist count=\"10\">\r\n  <a2m:items>\r\n   <a2m:item>\r\n    <div class=\"entry container\">\r\n      <h3 class=\"entry-title\"><a href=\"<a2m:url />\"><a2m:title /></a></h3>\r\n      <div class=\"publication-content\"><a2m:descriptions /></div>\r\n    </div>\r\n   </a2m:item>\r\n  </a2m:items>\r\n\
+    <p>&nbsp;</p>\r\n\
+    <a2m:pagination>\r\n\
+    <ul class=\"pagination container block\">\r\n <a2m:first>\r\n   <li><a href=\"<a2m:link />\">\xD0\xA0\xD0\xB0\xD0\xBD\xD1\x8C\xD1\x88\xD0\xB5</a></li>\r\n </a2m:first>\r\n <a2m:pages>\r\n   <li class=\"<a2m:class class=\"active\" />\"><a href=\"<a2m:link />\"><a2m:number /></a></li>\r\n </a2m:pages>\r\n <a2m:last>\r\n   <li><a href=\"<a2m:link />\">\xD0\x94\xD0\xB0\xD0\xBB\xD1\x8C\xD1\x88\xD0\xB5</a></li>\r\n </a2m:last>\r\n\
+    </ul>\r\n\
+    </a2m:pagination>\r\n </a2m:publicationlist>"

@@ -1,0 +1,29 @@
+<div class="page-wrapper container">
+  <table class="null-table full content-layout">
+    <tr>
+      <td class="header" colspan="2">
+        <h1 style="background-image:url(/images/adminsystem/icons/48/content.png);">Настройки шаблонов меню</h1>
+      </td>
+      <td class="column-right" rowspan="2">
+        <!--Control panel-->
+        <div class="control-panel">
+          <a href="#" class="help">Помощь</a>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td class="column-center">
+        <% form_for :item, :url=>{:action=>"delete",:id=>@item.id, :controller=>"PagedBlockGroup"} do |f| %>
+          <fieldset>
+            <div class="f-row width-50">
+              <p>
+                Вы действительно хотите удалить *<%= @item.name %>* со всеми вкладками?
+              </p>
+            </div>
+          </fieldset>
+          <%= submit_tag "Я подтверждаю удаление данной группы вкладок" %>
+        <% end %>
+      </td>
+    </tr>
+  </table>
+</div>

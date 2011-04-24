@@ -1,0 +1,24 @@
+<ul class="breadcrumbs">
+  <li>
+    <%= link_to "Список страниц", 'admin/navigation', {:class=>"ajax"} %>
+  </li>
+  <li><span>Редактирование страницы(блоков)</span></li>
+</ul>
+
+<div class="content">
+  <h1>Управление структурой сайта</h1>
+  <div class="subcolumns">
+    <div class="c33l">
+      <ul  id="subnav"  class="box">
+        <% Page.all.each do |mpage| %>
+        <li>
+          <%= link_to  mpage.title,  :controller=>"admin/pageparts",  :action=>"show",  :id=>mpage.id %>
+        </li>
+        <% end %>
+      </ul>
+    </div>
+    <div id="admin_pageparts_wrapper" class="c66r" style="border-left:1px dashed #d9cfb2;">
+
+    </div>
+  </div>
+</div>

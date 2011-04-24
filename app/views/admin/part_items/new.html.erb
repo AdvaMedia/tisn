@@ -1,0 +1,37 @@
+<h4>Добавляем модуль в <%= @parentpart.name %></h4>
+<% form_for :newpartitem, :url=>{:action=>"create", :controller=>"admin/part_items"}, :html=>{:class=>'post_submit'} do |form| %>
+<%= form.hidden_field :page_part_id %>
+<table>
+  <tbody>
+    <tr>
+      <td>
+        Какой модуль добавляем?
+      </td>
+      <td>
+        <%= form.select(:modul_id, Modul.find(:all).collect{|p| [ p.name, p.id ] }, { :include_blank => false }) %>
+      </td>
+      <td>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Имя доп. класса:
+      </td>
+      <td>
+        <%= form.text_field :extclass %>
+      </td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>
+        код CSS:
+      </td>
+      <td>
+        <%= form.text_area :extcss %>
+      </td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<%= submit_tag "Добавить" %>
+<% end %>

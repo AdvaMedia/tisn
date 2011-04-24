@@ -1,0 +1,4 @@
+<% form_tag url_for(:controller => 'AdminSystem', :action => 'confirm') do -%>
+<p>Добро пожаловать, <%= current_user.login %></p>
+<%= submit_tag "Продолжить" %>
+<% end %>

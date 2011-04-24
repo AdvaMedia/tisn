@@ -1,0 +1,24 @@
+<script type="text/javascript" src="/javascripts/admin/templates.js">
+</script>
+<h1>Управление шаблонами сайта</h1>
+<h3>Всего шаблонов: <%= @templates.length %> <%= link_to "Добавить", :action=>"new", :controller=>"admin/templates" %></h3>
+<table style="width: 100%;">
+  <tbody>
+    <tr>
+      <th>Название шаблона</th>
+      <th>Действия</th>
+    </tr>
+    <% @templates.each do |template| %>
+    <tr>
+      <td>
+        <%= template.name %>
+      </td>
+      <td>
+        <ul>
+          <li><%= link_to "Редактировать", :action=>"edit", :controller=>"admin/templates", :id=>template.id %></li>
+        </ul>
+      </td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>

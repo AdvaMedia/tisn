@@ -1,0 +1,21 @@
+<div class="page-wrapper container">
+	<table class="null-table full content-layout">
+		<tr>
+	      <td class="header" colspan="2">
+	        <h1 style="background-image:url(/images/adminsystem/icons/48/content.png);"><%= link_to "Офисы", admin_yandex_maps_path %> / <%= link_to "Адреса", admin_yandex_adresses_path(:map_region_id=>@office_image.map_address.map_region.id) %> / <%= link_to "Адреса", admin_yandex_photos_path(:map_address_id=>@office_image.map_address.id) %> / Редактирование фотографии</h1>
+	      </td>
+	      <td class="column-right" rowspan="2">
+	      </td>
+	    </tr>
+		<tr>
+	      <td class="column-center ">
+			<div id="githubstyle">
+				<% form_for :office_image, :url=>admin_yandex_photo_path(@office_image), :html=>{:method=>:put}  do |f| %>
+					<%= render :partial => "form", :locals => {:f => f }%>
+					<%= f.submit "Сохранить", :class=>"button" %>
+				<% end %>
+			</div>
+	      </td>
+	    </tr>
+	</table>
+</div>

@@ -1,0 +1,19 @@
+<ul class="breadcrumbs">
+  <li>
+    <%= link_to "Список страниц", 'admin/navigation', {:class=>"ajax"} %>
+  </li>
+  <li><span>Редактирование страницы(блоков)</span></li>
+</ul>
+
+<h2>Редактирум части страницы <%= @selpage.title %></h2>
+<h4>Шаблон страницы
+<% if @selpage.template %>
+  <%= "-#{@selpage.template}-" %>
+  <% else %>
+  -Нет шаблона-
+  <% end %>
+</h4>
+<div>
+  <p>Доступные контейнеры:</p>
+  <%= parts_list(@selpage) %>
+</div>

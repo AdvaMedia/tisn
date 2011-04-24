@@ -1,0 +1,40 @@
+<div class="page-wrapper container">
+  <table class="null-table full content-layout">
+    <tr>
+      <td class="header" colspan="2">
+        <h1 style="background-image:url(/images/adminsystem/icons/48/content.png);">Настройки шаблонов меню</h1>
+      </td>
+      <td class="column-right" rowspan="2">
+        <!--Control panel-->
+        <div class="control-panel">
+          <a href="#" class="help">Помощь</a>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td class="column-center">
+        <% form_for :item, :url=>{:action=>"create", :controller=>"PagedBlockGroup"} do |f| %>
+          <fieldset>
+            <div class="f-row width-50">
+              <%= f.label :name, "Наименование категории" %>
+              <div class="i-wrap">
+                <%= f.text_field :name, :class=>"i-text" %>
+                <div title="Обязательное поле" class="req">&nbsp;</div>
+              </div>
+              <span class="i-help">Можно написать название категории вкладок.</span>
+            </div>
+
+            <div class="f-row width-50">
+              <%= f.label :template, "Шаблон отображения данной категории" %>
+              <div class="i-wrap">
+                <%= f.text_area :template, :class=>"i-text", :rows=>10 %>
+              </div>
+              <span class="i-help">Измените шаблон отображения этой категории.</span>
+            </div>
+          </fieldset>
+          <%= submit_tag "Сохранить" %>
+        <% end %>
+      </td>
+    </tr>
+  </table>
+</div>

@@ -1,0 +1,10 @@
+development:
+  dirs:
+   - db/backups
+   - public/uploaded_images
+  servers:
+    -  name: local self
+       host: localhost
+       port: 5222
+       user: oneman
+       dir: /home/oneman/Documents/development_backup

@@ -1,0 +1,8 @@
+<ul class="menu-h page-tabs">
+  <li <%= "class=\"active\"" if @tab=="list" %>>
+    <%= link_to "Список опросов", {:action=>"index", :controller=>"InterviewAdmin"} %>
+  </li>
+  <li <%= "class=\"active\"" if @tab=="edit"%>>
+    <%= link_to "Менеджер опросов", {:action=>"index", :controller=>"InterviewVariants"} %>
+  </li>
+</ul>

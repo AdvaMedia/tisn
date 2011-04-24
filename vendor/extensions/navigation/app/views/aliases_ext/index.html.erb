@@ -1,0 +1,59 @@
+<div class="page-wrapper container">
+  <table class="null-table full content-layout">
+    <tr>
+      <td colspan="2" class="header">
+        <ul class="breadcrumbs">
+          <li>
+            <%= link_to "Список страниц", {:action=>"index", :controller=>"NavigationExt"}, {:class=>"ajax"} %>
+          </li>
+          <li>
+            <%= link_to "Редактирование страницы", {:controller => 'NavigationExt', :action => 'edit', :id=>params[:id]}, {:class=>"ajax"} %>
+          </li>
+          <li><span>Список ссылок</span></li>
+        </ul>
+      </td>
+      <td class="column-right" rowspan="2">
+        <!--Control panel-->
+        <div class="control-panel">
+          <a href="#" class="help">Помощь</a>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td class="column-center">
+        <table class="full">
+          <tbody>
+            <tr>
+              <th>
+                Ссылка
+                (<%= link_to "Добавить", {:action=>"new", :id=>params[:id]}, {:class=>"ajax"} %>)
+              </th>
+              <th>
+                Действия
+              </th>
+            </tr>
+            <% @links.each do |link| %>
+              <tr>
+                <td>
+                  <%= link_to link.url, "/#{link.url}", :target => "_blank" %>
+                </td>
+                <td>
+                  <ul>
+                    <li>
+                      <%= link_to "Редактировать", {:action=>"edit", :id=>link.id}, {:class=>"ajax"} %>
+                    </li>
+                    <li>
+                      <%= link_to "Удалить", {:action=>"predestroy", :id=>link.id}, {:class=>"ajax"} %>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+    
+  </table>
+
+</div>

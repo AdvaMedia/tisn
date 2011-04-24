@@ -1,0 +1,24 @@
+<div class="page-wrapper">
+  <h1>Для начала работы Вам нужно ввести свои идентификационные данные</h1>
+  <% form_tag({:action=>"login"}, {:id=>"login_form"}) do -%>
+    <fieldset>
+      <div class="f-row width-50">
+        <%= label_tag "login", "Логин:" %>
+        <div class="i-wrap">
+          <%= text_field_tag "login",nil, :class=>"i-text" %>
+          <div class="req" title="Обязательное поле">&nbsp;</div>
+        </div>
+        <span class="i-help">Логином обычно является адрес электронной почты.</span>
+      </div>
+      <div class="f-row width-50">
+        <%= label_tag "password", "Пароль:" %>
+        <div class="i-wrap">
+          <%= password_field_tag "password", nil, :class=>"i-text" %>
+          <div class="req" title="Обязательное поле">&nbsp;</div>
+        </div>
+      </div>
+
+      <%= submit_tag "Войти" %>
+    </fieldset>
+  <% end %>
+</div>

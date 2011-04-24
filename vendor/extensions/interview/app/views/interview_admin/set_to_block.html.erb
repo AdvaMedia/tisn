@@ -1,0 +1,43 @@
+<div class="page-wrapper container">
+  <table class="null-table full content-layout">
+    <tr>
+      <td class="header" colspan="2">
+        <h1 style=" background-image:url(/images/adminsystem/icons/48/content.png);">Управление блоками</h1>
+      </td>
+    </tr>
+    <tr>
+      <td class="column-center">
+        <p class="roundborder notice information">
+          <i class="notice icon">&nbsp;</i>
+          <% if flash[:notice] %>
+            <%= flash[:notice] %>
+          <% else %>
+            Выберите опрос из выпадающего списка.
+            и заполните шаблоны для его отображения
+          <% end %>
+        </p>
+
+        <% form_for :item do |f| %>
+          <fieldset>
+            <div class="f-row width-100">
+              <%= f.label :interview_id, "Принадлежит к категории:" %>
+              <div class="i-wrap">
+                <%= f.select(:interview_id, Interview.all.collect{|p| [p.name, p.id]}, { :include_blank => false }, {:class=>"i-select"}) %>
+              </div>
+              <span class="i-help">Выберите опрос.</span>
+            </div>
+
+            <div class="f-row width-100">
+              <%= f.label :template, "Шаблон публикации:" %>
+              <div class="i-wrap">
+                <%= f.text_area :template,  {:rows=>10, :class=>"i-text"} %>
+              </div>
+              <span class="i-help">Дизайн шаблона блока.</span>
+            </div>
+          </fieldset>
+          <%= f.submit "Сохранить" %>
+        <% end %>
+      </td>
+    </tr>
+  </table>
+</div>

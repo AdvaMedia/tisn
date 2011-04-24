@@ -1,0 +1,37 @@
+<script type="text/javascript" src="/javascripts/formcheck/formcheck.js"></script>
+<script type="text/javascript" src="/javascripts/formcheck/lang/ru.js"></script>
+<link rel="stylesheet" href="/css/formcheck/formcheck.css" type="text/css" media="screen" />
+<script type="text/javascript">
+  window.addEvent('domready',function(){
+    new FormCheck(<%= "'"+@order_named_id+"form"+"'" %>,{
+      submitByAjax:true,
+      ajaxResponseDiv:$(<%= "'"+@order_named_id+"form"+"'" %>).getParent().get('id')
+    });
+  });
+</script>
+<% form_tag "#{url_for(:action=>"send_order", :controller=>"order_send", :id=>@order_named_id)}", :id=>@order_named_id+"form" do |form| %>
+  <%= text_field_tag "order_mail", nil, :class=>"hidden" %>
+  <div class="f-row">
+    <label>Ваше имя:</label>
+    <div class="f-inputs">
+      <%= text_field_tag "order_name", nil, :class=>"i-text validate['required']" %>
+    </div>
+  </div>
+  <div class="f-row">
+    <label>Телефон:</label>
+    <div class="f-inputs">
+      <%= text_field_tag "order_phone", nil, :class=>"i-text validate['required']" %>
+    </div>
+  </div>
+  <div class="f-row">
+    <label>Комментарий:</label>
+    <div class="f-inputs">
+      <%= text_area_tag "order_comment", nil, :class=>"i-text  validate['required']", :size=>"50x3" %>
+    </div>
+  </div>
+  <div class="f-row f-actions">
+    <div class="f-inputs">
+      <%= submit_tag "Отправить заявку", :class=>"button" %>
+    </div>
+  </div>
+<% end %>

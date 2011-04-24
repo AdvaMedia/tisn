@@ -1,0 +1,746 @@
+pageblocks_034: 
+  blocktype: html
+  region_name: content
+  filter_type: "1"
+  title: !binary |
+    0KTRg9GA0L3QuNGC0YPRgNCw
+
+  weight: "0"
+  css_text: ""
+  template: ""
+  id: "36"
+  filter: /product/accessories
+  description: !binary |
+    0KTRg9GA0L3QuNGC0YPRgNCw
+
+  css_prefix: ""
+pageblocks_023: 
+  blocktype: html
+  region_name: content
+  filter_type: "1"
+  title: !binary |
+    0JrQvtC90YLQsNC60YLRiw==
+
+  weight: "0"
+  css_text: ""
+  template: ""
+  id: "25"
+  filter: /about-company/contacts
+  description: !binary |
+    0JrQvtC90YLQsNC60YLRiw==
+
+  css_prefix: ""
+pageblocks_012: 
+  blocktype: interview
+  region_name: content_region
+  filter_type: "1"
+  title: "\xD0\x9E\xD0\xBF\xD1\x80\xD0\xBE\xD1\x81 \xD0\xBD\xD0\xB0 \xD0\xB3\xD0\xBB\xD0\xB0\xD0\xB2\xD0\xBD\xD0\xBE\xD0\xB9"
+  weight: "0"
+  css_text: ""
+  template: ""
+  id: "14"
+  filter: /
+  description: "\xD0\x9E\xD0\xBF\xD1\x80\xD0\xBE\xD1\x81 \xD0\xBD\xD0\xB0 \xD0\xB3\xD0\xBB\xD0\xB0\xD0\xB2\xD0\xBD\xD0\xBE\xD0\xB9"
+  css_prefix: ""
+pageblocks_001: 
+  blocktype: naviwidget
+  region_name: contacts_region
+  filter_type: "1"
+  title: "\xD0\x93\xD0\xBB\xD0\xB0\xD0\xB2\xD0\xBD\xD0\xBE\xD0\xB5 \xD0\xBC\xD0\xB5\xD0\xBD\xD1\x8E"
+  weight: "0"
+  css_text: /* blocks */
+  template: ""
+  id: "1"
+  filter: "%"
+  description: "\xD0\x93\xD0\xBB\xD0\xB0\xD0\xB2\xD0\xBD\xD0\xBE\xD0\xB5 \xD0\xBC\xD0\xB5\xD0\xBD\xD1\x8E"
+  css_prefix: corners corners-4 ovv
+pageblocks_035: 
+  blocktype: html
+  region_name: content
+  filter_type: "1"
+  title: Siegenia
+  weight: "0"
+  css_text: ""
+  template: ""
+  id: "37"
+  filter: /product/accessories/siegenia
+  description: Siegenia
+  css_prefix: ""
+pageblocks_024: 
+  blocktype: html
+  region_name: sidebar
+  filter_type: "1"
+  title: "\xD0\xA1\xD0\xBA\xD0\xB0\xD1\x87\xD0\xB0\xD1\x82\xD1\x8C \xD0\xB1\xD1\x80\xD0\xB5\xD0\xBD\xD0\xB4\xD0\xB1\xD1\x83\xD0\xBA"
+  weight: "0"
+  css_text: ""
+  template: ""
+  id: "26"
+  filter: /about-company/advertising-support
+  description: "\xD0\xA1\xD0\xBA\xD0\xB0\xD1\x87\xD0\xB0\xD1\x82\xD1\x8C \xD0\xB1\xD1\x80\xD0\xB5\xD0\xBD\xD0\xB4\xD0\xB1\xD1\x83\xD0\xBA"
+  css_prefix: ""
+pageblocks_013: 
+  blocktype: html
+  region_name: content
+  filter_type: "1"
+  title: "\xD0\xA0\xD0\xB5\xD0\xBA\xD0\xBB\xD0\xB0\xD0\xBC\xD0\xBD\xD0\xB0\xD1\x8F \xD0\xBF\xD0\xBE\xD0\xB4\xD0\xB4\xD0\xB5\xD1\x80\xD0\xB6\xD0\xBA\xD0\xB0"
+  weight: "0"
+  css_text: |-
+    ul.pdf a { background-image: url(/assets/pictures/12/content_1278255692_file-pdf.png?1278255840); padding-left:25px; }
+    
+    ul.icons {padding-left:1em;}
+  template: ""
+  id: "15"
+  filter: /about-company/advertising-support
+  description: "\xD0\xA0\xD0\xB5\xD0\xBA\xD0\xBB\xD0\xB0\xD0\xBC\xD0\xBD\xD0\xB0\xD1\x8F \xD0\xBF\xD0\xBE\xD0\xB4\xD0\xB4\xD0\xB5\xD1\x80\xD0\xB6\xD0\xBA\xD0\xB0"
+  css_prefix: ""
+pageblocks_002: 
+  blocktype: html
+  region_name: footer_region
+  filter_type: "1"
+  title: !binary |
+    0KTRg9GC0LXRgA==
+
+  weight: "0"
+  css_text: |-
+    /* FOOTER BLOCK  */
+    
+    .my-footer   { 
+    	color:#c6c6c6;
+    	font-size:.9em;
+    	position:relative;
+    	padding:2.5em 0;
+    	border-top:1px solid #E3E6E6;
+    	margin-top:-1px;
+    	}
+    
+    .my-footer .columns,.my-footer p {
+    	margin-bottom:0;
+    	}
+    
+    .my-footer p { 
+    	padding-top:.6em; 
+    	}
+    
+    .my-footer a {
+    	color:#c6c6c6;
+    	}
+    	
+    .my-footer .madein { 
+    	position:absolute; 
+    	right:0; 
+    	top:50%;
+    	}	
+    
+    .my-footer .madein span { 
+    	font-family: Paratype, Arial, Helvetica, sans-serif; 
+    	}
+    
+    .my-footer img {
+    	margin:0;
+    	}
+  template: ""
+  id: "3"
+  filter: "%"
+  description: !binary |
+    0KTRg9GC0LXRgA==
+
+  css_prefix: my-footer
+pageblocks_036: 
+  blocktype: html
+  region_name: content
+  filter_type: "1"
+  title: Vorne
+  weight: "0"
+  css_text: ""
+  template: ""
+  id: "38"
+  filter: /product/accessories/vorne
+  description: Vorne
+  css_prefix: ""
+pageblocks_025: 
+  blocktype: html
+  region_name: content
+  filter_type: "1"
+  title: !binary |
+    0KHQtdGA0YLQuNGE0LjQutCw0YLRiw==
+
+  weight: "0"
+  css_text: ""
+  template: ""
+  id: "27"
+  filter: /documentation/certificates
+  description: !binary |
+    0KHQtdGA0YLQuNGE0LjQutCw0YLRiw==
+
+  css_prefix: ""
+pageblocks_014: 
+  blocktype: html
+  region_name: content
+  filter_type: "1"
+  title: "\xD0\x9F\xD0\xBB\xD0\xB0\xD1\x81\xD1\x82\xD0\xB8\xD0\xBA\xD0\xBE\xD0\xB2\xD1\x8B\xD0\xB5 \xD0\xBE\xD0\xBA\xD0\xBD\xD0\xB0 \xD0\xB8 \xD0\xB4\xD0\xB2\xD0\xB5\xD1\x80\xD0\xB8"
+  weight: "0"
+  css_text: ""
+  template: ""
+  id: "16"
+  filter: /product/plastic-windows-and-doors
+  description: "\xD0\x9F\xD0\xBB\xD0\xB0\xD1\x81\xD1\x82\xD0\xB8\xD0\xBA\xD0\xBE\xD0\xB2\xD1\x8B\xD0\xB5 \xD0\xBE\xD0\xBA\xD0\xBD\xD0\xB0 \xD0\xB8 \xD0\xB4\xD0\xB2\xD0\xB5\xD1\x80\xD0\xB8"
+  css_prefix: ""
+pageblocks_003: 
+  blocktype: html
+  region_name: footer_region
+  filter_type: "1"
+  title: !binary |
+    0J/QsNGA0YLQvdC10YDRiw==
+
+  weight: "-1"
+  css_text: "/* PARTNERS BLOCK  */\r\n\
+    \r\n\
+    .affiliates table { \r\n\
+    \tmargin-bottom:0;\r\n\
+    \t}\r\n\
+    \r\n\
+    .affiliates table td {\r\n\
+    \tpadding-bottom:.9em;}\r\n\
+    \r\n\
+    \r\n\
+    \t\t\t\r\n\
+    /* PARTNERS BLOCK  */\t\t\t\r\n\
+    \t\t\t\r\n\
+    .partners-block\t{\r\n\
+    \tpadding:2.5em 0;\r\n\
+    \tborder-bottom:1px solid #E3E6E6;\r\n\
+    \t}\t\t\r\n\
+    \r\n\
+    .partners-block table { \r\n\
+    \tmargin:0; \r\n\
+    \t}\t\r\n\
+    \r\n\
+    .partners-block\ta {\r\n\
+    \tdisplay:block;\r\n\
+    \twidth:165px;\r\n\
+    \theight:57px;\r\n\
+    \tbackground-position:0 100%;\r\n\
+    \tbackground-repeat:no-repeat;\r\n\
+    \t}\r\n\
+    \r\n\
+    .partners-block\ta:hover {\r\n\
+    \tbackground-position:0 0;\r\n\
+    \t}\r\n\
+    \r\n\
+    a.deceuninck {\r\n\
+    \tbackground-image: url(/assets/pictures/2/content_deceuninck.png);\r\n\
+    \t}\r\n\
+    \t\r\n\
+    a.siegenia {\r\n\
+    \tbackground-image:url(/assets/pictures/5/content_siegenia.png);\r\n\
+    \t}\t\r\n\
+    \t\r\n\
+    a.tisnservice {\r\n\
+    \tbackground-image:url(/assets/pictures/6/content_tisnservice.png);\r\n\
+    \t}\t\t\r\n\
+    \t\r\n\
+    a.funke {\r\n\
+    \tbackground-image:url(/assets/pictures/3/content_funke.png);\r\n\
+    \t}\t\r\n\
+    \r\n\
+    a.vorne {\r\n\
+    \tbackground-image:url(/assets/pictures/7/content_vorne.png);\r\n\
+    \t}\t\r\n\
+    \r\n\
+    a.grain {\r\n\
+    \tbackground-image: url(/assets/pictures/4/content_grain.png);\r\n\
+    \t}\t"
+  template: ""
+  id: "4"
+  filter: /
+  description: !binary |
+    0J/QsNGA0YLQvdC10YDRiw==
+
+  css_prefix: partners-block
+pageblocks_037: 
+  blocktype: html
+  region_name: sidebar
+  filter_type: "1"
+  title: "\xD0\xA1\xD1\x82\xD0\xBE\xD0\xBF\xD0\xBA\xD0\xB0 \xD1\x81\xD0\xB5\xD1\x80\xD1\x82\xD0\xB8\xD1\x84\xD0\xB8\xD0\xBA\xD0\xB0\xD1\x82\xD0\xBE\xD0\xB2"
+  weight: "0"
+  css_text: ""
+  template: ""
+  id: "39"
+  filter: |-
+    /product/plastic-windows-and-doors
+    /manufacture
+  description: "\xD0\xA1\xD1\x82\xD0\xBE\xD0\xBF\xD0\xBA\xD0\xB0 \xD1\x81\xD0\xB5\xD1\x80\xD1\x82\xD0\xB8\xD1\x84\xD0\xB8\xD0\xBA\xD0\xB0\xD1\x82\xD0\xBE\xD0\xB2"
+  css_prefix: ""
+pageblocks_026: 
+  blocktype: html
+  region_name: content
+  filter_type: "1"
+  title: "\xD0\x93\xD0\xBE\xD1\x81\xD1\x82\xD1\x8B \xD0\xB8 \xD1\x81\xD0\xBD\xD0\xB8\xD0\xBF\xD1\x8B"
+  weight: "0"
+  css_text: |-
+    ul.icons { padding-left:1em; list-style:none; }
+    ul.zip a { padding-left:25px; background-image:url(/assets/pictures/44/content_1278262813_folder_zipper.png?1278263406);}
+  template: ""
+  id: "28"
+  filter: /documentation/state-standards-and-snips
+  description: "\xD0\x93\xD0\xBE\xD1\x81\xD1\x82\xD1\x8B \xD0\xB8 \xD1\x81\xD0\xBD\xD0\xB8\xD0\xBF\xD1\x8B"
+  css_prefix: ""
+pageblocks_015: 
+  blocktype: html
+  region_name: content
+  filter_type: "1"
+  title: !binary |
+    0J/RgNC+0LjQt9Cy0L7QtNGB0YLQstC+
+
+  weight: "0"
+  css_text: ""
+  template: ""
+  id: "17"
+  filter: /manufacture
+  description: !binary |
+    0J/RgNC+0LjQt9Cy0L7QtNGB0YLQstC+
+
+  css_prefix: ""
+pageblocks_004: 
+  blocktype: html
+  region_name: ""
+  filter_type: "1"
+  title: "\xD0\x91\xD0\xBB\xD0\xBE\xD0\xBA \xD0\xBF\xD0\xBE\xD1\x81\xD0\xBB\xD0\xB5\xD0\xB4\xD0\xBD\xD0\xB8\xD1\x85 \xD0\xBD\xD0\xBE\xD0\xB2\xD0\xBE\xD1\x81\xD1\x82\xD0\xB5\xD0\xB9"
+  weight: "0"
+  css_text: |-
+    /* LAST NEWS MODULE  */	
+    
+    .modifed-last-news,
+    .modifed-last-news dl {
+    	 margin:0; 
+    	 }
+    
+    .modifed-last-news .col-last {
+    	position:relative;
+    	border-left:1px dotted #c6c6c6; 
+    	padding-left:1.5em;
+    	margin-left:1.5em;
+    	}
+    
+    .modifed-last-news img { 
+    	border:1px solid #E3E6E6; 
+    	padding:4px;
+    	}
+    
+    .modifed-last-news .entry-title a { 
+    	color:#000;
+    	}
+    
+    .modifed-last-news .date {
+    	float:left;
+    	width:80px; 
+    	color:#c6c6c6;
+    	font-weight:400;
+    	margin-left:0;
+    	}
+    
+    .modifed-last-news dd { 
+    	margin-bottom:.75em; 
+    	}	
+    	
+    .modifed-last-news .rss { 
+    	position:absolute;
+    	top:4px;
+    	right:0;
+    	}	
+    
+    .modifed-last-news .rss img {
+    	margin:0;
+    	}
+  template: ""
+  id: "5"
+  filter: /
+  description: "\xD0\x91\xD0\xBB\xD0\xBE\xD0\xBA \xD0\xBF\xD0\xBE\xD1\x81\xD0\xBB\xD0\xB5\xD0\xB4\xD0\xBD\xD0\xB8\xD1\x85 \xD0\xBD\xD0\xBE\xD0\xB2\xD0\xBE\xD1\x81\xD1\x82\xD0\xB5\xD0\xB9"
+  css_prefix: shadow-block
+pageblocks_038: 
+  blocktype: html
+  region_name: sidebar
+  filter_type: "1"
+  title: "\xD0\x9F\xD0\xB0\xD1\x80\xD1\x82\xD0\xBD\xD0\xB5\xD1\x80\xD1\x8B \xD0\xB2\xD0\xB5\xD1\x80\xD1\x82\xD0\xB8\xD0\xBA\xD0\xB0\xD0\xBB\xD1\x8C\xD0\xBD\xD1\x8B\xD0\xB9 \xD0\xB1\xD0\xBB\xD0\xBE\xD0\xBA"
+  weight: "0"
+  css_text: |-
+    .vertical-partners {padding:0; border:none; }
+    .vertical-partners a { margin:0 auto; }
+  template: ""
+  id: "40"
+  filter: |-
+    /documentation/certificates
+    /about-company
+  description: "\xD0\x9F\xD0\xB0\xD1\x80\xD1\x82\xD0\xBD\xD0\xB5\xD1\x80\xD1\x8B \xD0\xB2\xD0\xB5\xD1\x80\xD1\x82\xD0\xB8\xD0\xBA\xD0\xB0\xD0\xBB\xD1\x8C\xD0\xBD\xD1\x8B\xD0\xB9 \xD0\xB1\xD0\xBB\xD0\xBE\xD0\xBA"
+  css_prefix: partners-block vertical-partners block
+pageblocks_027: 
+  blocktype: html
+  region_name: content
+  filter_type: "1"
+  title: !binary |
+    0JrQsNGC0LDQu9C+0LPQuA==
+
+  weight: "0"
+  css_text: ""
+  template: ""
+  id: "29"
+  filter: /documentation/catalogs
+  description: !binary |
+    0JrQsNGC0LDQu9C+0LPQuA==
+
+  css_prefix: ""
+pageblocks_016: 
+  blocktype: html
+  region_name: content
+  filter_type: "1"
+  title: "\xD0\x9E\xD1\x81\xD1\x82\xD0\xB5\xD0\xBA\xD0\xBB\xD0\xB5\xD0\xBD\xD0\xB8\xD0\xB5\xC2\xA0\xD0\xB1\xD0\xB0\xD0\xBB\xD0\xBA\xD0\xBE\xD0\xBD\xD0\xBE\xD0\xB2 \xD0\xB8\xC2\xA0\xD0\xBB\xD0\xBE\xD0\xB4\xD0\xB6\xD0\xB8\xD0\xB9"
+  weight: "0"
+  css_text: ""
+  template: ""
+  id: "18"
+  filter: /service/glassing
+  description: "\xD0\x9E\xD1\x81\xD1\x82\xD0\xB5\xD0\xBA\xD0\xBB\xD0\xB5\xD0\xBD\xD0\xB8\xD0\xB5\xC2\xA0\xD0\xB1\xD0\xB0\xD0\xBB\xD0\xBA\xD0\xBE\xD0\xBD\xD0\xBE\xD0\xB2 \xD0\xB8\xC2\xA0\xD0\xBB\xD0\xBE\xD0\xB4\xD0\xB6\xD0\xB8\xD0\xB9"
+  css_prefix: ""
+pageblocks_005: 
+  blocktype: html
+  region_name: center_region
+  filter_type: "1"
+  title: "\xD0\xA4\xD0\xB8\xD0\xBB\xD0\xB8\xD0\xB0\xD0\xBB\xD1\x8B \xD0\xBA\xD0\xBE\xD0\xBC\xD0\xBF\xD0\xB0\xD0\xBD\xD0\xB8\xD0\xB8"
+  weight: "0"
+  css_text: |-
+    /* AFFILATES BLOCK  */
+    
+    .affiliates table { 
+    	margin-bottom:0;
+    	}
+    
+    .affiliates table td {
+    	padding-bottom:.9em;}
+    
+    .affiliates { /*background:url(/assets/pictures/11/content_pakety-na-glavnuu.png?1278251443) no-repeat 100% 0 ; */ }
+  template: ""
+  id: "6"
+  filter: /
+  description: "\xD0\xA4\xD0\xB8\xD0\xBB\xD0\xB8\xD0\xB0\xD0\xBB\xD1\x8B \xD0\xBA\xD0\xBE\xD0\xBC\xD0\xBF\xD0\xB0\xD0\xBD\xD0\xB8\xD0\xB8"
+  css_prefix: affiliates
+pageblocks_039: 
+  blocktype: html
+  region_name: sidebar
+  filter_type: "1"
+  title: "\xD0\x92\xD0\xBD\xD0\xB8\xD0\xBC\xD0\xB0\xD0\xBD\xD0\xB8\xD0\xB5 \xD0\xBF\xD0\xBE\xD0\xBB\xD1\x8C\xD0\xB7\xD0\xBE\xD0\xB2\xD0\xB0\xD1\x82\xD0\xB5\xD0\xBB\xD0\xB8"
+  weight: "4"
+  css_text: ""
+  template: ""
+  id: "41"
+  filter: /faq
+  description: "\xD0\x92\xD0\xBD\xD0\xB8\xD0\xBC\xD0\xB0\xD0\xBD\xD0\xB8\xD0\xB5 \xD0\xBF\xD0\xBE\xD0\xBB\xD1\x8C\xD0\xB7\xD0\xBE\xD0\xB2\xD0\xB0\xD1\x82\xD0\xB5\xD0\xBB\xD0\xB8"
+  css_prefix: ""
+pageblocks_028: 
+  blocktype: html
+  region_name: content
+  filter_type: "1"
+  title: !binary |
+    0JPQu9C+0YHRgdCw0YDQuNC5
+
+  weight: "0"
+  css_text: ""
+  template: ""
+  id: "30"
+  filter: /documentation/glossary
+  description: !binary |
+    0JPQu9C+0YHRgdCw0YDQuNC5
+
+  css_prefix: ""
+pageblocks_017: 
+  blocktype: html
+  region_name: content
+  filter_type: "1"
+  title: "\xD0\x93\xD0\xB8\xD0\xB1\xD0\xBA\xD0\xB0 \xD0\xB0\xD1\x80\xD0\xBE\xD0\xBA"
+  weight: "0"
+  css_text: ""
+  template: ""
+  id: "19"
+  filter: /service/flexible-arches
+  description: "\xD0\x93\xD0\xB8\xD0\xB1\xD0\xBA\xD0\xB0 \xD0\xB0\xD1\x80\xD0\xBE\xD0\xBA"
+  css_prefix: ""
+pageblocks_006: 
+  blocktype: html
+  region_name: ""
+  filter_type: "1"
+  title: "\xD0\x9E\xD0\xBF\xD1\x80\xD0\xBE\xD1\x81\xD1\x8B-\xD0\xB2\xD1\x80\xD0\xB5\xD0\xBC\xD0\xB5\xD0\xBD\xD0\xBD\xD1\x8B\xD0\xB9"
+  weight: "0"
+  css_text: ""
+  template: ""
+  id: "7"
+  filter: /
+  description: !binary |
+    0J7Qv9GA0L7RgdGL
+
+  css_prefix: polls
+pageblocks_040: 
+  blocktype: html
+  region_name: content
+  filter_type: "1"
+  title: !binary |
+    0JrQsNC70YzQutGD0LvRj9GC0L7RgA==
+
+  weight: "0"
+  css_text: ""
+  template: ""
+  id: "42"
+  filter: /calculate-the-cost
+  description: !binary |
+    0JrQsNC70YzQutGD0LvRj9GC0L7RgA==
+
+  css_prefix: ""
+pageblocks_029: 
+  blocktype: html
+  region_name: content
+  filter_type: "1"
+  title: "\xD0\xA1\xD1\x82\xD0\xBE\xD0\xB8\xD0\xBC\xD0\xBE\xD1\x81\xD1\x82\xD1\x8C \xD0\xBF\xD0\xBB\xD0\xB0\xD1\x81\xD1\x82\xD0\xB8\xD0\xBA\xD0\xBE\xD0\xB2\xD1\x8B\xD1\x85\xC2\xA0\xD0\xBE\xD0\xBA\xD0\xBE\xD0\xBD"
+  weight: "0"
+  css_text: ""
+  template: ""
+  id: "31"
+  filter: /product/how-much-does-windows
+  description: "\xD0\xA1\xD1\x82\xD0\xBE\xD0\xB8\xD0\xBC\xD0\xBE\xD1\x81\xD1\x82\xD1\x8C \xD0\xBF\xD0\xBB\xD0\xB0\xD1\x81\xD1\x82\xD0\xB8\xD0\xBA\xD0\xBE\xD0\xB2\xD1\x8B\xD1\x85\xC2\xA0\xD0\xBE\xD0\xBA\xD0\xBE\xD0\xBD"
+  css_prefix: ""
+pageblocks_018: 
+  blocktype: html
+  region_name: content
+  filter_type: "1"
+  title: "\xD0\x97\xD0\xB0\xD0\xBC\xD0\xB5\xD1\x80 \xD0\xBE\xD0\xBA\xD0\xBE\xD0\xBD\xD0\xBD\xD0\xBE\xD0\xB3\xD0\xBE \xD0\xBF\xD1\x80\xD0\xBE\xD0\xB5\xD0\xBC\xD0\xB0"
+  weight: "0"
+  css_text: ""
+  template: ""
+  id: "20"
+  filter: /service/measuring-windows
+  description: "\xD0\x97\xD0\xB0\xD0\xBC\xD0\xB5\xD1\x80 \xD0\xBE\xD0\xBA\xD0\xBE\xD0\xBD\xD0\xBD\xD0\xBE\xD0\xB3\xD0\xBE \xD0\xBF\xD1\x80\xD0\xBE\xD0\xB5\xD0\xBC\xD0\xB0"
+  css_prefix: ""
+pageblocks_007: 
+  blocktype: naviwidget
+  region_name: sidebar
+  filter_type: "0"
+  title: "\xD0\x92\xD1\x82\xD0\xBE\xD1\x80\xD0\xBE\xD1\x81\xD1\x82\xD0\xB5\xD0\xBF\xD0\xB5\xD0\xBD\xD0\xBD\xD0\xBE\xD0\xB5 \xD0\xBC\xD0\xB5\xD0\xBD\xD1\x8E"
+  weight: "0"
+  css_text: ""
+  template: ""
+  id: "9"
+  filter: /
+  description: "\xD0\x92\xD1\x82\xD0\xBE\xD1\x80\xD0\xBE\xD1\x81\xD1\x82\xD0\xB5\xD0\xBF\xD0\xB5\xD0\xBD\xD0\xBD\xD0\xBE\xD0\xB5 \xD0\xBC\xD0\xB5\xD0\xBD\xD1\x8E"
+  css_prefix: block
+pageblocks_030: 
+  blocktype: html
+  region_name: content
+  filter_type: "1"
+  title: !binary |
+    0JPQsNC70LXRgNC10Y8=
+
+  weight: "0"
+  css_text: ""
+  template: ""
+  id: "32"
+  filter: /product/gallery
+  description: !binary |
+    0JPQsNC70LXRgNC10Y8=
+
+  css_prefix: ""
+pageblocks_019: 
+  blocktype: html
+  region_name: content
+  filter_type: "1"
+  title: !binary |
+    0JTQvtGB0YLQsNCy0LrQsA==
+
+  weight: "0"
+  css_text: ""
+  template: ""
+  id: "21"
+  filter: /service/delivery
+  description: !binary |
+    0JTQvtGB0YLQsNCy0LrQsA==
+
+  css_prefix: ""
+pageblocks_008: 
+  blocktype: html
+  region_name: sidebar
+  filter_type: "0"
+  title: "\xD0\x9F\xD0\xBE\xD1\x8F\xD0\xB2\xD0\xB8\xD0\xBB\xD0\xB8\xD1\x81\xD1\x8C \xD0\xB2\xD0\xBE\xD0\xBF\xD1\x80\xD0\xBE\xD1\x81\xD1\x8B?"
+  weight: "2"
+  css_text: ""
+  template: ""
+  id: "10"
+  filter: /
+  description: "\xD0\x9F\xD0\xBE\xD1\x8F\xD0\xB2\xD0\xB8\xD0\xBB\xD0\xB8\xD1\x81\xD1\x8C \xD0\xB2\xD0\xBE\xD0\xBF\xD1\x80\xD0\xBE\xD1\x81\xD1\x8B?"
+  css_prefix: block
+pageblocks_031: 
+  blocktype: html
+  region_name: content
+  filter_type: "1"
+  title: !binary |
+    0J/RgNC+0YTQuNC70Lg=
+
+  weight: "0"
+  css_text: ""
+  template: ""
+  id: "33"
+  filter: /profiles
+  description: !binary |
+    0J/RgNC+0YTQuNC70Lg=
+
+  css_prefix: ""
+pageblocks_020: 
+  blocktype: html
+  region_name: content
+  filter_type: "1"
+  title: "\xD0\x9A\xD0\xBE\xD1\x80\xD0\xBF\xD0\xBE\xD1\x80\xD0\xB0\xD1\x82\xD0\xB8\xD0\xB2\xD0\xBD\xD1\x8B\xD0\xBC \xD0\xBA\xD0\xBB\xD0\xB8\xD0\xB5\xD0\xBD\xD1\x82\xD0\xB0\xD0\xBC"
+  weight: "0"
+  css_text: ""
+  template: ""
+  id: "22"
+  filter: /about-company/corporate-clients
+  description: "\xD0\x9A\xD0\xBE\xD1\x80\xD0\xBF\xD0\xBE\xD1\x80\xD0\xB0\xD1\x82\xD0\xB8\xD0\xB2\xD0\xBD\xD1\x8B\xD0\xBC \xD0\xBA\xD0\xBB\xD0\xB8\xD0\xB5\xD0\xBD\xD1\x82\xD0\xB0\xD0\xBC"
+  css_prefix: ""
+pageblocks_009: 
+  blocktype: paged_block
+  region_name: promo_region
+  filter_type: "1"
+  title: !binary |
+    0J/RgNC+0LzQvtCx0LvQvtC6
+
+  weight: "-10"
+  css_text: |-
+    .promo .video-wrap {
+    width:344px;
+    }
+    
+    .promo .video {
+    padding-left:420px;
+    }
+  template: ""
+  id: "11"
+  filter: /
+  description: !binary |
+    0J/RgNC+0LzQvtCx0LvQvtC6
+
+  css_prefix: system-block corners corners-4 ovv
+pageblocks_032: 
+  blocktype: html
+  region_name: ""
+  filter_type: "1"
+  title: "\xD0\x91\xD0\xBB\xD0\xBE\xD0\xBA \xD1\x81\xD1\x82\xD0\xB8\xD0\xBB\xD0\xB5\xD0\xB9 \xD0\xB4\xD0\xBB\xD1\x8F \xD1\x81\xD0\xB0\xD0\xB9\xD1\x82\xD0\xB0"
+  weight: "0"
+  css_text: |-
+    #content h1 {color:#02A0C1;
+    font-family:Arial,Helvetica,sans-serif;
+    font-size:2.7em;
+    margin-bottom:0.75em;}
+  template: ""
+  id: "34"
+  filter: /
+  description: "\xD0\x91\xD0\xBB\xD0\xBE\xD0\xBA \xD1\x81\xD1\x82\xD0\xB8\xD0\xBB\xD0\xB5\xD0\xB9 \xD0\xB4\xD0\xBB\xD1\x8F \xD1\x81\xD0\xB0\xD0\xB9\xD1\x82\xD0\xB0"
+  css_prefix: ""
+pageblocks_021: 
+  blocktype: publications
+  region_name: footer_region
+  filter_type: "0"
+  title: "\xD0\x91\xD0\xBB\xD0\xBE\xD0\xBA \xD0\xBD\xD0\xBE\xD0\xB2\xD1\x81\xD1\x82\xD0\xB5\xD0\xB9 \xD0\xB4\xD0\xBB\xD1\x8F \xD0\xB2\xD1\x82\xD0\xBE\xD1\x80\xD0\xBE\xD1\x81\xD1\x82\xD0\xB5\xD0\xBF\xD0\xB5\xD0\xBD\xD0\xBD\xD1\x8B\xD1\x85 \xD1\x81\xD1\x82\xD1\x80\xD0\xB0\xD0\xBD\xD0\xB8\xD1\x86"
+  weight: "-2"
+  css_text: ""
+  template: ""
+  id: "23"
+  filter: /
+  description: "\xD0\x91\xD0\xBB\xD0\xBE\xD0\xBA \xD0\xBD\xD0\xBE\xD0\xB2\xD1\x81\xD1\x82\xD0\xB5\xD0\xB9 \xD0\xB4\xD0\xBB\xD1\x8F \xD0\xB2\xD1\x82\xD0\xBE\xD1\x80\xD0\xBE\xD1\x81\xD1\x82\xD0\xB5\xD0\xBF\xD0\xB5\xD0\xBD\xD0\xBD\xD1\x8B\xD1\x85 \xD1\x81\xD1\x82\xD1\x80\xD0\xB0\xD0\xBD\xD0\xB8\xD1\x86"
+  css_prefix: shadow-block
+pageblocks_010: 
+  blocktype: publications
+  region_name: promo_region
+  filter_type: "1"
+  title: "\xD0\x91\xD0\xBB\xD0\xBE\xD0\xBA \xD0\xBD\xD0\xBE\xD0\xB2\xD0\xBE\xD1\x81\xD1\x82\xD0\xB5\xD0\xB9 \xD0\xBD\xD0\xB0 \xD0\xB3\xD0\xBB\xD0\xB0\xD0\xB2\xD0\xBD\xD0\xBE\xD0\xB9"
+  weight: "-1"
+  css_text: |-
+    /* LAST NEWS MODULE  */	
+    
+    .modifed-last-news,
+    .modifed-last-news dl {
+    	 margin:0; 
+    	 }
+    
+    .modifed-last-news .col-last {
+    	position:relative;
+    	border-left:1px dotted #c6c6c6; 
+    	padding-left:1.5em;
+    	margin-left:1.5em;
+    	}
+    
+    .modifed-last-news img { 
+    	border:1px solid #E3E6E6; 
+    	padding:4px;
+    	}
+    
+    .modifed-last-news .entry-title a { 
+    	color:#000;
+    	}
+    
+    .modifed-last-news .date {
+    	float:left;
+    	width:80px; 
+    	color:#c6c6c6;
+    	font-weight:400;
+    	margin-left:0;
+    	}
+    
+    .modifed-last-news dd { 
+    	margin-bottom:.75em; 
+    	}	
+    	
+    .modifed-last-news .rss { 
+    	position:absolute;
+    	top:4px;
+    	right:0;
+    	}	
+    
+    .modifed-last-news .rss img {
+    	margin:0;
+    	}
+  template: ""
+  id: "12"
+  filter: /
+  description: "\xD0\x91\xD0\xBB\xD0\xBE\xD0\xBA \xD0\xBD\xD0\xBE\xD0\xB2\xD0\xBE\xD1\x81\xD1\x82\xD0\xB5\xD0\xB9 \xD0\xBD\xD0\xB0 \xD0\xB3\xD0\xBB\xD0\xB0\xD0\xB2\xD0\xBD\xD0\xBE\xD0\xB9"
+  css_prefix: shadow-block
+pageblocks_033: 
+  blocktype: html
+  region_name: content
+  filter_type: "1"
+  title: "\xD0\x9E\xD0\xBA\xD0\xBE\xD0\xBD\xD0\xBD\xD0\xB0\xD1\x8F \xD1\x81\xD0\xB8\xD1\x81\xD1\x82\xD0\xB5\xD0\xBC\xD0\xB0 Grain Lider"
+  weight: "0"
+  css_text: ""
+  template: ""
+  id: "35"
+  filter: /profiles/grain
+  description: "\xD0\x9E\xD0\xBA\xD0\xBE\xD0\xBD\xD0\xBD\xD0\xB0\xD1\x8F \xD1\x81\xD0\xB8\xD1\x81\xD1\x82\xD0\xB5\xD0\xBC\xD0\xB0 Grain Lider"
+  css_prefix: ""
+pageblocks_022: 
+  blocktype: html
+  region_name: content
+  filter_type: "1"
+  title: "\xD0\x98\xD0\xBD\xD1\x84\xD0\xBE\xD1\x80\xD0\xBC\xD0\xB0\xD1\x86\xD0\xB8\xD1\x8F \xD0\xB4\xD0\xBB\xD1\x8F \xD0\xB4\xD0\xB8\xD0\xBB\xD0\xB5\xD1\x80\xD0\xBE\xD0\xB2"
+  weight: "0"
+  css_text: ""
+  template: ""
+  id: "24"
+  filter: /about-company/information-for-dealers
+  description: "\xD0\x98\xD0\xBD\xD1\x84\xD0\xBE\xD1\x80\xD0\xBC\xD0\xB0\xD1\x86\xD0\xB8\xD1\x8F \xD0\xB4\xD0\xBB\xD1\x8F \xD0\xB4\xD0\xB8\xD0\xBB\xD0\xB5\xD1\x80\xD0\xBE\xD0\xB2"
+  css_prefix: ""
+pageblocks_011: 
+  blocktype: html
+  region_name: content
+  filter_type: "1"
+  title: "\xD0\x9E \xD0\xBA\xD0\xBE\xD0\xBC\xD0\xBF\xD0\xB0\xD0\xBD\xD0\xB8\xD0\xB8"
+  weight: "0"
+  css_text: ""
+  template: ""
+  id: "13"
+  filter: /about-company
+  description: "\xD0\x9E \xD0\xBA\xD0\xBE\xD0\xBC\xD0\xBF\xD0\xB0\xD0\xBD\xD0\xB8\xD0\xB8"
+  css_prefix: ""

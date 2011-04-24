@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head profile="http://gmpg.org/xfn/11">
+    <a2m:pagetitle />
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
+    <meta http-equiv="imagetoolbar" content="no" />
+    <%= stylesheet_link_tag %w{cssf-base layout blocks modules}.map{|file| file="/templates/layouts/oknatisn/css/#{file}"} %>
+    <%= stylesheet_link_tag "ext_blocks" %>
+    <!--[if lt IE 8]><%= stylesheet_link_tag %w{ie}.map{|file| file="/templates/layouts/oknatisn/css/#{file}"} %><![endif]-->
+	<%= javascript_include_tag %w{auto_corners_selector css_browser_selector}.map{|file| file="/templates/layouts/oknatisn/js/#{file}"} %>
+    <%= javascript_include_tag %w{swfobject mootools-core-1.3 mootools-more-1.3 formcheck/formcheck geophones} %>
+  </head>
+  <body class="page">
+    <div class="page-margin">
+      <div class="wrap">
+        <div class="page-wrap">
+          <!--HEADER-->
+          <div id="header">
+            <!--Logotype-->
+            <div class="logo">
+              <h1><a class="img-repl" title="Компания Окна ТиСН" href="/">Окна ТиСН</a></h1>
+            </div>
+            <!--Phones-->
+            <div class="phones">
+              <a2m:geophones /> 
+            </div>
+            <!--Contact us-->
+            <a2m:feedback />
+            <div class="region block">
+              <a2m:region name="contacts_region" title="Регион для поиска" />
+            </div>
+          </div>
+          <!--END HEADER-->
+          <div class="container block">
+            <div class="content-wrap">
+              <div class="container" id="content">
+                <%= yield :layout %>
+  		<a2m:region name="content" title="Содержимое страницы" />
+              </div>
+	    </div>
+              <div id="sidebar">
+                <div class="region">
+                  <a2m:region name="sidebar" title="Левая панель" />
+                </div>
+              </div>
+          </div>
+          <div class="cc">&nbsp;</div>
+          <!--FOOTER-->
+          <div id="footer">
+            <div class="region">
+              <a2m:region name="footer_region" title="Подвал сайта" />
+            </div>
+          </div>
+          <!--END FOOTER-->
+        </div>
+      </div>
+      <img width="97" height="339" alt="" src="/templates/layouts/oknatisn/i/layout/peaple_page.png" class="peaple-page"></img>
+    </div><!--End Page margin-->
+     <a2m:all_phones />
+    <script type="text/javascript">CornersInit();</script>
+
+<!-- Yandex.Metrika -->
+<script src="//mc.yandex.ru/metrika/watch.js" type="text/javascript"></script>
+<div style="display:none;"><script type="text/javascript">
+try { var yaCounter1219686 = new Ya.Metrika(1219686); } catch(e){}
+</script></div>
+<noscript><div style="position:absolute"><img src="//mc.yandex.ru/watch/1219686" alt="" /></div></noscript>
+<!-- /Yandex.Metrika -->
+</body>
+</html>

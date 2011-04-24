@@ -1,0 +1,63 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    BlueCloth (1.0.1)
+    RedCloth (4.2.3)
+    actionmailer (2.3.8)
+      actionpack (= 2.3.8)
+    actionpack (2.3.8)
+      activesupport (= 2.3.8)
+      rack (~> 1.1.0)
+    activerecord (2.3.8)
+      activesupport (= 2.3.8)
+    activeresource (2.3.8)
+      activesupport (= 2.3.8)
+    activesupport (2.3.8)
+    acts_as_list (0.1.2)
+    bluecloth (2.1.0)
+    geoip (1.0.0)
+    gilenson (1.1.1)
+    kgio (2.3.3)
+    liquid (2.2.2)
+    nokogiri (1.4.4)
+    rack (1.1.2)
+    rails (2.3.8)
+      actionmailer (= 2.3.8)
+      actionpack (= 2.3.8)
+      activerecord (= 2.3.8)
+      activeresource (= 2.3.8)
+      activesupport (= 2.3.8)
+      rake (>= 0.8.3)
+    rake (0.8.7)
+    rmagick (2.13.1)
+    ru_propisju (1.1.0)
+    russian (0.2.7)
+    rutils (2.0.0)
+      gilenson (>= 1.1.0)
+      ru_propisju (>= 1.0.0)
+      russian (>= 0.2.7)
+    sanitize (2.0.1)
+      nokogiri (~> 1.4.4)
+    sqlite3-ruby (1.2.5)
+    unicorn (3.5.0)
+      kgio (~> 2.3)
+      rack
+    ya2yaml (0.30)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  BlueCloth
+  RedCloth (= 4.2.3)
+  acts_as_list
+  bluecloth
+  geoip
+  liquid
+  rails (= 2.3.8)
+  rmagick
+  rutils
+  sanitize
+  sqlite3-ruby (= 1.2.5)
+  unicorn
+  ya2yaml

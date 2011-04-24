@@ -1,0 +1,110 @@
+<div class="page-wrapper container">
+  <% form_for :item, :url=>{:action=>"create"} do |f| %>
+    <table class="null-table full content-layout">
+      <tr>
+        <td class="header" colspan="2">
+          <h1 style=" background-image:url(/images/adminsystem/icons/48/content.png);">Управление блоками</h1>
+        </td>
+        <td class="column-right" rowspan="2">
+          <!-- Здась будет панель управления -->
+  <%#= render :partial=>"blockspanel" %>
+        </td>
+      </tr>
+      <tr>
+        <td class="column-center">
+          <fieldset>
+            <div class="f-row width-100">
+              <%= f.label :blocktype, "Тип блока" %>
+              <div class="i-wrap">
+                <%= f.select :blocktype, A2mCms::ExtensionLoader.extensions.select{|ext| ext.is_block}.collect{|ext| [ext.title, ext.extension_name]}, { :include_blank => false }, {:class=>"i-select"} %>
+                <div class="req" title="Обязательное поле">&nbsp;</div>
+              </div>
+              <span class="i-help">Тип блока задает внутреннее содержание и редактор контента.</span>
+            </div>
+
+            <div class="f-row width-100">
+              <%= f.label :description, "Описание блока" %>
+              <div class="i-wrap">
+                <%= f.text_field :description, :class=>"i-text" %>
+                <div class="req" title="Обязательное поле">&nbsp;</div>
+              </div>
+              <span class="i-help">Описание используется на странице администрирования блоков.</span>
+            </div>
+
+            <div class="f-row width-100">
+              <%= f.label :title, "Заголовок блока" %>
+              <div class="i-wrap">
+                <%= f.text_field :title, :class=>"i-text" %>
+              </div>
+              <span class="i-help">Напишите заголовок блока. Точно так он будет показан пользователю.</span>
+            </div>
+
+            <div class="f-row width-100">
+              <%= f.label :region_name, "Где разместить блок:" %>
+              <div class="i-wrap">
+                <%= f.select :region_name, @regions.collect{|p| [ p.title, p.name ] }, {:include_blank => 'Отключено'}, {:class=>"i-select"} %>
+              </div>
+              <span class="i-help">Укажите регион, куда следует поместить блок.</span>
+            </div>
+
+            <div class="f-row width-50">
+              <%= f.label :weight, "Вес блока:" %>
+              <div class="i-wrap">
+                <%= f.select :weight, (-10..10).to_a, {:include_blank =>false, :selected => @item.weight}, {:class=>"i-select"} %>
+              </div>
+              <span class="i-help">Чем он легче, тем выше поднимается над другими блоками.</span>
+            </div>
+
+            <div class="f-row width-100">
+              <%= f.label :filter_type, "Показывать блок на определенных страницах:" %>
+              <div class="i-radio">
+                <%= f.radio_button :filter_type, false %>
+                <%= f.label :weight, "На всех, исключая перечисленные" %>
+              </div>
+              <div class="i-radio">
+                <%= f.radio_button :filter_type, true %>
+                <%= f.label :weight, "Только на перечисленных" %>
+              </div>
+            </div>
+
+            <div class="f-row width-100">
+              <div class="i-wrap">
+                <%= f.text_area :filter, :rows=>5, :class=>"i-select" %>
+              </div>
+              <span class="i-help">Укажите страницы, используя их пути. Символ звездочки (*) означает — для всех страниц в данном разделе. Для главной страницы впишите [index]..</span>
+            </div>
+          </fieldset>
+          <%= f.submit "Сохранить" %>
+        </td>
+        <td class="column-advanced">
+          <div style="background:#eee; padding: 1.5em;" class="corners corners-4">
+            <h3>Расширенные настройки</h3> В идеале, здесь можно будет задать классы для пункта меню а также ID по желанию.
+          </div>
+
+          <div class="f-row width-100">
+            <%= f.label :css_prefix, "Дополнительный классы блока" %>
+            <div class="i-wrap">
+              <%= f.text_field :css_prefix, :class=>"i-text" %>
+            </div>
+            <span class="i-help">Впишите дополнительные css классы, если в них есть надобность.</span>
+          </div>
+
+          <div class="f-row width-100">
+            <div class="i-wrap">
+              <%= f.text_area :css_text, :rows=>5, :class=>"i-select" %>
+            </div>
+            <span class="i-help">Если есть необходимость в переопределении стилей шаблона...</span>
+          </div>
+
+          <div class="f-row width-100">
+            <%= f.label :template, "Шаблон показа блока" %>
+            <div class="i-wrap">
+              <%= f.text_area :template, :rows=>5, :class=>"i-select" %>
+            </div>
+            <span class="i-help">Укажите свой собственный шаблон показа блока</span>
+          </div>
+        </td>
+      </tr>
+    </table>
+  <% end %>
+</div>

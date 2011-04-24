@@ -1,0 +1,16 @@
+<ul class="breadcrumbs">
+  <li>
+    <%= link_to "Дерево страниц", {:action=>"index", :controller=>"NavigationExt"}, {:class=>"ajax"} %>
+  </li>
+  <li>
+    <%= link_to @spartitem.page_part.page.title, {:action=>"show_moduls", :id=>@spartitem.page_part.page_id}, {:class=>"ajax"} %>
+  </li>
+  <li><span>Удалить модуль <b><%= @spartitem.modul.name %></b> из контейнера <b><%= @spartitem.page_part.name %></b>?</span></li>
+</ul>
+
+<% form_for :spartitem, :url=>{:action=>"delete_module", :mid=>@spartitem.id}, :html=>{:class=>"post_submit"} do |form| %>
+<h3>
+  Да, я хочу удалить этот модуль со страницы.
+</h3>
+<%= submit_tag "Удалить" %>
+<% end %>

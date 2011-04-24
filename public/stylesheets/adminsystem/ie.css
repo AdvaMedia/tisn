@@ -1,0 +1,84 @@
+
+/* Both IE styles		 
+------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------ */
+legend { margin-left:-.5em; }
+select { padding:0; }
+input,button,textarea,select { font-size: 100%; }
+
+
+
+
+/* IE 7 Hacks		[class].class-name {...}      
+------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------ */
+
+[class].corners, 
+[class].columns, 
+[class].layout-box { zoom: 1; } /* hasLayout ON */
+[class].container { margin-bottom: 5px; }
+
+
+/* Custom form styles */
+
+[class].i-checkbox input, 
+[class].i-radio input { margin: -7px 0 0 -3px;  }
+
+
+/* Roundborders */
+
+[class].roundborder { position:relative; zoom: 1; }
+[class].ie_tl, 
+[class].ie_tr, 
+[class].ie_bl, 
+[class].ie_br { width:5px; height:5px; position:absolute; background-position:0 0; background-repeat:no-repeat; display:block;}
+
+[class].ie_tl { background-image: url(/images/adminsystem/corners/roundborder_top_left.gif); left:-1px; top:-1px;}
+[class].ie_tr { background-image: url(/images/adminsystem/corners/roundborder_top_right.gif); right:-1px; top:-1px;}
+[class].ie_bl { background-image: url(/images/adminsystem/corners/roundborder_bottom_left.gif); left:-1px; bottom:-1px;}
+[class].ie_br { background-image: url(/images/adminsystem/corners/roundborder_bottom_right.gif); right:-1px; bottom:-1px; }
+
+[class].roundborder {
+  z-index: expression(
+    runtimeStyle.zIndex = 1,
+    innerHTML = "" + innerHTML + "<em class='ie_tl'></em><em class='ie_tr'></em><em class='ie_bl'></em><em class='ie_br'></em>"
+  );
+}
+
+
+/* IE 6 Hacks		* html* .class-name {...}
+------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------ */
+
+* html* .cc { font-size: 0px; overflow: hidden; height: 0px; }
+
+* html* .content .f-inputs { padding-left: 0; height: 1%; }
+* html* .content .f-actions { padding-left: 30%; }
+
+* html* .container, 
+* html* .columns, 
+* html* .content .f-actions, 
+* html* .menu-h, 
+* html* .layout-box,
+* html* .menu-v-d a, 
+* html* .menu-h-d,
+* html* .menu-h-d li, 
+* html* .menu-h-d ul li a,
+* html* .corners, 
+* html* .corners em.tl, 
+* html* .corners em.tr, 
+* html* .corners em.bl, 
+* html* .corners em.br { zoom: 1; } /* hasLayout ON */
+
+* html* .corners em.tr, 
+* html* .corners em.br { margin-left: 100%; left: -10px; }
+
+* html* .menu-v-d ul { margin-left: -1px; }
+* html* .menu-h-d li li { float: left; }
+
+* html* .page-layout .container { float: left; width: 100%; zoom: 1; height: 1%; display: block; }
+
+/* Custom form styles */
+
+* html* .i-checkbox input, 
+* html* .i-radio input { margin: -7px 0 0 -3px;  }

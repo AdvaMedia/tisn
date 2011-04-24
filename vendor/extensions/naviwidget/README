@@ -1,0 +1,120 @@
+NaviwidgetExtension
+===================
+
+Introduction goes here.
+
+
+Example
+=======
+
+Example goes here.
+
+
+Copyright (c) 2010 [name of plugin creator], released under the MIT license
+
+##Главное меню
+#Шаблон 0 уровня меню:
+
+<table class="menu general-menu full null-table">
+<tbody>
+ <tr>
+  <a2m:menuitems>
+  <a2m:item>
+   <a2m:normal>
+    <td class="leaf">
+     <div>
+      <a href="<a2m:url />"><span><a2m:name /></span></a>
+      <a2m:subitems />
+     </div>
+    </td>
+   </a2m:normal>
+   <a2m:active>
+    <td class="active-trail">
+     <div>
+      <a href="<a2m:url />" class="active"><span><a2m:name /></span></a>
+      <a2m:subitems />
+     </div>
+    </td>
+   </a2m:active>
+   <a2m:expanded>
+    <td class="active-trail">
+     <div>
+      <a href="<a2m:url />" class="active"><span><a2m:name /></span></a>
+      <a2m:subitems />
+     </div>
+    </td>
+   </a2m:expanded>
+  </a2m:item>
+  </a2m:menuitems>
+ </tr>
+</tbody>
+</table>
+
+#шаблон уровня 1:
+<ul class="menu">
+  <a2m:menuitems>
+  <a2m:item>
+   <a2m:normal>
+    <li class="leaf"><a href="<a2m:url />"><a2m:name /></a>
+     <a2m:subitems />
+    </li>
+   </a2m:normal>
+   <a2m:active>
+    <li class="leaf expanded active-trail"><a class="active" href="<a2m:url />"><a2m:name /></a>
+     <a2m:subitems />
+    </li>
+   </a2m:active>
+   <a2m:expanded>
+     <li class="leaf expanded"><a class="active" href="<a2m:url />"><a2m:name /></a>
+     <a2m:subitems />
+    </li>
+   </a2m:expanded>
+  </a2m:item>
+  </a2m:menuitems>
+</ul>
+####################################
+#Второстепенное меню
+
+#Шаблон уровня 0
+<ul class="menu sidebar-menu">
+  <a2m:menuitems>
+  <a2m:item>
+   <a2m:normal>
+    <li class="leaf"><a href="<a2m:url />"><a2m:name /></a>
+    </li>
+   </a2m:normal>
+   <a2m:active>
+    <li class="leaf expanded active-trail"><a class="active" href="<a2m:url />"><a2m:name /></a>
+     <a2m:subitems />
+    </li>
+   </a2m:active>
+   <a2m:expanded>
+     <li class="leaf expanded"><a class="active" href="<a2m:url />"><a2m:name /></a>
+     <a2m:subitems />
+    </li>
+   </a2m:expanded>
+  </a2m:item>
+  </a2m:menuitems>
+</ul>
+
+#Шаблон уровня 1
+<ul class="menu">
+  <a2m:menuitems>
+  <a2m:item>
+   <a2m:normal>
+    <li class="leaf"><a href="<a2m:url />"><a2m:name /></a>
+    </li>
+   </a2m:normal>
+   <a2m:active>
+    <li class="leaf expanded active-trail"><a class="active" href="<a2m:url />"><a2m:name /></a>
+     <a2m:subitems />
+    </li>
+   </a2m:active>
+   <a2m:expanded>
+     <li class="leaf expanded"><a class="active" href="<a2m:url />"><a2m:name /></a>
+     <a2m:subitems />
+    </li>
+   </a2m:expanded>
+  </a2m:item>
+  </a2m:menuitems>
+</ul>

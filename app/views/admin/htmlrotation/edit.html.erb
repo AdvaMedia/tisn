@@ -1,0 +1,22 @@
+<div class="content">
+  <% form_for :rotateitem, :url=>{:action=>"update", :controller=>"admin/htmlrotation"}, :html=>{:method=>:put} do |form| %>
+  <table style="width:100%">
+    <tbody>
+      <tr>
+        <th>Содержимое</th>
+        <th>Фильтр</th>
+      </tr>
+      <tr>
+        <td width="80%">
+          <%= form.text_area :content, :size=>"10x10", :style=>"width:100%" %>
+        </td>
+        <td>
+          <%= form.check_box :usefilter %> Использовать MarkDown?
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <%= submit_tag "Сохранить" %>
+  <%= link_to "Отмена", {:action=>"index", :controller=>"admin/htmlrotation"} %>
+  <% end %>
+</div>

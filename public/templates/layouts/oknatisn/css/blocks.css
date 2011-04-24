@@ -1,0 +1,116 @@
+/* SYSTEM STYLES
+------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------ */
+.system-block, user-block { position:relative; }
+
+
+/* CUSTOM USER STYLES
+------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------ */
+
+/* SHADOW BLOCK  */
+
+.shadow-block {
+	padding:2.5em 0;
+	background:url(../i/layout/shadow.jpg) 50% 0 no-repeat;
+	}
+
+
+/* FOOTER BLOCK  */
+
+.my-footer   { 
+	color:#c6c6c6;
+	font-size:.9em;
+	position:relative;
+	padding:2.5em 0;
+	border-top:1px solid #E3E6E6;
+	margin-top:-1px;
+	}
+
+.my-footer .columns,.my-footer p {
+	margin-bottom:0;
+	}
+
+.my-footer p { 
+	padding-top:.6em; 
+	}
+
+.my-footer a {
+	color:#c6c6c6;
+	}
+	
+.my-footer .madein { 
+	position:absolute; 
+	right:0; 
+	top:50%;
+	}	
+
+.my-footer .madein span { 
+	font-family: Paratype, Arial, Helvetica, sans-serif; 
+	}
+
+.my-footer img {
+	margin:0;
+	}	
+
+
+/* AFFILATES BLOCK  */
+
+.affiliates table { 
+	margin-bottom:0;
+	}
+
+.affiliates table td {
+	padding-bottom:.9em;}
+
+
+			
+/* PARTNERS BLOCK  */			
+			
+.partners-block	{
+	padding:2.5em 0;
+	border-bottom:1px solid #E3E6E6;
+	}		
+
+.partners-block table { 
+	margin:0; 
+	}	
+
+.partners-block	a {
+	display:block;
+	width:165px;
+	height:57px;
+	background-position:0 100%;
+	background-repeat:no-repeat;
+	}
+
+.partners-block	a:hover {
+	background-position:0 0;
+	}
+
+a.deceuninck {
+	background-image: url(../../files/deceuninck.png);
+	}
+	
+a.siegenia {
+	background-image:url(../../files/siegenia.png);
+	}	
+	
+a.tisnservice {
+	background-image:url(../../files/tisnservice.png);
+	}		
+	
+a.funke {
+	background-image:url(../../files/funke.png);
+	}	
+
+a.vorne {
+	background-image:url(../../files/vorne.png);
+	}	
+
+a.grain {
+	background-image: url(../../files/grain.png);
+	}	
+
+	
+				

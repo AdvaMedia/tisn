@@ -1,0 +1,18 @@
+<ul class="breadcrumbs">
+  <li><span>Набор виджетов</span></li>
+  <li>
+    <%= link_to "Добавить", {:action=>"newnav"}, {:class=>"ajax"} %>
+  </li>
+</ul>
+
+<h4>Набор виджетов:</h4>
+<ul>
+  <% Navigate.all.each do |nvitem| %>
+  <li>
+    <%= link_to nvitem.name, {:action=>"editnav", :id=>nvitem.id}, {:class=>"ajax"} %>
+    (
+    <%= link_to "Структура", {:action=>"index", :controller=>"NavWidNodesAdmin", :id=>nvitem.id}, {:class=>"ajax"} %>
+    )
+  </li>
+  <% end %>
+</ul>

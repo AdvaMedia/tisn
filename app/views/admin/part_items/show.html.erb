@@ -1,0 +1,10 @@
+<% if @partitem %>
+<% form_for :partitem,  :url=>{:action=>"destroy", :controller=>"admin/part_items"}, :html=>{:class=>'post_submit', :method=>:delete} do |form| %>
+<p>Вы действительно хотите удалить модуль <% @partitem.modul.name %> ?</p>
+<%= link_to "Нет, че-тА я передумал...", {:action=>"edit", :controller=>"admin/pageparts", :named_part=>@named_part, :id=>@pid}, {:class=>'ajax'} %>
+<%= submit_tag "Да, хочу" %>
+<% end %>
+<% else %>
+<h2>Модуль не найден...</h2>
+<%= link_to "Назад...", {:action=>"edit", :controller=>"admin/pageparts", :named_part=>@named_part, :id=>@pid}, {:class=>'ajax'} %>
+<% end %>

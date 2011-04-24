@@ -1,0 +1,42 @@
+<script type="text/javascript" src="/javascripts/formcheck/formcheck.js"></script>
+<script type="text/javascript" src="/javascripts/formcheck/lang/ru.js"></script>
+<link rel="stylesheet" href="/css/formcheck/formcheck.css" type="text/css" media="screen" />
+<script type="text/javascript">
+  window.addEvent('domready',function(){
+    new FormCheck('contactsform',{
+      submitByAjax:true,
+      ajaxResponseDiv:$('contactsform').getParent().get('id')
+    });
+  });
+</script>
+<h3>Форма обратной связи</h3>
+<% form_tag "#{url_for(:action=>"send_contact", :controller=>"contacts")}", :id=>"contactsform" do %>
+<input type="hidden" name="mail" />
+  <div class="f-row">
+    <label>Ваше имя:</label>
+    <div class="f-inputs">
+      <input type="text" tabindex="1" class="i-text validate['required']" name="myname" />
+    </div>
+  </div>
+  <div class="f-row">
+    <label>Контактный телефон:</label>
+    <div class="f-inputs">
+      <input type="text" tabindex="2" class="i-text validate['required','phone']" name="myphone" />
+    </div>
+  </div>
+  <div class="f-row">
+    <label>Электронная почта:</label>
+    <div class="f-inputs">
+      <input type="text" tabindex="2" class="i-text  validate['required','email']" name="mymail" />
+    </div>
+  </div>
+  <div class="f-row">
+    <label>Ваше сообщение:</label>
+    <div class="f-inputs">
+      <textarea tabindex="3" rows="5" cols="50" class="i-text validate['required']" name="mymessage"></textarea>
+    </div>
+  </div>
+  <div class="f-row f-actions">
+    <div class="f-inputs"><input type="submit" tabindex="4" value="Отправить сообщение" class="button"/></div>
+  </div>
+<% end %>

@@ -1,0 +1,38 @@
+<div class="page-wrapper container">
+	<table class="null-table full content-layout">
+		<tr>
+	      <td class="header" colspan="2">
+	        <h1 style="background-image:url(/images/adminsystem/icons/48/content.png);">Офисы</h1>
+	      </td>
+	      <td class="column-right" rowspan="2">
+	      </td>
+	    </tr>
+		<tr>
+	      <td class="column-center ">
+			<div id="githubstyle">
+	    	    <% form_for :map_region, :url=>admin_yandex_maps_path do |f| %>
+					<fieldset>
+						<div class="f-row width-100">
+			              <%= f.label :title, "Наименование области или региона" %>
+			              <div class="i-wrap">
+			                <%= f.text_field :title, :class=>"i-text" %>
+			                <div title="Обязательное поле" class="req">&nbsp;</div>
+			              </div>
+			              <span class="i-help">Например: Саратовская область.</span>
+			            </div>
+			
+						<div class="f-row width-100">
+			              <%= f.label :tab, "Наименование плашки в главных офисах" %>
+			              <div class="i-wrap">
+			                <%= f.text_field :tab, :class=>"i-text" %>
+			              </div>
+			              <span class="i-help">Например: в Саратове.</span>
+			            </div>
+					</fieldset>
+					<%= f.submit "Сохранить", :class=>"button" %>
+				<% end %>
+			</div>
+	      </td>
+	    </tr>
+	</table>
+</div>

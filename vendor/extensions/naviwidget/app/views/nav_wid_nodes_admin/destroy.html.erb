@@ -1,0 +1,18 @@
+<ul class="breadcrumbs">
+  <li>
+    <%= link_to "Набор виджетов", {:action=>"index", :controller=>"NavividgetAdmin"}, {:class=>"ajax"} %>
+  </li>
+  <li>
+    <%= link_to @navitem.name, "#" %>
+  </li>
+  <li>
+    <%= link_to "Структура меню", {:action=>"index", :id=>@navitem.id}, {:class=>"ajax"} %>
+  </li>
+  <li><span>Редактирование пункта</span></li>
+</ul>
+
+<% form_for :node, :url=>{:action=>"destroy", :id=>@node.id},:html=>{:class=>"post_submit"} do |f|%>
+  <h2><%= @node.name %> </h2>
+  <h3>Я хочу удалить этот пункт меню</h3>
+  <%= submit_tag "Да, удалить" %>
+<% end %>

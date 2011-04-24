@@ -1,0 +1,185 @@
+/*
+
+CSS for Mocha UI
+
+Copyright:
+	Copyright (c) 2007-2008 Greg Houston, <http://greghoustondesign.com/>.
+
+License:
+	MIT-style license.
+
+Note:
+	If you are adding MochaUI to an existing site, this CSS file may not be necessary.
+
+*/
+
+
+/* Reset */
+
+ul,ol,dl,li,dt,dd,h1,h2,h3,h4,h5,h6,pre,form,body,html,p,blockquote,fieldset,input,object,iframe { margin: 0; padding: 0; }
+a img,:link img,:visited img { border: none; }
+table { border-collapse: collapse; border-spacing: 0; }
+:focus { outline: none; }
+
+/* Structure */
+
+body {
+	text-align: left;
+	font: 0.8em/1.5  Arial, Helvetica, sans-serif; color:#1b232c;	color: #3f3f3f;
+}
+
+/* Typography */
+
+h2, h3, h4 {
+	margin: 0;
+	padding: 0 0 5px 0;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+h2 {
+	font-size: 14px;
+	font-weight: bold;
+}
+
+#mochaPage h3 {
+	display: block;
+	font-size: 12px;
+	padding: 6px 0 6px 0;
+	margin: 0 0 8px 0;
+	border-bottom: 1px solid #bbb;
+}
+
+h4 {
+	font-size: 11px;
+}
+
+a {
+	color: #098ED1;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+p {
+	margin: 0;
+	padding: 0 0 9px 0;
+}
+
+.lite {
+	color: #999;
+}
+
+/* List Elements */
+
+ul {
+	list-style: outside;
+	margin: 0 0 9px 16px;
+	list-style-type: disc;
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	padding: 0 0 9px 0;
+}
+
+/* Forms */
+
+textarea, input {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+/* Code */
+
+pre {
+	background-color: #f6f6f6;
+	color: #060;
+	display: block;
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 11px;
+	max-height: 250px;
+	overflow: auto;
+	margin: 0 0 10px 0;
+	padding: 0 10px 10px 10px;
+	border: 1px solid #d1d7dc;
+}
+
+/* Dividers */
+
+hr {
+	background-color: #ddd;
+	color: #ccc;
+	height: 1px;
+	border: 0px;
+}
+
+
+
+/* status */
+
+.status {
+	padding: 20px 20px 20px 60px;
+	border: 1px solid;
+	margin-bottom: 1em;
+	background-repeat: no-repeat;
+	background-position: 15px 50%;
+	font-weight: 700;
+}
+
+.ok {
+	background-image: url(../../images/adminsystem/icons/status/ok.gif);
+	background-color: #EDFFEB;
+	border-color: #ACD8A0;
+	color: #385E34;
+	}
+
+.info {
+	background-image: url(../../images/adminsystem/icons/status/info.gif);
+	background-color: #F0F7FF;
+	border-color: #ADC7E3;
+	color: #405E84;
+	}
+
+.err {
+	background-image: url(../../images/adminsystem/icons/status/error.gif);
+	background-color: #FFE5E5;
+	border-color: #FB7E7E;
+	color: #5A2626;
+	}
+
+/* BREADCRUMBS */
+
+.breadcrumbs {
+	list-style:none;
+	margin:-12px -12px 24px;
+	overflow:hidden;
+	border-bottom:1px solid #dbdbdb;
+	font-weight:700;
+	font-size:12px;
+}
+
+.breadcrumbs li {
+	float:left;
+	margin:0;
+}
+
+.breadcrumbs li a {
+	background:url(../../images/adminsystem/breadcrumb_separator.png) 100% 50% no-repeat;
+}
+
+.breadcrumbs li a,
+.breadcrumbs li span {
+	padding:6px 1.75em 7px 1em;
+	display:block; color:#666;
+}
+
+.breadcrumbs li a:hover {
+	color:#333;
+}

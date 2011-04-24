@@ -1,0 +1,20 @@
+<% @office_images.each do |office_image| %>
+  <tr>
+	<td>
+    	<%= link_to '<span>&#x2191;</span>', move_to_admin_yandex_photo_path(office_image, :direction=>"up"), :class=>"minibutton" if office_image.position > 1 %>
+		<%= link_to '<span>&#x2193;</span>', move_to_admin_yandex_photo_path(office_image, :direction=>"down"), :class=>"minibutton" if office_image.position < @office_images.count %>
+    </td>
+    <td>
+        <%= image_tag(url_for_file_column(office_image, :image, "widescreen")) %>
+    </td>
+	  <td>
+      <%= "#{office_image.alt_text}" unless office_image.alt_text.empty? %>
+    </td>
+    <td>
+		<%= link_to '<span>редактировать</span>', edit_admin_yandex_photo_path(office_image), :class=>"minibutton" %>
+		<%= link_to '<span>удалить</span>', admin_yandex_photo_path(office_image), :confirm => 'Вы уверены?', :method => :delete, :class=>"minibutton" %>
+	</td>
+  </tr>
+<% end %>
+
+<br />

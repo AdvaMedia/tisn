@@ -1,0 +1,42 @@
+<div class="content">
+  <table style="width:100%">
+    <tbody>
+      <tr>
+        <th><%= link_to "Назад", {:action=>"index", :controller=>"admin/orders"} %></th>
+        <th><%= link_to "Редактировать", {:action=>"edit", :controller=>"admin/orders"} %></th>
+        <th>
+          <% form_for :order, :url=>{:action=>"destroy", :controller=>"admin/orders"}, :html=>{:method=>:delete} do |form| %>
+            <%= submit_tag "Удалить" %>
+          <% end %>
+        </th>
+      </tr>
+      <tr>
+        <td>Наименование:</td>
+        <td>
+          <%= @order.name %>
+        </td>
+      </tr>
+      <tr>
+        <td>URL изображения:</td>
+        <td>
+          <img src="<%= @order.image_url %>"></img>
+        </td>
+      </tr>
+      <tr>
+        <td>Опции:</td>
+        <td>
+          <%= BlueCloth::new(@order.options).to_html %>
+        </td>
+      </tr>
+      <tr>
+        <td>Текст новости:</td>
+        <td>
+          <%= @order.cash %>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div>
+
+  </div>
+</div>

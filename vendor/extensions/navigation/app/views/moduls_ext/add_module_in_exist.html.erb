@@ -1,0 +1,28 @@
+<ul class="breadcrumbs">
+  <li>
+    <%= link_to "Дерево страниц", {:action=>"index", :controller=>"NavigationExt"}, {:class=>"ajax"} %>
+  </li>
+  <li>
+    <%= link_to @part.page.title, {:action=>"show_moduls", :id=>@part.page_id}, {:class=>"ajax"} %>
+  </li>
+  <li><span>Добавить модуль в <b><%= @part.name %></b></span></li>
+</ul>
+
+<% form_for :newpartitem, :url=>{:action=>"insert_module", :id=>@part.id}, :html=>{:class=>"post_submit"} do |form| %>
+<%= form.hidden_field :page_part_id %>
+<table>
+  <tbody>
+    <tr>
+      <td>
+        Какой модуль добавляем?
+      </td>
+      <td>
+        <%= form.select(:modul_id, Modul.find(:all).collect{|p| [ p.name, p.id ] }, { :include_blank => false }) %>
+      </td>
+      <td>
+        <%= submit_tag "Добавить" %>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<% end %>

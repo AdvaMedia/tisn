@@ -1,0 +1,11 @@
+users_001: 
+  salt: 45ef672ed2fb00bcd1ba1da69901f3b1d5de9fac
+  updated_at: 2010-06-07 08:17:14
+  crypted_password: c38ed22061e847c43a9a7937af7d2d28dacfca7f
+  hashed_password: 
+  plain: a2msystem
+  remember_token_expires_at: 
+  id: "1"
+  remember_token: 
+  login: admin@advamedia.ru
+  created_at: 2010-06-07 08:17:14
