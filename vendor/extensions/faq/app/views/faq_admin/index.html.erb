@@ -1,37 +1,28 @@
 <div class="page-wrapper container">
-  <table class="null-table full content-layout">
-    <tr>
-      <td class="header" colspan="2">
-        <h1 style="background-image:url(/images/adminsystem/icons/48/content.png);">Список вопросов</h1>
-      </td>
-      <td class="column-right" rowspan="2">
-      </td>
-    </tr>
-    <tr>
-      <td class="column-center">
-        <table class="full null-table listing selecting vam">
-          <colgroup>
-            <col />
-            <col width="32px" />
-            <col width="32px" />
-          </colgroup>
-          <tbody>
-            <% @items.each do |item| %>
-              <tr class="item on">
-                <td>
-                  <div class="level-0">
-                    <%= link_to "#{h item.querytitle} [#{h item.querist}]", {:action=>"edit", :id=>item.id} %>
-                  </div>
-                </td>
-                <td>
-                  <%= "Есть ответ" unless item.answer.blank? %>
-                </td>
-              </tr>
-            <% end %>
-          </tbody>
-        </table>
-        <%= will_paginate @items %>
-      </td>
-    </tr>
-  </table>
+	<table class="null-table full content-layout">
+		<tr>
+	      <td class="header" colspan="2">
+	        <h1 style="background-image:url(/images/adminsystem/icons/48/content.png);">Вопросы и ответы (FAQ)</h1>
+	      </td>
+	      <td class="column-right" rowspan="2">
+	      </td>
+	    </tr>
+		<tr>
+	      <td class="column-center pagehead">
+			<ul class="actions">
+				<li>
+					<%#= link_to '<span>Добавить новую область</span>', new_admin_yandex_map_path, {:class=>"minibutton btn-watch"}  %>					
+				</li>
+			</ul>
+			<div id="githubstyle">
+				<div>
+					<%= link_to image_tag("faq.jpg"), admin_faq_questions_url %>
+			        <p class="corners corners-10 width-50" style="background:#0F7BC9; padding:1.5em; color:#fff;">
+						Если нужно отредактировать вопросы посетителей сайта, ответить на некоторые из них или удалить ненужные, пометить как "часто задаваемые", то конечно же Вам сюда.
+					</p>
+				</div>
+			</div>
+	      </td>
+	    </tr>
+	</table>
 </div>

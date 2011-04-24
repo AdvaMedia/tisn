@@ -1,5 +1,6 @@
 $KCODE = 'UTF8' unless RUBY_VERSION >= '1.9'
 require 'ya2yaml'
+require "ap"
 
 namespace :a2m do
   namespace :extensions do
@@ -30,14 +31,19 @@ namespace :a2m do
         puts "Faq UnInstalled"
       end
       
-      desc 'Prepare to migrate to another module'
-      task :store_to_file => [:environment] do
-        puts "Prepare to store data"
-        items = Faq.all
-        p "Fetched #{items.length} faq objects."
+      desc 'import old data'
+      task :import => [:environment] do
+        puts "Prepare to import data"
         save_path = File.join(RAILS_ROOT, "tmp", "faq_old.yml")
-        p "Save faq to #{save_path}"
-        File.open(save_path, 'w'){|f| f.write items.ya2yaml(:syck_compatible => true)}
+        items = []
+        items = YAML.load(File.read(save_path)) if File.exist?(save_path)
+        unless items.blank?
+          p "Loaded #{items.length} items"
+          items.each do |question|
+            attrbts = question.ivars["attributes"]
+            Question.create(:title=>attrbts["querytitle"], :content=>attrbts["query"], :name=>attrbts["querist"], :answer=>attrbts["answer"])
+          end
+        end
       end
     end
   end

@@ -4,44 +4,32 @@ class FaqExtension < A2mCms::Extension
   title "Вопросы и ответы"
   version '0.1'
   root File.dirname(__FILE__)+'/../'
-  extension_group "mail"
+  extension_group "content"
   visible true
-  is_material true
-  is_block false
-  #block_engine ModuleBlockEngine
-  page_engine  FaqPageEngine
+  is_material false
+  is_block true
+  block_engine FaqBlockEngine
+  #page_engine  FaqPageEngine
   index_controller "Faq"
 
   admin_index "admin/#{extension_group}/faq"
 
   define_routes do |map|
-    #map.connect 'url', :controller => 'Controller', :action => 'action', :conditions=>{ :method=>:post}
-    map.with_options :controller=>"FaqAdmin" do |admin|
-      admin.connect "/#{admin_index}", :action=>"index"
-      admin.connect "/#{admin_index}/set_to_page", :action=>"set_to_page"
-      admin.connect "/#{admin_index}/edit/:id", :action=>"edit"
-      admin.connect "/#{admin_index}/save/:id", :action=>"save"
+    map.with_options( 
+      :name_prefix => "admin_",
+      :path_prefix => "admin/#{extension_group}",
+      :requirements => {:id => /[0-9]+/}
+    ) do |admin|
+      admin.resources :faq_admin, :as=>"faq"
     end
-    begin
-
-    vopages = Page.all(:conditions=>{:contenttype=>FaqExtension.extension_name})
-      init_pages_routes(map)
-      rescue Exception=>ex
+    map.with_options( 
+      :name_prefix => "admin_",
+      :path_prefix => "admin/#{extension_group}/faq",
+      :requirements => {:id => /[0-9]+/}
+    ) do |admin|
+      admin.resources :faq_questions, :as=>"questions"
     end
-  end
-
-
-  def add_to_route(routarr, page_url)
-    routarr.with_options :url=>page_url do |pers|
-      pers.with_options :controller=>index_controller do |cl|
-        cl.connect "#{page_url}/:page", :action=>"index", :tab=>nil, :page=>"page-1", :requirements=>{:page=>/page-\d+/}
-        cl.connect "#{page_url}/get-form", :action=>"get_form"
-        cl.connect "#{page_url}/send_faq", :action=>"send_faq"
-      end
-    end
-  end
-
-  
+  end  
 
   def foo; 1 end
 end
