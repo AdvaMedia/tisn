@@ -1,0 +1,44 @@
+<fieldset>
+	<div class="f-row width-100">
+		<%= f.label :title, "Суть вопроса:" %>
+		<div class="i-wrap">
+			<%= f.text_field :title, :class=>"i-text", :tabindex => 1 %>
+			<div title="Обязательное поле" class="req">&nbsp;</div>
+		</div>
+		<span class="i-help">Например: Хочу стать диллером</span>
+	</div>
+	
+	<div class="f-row width-100">
+		<%= f.label :name, "Кто Вы?:" %>
+		<div class="i-wrap">
+			<%= f.text_field :name, :class=>"i-text", :tabindex => 2 %>
+			<div title="Обязательное поле" class="req">&nbsp;</div>
+		</div>
+		<span class="i-help">Например: Иванов Иван Иванович</span>
+	</div>
+	
+	<div class="f-row width-100">
+		<%= f.label :content, "Сам вопрос:" %>
+		<div class="i-wrap">
+			<%= f.text_area :content, :class=>"i-text", :tabindex => 3 %>
+			<div title="Обязательное поле" class="req">&nbsp;</div>
+		</div>
+	</div>
+	
+	<div class="f-row width-100">
+		<%= f.label :contact, "Как с Вами связаться:" %>
+		<div class="i-wrap">
+			<%= f.text_field :contact, :class=>"i-text", :tabindex => 4 %>
+			<div title="Обязательное поле" class="req">&nbsp;</div>
+		</div>
+		<span class="i-help">Например: тел. +7(8452)12-34-56, c 10 утра до 18 вечера, кроме выходных</span>
+	</div>
+	
+	<div class="f-row width-100">
+		<%= f.label :mail, "Ваш email, если имеется:" %>
+		<div class="i-wrap">
+			<%= f.text_field :mail, :class=>"i-text", :tabindex => 5 %>
+		</div>
+		<span class="i-help">Например: post@example.com</span>
+	</div>
+</fieldset>

@@ -28,7 +28,7 @@ class FaqQuestionsController< AdminSystemControllerExt
  end
  
  def create
-  new
+  @question = Question.new(params[:question])
   respond_to do |format|
     if @question.save
       format.html { redirect_to(admin_faq_questions_url, :notice => 'Question was successfully created.') }
