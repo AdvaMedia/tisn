@@ -10,6 +10,7 @@
 		<tr>
 	      <td class="column-center pagehead">
 			<ul class="actions">
+				<li><%= sort_url %></li>
 				<li>
 					<%= link_to "<span>Задать вопрос</span>", new_admin_faq_question_url, {:class=>"minibutton btn-watch"}%>
 				</li>
@@ -20,16 +21,17 @@
 					<tr class="header">
 						<th>п/п</th>
 						<th>Переместить</th>
+						<th>Часто задаваемый?</th>
 						<th>Вопрос</th>
 						<th>Дата вопроса</th>
 						<th>Действия</th>
 					</tr>
 					<% if @new_questions.length > 0 %>
-					<tr><td colspan="5"><h3>Вопросы посетителей, требующие ответа:</h3></td></tr>
+					<tr><td colspan="6"><h3>Вопросы посетителей, требующие ответа:</h3></td></tr>
 					<%= render :partial => "list", :locals=>{:collection => @new_questions} %>
-					<tr><td colspan="5"><hr /></td></tr>
+					<tr><td colspan="6"><hr /></td></tr>
 					<% end %>
-					<tr><td colspan="5"><h3>Вопросы, на которые уже дан ответ:</h3></td></tr>
+					<tr><td colspan="6"><h3>Вопросы, на которые уже дан ответ:</h3></td></tr>
 		            <%= render :partial => "list", :locals=>{:collection => @ready} %>
 		          </tbody>
 		        </table>

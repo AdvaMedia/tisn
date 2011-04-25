@@ -12,8 +12,12 @@ class FaqQuestionsController< AdminSystemControllerExt
  before_filter :admin_login_required
  
  def index
-  @ready = Question.paginate(:order=>"position", :conditions=>["answer not null and answer != :answer", {:answer=>""}], :page=>params[:page], :per_page=>20)
-  @new_questions = Question.paginate(:order=>"position", :conditions=>["answer is null or answer == :answer", {:answer=>""}], :page=>1)
+  session[:questions_admin_order] ||= "position"
+  unless params[:order].blank?
+    session[:questions_admin_order] = params[:order] if (["position", "rate"].include? params[:order])  
+  end
+  @ready = Question.paginate(:order=>session[:questions_admin_order], :conditions=>["answer not null and answer != :answer", {:answer=>""}], :page=>params[:page], :per_page=>20)
+  @new_questions = Question.paginate(:order=>session[:questions_admin_order], :conditions=>["answer is null or answer == :answer", {:answer=>""}], :page=>1)
   respond_to do |format|
     format.html # index.html.erb
     format.xml  { render :xml => @questions }
@@ -84,6 +88,22 @@ class FaqQuestionsController< AdminSystemControllerExt
       when "down"
         @question.move_lower
       end  
+    rescue Exception => e
+      
+    end
+    
+    respond_to do |format|
+      #format.html { redirect_to(admin_faq_questions_url) }
+      format.html { redirect_to :back }
+      format.xml  { head :ok }
+    end
+  end
+  
+  def toggle_vip
+    begin
+      edit
+      @question.vip = !@question.vip
+      @question.save
     rescue Exception => e
       
     end

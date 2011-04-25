@@ -3,4 +3,9 @@
 
 class Question < ActiveRecord::Base
   acts_as_list
+  
+  def vote!
+    self.rate = self.rate + 1
+    save!
+  end
 end

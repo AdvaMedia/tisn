@@ -1,11 +1,16 @@
 <% collection.each do |question| %>
 <tr>
 	<td>
-		<%= question.position%>
+		<%= session[:questions_admin_order] == "position" ? question.position : question.rate %>
 	</td>
 	<td>
+		<% if session[:questions_admin_order] == "position" %>
 		<%= link_to '<span>&#x2191;</span>', move_to_admin_faq_question_path(question, :direction=>"up"), :class=>"minibutton"  %>
 		<%= link_to '<span>&#x2193;</span>', move_to_admin_faq_question_path(question, :direction=>"down"), :class=>"minibutton"  %>
+		<% end %>
+	</td>
+	<td class="<%= question.vip ? 'on' : 'off' %>">
+		<%= link_to "", toggle_vip_admin_faq_question_url(question), :confirm=>"Вы уверены?", :class=>"control activity" %>
 	</td>
 	<td>
 		<%= image_tag("z_ul.gif", :style=>"margin:0;") if question.answer.blank? %>

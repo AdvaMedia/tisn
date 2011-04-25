@@ -28,7 +28,8 @@ class FaqExtension < A2mCms::Extension
       :requirements => {:id => /[0-9]+/}
     ) do |admin|
       admin.resources :faq_questions, :as=>"questions",:member => { 
-        :move_to => :get 
+        :move_to => :get,
+        :toggle_vip => :get
       }
     end
   end  
