@@ -10,7 +10,7 @@
 		<% end %>
 	</td>
 	<td class="<%= question.vip ? 'on' : 'off' %>">
-		<%= link_to "", toggle_vip_admin_faq_question_url(question), :confirm=>"Вы уверены?", :class=>"control activity" %>
+		<%= link_to "", toggle_vip_admin_faq_question_url(question), :confirm=>"Вы уверены?", :class=>"control activity" unless question.answer.blank?%>
 	</td>
 	<td>
 		<%= image_tag("z_ul.gif", :style=>"margin:0;") if question.answer.blank? %>
