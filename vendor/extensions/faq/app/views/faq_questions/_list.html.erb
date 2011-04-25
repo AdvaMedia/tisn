@@ -1,8 +1,26 @@
-<% @questions.each do |question| %>
+<% collection.each do |question| %>
 <tr>
-	<td></td>
 	<td>
-		<%= question.title%>
+		<%= question.position%>
 	</td>
+	<td>
+		<%= link_to '<span>&#x2191;</span>', move_to_admin_faq_question_path(question, :direction=>"up"), :class=>"minibutton"  %>
+		<%= link_to '<span>&#x2193;</span>', move_to_admin_faq_question_path(question, :direction=>"down"), :class=>"minibutton"  %>
+	</td>
+	<td>
+		<%= image_tag("z_ul.gif", :style=>"margin:0;") if question.answer.blank? %>
+		<%= link_to question.title, edit_admin_faq_question_url(question) %>
+	</td>
+	<td>
+		<%= question.created_at.strftime('%d.%m.%y')%>
+	</td>
+	<td>
+		<%= link_to image_tag("adminsystem/icons/16/cross.png", :style=>"margin:0;"), admin_faq_question_url(question), :confirm => 'Вы уверены?', :method => :delete%>
+	</td>
+</tr>
+<% end %>
+<% if collection.total_pages > 1 %>
+<tr>
+	<td colspan="5"><%= will_paginate collection%></td>
 </tr>
 <% end %>

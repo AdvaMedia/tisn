@@ -26,6 +26,14 @@
 	</div>
 	
 	<div class="f-row width-100">
+		<%= f.label :answer, "Ответ на вопрос:" %>
+		<div class="i-wrap">
+			<%= f.text_area :answer, :class=>"i-text", :tabindex => 3 %>
+		</div>
+		<span class="i-help">Если ответ не задан, то сообщение не будет показываться в списке на сайте и не будет участвовать в поиске.</span>
+	</div>
+	
+	<div class="f-row width-100">
 		<%= f.label :contact, "Как с Вами связаться:" %>
 		<div class="i-wrap">
 			<%= f.text_field :contact, :class=>"i-text", :tabindex => 4 %>

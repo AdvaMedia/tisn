@@ -27,7 +27,9 @@ class FaqExtension < A2mCms::Extension
       :path_prefix => "admin/#{extension_group}/faq",
       :requirements => {:id => /[0-9]+/}
     ) do |admin|
-      admin.resources :faq_questions, :as=>"questions"
+      admin.resources :faq_questions, :as=>"questions",:member => { 
+        :move_to => :get 
+      }
     end
   end  
 

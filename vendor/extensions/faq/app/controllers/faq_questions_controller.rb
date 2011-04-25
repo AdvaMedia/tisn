@@ -12,7 +12,8 @@ class FaqQuestionsController< AdminSystemControllerExt
  before_filter :admin_login_required
  
  def index
-  @questions = Question.all(:order=>"position")
+  @ready = Question.paginate(:order=>"position", :conditions=>["answer not null and answer != :answer", {:answer=>""}], :page=>params[:page], :per_page=>20)
+  @new_questions = Question.paginate(:order=>"position", :conditions=>["answer is null or answer == :answer", {:answer=>""}], :page=>1)
   respond_to do |format|
     format.html # index.html.erb
     format.xml  { render :xml => @questions }
@@ -74,4 +75,23 @@ class FaqQuestionsController< AdminSystemControllerExt
    end
  end
   
+ def move_to
+    begin
+      edit
+      case params[:direction]
+      when "up"
+        @question.move_higher
+      when "down"
+        @question.move_lower
+      end  
+    rescue Exception => e
+      
+    end
+    
+    respond_to do |format|
+      #format.html { redirect_to(admin_faq_questions_url) }
+      format.html { redirect_to :back }
+      format.xml  { head :ok }
+    end
+  end
 end

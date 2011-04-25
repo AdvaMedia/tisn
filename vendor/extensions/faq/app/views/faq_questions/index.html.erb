@@ -18,10 +18,19 @@
 		        <table class="tree-browser" cellspacing="0" cellpadding="0">
 		          <tbody>
 					<tr class="header">
+						<th>п/п</th>
 						<th>Переместить</th>
 						<th>Вопрос</th>
+						<th>Дата вопроса</th>
+						<th>Действия</th>
 					</tr>
-		            <%= render :partial => "list" %>
+					<% if @new_questions.length > 0 %>
+					<tr><td colspan="5"><h3>Вопросы посетителей, требующие ответа:</h3></td></tr>
+					<%= render :partial => "list", :locals=>{:collection => @new_questions} %>
+					<tr><td colspan="5"><hr /></td></tr>
+					<% end %>
+					<tr><td colspan="5"><h3>Вопросы, на которые уже дан ответ:</h3></td></tr>
+		            <%= render :partial => "list", :locals=>{:collection => @ready} %>
 		          </tbody>
 		        </table>
 			</div>
