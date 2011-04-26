@@ -1,3 +1,9 @@
+GIT
+  remote: git://github.com/aughey/thinking-sphinx.git
+  revision: c19b469466be2123e17351ef25f595efba4161fb
+  specs:
+    thinking-sphinx (1.1.5)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -47,7 +53,7 @@ GEM
     sanitize (2.0.1)
       nokogiri (~> 1.4.4)
     sqlite3-ruby (1.2.5)
-    unicorn (3.5.0)
+    unicorn (3.6.0)
       kgio (~> 2.3)
       rack
     ya2yaml (0.30)
@@ -69,5 +75,6 @@ DEPENDENCIES
   rutils
   sanitize
   sqlite3-ruby (= 1.2.5)
+  thinking-sphinx!
   unicorn
   ya2yaml

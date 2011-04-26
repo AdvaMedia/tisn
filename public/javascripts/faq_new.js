@@ -1,6 +1,7 @@
 window.addEvent('domready', function(){
 	$$('dl.faq dd').each(function(el){
 		el.acc_margin = {'margin-top':el.getStyle('margin-top'), 'margin-bottom': el.getStyle('margin-top') };
+		el.set('morph', {duration: 'short'});
 	});
 	
 	new Fx.Accordion($$('dl.faq dt'), $$('dl.faq dd'),{

@@ -1,5 +1,5 @@
 class FaqController < ApplicationController
-  protect_from_forgery :false
+  #protect_from_forgery :false
   def send_complaint
     ret = {:status=>:created, :errors=>[]}
     if request.xhr?
@@ -20,6 +20,17 @@ class FaqController < ApplicationController
     respond_to do |format|
       format.html { render :text => "Доступ запрещен..." }
       format.json {render :json=>ret, :status => ret[:status]}
+    end
+  end
+  
+  def live_search
+    @ret = []
+    unless params[:q].blank?
+      @ret = Question.search params[:q], :match_mode => :any
+    end
+    respond_to do |format|
+      format.html { render :text => @ret }
+      format.json { render :json=>@ret }
     end
   end
 end
