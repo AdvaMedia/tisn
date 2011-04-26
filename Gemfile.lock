@@ -16,9 +16,11 @@ GEM
     acts_as_list (0.1.2)
     awesome_print (0.3.2)
     bluecloth (2.1.0)
+    columnize (0.3.2)
     geoip (1.0.0)
     gilenson (1.1.1)
     kgio (2.3.3)
+    linecache (0.43)
     liquid (2.2.2)
     nokogiri (1.4.4)
     rack (1.1.2)
@@ -32,6 +34,11 @@ GEM
     rake (0.8.7)
     rmagick (2.13.1)
     ru_propisju (1.1.0)
+    ruby-debug (0.10.4)
+      columnize (>= 0.1)
+      ruby-debug-base (~> 0.10.4.0)
+    ruby-debug-base (0.10.4)
+      linecache (>= 0.3)
     russian (0.2.7)
     rutils (2.0.0)
       gilenson (>= 1.1.0)
@@ -58,6 +65,7 @@ DEPENDENCIES
   liquid
   rails (= 2.3.8)
   rmagick
+  ruby-debug
   rutils
   sanitize
   sqlite3-ruby (= 1.2.5)

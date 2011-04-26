@@ -1,1 +1,34 @@
-<h1>Ваши вопросы и ответы</h1>
+<h1 class="heading">Вопросы и ответы</h1>
+<div class="questions">
+	<ul class="menu-h tabs">
+		<li class="active">
+			<a href="#">Вопросы</a>
+		</li>
+		<li class="">
+			<a href="#">Претензии</a>
+		</li>
+	</ul>
+	<div class="tab-container">
+		<h2>Вопросы, на которые мы чаще всего отвечаем:</h2>
+		<!-- Сюда вставляем часто задаваемые вопросы-->
+		<dl class="faq container">
+		{% for question in vips %}
+			<dt class="toggle"><span>{{question.title}}</span></dt>
+            <dd class="hidden">{{question.answer}}</dd>
+		{% endfor %}
+		</dl>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+{% formfor compliant %}
+{% endformfor %}
+
+<script type="text/javascript" src="/javascripts/faq_new.js"></script>

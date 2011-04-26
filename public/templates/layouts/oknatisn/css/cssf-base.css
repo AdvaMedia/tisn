@@ -240,7 +240,7 @@ label[for] { cursor:pointer; }
 
 /* 2. Input, Textarea, Select, Radio, Check  */
 
-input, button { vertical-align:middle; font:1.2em sans-serif; padding:2px; }
+input { vertical-align:middle; font:1.2em sans-serif; padding:2px; }
 input:focus { outline-color:#7cbdf0; }
 
 input[type="text"], 

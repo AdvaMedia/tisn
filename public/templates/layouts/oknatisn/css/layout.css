@@ -57,11 +57,12 @@ label {
 	
 button {
 	cursor:pointer;
-	padding:.5em;
 	}
 
 button span {
 	font-weight:700;
+	line-height:2em;
+	padding:0 0.8em;
 	white-space:nowrap;
 	}
 
@@ -108,30 +109,6 @@ tbody th {
 	font-family:Arial, Helvetica, sans-serif;
 	color:#02a0c1;
 	}
-
-.yellowbutton a {
-	border:1px solid;
-	border-color:#FFF3B1 #FFEF9A #FFE765;
-	padding:0 1em;
-	color:#000;
-	font: bold 1em/34px Verdana, Geneva, sans-serif;
-	background:url(../i/layout/table-menu-a.png) 0 100% repeat-x;
-	text-shadow:0 1px 0 #E5C824;
-	display:block;
-	-moz-border-radius:2px;
-	-webkit-border-radius:2px;
-	border-radius:2px;
-
-	}
-
-.yellowbutton {
-	border:1px solid #F0B300;
-	position:absolute;
-	-moz-border-radius:3px;
-	-webkit-border-radius:3px;
-	border-radius:3px;
-	}
-
 	
 /* HEADER 
 ------------------------------------------------------------------------------------------------------------------------

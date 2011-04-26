@@ -1,5 +1,6 @@
 require 'liquid'
 class FaqBlockEngine
+  include ActionController::UrlWriter
   attr_accessor :block, :tag, :index, :template, :template_name
   def initialize(blockitem, tagitem, itemindex)
     @block=blockitem
@@ -11,8 +12,18 @@ class FaqBlockEngine
   def render
     fname = File.dirname(__FILE__) + "/../app/views/liquid/#{@template_name}.html"
     @template = File.exist?(fname) ? File.read(fname) : ""
+    paths = get_paths
+    params = {}.merge('auth_key'=>"#{@tag.globals.page.response.template.controller.send :form_authenticity_token}").merge(@tag.globals.page.response.template.controller.send :params)
     
-    Liquid::Template.parse(@template).render()
+    @vips = Question.all(:order=>"position", :conditions=>{:vip => true})
+    
+    Liquid::Template.parse(@template).render(
+      'paths'=>paths, 
+      'compliant'=>Complaint.new(:owner=>"Unknown user"), 
+      'params'=>params, 
+      'auth_token'=>params['auth_key'],
+      'vips' => @vips
+      )
   end
   
   class << self
@@ -20,4 +31,20 @@ class FaqBlockEngine
       "#"
     end
   end
+  
+  private
+  
+  def get_paths
+    {
+      "complaint_form_action"=>faq_compliants_path(:format=>:json)
+    }
+  end
+end
+
+class ComplaintDrop < Clot::BaseDrop
+    liquid_attributes << :owner
+end
+
+class QuestionDrop < Clot::BaseDrop
+    liquid_attributes << :title << :content << :answer << :id
 end

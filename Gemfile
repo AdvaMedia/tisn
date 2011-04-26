@@ -1,6 +1,8 @@
 # A sample Gemfile
 source :gemcutter
 #
+gem "ruby-debug"
+
 gem "rails", "2.3.8"
 gem 'sqlite3-ruby', '1.2.5', :require => 'sqlite3'
 gem "RedCloth", "4.2.3"
