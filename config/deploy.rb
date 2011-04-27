@@ -2,7 +2,7 @@ $:.unshift(File.expand_path('./lib', ENV['rvm_path']))
 require "rvm/capistrano"
 
 set :using_rvm, true
-set :rvm_ruby_string, 'rvm 1.8.7@tins'
+set :rvm_ruby_string, 'ruby-1.8.7-p334@tisn'
 
 set :application, "tisn.preview"
 
@@ -36,5 +36,13 @@ namespace :unicorn do
  
   task :restart do
     run "kill -HUP `cat #{deploy_to}/shared/pids/unicorn.pid`"
+  end
+end
+
+namespace :ts do
+  [:index, :conf, :start, :stop].each do |ctask|
+    task ctask do
+      run "cd #{deploy_to}/current && rake ts:#{ctask.to_s}"
+    end
   end
 end
