@@ -27,7 +27,7 @@ end
 
 namespace :unicorn do
   task :start do
-    run "cd #{deploy_to}/current && unicorn_rails -c #{deploy_to}/current/config/unicorn.rb -e #{rails_env} -D"
+    run "cd #{deploy_to}/current && unicorn_rails -c #{deploy_to}/current/config/unicorn.rb -D"
   end
  
   task :stop do
