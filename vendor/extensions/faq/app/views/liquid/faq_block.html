@@ -11,7 +11,7 @@
 	<div class="tab-container">
 		<h2>Вопросы, на которые мы чаще всего отвечаем:</h2>
 		<!-- Сюда вставляем часто задаваемые вопросы-->
-		<dl class="faq container">
+		<dl class="faq container faq_top">
 		{% for question in vips %}
 			<dt class="toggle"><span>{{question.title}}</span></dt>
             <dd class="hidden">{{question.answer}}</dd>
@@ -21,6 +21,34 @@
 		<p class="help "><strong>Если вы не нашли ответа выше — задайте свой вопрос</strong>,<br /> но для начала — 
           ознакомтесь со списком опубликованных вопросов, возможно кто-то уже поднимал интересующую Вас тему. 
           Добавляя новый вопрос, старайтесь сделать его информативным, кратким и понятным для остальных посетителей.</p>
+		<!--noindex-->
+		{% formfor question class:"to-ask corners corners-4" %}
+		<div class="f-row width-100 no-margin">
+			{% text_field "title", class:"i-text theme" %}&nbsp;&nbsp;{% submit_tag "Задать", class:'search_helper', name:nil %}
+			<fieldset class="hidden">
+				<div class="f-row width-100">
+					{% label "content", "&darr; Уточните ваш вопрос или оставьте поле пустым" %}
+					<div class="i-wrap">
+						{% text_area "content", rows:6, class:"i-text" %}
+					</div>
+				</div>
+				
+				<div class="f-row width-50">
+					<div class="i-wrap">
+						{% text_field "name", size:30, class:"validate['required'] i-text" %}
+					</div>
+				</div>
+				
+				{% submit_tag "Отправить вопрос" %}
+               <span class="or">или</span>
+			   <a class="icon cancel" href="#">отменить и закрыть форму</a>
+			</fieldset>
+		</div>
+		{% endformfor %}
+		<!--noindex-->
+		<div id='faq_search_result'>
+			
+		</div>
 	</div>
 </div>
 

@@ -35,6 +35,7 @@ class FaqExtension < A2mCms::Extension
     
     map.with_options(:controller=>"Faq", :path_prefix=>"railsbike/faq") do |r|
       r.faq_compliants "send_complaint.:format", :action=>"send_complaint"
+      r.faq_questions "send_question.:format", :action=>"send_question"
       r.faq_live_search "live_search.:format", :action=>"live_search"
     end
   end  

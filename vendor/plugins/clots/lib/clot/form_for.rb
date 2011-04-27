@@ -131,7 +131,7 @@ module Clot
     def set_class
       @class_string = ""
       unless @attributes["class"].nil?
-        @class_string = 'class="' + @attributes["class"] + '" '
+        @class_string = 'class="' + @attributes["class"].tr('"','').tr("'","") + '" '
       end
 
       @class_name = drop_class_to_table_item @model.class

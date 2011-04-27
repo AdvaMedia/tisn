@@ -20,6 +20,7 @@ class FaqBlockEngine
     Liquid::Template.parse(@template).render(
       'paths'=>paths, 
       'compliant'=>Complaint.new(:owner=>"Unknown user"), 
+      'question'=>Question.new,
       'params'=>params, 
       'auth_token'=>params['auth_key'],
       'vips' => @vips
@@ -36,7 +37,9 @@ class FaqBlockEngine
   
   def get_paths
     {
-      "complaint_form_action"=>faq_compliants_path(:format=>:json)
+      "complaint_form_action"=>faq_compliants_path(:format=>:json),
+      "question_form_action"=>faq_questions_path(:format=>:json),
+      "live_serarch_url"=>faq_live_search_path
     }
   end
 end

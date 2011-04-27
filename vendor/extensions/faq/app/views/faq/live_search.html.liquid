@@ -1,0 +1,7 @@
+<h1>Результаты поиска:</h1>
+<dl class="faq container faq_more">
+{% for question in ret %}
+	<dt class="toggle"><span>{{question.title}}</span></dt>
+    <dd class="hidden">{{question.answer}}</dd>
+{% endfor %}
+</dl>
