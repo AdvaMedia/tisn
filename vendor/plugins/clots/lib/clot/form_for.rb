@@ -142,7 +142,7 @@ module Clot
     end
 
     def get_form_header(context)
-      result = '<form method="POST" ' + @class_string + 'action="' + @form_action + '"' + @upload_info + '>'
+      result = '<form method="post" ' + @class_string + 'action="' + @form_action + '"' + @upload_info + '>'
       if @activity == "edit"
         result += '<input type="hidden" name="_method" value="PUT"/>'
       end
