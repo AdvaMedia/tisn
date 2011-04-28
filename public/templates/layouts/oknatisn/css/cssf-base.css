@@ -280,7 +280,7 @@ textarea { overflow:auto; }
 
 input[type="text"].i-invalid,
 textarea.i-invalid,
-select.i-invalid { background:url(../i/invalid_line.png) 0 100% repeat-x; border:1px solid #CC3300; outline:none; }
+select.i-invalid { background:#fff url(../i/invalid_line.png) 0 100% repeat-x; border:1px solid #CC3300; outline:none; }
 
 .f-row .f-row { margin-top:1em; }
 .adding-row { margin:1em 0; }

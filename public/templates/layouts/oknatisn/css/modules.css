@@ -522,24 +522,44 @@ ul.select-phone {
 .question .text { margin-left:4em; }
 
 .questions { }
+.tab-container { overflow:hidden; }
 
 .faq dt.toggle { margin:0 0 .5em 0; padding-left:0; font:normal 1.3em/1.5 Arial, Helvetica, sans-serif; background:url(../i/icons/16/plus.png) 0 50% no-repeat; padding-left:30px; cursor:pointer; }
 .faq dt.toggle.on { background-image:url(../i/icons/16/minus.png); }
-.faq dt.toggle span { border-bottom:1px dashed; }
+.faq dt.toggle span { /*border-bottom:1px dashed;*/ }
 .faq dt.toggle span:hover { border-bottom:none; }
 .faq dd { padding:.5em 0 .5em 20px; margin:1em 0 1em 9px; color:#666;  border-left:2px solid #ccc;}
 
-
 .to-ask { padding:1em; background:#BADDF9 url(../i/layout/to-ask-bg.jpg) no-repeat; }
-.to-ask .theme { font-size:1.45em; color:#ccc; width:590px; }
+.to-ask .theme { font-size:1.45em;  width:590px; }
 .ie7 .to-ask .theme { width:580px; }
-.to-ask .theme:focus { color:#000; }
 .to-ask fieldset { margin:.5em 0 0;}
 
-.questions .help { font-size:.9em; color:#666; }
+.overtext { display:block; position:absolute; left: 6px; top: 3px;}
+.overtext.for-to-ask { font-size:1.45em; color:#ccc; top:1px }
 
+.questions .help { font-size:.9em; color:#666; }
 .questions .or { margin:0 2em; }
 .questions .cancel { background:url(../i/icons/16/cross.png) 0 100% no-repeat; color:#000; }
+.questions .success { font-size:1.3em; background: url(../i/layout/good-questions.png) 0 50% no-repeat; display:block; padding-left:50px; color: #4E879D; padding:.5em 0 .5em 65px;}
+
+.questions .sort-list a { color:#000; }
+.questions .sort-list .active { background:#BADDF9; padding:2px 4px; border:none; }
+
+.user-questions { padding:0 0 2em 6em; position:relative; }
+.user-questions dt,.user-questions dd { margin-left:0; padding-left:0; }
+.user-questions dt { font-size:1.1em; }
+.user-questions dd { margin-bottom:0; }
+.user-questions .answer { font:italic 1em/1.5 Arial, Helvetica, sans-serif; margin-top:1em; background:#DFEAF2; color: #496677; padding:1em; }
+
+.vote-panel { border-right:1px solid #eee; padding-right:7px; width:50px; left:0; top:5px; position: absolute; }
+ .rating { font:2em/1.2 "Times New Roman", Times, serif; color:#ccc; }
+ .vote-up { font-size:.8em; font-weight:400; color:#666; }
+ .vote-up i { display:block; width:24px; height:24px; background:url(../i/icons/24/vote.png) no-repeat;  margin:.5em auto;}
+ .vote-up.on i { background-position:0 100%; cursor:text; }
+
+.more-questions { background:url(../i/layout/separate-center.png) 50% 11px no-repeat; } 
+.more-questions li { width:120px; margin:auto; float:none; }
 
 /* CONTACTS MODULE */
 

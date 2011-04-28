@@ -1,7 +1,19 @@
-<h1>Результаты поиска:</h1>
-<dl class="faq container faq_more">
+<p class="sort-list">
+    Всего вопросов — {{ ret | size }},<br />их можно отсоритровать
+    <a href="#" class="pseudo active">по дате</a>&nbsp;или&nbsp;<a href="#" class="pseudo">по значимости</a>
+</p>
 {% for question in ret %}
-	<dt class="toggle"><span>{{question.title}}</span></dt>
-    <dd class="hidden">{{question.answer}}</dd>
+	<dl class="user-questions">
+		<dt class="toggle">{{question.title}}</dt>
+	    <dd class="">
+			<div class="elaboration">{{question.content}}</div>
+			<div class="answer corners corners-4">{{question.answer}}</div>
+			<!--noindex-->
+            <div class="vote-panel a-center">
+              <span class="rating" title="Количество голосов за вопрос">{{question.rate}}</span>
+              <a class="vote-up on" href="#" title="Голосовать за вопрос"><i></i></a>
+            </div>
+            <!--/noindex-->
+		</dd>
+	</dl>
 {% endfor %}
-</dl>

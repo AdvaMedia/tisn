@@ -48,7 +48,7 @@ class FaqController < ApplicationController
   def live_search
     @ret = []
     unless params[:q].blank?
-      @ret = Question.search params[:q], :match_mode => :any
+      @ret = Question.search params[:q]#, :match_mode => :any
     end
     respond_to do |format|
       format.html {  }

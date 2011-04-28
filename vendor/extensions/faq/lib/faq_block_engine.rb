@@ -49,5 +49,5 @@ class ComplaintDrop < Clot::BaseDrop
 end
 
 class QuestionDrop < Clot::BaseDrop
-    liquid_attributes << :title << :content << :answer << :id
+    liquid_attributes << :title << :content << :answer << :id << :rate
 end
