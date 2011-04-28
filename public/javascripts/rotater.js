@@ -107,7 +107,7 @@ MGFX.Rotater = new Class({
 			curSlide = this.currentSlide;
 		this.slides.each(function(slide, index){
 			if(index == slideIndex && index != curSlide){ //show
-				action[index.toString()] = { opacity: 1, height:slide.store_height };
+				action[index.toString()] = { opacity: 1, height:'auto' };
 			} else {
 				action[index.toString()] = { opacity:0, height:0 };
 			}

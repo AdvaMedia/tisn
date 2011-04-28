@@ -10,6 +10,8 @@ role :web, "advamedia.ru"                          # Your HTTP server, Apache/et
 set :user, 'advamedia' # пользователь удалённого сервера
 set :use_sudo, false # не запускать команды под sudo
 
+set :keep_releases, 1
+
 set :app_dir, "/home/#{user}/sites/advamedia/#{application}/"
 
 # Директория, куда будет делаться checkout из репозитория
@@ -24,6 +26,20 @@ set :deploy_via, :remote_cache
 after "deploy:setup" do
   run "mkdir -p #{deploy_to}/shared/pids && mkdir -p #{deploy_to}/shared/config && mkdir -p #{deploy_to}/shared/var"
 end
+
+before "deploy:update" do
+  unicorn.stop
+  ts.stop
+end
+
+after "deploy:update" do
+  ts.conf
+  ts.index
+  ts.start    
+  unicorn.start
+end
+
+    
 
 namespace :unicorn do
   task :start do
