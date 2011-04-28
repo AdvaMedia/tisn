@@ -104,12 +104,15 @@ MGFX.Rotater = new Class({
 	showSlide: function(slideIndex){
 		if(slideIndex == this.currentSlide) return this;
 		var action = {},
+			act_style = {},
 			curSlide = this.currentSlide;
 		this.slides.each(function(slide, index){
 			if(index == slideIndex && index != curSlide){ //show
-				action[index.toString()] = { opacity: 1, height:'auto' };
+				action[index.toString()] = { opacity: 1};
+				slide.setStyles({height:'100%'});
 			} else {
-				action[index.toString()] = { opacity:0, height:0 };
+				action[index.toString()] = { opacity:0};
+				slide.setStyles({height:'0px'});
 			}
 		});
 		this.fireEvent('onShowSlide', slideIndex);
