@@ -19,12 +19,12 @@ class FaqBlockEngine
     
     Liquid::Template.parse(@template).render(
       'paths'=>paths, 
-      'compliant'=>Complaint.new(:owner=>"Unknown user"), 
-      'question'=>Question.new,
+      'compliant'=>Complaint.new(:owner=>"Ваше имя", :number=>"Номер договора", :contacts=>"Телефон для связи", :content=>"Опишите проблему", :dog_created=>"Дата заключения договора"), 
+      'question'=>Question.new(:title=>"Введите в это поле Ваш вопрос", :content=>"Уточните ваш вопрос", :name=>"не забудьте указать Ваше имя", :mail=>"электронную почту", :contact=>"номер телефона"),
       'params'=>params, 
       'auth_token'=>params['auth_key'],
       'vips' => @vips,
-      'newest' => Question.paginate(:per_page=>10, :order=>"position DESC", :page=>1)
+      'newest' => Question.paginate(:per_page=>15, :order=>"position DESC", :page=>1, :conditions=>["answer not null and answer != :answer", {:answer=>""}])
       )
   end
   
@@ -46,9 +46,9 @@ class FaqBlockEngine
 end
 
 class ComplaintDrop < Clot::BaseDrop
-    liquid_attributes << :owner
+    liquid_attributes << :owner <<:number << :dog_created << :contacts << :content
 end
 
 class QuestionDrop < Clot::BaseDrop
-    liquid_attributes << :title << :content << :answer << :id << :rate << :position << :created_at << :updated_at
+    liquid_attributes << :title << :content << :answer << :id << :rate << :position << :created_at << :updated_at << :name << :mail << :contact
 end

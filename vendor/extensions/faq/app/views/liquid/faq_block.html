@@ -24,18 +24,27 @@
 		<!--noindex-->
 		{% formfor question class:"to-ask corners corners-4" %}
 		<div class="f-row width-100 no-margin">
-			{% text_field "title", class:"i-text theme" %}&nbsp;&nbsp;{% submit_tag "Задать", class:'search_helper', name:nil %}
+			{% text_field "title", class:"validate['required'] i-text theme" %}&nbsp;&nbsp;{% submit_tag "Задать", class:'search_helper', name:nil %}
 			<fieldset class="hidden">
 				<div class="f-row width-100">
 					{% label "content", "&darr; Уточните ваш вопрос или оставьте поле пустым" %}
 					<div class="i-wrap">
-						{% text_area "content", rows:6, cols:"0", class:"i-text" %}
+						{% text_area "content", rows:6, cols:"0", class:"validate i-text" %}
 					</div>
 				</div>
 			
 				<div class="f-row width-50">
 					<div class="i-wrap">
 						{% text_field "name", size:30, class:"validate['required'] i-text" %}
+					</div>
+					<div class="req" title="Обязательное поле">&nbsp;</div>
+				</div>
+				
+				<div class="f-row width-50">
+					<div class="i-wrap">
+						{% text_field "mail", size:30, class:"validate i-text" %}
+						или
+						{% text_field "contact", size:30, class:"validate i-text" %}
 					</div>
 				</div>
 			
@@ -44,11 +53,12 @@
 			   <a class="icon cancel" href="#">отменить и закрыть форму</a>
 			</fieldset>
 		</div>
+		<div class='success_cont hidden'><span class="success">Отлично! Сообщение будет передано специалистам компании. <br />Если требуется решение проблемы — мы свяжемся с вами.</span></div>
 		{% endformfor %}
 		<!--noindex-->
 		<div id='faq_search_result'>
 			<p class="sort-list">
-			    Всего последних вопросов — {{ newest | size }},<br />их можно отсоритровать
+			    Всего последних вопросов — {{ newest | size }}, их можно отсоритровать
 			    <a href="#" class="pseudo active">по дате</a>&nbsp;или&nbsp;<a href="#" class="pseudo">по значимости</a>
 			</p>
 			{% for question in newest %}
@@ -69,8 +79,52 @@
 		</div>
 	</div>
 	<div class="tab-container">
-		{% formfor compliant %}
+		<h2>Оставить претензию :(</h2> 
+        <div class="block">
+          <p>Уважаемые посетители сайта, с помощью этой страницы вы можете оставить свои претензии, недовольства, пожелания. </p>
+          <p>Для оперативности решения Вашей проблемы указывайте <span style="background:#FBFABC url(template/i/invalid_line.png) 0 100% repeat-x;">телефон для связи, номер договора, дату его заключения, адрес оформления Вашего заказа</span> (для частных клиентов).</p>
+          <p>Претензии без контактной информации автора не рассматриваются и воспринимаются как «спам».</p>
+        </div>
+		<!--noindex-->
+		{% formfor compliant class:"complain corners corners-4" %}
+			<fieldset>
+				<div class='cumlaint_container'>
+					<div class="f-row width-50">
+			          <div class="i-wrap">
+			            {% text_field "owner", class:"i-text validate['required']" %}
+			            <div class="req" title="Обязательное поле">&nbsp;</div>
+			          </div>
+			        </div>
+					<div class="f-row width-50">
+			          <div class="i-wrap">
+			            {% text_field "contacts", class:"i-text validate['required']" %}
+			            <div class="req" title="Обязательное поле">&nbsp;</div>
+			          </div>
+			        </div>
+					<div class="f-row width-50">
+			          <div class="i-wrap">
+			            {% text_field "number", class:"i-text validate['required']" %}
+			            <div class="req" title="Обязательное поле">&nbsp;</div>
+			          </div>
+			        </div>
+					<div class="f-row width-50">
+			          <div class="i-wrap">
+			            {% text_field "dog_created", class:"i-text validate['required']" %}
+			            <div class="req" title="Обязательное поле">&nbsp;</div>
+			          </div>
+			        </div>
+					<div class="f-row width-100">
+		              <div class="i-wrap">
+		                {% text_area "content", rows:10, cols:"0", class:"i-text validate['required']" %}
+		                <div class="req" title="Обязательное поле">&nbsp;</div>
+		              </div>
+		            </div>
+				</div>
+				{% submit_tag "Отправить вопрос" %}
+			</fieldset>
+			<div class='success_cont hidden'><span class="success">Отлично! Сообщение будет передано специалистам компании. <br />Если требуется решение проблемы — мы свяжемся с вами.</span></div>
 		{% endformfor %}
+		<!--/noindex-->
 	</div>
 </div>
 

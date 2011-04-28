@@ -530,7 +530,7 @@ ul.select-phone {
 .faq dt.toggle span:hover { border-bottom:none; }
 .faq dd { padding:.5em 0 .5em 20px; margin:1em 0 1em 9px; color:#666;  border-left:2px solid #ccc;}
 
-.to-ask { padding:1em; background:#BADDF9 url(../i/layout/to-ask-bg.jpg) no-repeat; }
+.to-ask, .complain { padding:1em; background:#BADDF9 url(../i/layout/to-ask-bg.jpg) no-repeat; }
 .to-ask .theme { font-size:1.45em;  width:590px; }
 .ie7 .to-ask .theme { width:580px; }
 .to-ask fieldset { margin:.5em 0 0;}
@@ -556,10 +556,13 @@ ul.select-phone {
  .rating { font:2em/1.2 "Times New Roman", Times, serif; color:#ccc; }
  .vote-up { font-size:.8em; font-weight:400; color:#666; }
  .vote-up i { display:block; width:24px; height:24px; background:url(../i/icons/24/vote.png) no-repeat;  margin:.5em auto;}
- .vote-up.on i { background-position:0 100%; cursor:text; }
+ .vote-up.on { cursor:text; }
+ .vote-up.on i { background-position:0 100%; }
 
 .more-questions { background:url(../i/layout/separate-center.png) 50% 11px no-repeat; } 
 .more-questions li { width:120px; margin:auto; float:none; }
+
+
 
 /* CONTACTS MODULE */
 

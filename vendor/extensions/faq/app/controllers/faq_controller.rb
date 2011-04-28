@@ -26,15 +26,15 @@ class FaqController < ApplicationController
   def send_question
     ret = {:status=>:created, :errors=>[]}
     if request.xhr?
-      unless params[:complaint].blank?
-        question = Question.new(params[:complaint])
+      unless params[:question].blank?
+        question = Question.new(params[:question])
         if question.save
           ret[:status] = :created
         else
-          ret[:errors] << "Не удалось сохранить претензию"
+          ret[:errors] << "Не удалось сохранить вопрос"
         end
       else
-        ret[:errors] << "Не найден параметр претензии"
+        ret[:errors] << "Не найден параметр вопроса"
       end
     else
       ret[:errors] << "Сервер отклонил Ваш запрос!"
@@ -48,7 +48,7 @@ class FaqController < ApplicationController
   def live_search
     @ret = []
     unless params[:q].blank?
-      @ret = Question.search params[:q]#, :match_mode => :any
+      @ret = Question.search(params[:q], :conditions=>["answer not null and answer != :answer", {:answer=>""}])#, :match_mode => :any
     end
     respond_to do |format|
       format.html {  }

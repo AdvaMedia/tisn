@@ -74,7 +74,7 @@ class FaqQuestionsController< AdminSystemControllerExt
    edit
    @question.destroy
    respond_to do |format|
-     format.html { redirect_to(admin_faq_questions_url) }
+     format.html { redirect_to :back }
      format.xml  { head :ok }
    end
  end

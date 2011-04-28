@@ -6,6 +6,12 @@ window.addEvent('domready', function(){
 		el.set('morph', {duration: 'short'});
 	});
 	
+	$$('form').each(function(frm){
+		frm.getElements('fieldset[class!="hidden"] input[type="text"]').combine(frm.getElements('fieldset[class!="hidden"] textarea')).each(function(inp){
+			set_over_text_for_item(inp);
+		});
+	});
+	
 	new Fx.Accordion($$('dl.faq_top dt'), $$('dl.faq_top dd'),{
 		onActive:function(toggler, element){
 			toggler.addClass('on');
@@ -19,9 +25,14 @@ window.addEvent('domready', function(){
 		el.removeClass('hidden');
 	});
 	
+	$$('form').each(function(frm, index){
+		frm.set('id', 'validate_form_'+index);
+		init_forms(frm, frm.getElement('div.success_cont'));
+	});
+	
 	var search_input = $('question_title');
 	if (search_input != undefined){
-		new OverText(search_input, {textOverride:'Введите сюда Ваш вопрос'});
+		set_over_text_for_item(search_input);
 		search_input.removeEvent('keyup');
 		search_input.addEvent('keyup',function(e){
 			if (e.target.get('value') != ''){
@@ -41,7 +52,14 @@ window.addEvent('domready', function(){
 		el.addEvent('click',function(e){
 			new Event(e).stop();
 			el.getNext('fieldset').removeClass('hidden').fade('in');
+			el.getParent('div').getNext('div.success_cont').addClass('hidden');
 			show_tooltip(el);
+			frm = el.getParent('form');
+			frm.getElements('input[type="text"]').combine(frm.getElements('textarea')).each(function(inp){
+				if (inp.get('id') != 'question_title'){
+					set_over_text_for_item(inp);
+				}
+			});
 		});
 	});
 	
@@ -75,9 +93,13 @@ var faq_sort = function(forward){
 		sorterFx.forward();
 	}else{
 		sorterFx.backward();	
-	}
-	console.debug(sorterFx);
-	
+	}	
+}
+
+var set_over_text_for_item = function(item){
+	var iov = item.get('value');
+	item.set('value','');
+	new OverText(item,{textOverride:iov, labelClass:'overtext', element:'span'});
 }
 
 var publish_search_results = function(container, data){
@@ -100,15 +122,39 @@ var publish_search_results = function(container, data){
 }
 
 var show_tooltip = function(sender){
-	if (sender.overtext == undefined){
-		if ($('question_content') != undefined){new OverText($('question_content'),{textOverride:'Уточните вопрос'});}
-		if ($('question_name') != undefined){new OverText($('question_name'),{textOverride:'Ваше имя'});}
-		sender.overtext = true;
-	}
 	sender.getNext('fieldset').getElements('a.cancel').each(function(el){
 		el.addEvent('click',function(e){
 			new Event(e).stop();
 			sender.getNext('fieldset').fade('out').addClass('hidden');
 		})
 	});
+}
+
+var init_forms = function(form, result_element){
+	new FormCheck(form,{
+        display : {
+            errorsLocation : 0,
+            indicateErrors : 0,
+            showErrors : 1,
+            addClassErrorToField : 1,
+            removeClassErrorOnTipClosure :1
+        },
+		form_id: form.get('id'),
+		submit:false,
+        fieldErrorClass: 'i-invalid',
+		onValidateSuccess:function(){
+			var myJSONRemote = new Request.JSON({
+				url:this.form.get('action'),
+				onSuccess:function(responseJSON, responseText){
+					if (responseJSON.errors.length == 0){
+						result_element.removeClass('hidden');
+						result_element.getParent('form').getElement('fieldset').addClass('hidden');
+						result_element.getParent('form').getElements('input[type="text"]').combine(result_element.getParent('form').getElements('textarea')).each(function(el){
+							el.set('value', '');
+						});
+					}
+				}
+			}).post(form);
+		}
+    });
 }
