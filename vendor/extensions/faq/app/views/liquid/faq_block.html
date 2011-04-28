@@ -1,10 +1,13 @@
+<style>
+	.tab-container { position:absolute; overflow:hidden; }
+</style>
 <h1 class="heading">Вопросы и ответы</h1>
 <div class="questions">
 	<ul class="menu-h tabs">
-		<li class="active">
+		<li class="active tab">
 			<a href="#">Вопросы</a>
 		</li>
-		<li class="">
+		<li class="tab">
 			<a href="#">Претензии</a>
 		</li>
 	</ul>
@@ -32,13 +35,13 @@
 						{% text_area "content", rows:6, cols:"0", class:"i-text" %}
 					</div>
 				</div>
-				
+			
 				<div class="f-row width-50">
 					<div class="i-wrap">
 						{% text_field "name", size:30, class:"validate['required'] i-text" %}
 					</div>
 				</div>
-				
+			
 				{% submit_tag "Отправить вопрос" %}
                <span class="or">или</span>
 			   <a class="icon cancel" href="#">отменить и закрыть форму</a>
@@ -47,8 +50,11 @@
 		{% endformfor %}
 		<!--noindex-->
 		<div id='faq_search_result'>
-			
+		
 		</div>
+	</div>
+	<div class="tab-container">
+		А тут будет формочка с претензией!
 	</div>
 </div>
 
@@ -63,4 +69,6 @@
 {% formfor compliant %}
 {% endformfor %}
 
+<script type="text/javascript" src="/javascripts/rotater.js"></script>
+<script type="text/javascript" src="/javascripts/tabs.js"></script>
 <script type="text/javascript" src="/javascripts/faq_new.js"></script>

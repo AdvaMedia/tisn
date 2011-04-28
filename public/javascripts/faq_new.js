@@ -41,6 +41,12 @@ window.addEvent('domready', function(){
 			show_tooltip(el);
 		});
 	});
+	
+	new MGFX.Tabs('.tab','.tab-container',{
+					autoplay: false,
+					transitionDuration:500,
+					hover:false
+				});
 });
 
 var publish_search_results = function(container, data){
