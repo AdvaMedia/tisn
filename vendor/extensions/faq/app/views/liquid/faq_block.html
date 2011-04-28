@@ -47,7 +47,25 @@
 		{% endformfor %}
 		<!--noindex-->
 		<div id='faq_search_result'>
-		
+			<p class="sort-list">
+			    Всего последних вопросов — {{ newest | size }},<br />их можно отсоритровать
+			    <a href="#" class="pseudo active">по дате</a>&nbsp;или&nbsp;<a href="#" class="pseudo">по значимости</a>
+			</p>
+			{% for question in newest %}
+				<dl class="user-questions">
+					<dt class="toggle">{{question.title}}</dt>
+				    <dd class="">
+						<div class="elaboration">{{question.content}}</div>
+						<div class="answer corners corners-4">{{question.answer}}</div>
+						<!--noindex-->
+			            <div class="vote-panel a-center">
+			              <span class="rating" title="Количество голосов за вопрос">{{question.rate}}</span>
+			              <a class="vote-up on" href="#" title="Голосовать за вопрос"><i></i></a>
+			            </div>
+			            <!--/noindex-->
+					</dd>
+				</dl>
+			{% endfor %}
 		</div>
 	</div>
 	<div class="tab-container">

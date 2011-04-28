@@ -23,7 +23,8 @@ class FaqBlockEngine
       'question'=>Question.new,
       'params'=>params, 
       'auth_token'=>params['auth_key'],
-      'vips' => @vips
+      'vips' => @vips,
+      'newest' => Question.paginate(:per_page=>10, :order=>"position DESC", :page=>1)
       )
   end
   
@@ -49,5 +50,5 @@ class ComplaintDrop < Clot::BaseDrop
 end
 
 class QuestionDrop < Clot::BaseDrop
-    liquid_attributes << :title << :content << :answer << :id << :rate
+    liquid_attributes << :title << :content << :answer << :id << :rate << :position << :created_at << :updated_at
 end

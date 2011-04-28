@@ -1,4 +1,6 @@
+var last_sort_method = true;
 window.addEvent('domready', function(){
+	
 	$$('dl.faq dd').each(function(el){
 		el.acc_margin = {'margin-top':el.getStyle('margin-top'), 'margin-bottom': el.getStyle('margin-top') };
 		el.set('morph', {duration: 'short'});
@@ -20,6 +22,7 @@ window.addEvent('domready', function(){
 	var search_input = $('question_title');
 	if (search_input != undefined){
 		new OverText(search_input, {textOverride:'Введите сюда Ваш вопрос'});
+		search_input.removeEvent('keyup');
 		search_input.addEvent('keyup',function(e){
 			if (e.target.get('value') != ''){
 				if (e.target.get('value').length > 3){
@@ -46,13 +49,40 @@ window.addEvent('domready', function(){
 					autoplay: false,
 					transitionDuration:500,
 					hover:false
-				});
-				
+	});
+	make_sort_buttons();
+	faq_sort(last_sort_method);
 });
+
+var make_sort_buttons = function(){
+	$$('p.sort-list a.pseudo').each(function(item, index){
+		item.removeEvent('click');
+		item.addEvent('click',function(e){
+			new Event(e).stop();
+			faq_sort(index == 0);
+			$$('p.sort-list a.pseudo').each(function(el){el.removeClass('active')});
+			item.addClass('active');
+		});
+	});
+}
+
+var faq_sort = function(forward){
+	last_sort_method = forward;
+	var sorterFx = new Fx.Sort($$('dl.user-questions'), {
+	  duration: 1000
+	});
+	if (forward){
+		sorterFx.forward();
+	}else{
+		sorterFx.backward();	
+	}
+	console.debug(sorterFx);
+	
+}
 
 var publish_search_results = function(container, data){
 	container.set('html',data);
-	new Fx.Accordion($$('dl.faq_more dt'), $$('dl.faq_more dd'),{
+	/*new Fx.Accordion($$('dl.faq_more dt'), $$('dl.faq_more dd'),{
 		onActive:function(toggler, element){
 			toggler.addClass('on');
 			element.morph(element.acc_margin);
@@ -64,7 +94,9 @@ var publish_search_results = function(container, data){
 		display:-1
 	}).elements.each(function(el){
 		el.removeClass('hidden');
-	});
+	});*/
+	make_sort_buttons();
+	faq_sort(last_sort_method);
 }
 
 var show_tooltip = function(sender){
