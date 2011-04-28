@@ -47,6 +47,7 @@ MGFX.Rotater = new Class({
 	createFx: function(){
 		if (!this.slideFx) this.slideFx = new Fx.Elements(this.slides, {duration: this.options.transitionDuration, link: 'cancel'});
 		this.slides.each(function(slide){
+			slide.store_height = slide.getStyle('height');
 			slide.setStyle('opacity',0);
 		});
 	}.protect(),
@@ -106,9 +107,9 @@ MGFX.Rotater = new Class({
 			curSlide = this.currentSlide;
 		this.slides.each(function(slide, index){
 			if(index == slideIndex && index != curSlide){ //show
-				action[index.toString()] = { opacity: 1 };
+				action[index.toString()] = { opacity: 1, height:slide.store_height };
 			} else {
-				action[index.toString()] = { opacity:0 };
+				action[index.toString()] = { opacity:0, height:0 };
 			}
 		});
 		this.fireEvent('onShowSlide', slideIndex);

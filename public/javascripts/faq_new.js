@@ -47,6 +47,7 @@ window.addEvent('domready', function(){
 					transitionDuration:500,
 					hover:false
 				});
+				
 });
 
 var publish_search_results = function(container, data){
