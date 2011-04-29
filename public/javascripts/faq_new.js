@@ -30,32 +30,30 @@ window.addEvent('domready', function(){
 		init_forms(frm, frm.getElement('div.success_cont'));
 	});
 	
-	var waiterExample = new Waiter($('faq_search_result'));
+	var waiter_search = new Waiter($('faq_search_result'));
 	
 	var search_input = $('question_title');
 	if (search_input != undefined){
 		set_over_text_for_item(search_input);
-		search_input.removeEvent('keyup');
-		search_input.addEvent('keyup',function(e){
-			if (e.target.get('value') != ''){
-				if (e.target.get('value').length > 3){
+		new Observer(search_input, function(){
+			if (search_input.get('value') != ''){
+				if (search_input.get('value').length > 3){
 				var myHTMLRequest = new Request.HTML({
-					url:'railsbike/faq/live_search', 
-					onRequest:function(){
-						waiterExample.start()
-					},
-					onFailure:function(){
-						waiterExample.stop();
-					},
+					url:'railsbike/faq/live_search',
+					onRequest: function(){
+					        waiter_search.start();
+				    },
+				    onFailure: function(responseText){
+					        waiter_search.stop();
+				    },
 					onSuccess:function(responseTree, responseElements, responseHTML, responseJavaScript){
-						waiterExample.stop();
+						waiter_search.stop();
 						publish_search_results($('faq_search_result'), responseHTML);
-					}}).post('q='+e.target.get('value'));
+					}}).post('q='+search_input.get('value'));
 			}else{
 				publish_search_results($('faq_search_result'), "<h1>Результаты поиска:</h1><span>По Вашему запросу ничего не найдено!</span>");
 			}
-			}
-		});
+		}}, {delay:500});			
 	}
 	
 	$$('input.search_helper').each(function(el){
