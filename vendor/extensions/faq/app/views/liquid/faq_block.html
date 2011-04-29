@@ -73,7 +73,11 @@
 						<!--noindex-->
 			            <div class="vote-panel a-center">
 			              <span class="rating" title="Количество голосов за вопрос">{{question.rate}}</span>
-			              <a class="vote-up on" href="#" title="Голосовать за вопрос"><i>&nbsp;</i></a>
+						  {% unless question.voted %}
+								<a class="vote-up" href="{{paths.faq_vote_path}}/?id={{question.id}}" title="Голосовать за вопрос"><i>&nbsp;</i>Оценить</a>
+						  {% else %}
+								<a class="vote-up on" onclick="return false;" href="#" title="Ваш голос учтен. Спасибо!"><i>&nbsp;</i></a>
+						  {% endunless %}
 			            </div>
 			            <!--/noindex-->
 					</dd>
@@ -92,7 +96,7 @@
 		<h2>Оставить претензию :(</h2> 
         <div class="block">
           <p>Уважаемые посетители сайта, с помощью этой страницы вы можете оставить свои претензии, недовольства, пожелания. </p>
-          <p>Для оперативности решения Вашей проблемы указывайте <span style="background:#FBFABC url(template/i/invalid_line.png) 0 100% repeat-x;">телефон для связи, номер договора, дату его заключения, адрес оформления Вашего заказа</span> (для частных клиентов).</p>
+          <p>Для оперативности решения Вашей проблемы указывайте <span style="background:#FBFABC">телефон для связи, номер договора, дату его заключения, адрес оформления Вашего заказа</span> (для частных клиентов).</p>
           <p>Претензии без контактной информации автора не рассматриваются и воспринимаются как «спам».</p>
         </div>
 		<!--noindex-->

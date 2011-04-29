@@ -38,6 +38,7 @@ class FaqExtension < A2mCms::Extension
       r.faq_questions "send_question.:format", :action=>"send_question"
       r.faq_live_search "live_search.:format", :action=>"live_search"
       r.faq_show_more "show_more.:format", :action=>"show_more"
+      r.faq_vote "vote.:format", :action=>"vote"
     end
   end  
 

@@ -151,6 +151,22 @@ var faq_sort = function(forward){
 				}}).post('order='+item.get('href').replace('#','')+'&skip_search=true');
 		});
 	});
+	
+	$$('a.vote-up').each(function(link){
+		if (!link.hasClass('on')){
+			link.vote_link = link.get('href');
+			link.set('href', "#");
+			link.addEvent('click',function(e){
+				new Event(e).stop();
+				var myHTMLRequest = new Request.HTML({
+					url:this.vote_link,
+					onSuccess:function(responseTree, responseElements, responseHTML, responseJavaScript){
+						this.getParent('div').set('html', responseHTML);
+					}.bind(this)
+				}).post();
+			}.bind(link));
+		}
+	});
 }
 
 var set_over_text_for_item = function(item, overclass){

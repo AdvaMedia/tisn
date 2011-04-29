@@ -3,6 +3,7 @@
 require 'thinking_sphinx'
 class Question < ActiveRecord::Base
   acts_as_list
+  attr_accessor :voted
   
   define_index do
     indexes title
