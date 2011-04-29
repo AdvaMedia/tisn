@@ -8,7 +8,7 @@ window.addEvent('domready', function(){
 	
 	$$('form').each(function(frm){
 		frm.getElements('fieldset[class!="hidden"] input[type="text"]').combine(frm.getElements('fieldset[class!="hidden"] textarea')).each(function(inp){
-			set_over_text_for_item(inp);
+			set_over_text_for_item(inp, null);
 		});
 	});
 	
@@ -34,7 +34,7 @@ window.addEvent('domready', function(){
 	
 	var search_input = $('question_title');
 	if (search_input != undefined){
-		set_over_text_for_item(search_input);
+		set_over_text_for_item(search_input, "overtext for-to-ask");
 		new Observer(search_input, function(){
 			if (search_input.get('value') != ''){
 				if (search_input.get('value').length > 3){
@@ -66,7 +66,7 @@ window.addEvent('domready', function(){
 			frm = el.getParent('form');
 			frm.getElements('input[type="text"]').combine(frm.getElements('textarea')).each(function(inp){
 				if (inp.get('id') != 'question_title'){
-					set_over_text_for_item(inp);
+					set_over_text_for_item(inp, null);
 				}
 			});
 		});
@@ -105,10 +105,14 @@ var faq_sort = function(forward){
 	}	
 }
 
-var set_over_text_for_item = function(item){
+var set_over_text_for_item = function(item, overclass){
+	if (overclass == null){
+		overclass = 'overtext';
+	}
 	var iov = item.get('value');
 	item.set('value','');
-	new OverText(item,{textOverride:iov, labelClass:'overtext', element:'span'});
+	console.debug([item, overclass]);
+	new OverText(item,{textOverride:iov, labelClass:overclass, element:'span'}).text.set('class', overclass);
 }
 
 var publish_search_results = function(container, data){
