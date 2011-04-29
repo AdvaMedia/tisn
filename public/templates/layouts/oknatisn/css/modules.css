@@ -554,8 +554,8 @@ ul.select-phone {
 
 .vote-panel { border-right:1px solid #eee; padding-right:7px; width:50px; left:0; top:5px; position: absolute; }
  .rating { font:2em/1.2 "Times New Roman", Times, serif; color:#ccc; }
- .vote-up { font-size:.8em; font-weight:400; color:#666; }
- .vote-up i { display:block; width:24px; height:24px; background:url(../i/icons/24/vote.png) no-repeat;  margin:.5em auto;}
+ .vote-up { font-size:.8em; font-weight:400; color:#666; display:block; }
+ .vote-up i { display:block; width:24px; height:24px; background:url(../i/icons/24/vote.png) no-repeat; margin:.5em auto; text-indent:-999px; overflow:hidden; }
  .vote-up.on { cursor:text; }
  .vote-up.on i { background-position:0 100%; }
 

@@ -34,25 +34,27 @@ window.addEvent('domready', function(){
 	
 	var search_input = $('question_title');
 	if (search_input != undefined){
+		var storred_data = $('faq_search_result').get('html');
 		set_over_text_for_item(search_input, "overtext for-to-ask");
 		new Observer(search_input, function(){
 			if (search_input.get('value') != ''){
-				if (search_input.get('value').length > 3){
+				if (search_input.get('value').length > 0){
 					faq_more_last_url='/railsbike/faq/live_search?q='+search_input.get('value');
-				var myHTMLRequest = new Request.HTML({
-					url:'/railsbike/faq/live_search',
-					onRequest: function(){
-					        waiter_search.start();
-				    },
-				    onFailure: function(responseText){
-					        waiter_search.stop();
-				    },
-					onSuccess:function(responseTree, responseElements, responseHTML, responseJavaScript){
-						waiter_search.stop();
-						publish_search_results($('faq_search_result'), responseHTML);
+					var myHTMLRequest = new Request.HTML({
+						url:'/railsbike/faq/live_search',
+						onRequest: function(){
+						        waiter_search.start();
+					    },
+					    onFailure: function(responseText){
+						        waiter_search.stop();
+					    },
+						onSuccess:function(responseTree, responseElements, responseHTML, responseJavaScript){
+							waiter_search.stop();
+							publish_search_results($('faq_search_result'), responseHTML);
 					}}).post('q='+search_input.get('value'));
 			}else{
-				publish_search_results($('faq_search_result'), "<h1>Результаты поиска:</h1><span>По Вашему запросу ничего не найдено!</span>");
+				//publish_search_results($('faq_search_result'), storred_data);
+				console.debug('test');
 			}
 		}}, {delay:500});			
 	}

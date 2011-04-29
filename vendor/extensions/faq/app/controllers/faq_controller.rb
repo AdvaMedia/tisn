@@ -96,6 +96,7 @@ class FaqController < ApplicationController
     session[:live_search_order] = params[:order] if !params[:order].blank? and %{position rate}.include? params[:order]
     @live_search_order = session[:live_search_order]
     @faq_show_more_url = faq_show_more_path
+    @faq_vote_path = faq_vote_path
   end
   
   def post_for_liquid
