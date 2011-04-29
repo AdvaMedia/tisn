@@ -159,7 +159,7 @@ var set_over_text_for_item = function(item, overclass){
 	}
 	var iov = item.get('value');
 	item.set('value','');
-	new OverText(item,{textOverride:iov, labelClass:overclass, element:'span'}).text.set('class', overclass);
+	new OverText(item,{textOverride:iov, labelClass:overclass, element:'span'}).text.set('style', '').set('class', overclass);
 }
 
 var publish_search_results = function(container, data){

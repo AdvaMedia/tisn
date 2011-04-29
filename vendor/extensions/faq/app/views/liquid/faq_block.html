@@ -27,7 +27,6 @@
 			{% text_field "title", class:"validate['required'] i-text theme" %}&nbsp;&nbsp;{% submit_tag "Задать", class:'search_helper', name:nil %}
 			<fieldset class="hidden">
 				<div class="f-row width-100">
-					{% label "content", "&darr; Уточните ваш вопрос или оставьте поле пустым" %}
 					<div class="i-wrap">
 						{% text_area "content", rows:6, cols:"0", class:"validate i-text" %}
 					</div>
@@ -43,7 +42,11 @@
 				<div class="f-row width-50">
 					<div class="i-wrap">
 						{% text_field "mail", size:30, class:"validate i-text" %}
-						или
+					</div>
+				</div>
+				или
+				<div class="f-row width-50">
+					<div class="i-wrap">
 						{% text_field "contact", size:30, class:"validate i-text" %}
 					</div>
 				</div>
@@ -71,7 +74,6 @@
 			            <div class="vote-panel a-center">
 			              <span class="rating" title="Количество голосов за вопрос">{{question.rate}}</span>
 			              <a class="vote-up on" href="#" title="Голосовать за вопрос"><i>&nbsp;</i></a>
-						  <input type="hidden" class='date_sort' value="{{question.position}}">
 			            </div>
 			            <!--/noindex-->
 					</dd>

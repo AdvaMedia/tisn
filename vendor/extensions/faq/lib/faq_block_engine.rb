@@ -22,7 +22,7 @@ class FaqBlockEngine
     Liquid::Template.parse(@template).render(
       'paths'=>paths, 
       'compliant'=>Complaint.new(:owner=>"Ваше имя", :number=>"Номер договора", :contacts=>"Телефон для связи", :content=>"Опишите проблему", :dog_created=>"Дата заключения договора"), 
-      'question'=>Question.new(:title=>"Введите в это поле Ваш вопрос", :content=>"Уточните ваш вопрос", :name=>"не забудьте указать Ваше имя", :mail=>"электронную почту", :contact=>"номер телефона"),
+      'question'=>Question.new(:title=>"Введите в это поле Ваш вопрос", :content=>"Уточните ваш вопрос или оставьте поле пустым", :name=>"не забудьте указать Ваше имя", :mail=>"электронную почту", :contact=>"номер телефона"),
       'params'=>params, 
       'auth_token'=>params['auth_key'],
       'vips' => @vips,
