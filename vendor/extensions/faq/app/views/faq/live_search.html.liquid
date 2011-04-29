@@ -1,7 +1,7 @@
 {% unless ret == empty %}
 <p class="sort-list">
     Всего найдено вопросов — {{ ret | size }}, их можно отсоритровать
-    <a href="#" class="pseudo active">по дате</a>&nbsp;или&nbsp;<a href="#" class="pseudo">по значимости</a>
+    <a href="#position" class="pseudo{% if live_search_order == 'position' %} active{% endif %}">по дате</a>&nbsp;или&nbsp;<a href="#rate" class="pseudo{% if live_search_order == 'rate' %} active{% endif %}">по значимости</a>
 </p>
 
 {% for question in ret %}
@@ -19,7 +19,14 @@
 		</dd>
 	</dl>
 {% endfor %}
+{% if news_all_pages > newst_page %}
+<ul class="pagination container more-questions">
+  <li><a href="{{faq_show_more_url}}" rel="nofollow" id="show_more_link">Показать еще</a></li>
+</ul>
 {% else %}
+<input type="hidden" id="show_more_link_hidden" value="{{faq_show_more_url}}" />
+{% endif %}
+{% elsif show_message %}
 <p class="sort-list">
     К сожалению, ни одного вопроса, удовлетворяющего вашему запросу не найдено.<br /> Вы можете задать этот вопрос, воспользовавшись формой выше.
 </p>

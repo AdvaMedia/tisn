@@ -8,6 +8,8 @@ class Question < ActiveRecord::Base
     indexes title
     indexes content
     indexes answer
+    has position
+    has rate
     where "answer not null and answer !=''"
   end
   

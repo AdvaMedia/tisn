@@ -1,6 +1,8 @@
 var last_sort_method = true;
+var waiter_search;
+var faq_more_last_url;
 window.addEvent('domready', function(){
-	
+	waiter_search = new Waiter($('faq_search_result'));
 	$$('dl.faq dd').each(function(el){
 		el.acc_margin = {'margin-top':el.getStyle('margin-top'), 'margin-bottom': el.getStyle('margin-top') };
 		el.set('morph', {duration: 'short'});
@@ -30,16 +32,15 @@ window.addEvent('domready', function(){
 		init_forms(frm, frm.getElement('div.success_cont'));
 	});
 	
-	var waiter_search = new Waiter($('faq_search_result'));
-	
 	var search_input = $('question_title');
 	if (search_input != undefined){
 		set_over_text_for_item(search_input, "overtext for-to-ask");
 		new Observer(search_input, function(){
 			if (search_input.get('value') != ''){
 				if (search_input.get('value').length > 3){
+					faq_more_last_url='/railsbike/faq/live_search?q='+search_input.get('value');
 				var myHTMLRequest = new Request.HTML({
-					url:'railsbike/faq/live_search',
+					url:'/railsbike/faq/live_search',
 					onRequest: function(){
 					        waiter_search.start();
 				    },
@@ -81,20 +82,44 @@ window.addEvent('domready', function(){
 	faq_sort(last_sort_method);
 });
 
-var make_sort_buttons = function(){
-	$$('p.sort-list a.pseudo').each(function(item, index){
-		item.removeEvent('click');
-		item.addEvent('click',function(e){
+var init_show_more = function(){
+	if ($('show_more_link') != undefined){
+		if (faq_more_last_url == undefined){
+		faq_more_last_url = $('show_more_link').get('href');
+		}
+		$('show_more_link').removeEvent('click');
+		$('show_more_link').addEvent('click',function(e){
 			new Event(e).stop();
-			faq_sort(index == 0);
-			$$('p.sort-list a.pseudo').each(function(el){el.removeClass('active')});
-			item.addClass('active');
+			faq_more_last_url = $('show_more_link').get('href');
+			$('show_more_link').set('href',"#");
+			var myHTMLRequest = new Request.HTML({
+				url:faq_more_last_url,
+				onRequest: function(){
+						//new Element('div').set('id', 'faq_search_result_more').replaces($('show_more_link').getParent('ul'));
+				        waiter_search.start();
+			    },
+			    onFailure: function(responseText){
+				        waiter_search.stop();
+			    },
+				onSuccess:function(responseTree, responseElements, responseHTML, responseJavaScript){
+					waiter_search.stop();
+					publish_search_results($('faq_search_result'), responseHTML);
+				}
+			}).post('order=position');
 		});
-	});
+	}else{
+		if (faq_more_last_url == undefined && $('show_more_link_hidden') != undefined){
+			faq_more_last_url = $('show_more_link_hidden').get('value');
+		}
+	}
+}
+
+var make_sort_buttons = function(){
+	
 }
 
 var faq_sort = function(forward){
-	last_sort_method = forward;
+	/*last_sort_method = forward;
 	var sorterFx = new Fx.Sort($$('dl.user-questions'), {
 	  duration: 1000
 	});
@@ -102,7 +127,30 @@ var faq_sort = function(forward){
 		sorterFx.forward();
 	}else{
 		sorterFx.backward();	
-	}	
+	}*/
+	init_show_more();
+	$$('p.sort-list a.pseudo').each(function(item, index){
+		item.removeEvent('click');
+		item.addEvent('click',function(e){
+			new Event(e).stop();
+			$$('p.sort-list a.pseudo').each(function(el){el.removeClass('active')});
+			item.addClass('active');
+			console.debug(faq_more_last_url);
+			var myHTMLRequest = new Request.HTML({
+				url:faq_more_last_url,
+				onRequest: function(){
+						//new Element('div').set('id', 'faq_search_result_more').replaces($('show_more_link').getParent('ul'));
+				        waiter_search.start();
+			    },
+			    onFailure: function(responseText){
+				        waiter_search.stop();
+			    },
+				onSuccess:function(responseTree, responseElements, responseHTML, responseJavaScript){
+					waiter_search.stop();
+					publish_search_results($('faq_search_result'), responseHTML);
+				}}).post('order='+item.get('href').replace('#','')+'&skip_search=true');
+		});
+	});
 }
 
 var set_over_text_for_item = function(item, overclass){
@@ -111,7 +159,6 @@ var set_over_text_for_item = function(item, overclass){
 	}
 	var iov = item.get('value');
 	item.set('value','');
-	console.debug([item, overclass]);
 	new OverText(item,{textOverride:iov, labelClass:overclass, element:'span'}).text.set('class', overclass);
 }
 
@@ -156,8 +203,9 @@ var init_forms = function(form, result_element){
 		submit:false,
         fieldErrorClass: 'i-invalid',
 		onValidateSuccess:function(){
+			faq_more_last_url = this.form.get('action');
 			var myJSONRemote = new Request.JSON({
-				url:this.form.get('action'),
+				url:faq_more_last_url,
 				onSuccess:function(responseJSON, responseText){
 					if (responseJSON.errors.length == 0){
 						result_element.removeClass('hidden');

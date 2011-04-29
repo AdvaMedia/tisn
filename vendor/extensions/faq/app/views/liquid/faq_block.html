@@ -59,7 +59,7 @@
 		<div id='faq_search_result'>
 			<p class="sort-list">
 			    Всего последних вопросов — {{ newest | size }}, их можно отсоритровать
-			    <a href="#" class="pseudo active">по дате</a>&nbsp;или&nbsp;<a href="#" class="pseudo">по значимости</a>
+			    <a href="#position" class="pseudo{% if live_search_order == 'position' %} active{% endif %}">по дате</a>&nbsp;или&nbsp;<a href="#rate" class="pseudo{% if live_search_order == 'rate' %} active{% endif %}">по значимости</a>
 			</p>
 			{% for question in newest %}
 				<dl class="user-questions">
@@ -77,6 +77,13 @@
 					</dd>
 				</dl>
 			{% endfor %}
+			{% if news_all_pages > newst_page %}
+			<ul class="pagination container more-questions">
+		      <li><a id="show_more_link" href="{{paths.faq_show_more_url}}" rel="nofollow">Показать еще</a></li>
+		    </ul>
+			{% else %}
+			<input type="hidden" id="show_more_link_hidden" value="{{paths.faq_show_more_url}}" />
+			{% endif %}
 		</div>
 	</div>
 	<div class="tab-container">

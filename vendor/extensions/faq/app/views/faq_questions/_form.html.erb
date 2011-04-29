@@ -28,7 +28,7 @@
 	<div class="f-row width-100">
 		<%= f.label :answer, "Ответ на вопрос:" %>
 		<div class="i-wrap">
-			<%= f.text_area :answer, :class=>"i-text", :tabindex => 3 %>
+			<%= f.text_area :answer, :class=>"i-text", :tabindex => 4 %>
 		</div>
 		<span class="i-help">Если ответ не задан, то сообщение не будет показываться в списке на сайте и не будет участвовать в поиске.</span>
 	</div>
@@ -36,7 +36,7 @@
 	<div class="f-row width-100">
 		<%= f.label :contact, "Как с Вами связаться:" %>
 		<div class="i-wrap">
-			<%= f.text_field :contact, :class=>"i-text", :tabindex => 4 %>
+			<%= f.text_field :contact, :class=>"i-text", :tabindex => 5 %>
 			<div title="Обязательное поле" class="req">&nbsp;</div>
 		</div>
 		<span class="i-help">Например: тел. +7(8452)12-34-56, c 10 утра до 18 вечера, кроме выходных</span>
@@ -45,8 +45,16 @@
 	<div class="f-row width-100">
 		<%= f.label :mail, "Ваш email, если имеется:" %>
 		<div class="i-wrap">
-			<%= f.text_field :mail, :class=>"i-text", :tabindex => 5 %>
+			<%= f.text_field :mail, :class=>"i-text", :tabindex => 6 %>
 		</div>
 		<span class="i-help">Например: post@example.com</span>
+	</div>
+	
+	<div class="f-row width-100">
+		<%= f.label :rate, "А это рейтинг...:" %>
+		<div class="i-wrap">
+			<%= f.text_field :rate, :class=>"i-text", :tabindex => 7 %>
+		</div>
+		<span class="i-help">Рейтинг обычно устанавливается пользователями - голосованием, но его можно изменить! Это просто число.</span>
 	</div>
 </fieldset>
