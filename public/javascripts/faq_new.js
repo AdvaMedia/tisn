@@ -30,6 +30,8 @@ window.addEvent('domready', function(){
 		init_forms(frm, frm.getElement('div.success_cont'));
 	});
 	
+	var waiterExample = new Waiter($('faq_search_result'));
+	
 	var search_input = $('question_title');
 	if (search_input != undefined){
 		set_over_text_for_item(search_input);
@@ -37,9 +39,18 @@ window.addEvent('domready', function(){
 		search_input.addEvent('keyup',function(e){
 			if (e.target.get('value') != ''){
 				if (e.target.get('value').length > 3){
-				var myHTMLRequest = new Request.HTML({url:'railsbike/faq/live_search', onSuccess:function(responseTree, responseElements, responseHTML, responseJavaScript){
-					publish_search_results($('faq_search_result'), responseHTML);
-				}}).post('q='+e.target.get('value'));
+				var myHTMLRequest = new Request.HTML({
+					url:'railsbike/faq/live_search', 
+					onRequest:function(){
+						waiterExample.start()
+					},
+					onFailure:function(){
+						waiterExample.stop();
+					},
+					onSuccess:function(responseTree, responseElements, responseHTML, responseJavaScript){
+						waiterExample.stop();
+						publish_search_results($('faq_search_result'), responseHTML);
+					}}).post('q='+e.target.get('value'));
 			}else{
 				publish_search_results($('faq_search_result'), "<h1>Результаты поиска:</h1><span>По Вашему запросу ничего не найдено!</span>");
 			}

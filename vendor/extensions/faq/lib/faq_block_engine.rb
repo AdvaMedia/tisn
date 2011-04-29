@@ -50,5 +50,5 @@ class ComplaintDrop < Clot::BaseDrop
 end
 
 class QuestionDrop < Clot::BaseDrop
-    liquid_attributes << :title << :content << :answer << :id << :rate << :position << :created_at << :updated_at << :name << :mail << :contact
+    liquid_attributes << :title << :content << :answer << :id << :rate << :position << :created_at << :updated_at << :name << :mail << :contact << :timest
 end

@@ -15,4 +15,8 @@ class Question < ActiveRecord::Base
     self.rate = self.rate + 1
     save!
   end
+  
+  def timest
+    self.created_at.to_i
+  end
 end
