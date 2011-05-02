@@ -502,6 +502,46 @@ ul.select-phone {
 	font-size:2em;
 	}
 
+
+/* CONTACTS MODULE */
+
+.contacts-map h3.toggle { background: #F2F2F2 url(../i/icons/16/plus.png) 98.5% 55% no-repeat; padding:.25em 30px .25em 10px; cursor:pointer; }
+.contacts-map h3.toggle:hover { background-color: #eee; }
+.contacts-map h3.toggle.on { background-image:url(../i/icons/16/minus.png); background-color:#00C3E7; color:#fff; }
+.contacts-map h3.toggle.on:hover { background-color:#02B5D5; }
+
+
+.vcard { border-bottom:1px solid #eee; padding:1.5em; position:relative; }
+.country-name:after, .locality:after { content:',';}
+.vcard .adr { background-image:url(../i/icons/16/h-adr.png); }
+.vcard .time { background-image: url(../i/icons/16/h-time.png); }
+.vcard .tel { background-image:url(../i/icons/16/h-phone.png); }
+.vcard .photo { }
+.vcard .photo a { border:1px solid #ccc; display:inline-block;}
+.vcard .photo a img { margin:0; padding:2px; }
+.vcard .information { margin-left:140px; }
+.vcard .onmap { background-image: url(../i/icons/16/onmap.png); position:absolute; right:1em; top: 3em; font-weight:700; color:#000; }
+
+.modal.showmap { position:absolute; position:fixed; top:2em; min-width:700px; margin-left:-350px; }
+.modal.showmap .content { padding:0;}
+.modal.showmap img { margin:0; }
+.modal.showmap .wheader { position:relative; }
+.modal.showmap h4 { margin:0; /*color:#02A0C1;*/ padding:.5em; }
+.modal.showmap .cancel { position:absolute; right:10px; top:10px; }
+
+.central-office { background:#00C5EB; position:relative; }
+.central-office h2 { color:#fff; font-family: Paratype,Verdana,Geneva,sans-serif; border-bottom: 1px solid #2FA5BA; margin:0; padding: 10px 20px; }
+.central-office .section { border-top:1px solid #3ADDF9; }
+.central-office .vcard {  border-bottom:none; }
+.central-office .vcard .photo a { background:#fff; border-color:#fff; }
+.central-office .vcard .onmap { color:#fff; }
+.tabs-office { list-style:none; padding:0; margin:0; position:absolute; bottom: -30px; border-top:1px solid #00C5EB; }
+.tabs-office li { float:left; margin:0 0 0 2px; background: url(../i/layout/office-tabs.png) repeat-x 0 0 #00C5EB; padding: 5px 1em; }
+.tabs-office li:first-child { margin-left:0; }
+.tabs-office li.active { background-image:none; font-weight:700; }
+.tabs-office li a { color:#fff; }
+.tabs-office li .tl,.tabs-office li .tr { display:none; }
+
 	
 /* FAQ MODULE */
 
@@ -530,7 +570,7 @@ ul.select-phone {
 .faq dt.toggle span:hover { border-bottom:none; }
 .faq dd { padding:.5em 0 .5em 20px; margin:1em 0 1em 9px; color:#666;  border-left:2px solid #ccc;}
 
-.to-ask, .complain { padding:1em; background:#BADDF9 url(../i/layout/to-ask-bg.jpg) no-repeat; }
+.to-ask { padding:1em; background:#BADDF9 url(../i/layout/to-ask-bg.jpg) no-repeat; }
 .to-ask .theme { font-size:1.45em;  width:590px; }
 .ie7 .to-ask .theme { width:580px; }
 .to-ask fieldset { margin:.5em 0 0;}
@@ -554,15 +594,12 @@ ul.select-phone {
 
 .vote-panel { border-right:1px solid #eee; padding-right:7px; width:50px; left:0; top:5px; position: absolute; }
  .rating { font:2em/1.2 "Times New Roman", Times, serif; color:#ccc; }
- .vote-up { font-size:.8em; font-weight:400; color:#666; display:block; }
- .vote-up i { display:block; width:24px; height:24px; background:url(../i/icons/24/vote.png) no-repeat; margin:.5em auto; text-indent:-999px; overflow:hidden; }
- .vote-up.on { cursor:text; }
- .vote-up.on i { background-position:0 100%; }
+ .vote-up { font-size:.8em; font-weight:400; color:#666; }
+ .vote-up i { display:block; width:24px; height:24px; background:url(../i/icons/24/vote.png) no-repeat;  margin:.5em auto;}
+ .vote-up.on i { background-position:0 100%; cursor:text; }
 
 .more-questions { background:url(../i/layout/separate-center.png) 50% 11px no-repeat; } 
 .more-questions li { width:120px; margin:auto; float:none; }
-
-
 
 /* CONTACTS MODULE */
 
