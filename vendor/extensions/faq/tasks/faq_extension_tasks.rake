@@ -48,3 +48,28 @@ namespace :a2m do
     end
   end
 end
+
+
+namespace :faq do
+  desc 'Sena mail with questions and complaints'
+  task :send_mail=>[:environment] do
+    #sent_body={"current_date"=>Time.now, "company"=>"Окна ТиСН", "site"=>{"name"=>"Окна ТиСН"}}
+    @items = {}    
+    @items["questions"] = Question.all(:conditions=>{:mailme=>false})
+    @items["complaints"] = Complaint.all(:conditions=>{:mailme=>false})
+    @items["current_date"] = Time.now
+    @items["company"]="Окна ТиСН"
+    @items["site"]={"name"=>"Окна ТиСН"}
+    begin
+      FaqMailer.deliver_faq_messages('tisn@advamedia.ru', 'kirillov@advamedia.ru', "Информация о поступивших вопросах и претензиях (не требует ответа)", @items, Time.now)
+      ([] << @items["questions"] << @items["complaints"]).flatten.each do |itm|
+        unless itm.blank?
+          itm.mailme = true
+          itm.save!
+        end
+      end
+    rescue Exception => e
+      p e
+    end
+  end
+end

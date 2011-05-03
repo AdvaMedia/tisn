@@ -1,0 +1,52 @@
+<div class="page-wrapper container">
+	<table class="null-table full content-layout">
+		<tr>
+	      <td class="header" colspan="2">
+	        <h1 style="background-image:url(/images/adminsystem/icons/48/content.png);"><%= link_to "Вопросы и ответы", admin_faq_complaints_url %> / Просмотр претензии</h1>
+	      </td>
+	      <td class="column-right" rowspan="2">
+	      </td>
+	    </tr>
+		<tr>
+	      <td class="column-center ">
+			<div id="githubstyle">
+				<div class="f-row width-100">
+					<b>Номер договора:</b>
+					<div class="i-wrap">
+						<%= h @item.number %>
+					</div>
+				</div>
+				
+				<div class="f-row width-100">
+					<b>Дата заключения договора:</b>
+					<div class="i-wrap">
+						<%= h @item.dog_created %>
+					</div>
+				</div>
+				
+				<div class="f-row width-100">
+					<b>На кого оформлен:</b>
+					<div class="i-wrap">
+						<%= h @item.owner %>
+					</div>
+				</div>
+				
+				<div class="f-row width-100">
+					<b>Телефон для связи:</b>
+					<div class="i-wrap">
+						<%= h @item.contacts %>
+					</div>
+				</div>
+				
+				<div class="f-row width-100">
+					<b>Текст претензии:</b>
+					<div class="i-wrap">
+						<%= h @item.content %>
+					</div>
+				</div>
+				
+			</div>
+	      </td>
+	    </tr>
+	</table>
+</div>

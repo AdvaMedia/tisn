@@ -18,11 +18,12 @@
 		        <table class="tree-browser" cellspacing="0" cellpadding="0">
 		          <tbody>
 					<tr class="header">
-						<th>п/п</th>
+						<th>Номер договора</th>
 						<th>Претензия</th>
 						<th>Дата добавления</th>
 						<th>Действия</th>
 					</tr>
+					<%= render :partial => "list", :locals=>{:collection => @items} %>
 		          </tbody>
 		        </table>
 			</div>

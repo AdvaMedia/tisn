@@ -1,0 +1,16 @@
+<% collection.each do |complaint| %>
+<tr>
+	<td>
+		<%= h complaint.number %>
+	</td>
+	<td>
+		<%= link_to h(complaint.content)[0..100]+'...', admin_faq_complaint_path(complaint) %>
+	</td>
+	<td>
+		<%= h complaint.created_at.strftime('%d/%m/%y (%H:%M)')%>
+	</td>
+	<td>
+		<%= link_to image_tag("adminsystem/icons/16/cross.png", :style=>"margin:0;"), admin_faq_complaint_path(complaint), :confirm => 'Вы уверены?', :method => :delete%>
+	</td>
+</tr>
+<% end %>

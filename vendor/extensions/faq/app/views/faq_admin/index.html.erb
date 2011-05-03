@@ -15,12 +15,22 @@
 				</li>
 			</ul>
 			<div id="githubstyle">
-				<div>
-					<%= link_to image_tag("faq.jpg"), admin_faq_questions_url %>
-			        <p class="corners corners-10 width-50" style="background:#0F7BC9; padding:1.5em; color:#fff;">
-						Если нужно отредактировать вопросы посетителей сайта, ответить на некоторые из них или удалить ненужные, пометить как "часто задаваемые", то конечно же Вам сюда.
-					</p>
-				</div>
+				<table class="null-table full">
+					<tbody>
+						<tr>
+							<td>
+								<div>
+									<%= link_to '<p class="corners corners-10 width-90" style="background:#0F7BC9; padding:1.5em; color:#fff;">Если нужно отредактировать вопросы посетителей сайта, ответить на некоторые из них или удалить ненужные, пометить как "часто задаваемые", то конечно же Вам сюда.</p>', admin_faq_questions_url %>
+								</div>
+							</td>
+							<td>
+								<div>
+									<%= link_to '<p class="corners corners-10 width-90" style="background:#0F7BC9; padding:1.5em; color:#fff;">Если Вы хотите посмотреть претензии, отправленные со страницы сайта, то вам точно сюда.</p>', admin_faq_complaints_url %>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
 			</div>
 	      </td>
 	    </tr>
