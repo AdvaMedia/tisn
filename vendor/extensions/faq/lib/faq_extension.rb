@@ -31,6 +31,7 @@ class FaqExtension < A2mCms::Extension
         :move_to => :get,
         :toggle_vip => :get
       }
+      admin.resources :faq_complaints, :as=>"complaints"
     end
     
     map.with_options(:controller=>"Faq", :path_prefix=>"railsbike/faq") do |r|
