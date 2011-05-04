@@ -14,18 +14,8 @@ window.addEvent('domready', function(){
 		});
 	});
 	
-	new Fx.Accordion($$('dl.faq_top dt'), $$('dl.faq_top dd'),{
-		onActive:function(toggler, element){
-			toggler.addClass('on');
-			element.morph(element.acc_margin);
-		},
-		onBackground:function(toggler, element){
-			toggler.removeClass('on');
-			element.morph({'margin-top':0, 'margin-bottom': 0 });
-		}
-	}).elements.each(function(el){
-		el.removeClass('hidden');
-	});
+	init_top_toggler($$('dl.faq_top dt'), $$('dl.faq_top dd'));
+	
 	
 	$$('form').each(function(frm, index){
 		frm.set('id', 'validate_form_'+index);
@@ -84,10 +74,74 @@ window.addEvent('domready', function(){
 	faq_sort(last_sort_method);
 });
 
+var init_top_toggler = function(togglers, containers){
+	togglers.each(function(el, index){
+		containers[index].removeClass('hidden');
+		el.fx = new Fx.Slide(containers[index], {resetHeight:true}).hide();
+		el.fx.wrapper.morph({'margin-top':0, 'margin-bottom': 0 });
+		el.addEvent('click',function(e){
+			el.fx.toggle();
+			if (el.fx.open){
+				el.fx.wrapper.morph({'margin-top':0, 'margin-bottom': 0 });
+				el.fx.wrapper.fade('out');
+				el.removeClass('on');
+			}else{
+				el.fx.wrapper.morph(el.fx.element.acc_margin);
+				el.fx.wrapper.fade('in');
+				el.addClass('on');
+			}
+		});
+	});
+	/*new Fx.Accordion(togglers, containers,{
+		onActive:function(toggler, element){
+			toggler.addClass('on');
+			element.morph(element.acc_margin);
+		},
+		onBackground:function(toggler, element){
+			toggler.removeClass('on');
+			element.morph({'margin-top':0, 'margin-bottom': 0 });
+		}
+	}).elements.each(function(el){
+		el.removeClass('hidden');
+	});*/
+}
+
 var init_show_more = function(){
-	if ($('show_more_link') != undefined){
+	//init paginate links
+	var paginate_arr = $$('ul.pagination li a');
+	if (paginate_arr.length > 0){
+		faq_more_last_url = $$('ul.pagination li.active a')[0].get('href');
+		paginate_arr.each(function(link, index){
+			link.removeEvent('click');
+			link.addEvent('click',function(e){
+				new Event(e).stop();
+				faq_more_last_url = link.get('href');
+				link.set('href','#');
+				var myHTMLRequest = new Request.HTML({
+					url:faq_more_last_url,
+					onRequest: function(){
+							//new Element('div').set('id', 'faq_search_result_more').replaces($('show_more_link').getParent('ul'));
+					        waiter_search.start();
+				    },
+				    onFailure: function(responseText){
+					        waiter_search.stop();
+				    },
+					onSuccess:function(responseTree, responseElements, responseHTML, responseJavaScript){
+						waiter_search.stop();
+						publish_search_results($('faq_search_result'), responseHTML);
+					}
+				}).post('&page='+link.get('html'));
+			});
+		});
+	}else{
+		if (faq_more_last_url == undefined && $('show_more_link_hidden') != undefined){
+			faq_more_last_url = $('show_more_link_hidden').get('value');
+		}
+	}
+	
+	/*if ($('show_more_link') != undefined){
 		if (faq_more_last_url == undefined){
-		faq_more_last_url = $('show_more_link').get('href');
+		faq_more_last_url = $$('ul.pagination li.active a').first.get('href');
 		}
 		$('show_more_link').removeEvent('click');
 		$('show_more_link').addEvent('click',function(e){
@@ -109,11 +163,7 @@ var init_show_more = function(){
 				}
 			}).post('order=position');
 		});
-	}else{
-		if (faq_more_last_url == undefined && $('show_more_link_hidden') != undefined){
-			faq_more_last_url = $('show_more_link_hidden').get('value');
-		}
-	}
+	}*/
 }
 
 var make_sort_buttons = function(){
@@ -137,7 +187,6 @@ var faq_sort = function(forward){
 			new Event(e).stop();
 			$$('p.sort-list a.pseudo').each(function(el){el.removeClass('active')});
 			item.addClass('active');
-			console.debug(faq_more_last_url);
 			var myHTMLRequest = new Request.HTML({
 				url:faq_more_last_url,
 				onRequest: function(){
@@ -150,7 +199,7 @@ var faq_sort = function(forward){
 				onSuccess:function(responseTree, responseElements, responseHTML, responseJavaScript){
 					waiter_search.stop();
 					publish_search_results($('faq_search_result'), responseHTML);
-				}}).post('order='+item.get('href').replace('#','')+'&skip_search=true');
+				}}).post('order='+item.get('href').replace('#','')+'&skip_search=true'+'&page='+$$('ul.pagination li.active a')[0].get('html'));
 		});
 	});
 	

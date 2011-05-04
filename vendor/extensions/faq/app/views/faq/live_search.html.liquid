@@ -1,12 +1,12 @@
 {% unless ret == empty %}
 <p class="sort-list">
-    Всего найдено вопросов — {{ ret | size }}, их можно отсоритровать
+    <strong>Вопросы</strong>&nbsp;
     <a href="#position" class="pseudo{% if live_search_order == 'position' %} active{% endif %}">по дате</a>&nbsp;или&nbsp;<a href="#rate" class="pseudo{% if live_search_order == 'rate' %} active{% endif %}">по значимости</a>
 </p>
 
 {% for question in ret %}
 	<dl class="user-questions">
-		<dt class="toggle">{{question.title}}</dt>
+		<dt>{{question.title}}</dt>
 	    <dd class="">
 			<div class="elaboration">{{question.content}}</div>
 			<div class="answer corners corners-4">{{question.answer}}</div>
@@ -24,8 +24,11 @@
 	</dl>
 {% endfor %}
 {% if news_all_pages > newst_page %}
-<ul class="pagination container more-questions">
-  <li><a href="{{faq_show_more_url}}" rel="nofollow" id="show_more_link">Показать еще</a></li>
+<ul class="pagination container block">
+	<li class="label">Постраничная навигация:</li>
+	{% for page in (1..news_all_pages) %}
+	<li class="{% if page == active_page %}active{% endif %}"><a href="{{faq_show_more_url}}">{{page}}</a></li>
+	{% endfor %}
 </ul>
 {% else %}
 <input type="hidden" id="show_more_link_hidden" value="{{faq_show_more_url}}" />

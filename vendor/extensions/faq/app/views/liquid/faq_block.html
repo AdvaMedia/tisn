@@ -17,10 +17,6 @@
             <dd class="hidden">{{question.answer}}</dd>
 		{% endfor %}
 		</dl>
-		<hr />
-		<p class="help "><strong>Если вы не нашли ответа выше — задайте свой вопрос</strong>,<br /> но для начала — 
-          ознакомтесь со списком опубликованных вопросов, возможно кто-то уже поднимал интересующую Вас тему. 
-          Добавляя новый вопрос, старайтесь сделать его информативным, кратким и понятным для остальных посетителей.</p>
 		<!--noindex-->
 		{% formfor question class:"to-ask corners corners-4" %}
 		<div class="f-row width-100 no-margin">
@@ -61,12 +57,12 @@
 		<!--noindex-->
 		<div id='faq_search_result'>
 			<p class="sort-list">
-			    Всего последних вопросов — {{ newest | size }}, их можно отсоритровать
+			    <strong>Вопросы</strong>&nbsp;
 			    <a href="#position" class="pseudo{% if live_search_order == 'position' %} active{% endif %}">по дате</a>&nbsp;или&nbsp;<a href="#rate" class="pseudo{% if live_search_order == 'rate' %} active{% endif %}">по значимости</a>
 			</p>
 			{% for question in newest %}
 				<dl class="user-questions">
-					<dt class="toggle">{{question.title}}</dt>
+					<dt>{{question.title}}</dt>
 				    <dd class="">
 						<div class="elaboration">{{question.content}}</div>
 						<div class="answer corners corners-4">{{question.answer}}</div>
@@ -84,8 +80,11 @@
 				</dl>
 			{% endfor %}
 			{% if news_all_pages > newst_page %}
-			<ul class="pagination container more-questions">
-		      <li><a id="show_more_link" href="{{paths.faq_show_more_url}}" rel="nofollow">Показать еще</a></li>
+			<ul class="pagination container block">
+				<li class="label">Постраничная навигация:</li>
+				{% for page in (1..news_all_pages) %}
+				<li class="{% if page == 1 %}active{% endif %}"><a href="{{paths.faq_show_more_url}}">{{page}}</a></li>
+				{% endfor %}
 		    </ul>
 			{% else %}
 			<input type="hidden" id="show_more_link_hidden" value="{{paths.faq_show_more_url}}" />

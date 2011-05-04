@@ -61,10 +61,9 @@ class FaqController < ApplicationController
   def show_more
     prepare_search
     @show_message = false
-    unless params[:skip_search]
-      session[:live_search_page] = session[:live_search_page].blank? ? 1 : session[:live_search_page]+1
-    end
-    @ret = Question.paginate(:per_page=>5*session[:live_search_page], :order=>"#{@live_search_order} DESC", :page=>1, :conditions=>["answer not null and answer != :answer", {:answer=>""}])
+    @active_page = params[:page].to_i || 1
+    @ret = Question.paginate(:per_page=>5, :order=>"#{@live_search_order} DESC", :page=>@active_page, :conditions=>["answer not null and answer != :answer", {:answer=>""}])
+    @total_pages = @ret.total_pages
     @ret.map!{|i| i.voted = @vote_array.include?(i.id); i}
     post_for_liquid
     render :live_search
