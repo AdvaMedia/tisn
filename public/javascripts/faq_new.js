@@ -185,6 +185,10 @@ var faq_sort = function(forward){
 		item.removeEvent('click');
 		item.addEvent('click',function(e){
 			new Event(e).stop();
+			var last_page = 1
+			if ($$('ul.pagination li.active a').length > 0){
+				last_page = $$('ul.pagination li.active a')[0].get('html');
+			}
 			$$('p.sort-list a.pseudo').each(function(el){el.removeClass('active')});
 			item.addClass('active');
 			var myHTMLRequest = new Request.HTML({
@@ -199,7 +203,7 @@ var faq_sort = function(forward){
 				onSuccess:function(responseTree, responseElements, responseHTML, responseJavaScript){
 					waiter_search.stop();
 					publish_search_results($('faq_search_result'), responseHTML);
-				}}).post('order='+item.get('href').replace('#','')+'&skip_search=true'+'&page='+$$('ul.pagination li.active a')[0].get('html'));
+				}}).post('order='+item.get('href').replace('#','')+'&skip_search=true'+'&page='+last_page);
 		});
 	});
 	
