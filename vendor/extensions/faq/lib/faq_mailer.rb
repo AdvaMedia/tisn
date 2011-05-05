@@ -1,6 +1,6 @@
 class FaqMailer < ActionMailer::Base
   
-  def faq_messages(sent_from='tisn@advamedia.ru',sent_recipients='kirillov@advamedia.ru', sent_subject='Информация о поступивших вопросах и претензиях', sent_body={"current_date"=>Time.now, "company"=>"Окна ТиСН", "site"=>{"name"=>"Окна ТиСН"}}, sent_at = Time.now)
+  def faq_messages(sent_from='tisn@advamedia.ru',sent_recipients="postmaster@advamedia.ru", sent_subject='Информация о поступивших вопросах и претензиях', sent_body={"current_date"=>Time.now, "company"=>"Окна ТиСН", "site"=>{"name"=>"Окна ТиСН"}}, sent_at = Time.now)
     @content_type   = "text/html"
     @from       = sent_from
     @recipients = sent_recipients

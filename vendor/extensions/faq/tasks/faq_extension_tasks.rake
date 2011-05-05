@@ -61,7 +61,8 @@ namespace :faq do
     @items["company"]="Окна ТиСН"
     @items["site"]={"name"=>"Окна ТиСН"}
     begin
-      FaqMailer.deliver_faq_messages('tisn@advamedia.ru', 'kirillov@advamedia.ru', "Информация о поступивших вопросах и претензиях (не требует ответа)", @items, Time.now)
+      p "Sending mail to #{A2mConfiguration.get_value(FeedbackExtension.extension_name, "mail", "postmaster@advamedia.ru")}"
+      FaqMailer.deliver_faq_messages('tisn@advamedia.ru', A2mConfiguration.get_value(FeedbackExtension.extension_name, "mail", "postmaster@advamedia.ru"), "Информация о поступивших вопросах и претензиях (не требует ответа)", @items, Time.now)
       ([] << @items["questions"] << @items["complaints"]).flatten.each do |itm|
         unless itm.blank?
           itm.mailme = true
@@ -69,6 +70,7 @@ namespace :faq do
         end
       end
     rescue Exception => e
+      p "!!!!!!!!!!!!!!!!!"
       p e
     end
   end
