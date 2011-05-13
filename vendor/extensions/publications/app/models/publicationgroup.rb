@@ -3,7 +3,14 @@
 require 'rutils'
 
 class Publicationgroup < ActiveRecord::Base
-  has_many :publicationitems, :order=>"created_at DESC", :dependent=>:destroy
+  has_many :publicationitems, :order=>"created_at DESC", :dependent=>:destroy do
+    def locked
+      find(:all, :conditions=>{:lock=>true})
+    end
+    def unlocked
+      find(:all, :conditions=>{:lock=>false})
+    end
+  end
   has_many :publicationpages
   has_many :publicationblocks
 

@@ -54,5 +54,11 @@ class PublicationsItemsController < AdminSystemControllerExt
       redirect_to :action=>"show", :id=>tmp_id if @item.delete
     end
   end
+  
+  def toggle_lock
+    edit
+    @item.lock_toggle! unless @item.blank?
+    redirect_to :back
+  end
 
 end

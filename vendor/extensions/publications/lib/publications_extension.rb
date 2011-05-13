@@ -35,6 +35,7 @@ class PublicationsExtension < A2mCms::Extension
         ind_cont.connect "/#{admin_index}/:id/item/:tid/edit", :action=>"edit"
         ind_cont.connect "/#{admin_index}/:id/item/:tid/save", :action=>"save"
         ind_cont.connect "/#{admin_index}/:id/item/:tid/delete", :action=>"delete"
+        ind_cont.connect "/#{admin_index}/:id/item/:tid/togle", :action=>"toggle_lock"
       end
 
       map.with_options :controller=>"PublicationsGroups" do |ind_cont|
