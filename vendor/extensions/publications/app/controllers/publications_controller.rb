@@ -1,6 +1,6 @@
 # To change this template, choose Tools | Templates
 # and open the template in the editor.
-
+require 'liquid'
 class PublicationsController < PageController
   layout :get_layout
   before_filter :init_page, :only=>:index
@@ -13,13 +13,20 @@ class PublicationsController < PageController
           :publicationgroup_id=>@page.publicationpages.first.publicationgroup.id,
           :tag=>params[:tab]
         }).first
-      @render_template = @page.publicationpages.first.template_one if @page.publicationpages.length > 0
+      @render_template = Rails.cache.fetch("publication-#{@page.publication_tag.id}", :expires_in => 12.hours){
+        Liquid::Template.parse(@page.publicationpages.first.template_one).render('publication'=>@page.publication_tag, 'others'=>@page.publication_tag.publicationgroup.publicationitems.reject{|i| i==@page.publication_tag}) if @page.publicationpages.length > 0
+      }
     else
-      @render_template = @page.publicationpages.first.template_all if @page.publicationpages.length > 0
+      @render_template = Rails.cache.fetch("#publications-#{@page.publicationpages.first.publicationgroup.id}", :expires_in => 12.hours){
+        pubitems = @page.publicationpages.first.publicationgroup.publicationitems
+        Liquid::Template.parse(@page.publicationpages.first.template_all).render('lockeds'=>pubitems.locked, 'unlockeds'=>pubitems.unlocked, 'first'=>pubitems.first, 'group'=>@page.publicationpages.first.publicationgroup) if @page.publicationpages.length > 0
+      }
     end
 
     respond_to do |format|
-      format.html
+      format.html {
+        
+      }
       format.rss  {
         @items = @page.publicationgroups.first.publicationitems if @page.publicationgroups.length >0
         render :layout => false

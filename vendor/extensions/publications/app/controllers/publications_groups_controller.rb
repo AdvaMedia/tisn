@@ -60,6 +60,7 @@ class PublicationsGroupsController < AdminSystemControllerExt
     if request.post?
       if @item.update_attributes(params[:item])
         Rails.cache.delete("publication-group-items-#{@item.publicationgroup.id}")
+        Rails.cache.delete("publications-#{@item.publicationgroup.id}")
         flash[:notice] = "Настройка блока изменена"
       end
     end

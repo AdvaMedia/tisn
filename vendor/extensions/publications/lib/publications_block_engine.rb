@@ -23,8 +23,9 @@ class PublicationsBlockEngine
     
     template = @block.publicationblocks.first.template
     pubitems = @block.publicationblocks.first.publicationgroup.publicationitems
-    Rails.cache.fetch("publication-group-items-#{@block.publicationblocks.first.publicationgroup.id}")
-    Liquid::Template.parse(template).render('lockeds'=>pubitems.locked, 'unlockeds'=>pubitems.unlocked, 'first'=>@block.publicationblocks.first.publicationgroup.publicationitems.first)
+    Rails.cache.fetch("publication-group-items-#{@block.publicationblocks.first.publicationgroup.id}"){
+      Liquid::Template.parse(template).render('lockeds'=>pubitems.locked, 'unlockeds'=>pubitems.unlocked, 'first'=>@block.publicationblocks.first.publicationgroup.publicationitems.first)
+    }
     #result.join
   end
 
