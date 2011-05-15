@@ -27,6 +27,7 @@ class PublicationsItemsController < AdminSystemControllerExt
     if request.post?
       @item.update_attributes(params[:item])
       if @item.save
+        Rails.cache.delete("publication-group-items-#{@item.publicationgroup.id}")
         redirect_to :action=>"show", :id=>@item.publicationgroup.id
       end
     end
@@ -42,6 +43,7 @@ class PublicationsItemsController < AdminSystemControllerExt
     if request.post?
       @item.update_attributes(params[:item])
       if @item.save
+        Rails.cache.delete("publication-group-items-#{@item.publicationgroup.id}")
         redirect_to :action=>"show", :id=>@item.publicationgroup.id
       end
     end

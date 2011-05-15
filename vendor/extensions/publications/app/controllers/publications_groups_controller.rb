@@ -33,6 +33,7 @@ class PublicationsGroupsController < AdminSystemControllerExt
     edit
     if request.post?
       @item.update_attributes(params[:item])
+      Rails.cache.delete("publication-group-items-#{@item.id}")
       redirect_to :action=>"index"
     end
   end
@@ -48,14 +49,19 @@ class PublicationsGroupsController < AdminSystemControllerExt
   def set_to_page
     @item = init_page_association
     if request.post?
-      flash[:notice] = "Настройка страницы изменена" if @item.update_attributes(params[:item])
+      if @item.update_attributes(params[:item])
+        flash[:notice] = "Настройка страницы изменена" 
+      end
     end
   end
 
   def set_to_block
     @item = init_block_association
     if request.post?
-      flash[:notice] = "Настройка блока изменена" if @item.update_attributes(params[:item])
+      if @item.update_attributes(params[:item])
+        Rails.cache.delete("publication-group-items-#{@item.publicationgroup.id}")
+        flash[:notice] = "Настройка блока изменена"
+      end
     end
   end
 

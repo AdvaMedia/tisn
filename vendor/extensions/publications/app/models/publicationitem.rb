@@ -19,4 +19,8 @@ class Publicationitem < ActiveRecord::Base
   def lock_toggle!
     update_attribute(:lock, !self.lock)
   end
+  
+  def full_url
+    self.publicationgroup.blank? ? "#" : [self.publicationgroup.full_url, self.tag].join('/')
+  end
 end

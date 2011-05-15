@@ -160,51 +160,6 @@ width:344px;
 padding-left:420px;
 }
 
-/* LAST NEWS MODULE  */	
-
-.modifed-last-news,
-.modifed-last-news dl {
-	 margin:0; 
-	 }
-
-.modifed-last-news .col-last {
-	position:relative;
-	border-left:1px dotted #c6c6c6; 
-	padding-left:1.5em;
-	margin-left:1.5em;
-	}
-
-.modifed-last-news img { 
-	border:1px solid #E3E6E6; 
-	padding:4px;
-	}
-
-.modifed-last-news .entry-title a { 
-	color:#000;
-	}
-
-.modifed-last-news .date {
-	float:left;
-	width:80px; 
-	color:#c6c6c6;
-	font-weight:400;
-	margin-left:0;
-	}
-
-.modifed-last-news dd { 
-	margin-bottom:.75em; 
-	}	
-	
-.modifed-last-news .rss { 
-	position:absolute;
-	top:4px;
-	right:0;
-	}	
-
-.modifed-last-news .rss img {
-	margin:0;
-	}
-
 ul.pdf a { background-image: url(/assets/pictures/12/content_1278255692_file-pdf.png?1278255840); padding-left:25px; }
 
 ul.icons {padding-left:1em;}
