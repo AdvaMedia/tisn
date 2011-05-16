@@ -5,7 +5,7 @@
 	{% for campaign in cam_item.campaigns %}
 		<div class="entry roundborder">
 	        <h4 class="corners corners-3 entry-title">{{campaign.name}}</h4>
-	        <b class="icon time">Акция действует: </b><span>c {{campaign.date_on | date: "%d.%m.%y"}} по {{campaign.date_off | date: "%d.%m.%y"}}</span><br>
+	        <b class="icon time">Акция действует: </b><span>c {{campaign.date_on | date: "%d.%m.%y"}} по {{campaign.date_off | date: "%d.%m.%y"}}</span><br />
 	        <b class="icon adr">По адресу: </b><span>{{campaign.map_address.full_address}}</span>
 		</div>
 	{% endfor %}
