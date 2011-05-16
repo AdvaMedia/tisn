@@ -1,0 +1,11 @@
+<div class="roundborder special-row">
+ <div class="container">
+    <a href="{{page_url}}" class="marker f-left">Спецпредложения</a>
+	{% random campaign in campaigns %}
+    <span class="item">
+      <a href="{{campaign.full_url}}" title="{{campaign.name}}">{{campaign.name}}</a>&nbsp;&nbsp;|&nbsp;&nbsp;{{campaign.ur_address}}
+    </span>
+	{% endrandom %}
+    <div class="fade">&nbsp;</div>
+ </div>
+</div>
