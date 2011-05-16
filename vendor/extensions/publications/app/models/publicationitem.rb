@@ -2,6 +2,7 @@
 # and open the template in the editor.
 
 class Publicationitem < ActiveRecord::Base
+  include FileColumnHelper
   belongs_to :publicationgroup
 
   before_save :update_tag
@@ -10,9 +11,9 @@ class Publicationitem < ActiveRecord::Base
   file_column :image, :magick => { 
         :image_required => false,
         :versions => {
-          :thumb => "120x80",
+          :thumb => "170x100",
           :orig => {:name=>"orig"},
-          :widescreen => {:crop => "12:8", :size => "120x80!"}
+          :widescreen => {:crop => "17:10", :size => "170x100!"}
           }
       }
   
@@ -31,5 +32,9 @@ class Publicationitem < ActiveRecord::Base
   
   def full_url
     self.publicationgroup.blank? ? "#" : [self.publicationgroup.full_url, self.tag].join('/')
+  end
+  
+  def image_url(ver="widescreen")
+    url_for_file_column(self, "image", ver)
   end
 end

@@ -1,7 +1,7 @@
 <%= javascript_include_tag :ckeditor %>
 <%= render :partial=>"tabs" %>
 <div class="page-wrapper container">
-  <% form_for :item, :url=>{:action=>"create",:id=>@item.publicationgroup.id} do |f| %>
+  <% form_for :item, :url=>{:action=>"create",:id=>@item.publicationgroup.id}, :html => {:multipart => true} do |f| %>
     <table class="null-table full content-layout">
       <tr>
         <td class="header" colspan="2">
@@ -29,12 +29,12 @@
             </div>
 
             <div class="f-row width-100">
-              <%= f.label :image_url, "URL изображения:" %>
-              <div class="i-wrap">
-                <%= f.text_field :image_url, :class=>"i-text" %>
-              </div>
-              <span class="i-help">Например: О компании Ромашка.</span>
-            </div>
+	            <%= f.label :alt_image, "Постер для публикации:" %>
+	            <div class="i-wrap">
+	              <%= file_column_field 'item', 'image' %>
+	            </div>
+	            <span class="i-help">Выберите файл, который будет постером публикации.</span>
+	          </div>
 
             <div class="f-row width-100">
               <%= f.label :descriptions, "Описание публикации:" %>
@@ -75,6 +75,8 @@
             </div>
             <span class="i-help">Выберите категорию, к которой принадлежит данная публикация.</span>
           </div>
+
+		
         </td>
       </tr>
     </table>
