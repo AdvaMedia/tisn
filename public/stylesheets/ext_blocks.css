@@ -174,3 +174,8 @@ margin-bottom:0.75em;}
 
 .vertical-partners {padding:0; border:none; }
 .vertical-partners a { margin:0 auto; }
+
+/* FIX FOR CAMPAIGNS*/
+#active_car_container {position:absolute; margin-left: 20px;}
+.campaign_entry {height: 110px;}
+#active_car_wrappper {height:80px;}
