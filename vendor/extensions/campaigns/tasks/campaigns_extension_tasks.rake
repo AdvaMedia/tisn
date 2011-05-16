@@ -4,7 +4,7 @@ require "ap"
 
 namespace :a2m do
   namespace :extensions do
-    namespace :faq do
+    namespace :campaigns do
       desc "migrate extension"
       task :migrate=>:environment do
         if ENV["VERSION"]

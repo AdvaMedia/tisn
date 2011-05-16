@@ -1,0 +1,32 @@
+<div class="page-wrapper container">
+	<table class="null-table full content-layout">
+		<tr>
+	      <td class="header" colspan="2">
+	        <h1 style="background-image:url(/images/adminsystem/icons/48/content.png);">Акции</h1>
+	      </td>
+	      <td class="column-right" rowspan="2">
+	      </td>
+	    </tr>
+		<tr>
+	      <td class="column-center pagehead">
+			<ul class="actions">
+				<li>
+					<%= link_to "<span>Новая акция</span>", new_admin_campaign_url, {:class=>"minibutton btn-watch"}%>
+				</li>
+			</ul>
+			<div id="githubstyle">
+		        <table class="tree-browser" cellspacing="0" cellpadding="0">
+		          <tbody>
+					<tr class="header">
+						<th>Акция</th>
+						<th>Дата проведения</th>
+						<th>Действия</th>
+					</tr>
+		            <%= render :partial => "list", :locals=>{:collection => @items} %>
+		          </tbody>
+		        </table>
+			</div>
+	      </td>
+	    </tr>
+	</table>
+</div>

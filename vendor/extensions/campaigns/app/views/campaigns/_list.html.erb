@@ -1,0 +1,13 @@
+<% collection.each do |campaign| %>
+<tr>
+	<td>
+		<%= link_to campaign.name, edit_admin_campaign_url(campaign) %>
+	</td>
+	<td>
+		<%= "C #{campaign.date_on.strftime('%d.%m.%y')} по #{campaign.date_off.strftime('%d.%m.%y')}"%>
+	</td>
+	<td>
+		<%= link_to image_tag("adminsystem/icons/16/cross.png", :style=>"margin:0;"), admin_campaign_url(campaign), :confirm => 'Вы уверены?', :method => :delete%>
+	</td>
+</tr>
+<% end %>

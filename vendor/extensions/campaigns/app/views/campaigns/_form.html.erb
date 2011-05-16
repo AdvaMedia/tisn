@@ -1,0 +1,45 @@
+<fieldset>
+	<div class="f-row width-100">
+		<%= f.label :name, "Название акции:" %>
+		<div class="i-wrap">
+			<%= f.text_field :name, :class=>"i-text", :tabindex => 1 %>
+			<div title="Обязательное поле" class="req">&nbsp;</div>
+		</div>
+		<span class="i-help">Например: Все окна со скидкой 50%</span>
+	</div>
+	
+	<div class="f-row width-100">
+		<%= f.label :map_address_id, "Место проведения акции:" %>
+		<div class="i-wrap">
+			<%= f.select :map_address_id, MapAddress.all.collect{|i| ["#{i.map_region.title}, #{i.name} - #{i.full_address}", i.id]}, :class=>"i-select", :tabindex => 2 %>
+			<div title="Обязательное поле" class="req">&nbsp;</div>
+		</div>
+		<span class="i-help">Место проведения акции</span>
+	</div>
+	
+	<div class="f-row width-100">
+		<%= f.label :date_on, "Начало:" %>
+		<div class="i-wrap">
+			<%= f.date_select :date_on, :class=>"i-select", :tabindex => 3 %>
+			<div title="Обязательное поле" class="req">&nbsp;</div>
+		</div>
+		<span class="i-help">Начало проведения акции</span>
+	</div>
+	
+	<div class="f-row width-100">
+		<%= f.label :date_off, "Окончание:" %>
+		<div class="i-wrap">
+			<%= f.date_select :date_off, :class=>"i-select", :tabindex => 3 %>
+			<div title="Обязательное поле" class="req">&nbsp;</div>
+		</div>
+		<span class="i-help">Окончание проведения акции</span>
+	</div>
+	
+	<div class="f-row width-100">
+		<%= f.label :content, "Описание акции:" %>
+		<div class="i-wrap">
+			<%= f.text_area :content, :class=>"i-text", :tabindex => 4 %>
+			<div title="Обязательное поле" class="req">&nbsp;</div>
+		</div>
+	</div>
+</fieldset>

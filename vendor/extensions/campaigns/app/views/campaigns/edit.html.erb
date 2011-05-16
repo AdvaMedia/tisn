@@ -1,0 +1,22 @@
+<div class="page-wrapper container">
+	<table class="null-table full content-layout">
+		<tr>
+	      <td class="header" colspan="2">
+	        <h1 style="background-image:url(/images/adminsystem/icons/48/content.png);"><%= link_to "Акции", admin_campaigns_url %> / Редактирование акции</h1>
+	      </td>
+	      <td class="column-right" rowspan="2">
+	      </td>
+	    </tr>
+		<tr>
+	      <td class="column-center ">
+			<div id="githubstyle">
+				<% form_for :campaign, :url=>admin_campaign_url(@campaign), :html =>{:method=>:put} do |f| %>
+					<%= render :partial => "form", :locals => {:f => f }%>
+					<%= f.submit "Сохранить", :class=>"button" %>
+					<%= link_to "<span>Отменить</span>", admin_campaigns_url, {:class=>"minibutton btn-watch"}%>
+				<% end %>
+			</div>
+	      </td>
+	    </tr>
+	</table>
+</div>

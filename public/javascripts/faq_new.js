@@ -43,8 +43,6 @@ window.addEvent('domready', function(){
 							publish_search_results($('faq_search_result'), responseHTML);
 					}}).post('q='+search_input.get('value'));
 			}else{
-				//publish_search_results($('faq_search_result'), storred_data);
-				console.debug('test');
 			}
 		}}, {delay:500});			
 	}

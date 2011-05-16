@@ -7,6 +7,15 @@ class Publicationitem < ActiveRecord::Base
   before_save :update_tag
   before_create :update_tag
   
+  file_column :image, :magick => { 
+        :image_required => false,
+        :versions => {
+          :thumb => "120x80",
+          :orig => {:name=>"orig"},
+          :widescreen => {:crop => "12:8", :size => "120x80!"}
+          }
+      }
+  
   #locked and unlocked lists
   {:locked=>true, :unlocked=>false}.each_pair do |key, value|
     named_scope key, :conditions=>{:lock=>value}

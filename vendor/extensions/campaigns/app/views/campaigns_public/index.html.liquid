@@ -1,0 +1,16 @@
+<div class="specials container block">
+{% for cam_item in items %}
+<h3 id="map-region-{{cam_item.region.id}}" class="corners corners-3 toggle">{{cam_item.region.title}}</h3>
+<div class="toggle-container hidden">
+	{% for campaign in cam_item.campaigns %}
+		<div class="entry roundborder">
+	        <h4 class="corners corners-3 entry-title">{{campaign.name}}</h4>
+	        <b class="icon time">Акция действует: </b><span>c {{campaign.date_on | date: "%d.%m.%y"}} по {{campaign.date_off | date: "%d.%m.%y"}}</span><br>
+	        <b class="icon adr">По адресу: </b><span>{{campaign.map_address.full_address}}</span>
+		</div>
+	{% endfor %}
+</div>
+{% endfor %}
+</div>
+
+<script type="text/javascript" src="/javascripts/core_toggler.js"></script>

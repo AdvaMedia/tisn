@@ -424,12 +424,25 @@
 	}
 
 	
-/* LAST NEWS MODULE  */	
+/* NEWS MODULE AND LAST NEWS MODULE  */	
+
+.head-section { position:relative; }
+.rss-section { background: url(../i/layout/rss.png) no-repeat;
+    color: #999;
+    display: inline-block;
+    font-size: .9em;
+    line-height: 28px;
+    padding-left: 10px;
+    width: 100px;
+	margin-right:17px; }
+
+.news .entry-title { font-size:1.7em; }
+.news .thumb { padding:4px; border:1px solid #E3E6E6; } 
+.news .entry div.f-left { margin-right:1.5em; }
+.news .date { color:#C6C6C6; display:block; position:relative; top:.4em; margin-bottom:.4em; }
 
 .modifed-last-news,
-.modifed-last-news dl {
-	 margin:0; 
-	 }
+.modifed-last-news dl { }
 
 .modifed-last-news .col-last {
 	position:relative;
@@ -468,6 +481,24 @@
 .modifed-last-news .rss img {
 	margin:0;
 	}
+
+
+/* SPECIALS MODULE */
+
+.specials {}
+.specials .actual { position:absolute; font-size:.8em; right:0; top:5px; color:#ccc;}
+.specials .last-special { background:#00C5EB url(../i/layout/special_smile.png) -5px 120% no-repeat; padding:1em 1em 1em 9em;}
+.specials .roundborder { margin:1em 1.5em; }
+.specials .entry-title { background:#00C5EB url(../i/layout/special_entry.png) 0 no-repeat; color:#fff; padding:2px 5px 2px 40px; margin:-5px -5px .6em -5px; }
+.specials .last-special .entry-title { background:none; margin:0 0 .5em 0; padding:0; }
+.specials p { margin-bottom:.6em; }
+.specials .time { background-image:url(../i/icons/16/h-time.png); }
+.specials .adr { background-image:url(../i/icons/16/h-adr.png); }
+.specials  h3.toggle { background: #F2F2F2 url(../i/icons/16/plus.png) 98.5% 55% no-repeat; padding:.25em 30px .25em 10px; cursor:pointer; }
+.specials  h3.toggle:hover { background-color: #eee; }
+.specials  h3.toggle.on { background-image:url(../i/icons/16/minus.png); background-color:#00C3E7; color:#fff; }
+.specials  h3.toggle.on:hover { background-color:#02B5D5; }
+
 	
 /* POLL MODULE  */	
 
@@ -564,7 +595,7 @@ ul.select-phone {
 .user-questions dt,.user-questions dd { margin-left:0; padding-left:0; }
 .user-questions dt { font-size:1.1em; }
 .user-questions dd { margin-bottom:0; }
-.user-questions .answer { font:italic 1em/1.5 Arial, Helvetica, sans-serif; margin-top:1em; background:#99e8f7; color: #496677; padding:1em; }
+.user-questions .answer { font:italic 1em/1.5 Arial, Helvetica, sans-serif; margin-top:1em; background:/*#99e8f7*/ #e9f1f6; color: #496677; padding:1em; }
 
 .vote-panel { border-right:1px solid #eee; padding-right:7px; width:50px; left:0; top:5px; position: absolute; }
  .rating { font:2em/1.2 "Times New Roman", Times, serif; color:#223B44; }

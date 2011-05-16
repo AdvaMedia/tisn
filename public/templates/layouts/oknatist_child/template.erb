@@ -34,8 +34,9 @@
           <div class="container block">
             <div class="content-wrap">
               <div class="container" id="content">
+				<a2m:region name="pre_content" title="Выше основного содержания" />
                 <%= yield :layout %>
-  		<a2m:region name="content" title="Содержимое страницы" />
+		  		<a2m:region name="content" title="Содержимое страницы" />
               </div>
 	    </div>
               <div id="sidebar">

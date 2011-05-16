@@ -2,6 +2,9 @@ class MapAddress < ActiveRecord::Base
   
   belongs_to :map_region, :class_name => "MapRegion", :foreign_key => "map_region_id"
   has_many :office_images, :class_name => "OfficeImage", :order=>"position ASC"
+  
+  has_one :campaign
+  
   acts_as_list :scope=>:map_region
 
   liquid_methods :map_region, :office_images, :country, :name, :federation, :area, :city, :street, :post_index, :house, :office, :work_times, :is_primary, :position, :lat, :lng, :full_address, :phones_ar, :has_phones?, :poster, :has_map?

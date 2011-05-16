@@ -1,0 +1,40 @@
+<style>
+	#active_car_container {
+		position:absolute;
+		margin-left: 20px;
+	}
+	.campaign_entry {height: 110px;}
+	#active_car_wrappper {height:80px;}
+</style>
+<div class="specials">
+   <div class="head-section">
+    <h2><a style="color:#000;" href="{{page_url}}">Специальные предложения</a>
+    <span class="actual">активных &mdash; {{ campaigns | size}}</span></h2>
+   </div>
+  <div id="active_car_wrappper" class="corners corners-4 last-special block">
+	<div id="active_car_container">
+	{% for campaign in campaigns %}
+    <div class="entry container campaign_entry">
+      <h3 class="entry-title"><a style="color:#fff;" href="#">{{campaign.name}}</a></h3>
+      <div>
+        <b class="icon time">Акция действует: </b><span style="color:#fff;">c {{campaign.date_on | date: "%d.%m.%y"}} по {{campaign.date_off | date: "%d.%m.%y"}}</span><br>
+        <b class="icon adr">По адресу: </b><span style="color:#fff;">{{campaign.map_address.full_address}}</span>
+      </div>
+    </div>
+	{% endfor %}
+	</div>
+  </div>
+</div>
+
+<script type="text/javascript" src="/javascripts/carusel.js"></script>
+<script type="text/javascript">
+	window.addEvent('domready',function(){
+		new noobSlide({
+			box: $('active_car_container'),
+			items: $$('div.campaign_entry'),
+			size: 110,
+			mode: 'vertical',
+			autoPlay: true
+		});
+	});
+</script>
