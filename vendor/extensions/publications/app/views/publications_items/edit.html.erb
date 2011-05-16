@@ -29,7 +29,7 @@
             </div>
 
             <div class="f-row width-100">
-				<%= image_tag(url_for_file_column(@item, :image, "widescreen")) %><br />
+				<%= image_tag(url_for_file_column(@item, :image, "widescreen")) unless @item.image_url.nil? %><br />
 	            <%= f.label :alt_image, "Постер для публикации:" %>
 	            <div class="i-wrap">
 	              <%= file_column_field 'item', 'image' %>
