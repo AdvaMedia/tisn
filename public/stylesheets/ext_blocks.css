@@ -164,6 +164,10 @@ ul.pdf a { background-image: url(/assets/pictures/12/content_1278255692_file-pdf
 
 ul.icons {padding-left:1em;}
 
+YMaps-b-balloon-frame {
+margin: 0;
+}
+
 ul.icons { padding-left:1em; list-style:none; }
 ul.zip a { padding-left:25px; background-image:url(/assets/pictures/44/content_1278262813_folder_zipper.png?1278263406);}
 

@@ -175,6 +175,8 @@ tbody th { background: #e0e0e0; color: #333; }
 tbody th { border-bottom: 1px solid #fff; text-align: left; }
 tbody td { border-bottom: 1px solid #eee; }
 
+table.YMaps-b-balloon-frame { border:none; margin:0; }
+table.YMaps-b-balloon-frame tbody td { border:none; border-collapse:collapse; }
 
 /* 5. Images  */
 

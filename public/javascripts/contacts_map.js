@@ -49,7 +49,7 @@ window.addEvent('domready',function(e){
 	            s.iconStyle = new YMaps.IconStyle();
 	            s.iconStyle.href = "/images/location.png";
 	            s.iconStyle.size = new YMaps.Point(40, 44);
-	            s.iconStyle.offset = new YMaps.Point(-20, -44);	
+	            s.iconStyle.offset = new YMaps.Point(-15, -44);	
 	
 	$$('a.onmap').addEvent('click',function(e){
 		new Event(e).stop();
