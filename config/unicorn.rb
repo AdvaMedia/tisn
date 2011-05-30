@@ -1,7 +1,7 @@
-rails_root = '/home/advamedia/sites/advamedia/tisn.preview/deploy/current'
-rails_env  = 'development'
-pid_file   = '/home/advamedia/sites/advamedia/tisn.preview/deploy/shared/pids/unicorn.pid'
-socket_file= '/home/advamedia/sites/advamedia/tisn.preview/deploy/var/unicorn.sock'
+rails_root = '/sites/advamedia.ru/tisn/deploy/current'
+rails_env  = 'production'
+pid_file   = '/sites/advamedia.ru/tisn/deploy/shared/pids/unicorn.pid'
+socket_file= '/sites/advamedia.ru/tisn/deploy/var/unicorn.sock'
 log_file   = "#{rails_root}/log/unicorn.log"
 username   = 'advamedia'
 group	   = 'advamedia'
