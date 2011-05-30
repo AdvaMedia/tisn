@@ -19,5 +19,6 @@
 
 # Learn more: http://github.com/javan/whenever
 every 1.day, :at => 00 do
-  
+  rake "ts:index"
+  rake "faq:send_mail"
 end

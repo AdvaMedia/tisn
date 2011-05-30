@@ -1,6 +1,11 @@
 $:.unshift(File.expand_path('./lib', ENV['rvm_path'])) 
 require "rvm/capistrano"
 
+set :whenever_command, "bundle exec whenever"
+set :whenever_roles, :web
+require "whenever/capistrano"
+
+
 set :using_rvm, true
 set :rvm_ruby_string, 'ruby-1.8.7-p334@tisn'
 
