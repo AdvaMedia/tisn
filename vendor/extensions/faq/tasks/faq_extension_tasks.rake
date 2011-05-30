@@ -1,6 +1,5 @@
 $KCODE = 'UTF8' unless RUBY_VERSION >= '1.9'
 require 'ya2yaml'
-require "ap"
 
 namespace :a2m do
   namespace :extensions do
