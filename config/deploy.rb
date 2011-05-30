@@ -17,6 +17,8 @@ set :app_dir, "/sites/advamedia.ru/#{application}/"
 # Директория, куда будет делаться checkout из репозитория
 set :deploy_to, "#{app_dir}deploy"
 
+set :rails_env, "production"
+
 # Настройки репозитория
 set :scm, :git
 set :repository, "git://github.com/AdvaMedia/tisn.git"
@@ -28,8 +30,8 @@ after "deploy:setup" do
 end
 
 before "deploy:update" do
-  #unicorn.stop
-  #ts.stop
+  unicorn.stop
+  ts.stop
 end
 
 after "deploy:update" do
@@ -43,7 +45,7 @@ end
 
 namespace :unicorn do
   task :start do
-    run "cd #{deploy_to}/current && unicorn_rails -c #{deploy_to}/current/config/unicorn.rb -D"
+    run "cd #{deploy_to}/current && unicorn_rails -c #{deploy_to}/current/config/unicorn.rb -D -E #{rails_env}"
   end
  
   task :stop do
@@ -58,7 +60,7 @@ end
 namespace :ts do
   [:index, :conf, :start, :stop].each do |ctask|
     task ctask do
-      run "cd #{deploy_to}/current && rake ts:#{ctask.to_s}"
+      run "cd #{deploy_to}/current && rake ts:#{ctask.to_s} RAILS_ENV=#{rails_env}"
     end
   end
 end

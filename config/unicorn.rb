@@ -1,5 +1,5 @@
 rails_root = '/sites/advamedia.ru/tisn/deploy/current'
-rails_env  = 'production'
+rails_env = ENV['RAILS_ENV'] || 'production'
 pid_file   = '/sites/advamedia.ru/tisn/deploy/shared/pids/unicorn.pid'
 socket_file= '/sites/advamedia.ru/tisn/deploy/var/unicorn.sock'
 log_file   = "#{rails_root}/log/unicorn.log"
@@ -13,8 +13,8 @@ timeout 30
 worker_processes 1
  
 # Listen on a Unix data socket
-#listen socket_file, :backlog => 1024
-listen 8080
+listen socket_file, :backlog => 64
+#listen 8080
 pid pid_file
  
 stdout_path log_file
