@@ -19,7 +19,7 @@ set :deploy_to, "#{app_dir}deploy"
 
 # Настройки репозитория
 set :scm, :git
-set :repository, "git@github.com:AdvaMedia/tisn.git"
+set :repository, "git://github.com/AdvaMedia/tisn.git"
 set :branch, "faq"
 set :deploy_via, :remote_cache
 
@@ -28,8 +28,8 @@ after "deploy:setup" do
 end
 
 before "deploy:update" do
-  unicorn.stop
-  ts.stop
+  #unicorn.stop
+  #ts.stop
 end
 
 after "deploy:update" do
