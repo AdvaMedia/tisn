@@ -4,22 +4,22 @@ require "rvm/capistrano"
 set :using_rvm, true
 set :rvm_ruby_string, 'ruby-1.8.7-p334@tisn'
 
-set :application, "tisn.preview"
+set :application, "tisn"
 
-role :web, "advamedia.ru"                          # Your HTTP server, Apache/etc
+role :web, "95.141.193.62"                          # Your HTTP server, Apache/etc
 set :user, 'advamedia' # пользователь удалённого сервера
 set :use_sudo, false # не запускать команды под sudo
 
 set :keep_releases, 1
 
-set :app_dir, "/home/#{user}/sites/advamedia/#{application}/"
+set :app_dir, "/sites/advamedia.ru/#{application}/"
 
 # Директория, куда будет делаться checkout из репозитория
 set :deploy_to, "#{app_dir}deploy"
 
 # Настройки репозитория
 set :scm, :git
-set :repository, "git@rubylnik.ru:tisn.git"
+set :repository, "git@github.com:AdvaMedia/tisn.git"
 set :branch, "faq"
 set :deploy_via, :remote_cache
 
