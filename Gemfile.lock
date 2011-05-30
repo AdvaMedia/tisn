@@ -1,14 +1,9 @@
-GIT
-  remote: git://github.com/aughey/thinking-sphinx.git
-  revision: c19b469466be2123e17351ef25f595efba4161fb
-  specs:
-    thinking-sphinx (1.1.5)
-
 GEM
   remote: http://rubygems.org/
   specs:
     BlueCloth (1.0.1)
     RedCloth (4.2.3)
+    aaronh-chronic (0.3.9)
     actionmailer (2.3.8)
       actionpack (= 2.3.8)
     actionpack (2.3.8)
@@ -56,6 +51,9 @@ GEM
     unicorn (3.6.0)
       kgio (~> 2.3)
       rack
+    whenever (0.6.8)
+      aaronh-chronic (>= 0.3.9)
+      activesupport (>= 2.3.4)
     ya2yaml (0.30)
 
 PLATFORMS
@@ -75,6 +73,6 @@ DEPENDENCIES
   rutils
   sanitize
   sqlite3-ruby (= 1.2.5)
-  thinking-sphinx!
   unicorn
+  whenever
   ya2yaml

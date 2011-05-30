@@ -41,6 +41,13 @@ after "deploy:update" do
   unicorn.start
 end
 
+namespace :deploy do
+  desc "Update the crontab file"
+  task :update_crontab, :roles => :db do
+    run "cd #{deploy_to}/current && whenever --update-crontab #{application}"
+  end
+end
+
     
 
 namespace :unicorn do

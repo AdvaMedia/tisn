@@ -18,4 +18,5 @@ gem "rmagick"
 #gem "liquid"
 gem "ya2yaml"
 gem "awesome_print"
+gem 'whenever', :require => false
 #gem "thinking-sphinx", :git=>"git://github.com/aughey/thinking-sphinx.git"
