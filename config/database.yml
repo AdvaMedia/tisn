@@ -30,6 +30,6 @@ test:
 
 production:
     adapter: sqlite3
-    database: db/tor_production.sqlite
+    database: db/tisn_production.sqlite
 #  socket: /var/lib/mysql/mysql.sock
 
