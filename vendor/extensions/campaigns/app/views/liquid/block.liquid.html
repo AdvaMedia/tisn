@@ -3,6 +3,7 @@
     <h2><a style="color:#000;" href="{{page_url}}">Специальные предложения</a>
     <span class="actual">активных &mdash; {{ campaigns | size}}</span></h2>
    </div>
+  {% unless campaigns == empty %}
   <div id="active_car_wrappper" class="corners corners-4 last-special block">
 	<div id="active_car_container">
 	{% for campaign in campaigns %}
@@ -16,6 +17,7 @@
 	{% endfor %}
 	</div>
   </div>
+  {% endunless %}
 </div>
 
 <script type="text/javascript" src="/javascripts/carusel.js"></script>

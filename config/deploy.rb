@@ -11,7 +11,7 @@ set :rvm_ruby_string, 'ruby-1.8.7-p334@tisn'
 
 set :application, "tisn"
 
-role :web, "95.141.193.62"                          # Your HTTP server, Apache/etc
+role :web, "oknatisn.ru"                          # Your HTTP server, Apache/etc
 set :user, 'advamedia' # пользователь удалённого сервера
 set :use_sudo, false # не запускать команды под sudo
 
