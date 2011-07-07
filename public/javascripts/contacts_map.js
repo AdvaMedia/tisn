@@ -64,18 +64,22 @@ window.addEvent('domready',function(e){
 			if (placemark != undefined){
 				map.removeOverlay(placemark);
 			}
-			geocoder = new YMaps.Geocoder(new YMaps.GeoPoint(this.map_args[0], this.map_args[1]), {results: 1});
+			var ttt_geopoint = new YMaps.GeoPoint(this.map_args[0], this.map_args[1]);
+			geocoder = new YMaps.Geocoder(ttt_geopoint, {results: 1});
 			YMaps.Events.observe(geocoder, geocoder.Events.Load, function (geocoder){
-				var tmp_y_bounds = geocoder.get(0).getGeoPoint();
-				placemark = new YMaps.Placemark(tmp_y_bounds, {draggable: false, style:s});
-				placemark.name="Адрес офиса";
-				placemark.description = geocoder.get(0).text;
-				map.setZoom(50, {smooth:true});
-				map.addOverlay(placemark);
-				
+			        var tmp_y_bounds = geocoder.get(0).getGeoPoint();
+			        //placemark = new YMaps.Placemark(tmp_y_bounds, {draggable: false, style:s});
+			        placemark = new YMaps.Placemark(ttt_geopoint, {draggable: false, style:s});
+			        placemark.name="Адрес офиса";
+			        placemark.description = geocoder.get(0).text;
+			        map.setZoom(50, {smooth:true});
+			        map.addOverlay(placemark);
+
 			    //map.setBounds(geocoder.get(0).getBounds());
-				map.panTo(geocoder.get(0).getGeoPoint(), {flying: 1})
+			    map.panTo(ttt_geopoint, {flying: 1})
+			    //map.panTo(geocoder.get(0).getGeoPoint(), {flying: 1})
 			});
+			
 			
 		}
 	});
