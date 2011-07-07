@@ -339,7 +339,7 @@ EOF
       "saratov"=>{
         :name=>"Саратове",
         :code=>"8452",
-        :number=>"22-55-55"
+        :number=>"39-00-93"
       },
       "samara"=>{
         :name=>"Самаре",
